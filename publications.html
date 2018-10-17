@@ -1,343 +1,213 @@
 <!DOCTYPE html>
 <html lang = "en">
-   
-   <head>
-      <title>Alessio Xompero</title>
-      <link href = "css/bootstrap.min.css" rel = "stylesheet">
-      
-      <style>
-         body {
-            padding-top: 40px;
-            padding-bottom: 40px;
-            background-color: #ADABAB;
-         }
-         
-         .form-signin {
-            max-width: 330px;
-            padding: 15px;
-            margin: 0 auto;
-            color: #017572;
-         }
-         
-         .form-signin .form-signin-heading,
-         .form-signin .checkbox {
-            margin-bottom: 10px;
-         }
-         
-         .form-signin .checkbox {
-            font-weight: normal;
-         }
-         
-         .form-signin .form-control {
-            position: relative;
-            height: auto;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            padding: 10px;
-            font-size: 16px;
-         }
-         
-         .form-signin .form-control:focus {
-            z-index: 2;
-         }
-         
-         .form-signin input[type="email"] {
-            margin-bottom: -1px;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-            border-color:#017572;
-         }
-         
-         .form-signin input[type="password"] {
-            margin-bottom: 10px;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-            border-color:#017572;
-         }
-         
-         h2{
-            text-align: center;
-            color: #017572;
-         }
-      </style>
-      
-   </head>
-   
-         <style>
-      body {
-        background-color: #EBE8E4;
-        color: #222;
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        font-weight: 300;
-        font-size: 15px;
-    }
+
+  <head>
+    <title>Alessio Xompero</title>
+
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+
+    <style>
+      h2{
+        text-align: left;
+        color: #017572;
+      }
+
+      #bib_morb, #bib_qianicassp, #bib_fusion {
+        width: 45%;
+        padding: 10px 0px 0px 20px;
+        text-align: left;
+        background-color: rgba(128, 128, 128, 0);
+        margin-top: 0px;
+        white-space: pre;
+      }
+
+      #abstract_morb, #abstract_qianicassp, #abstract_fusion {
+        width: 45%;
+        padding: 10px 0px 0px 20px;
+        font-style: italic;
+        text-align: left;
+        background-color: rgba(128, 128, 128, 0);
+        margin-top: 0px;
+        white-space: break-all;
+      }
     </style>
 
-   <body>
-     <h1>Alessio Xompero</h1>
-     
-     <nav>
-      <ul>
+    <script> 
+      function AppearBib(bib_id) {
+        var x = document.getElementById(bib_id);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function AppearAbstract(abstract_id) {
+        var x = document.getElementById(abstract_id);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+
+<body>
+  <h1 style="text-align:center">Alessio Xompero</h1>
+
+  <nav style="text-align:center">
+    <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
       <li><a href="publications.html">Publications</a></li>
+    </ul>
+  </nav>
 
-      </ul>
-      </nav>
-      
-      <style>
-        nav {
-          background-color: #fff;
-          border: 1px solid #dedede;
-          border-radius: 4px;
-          box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-          color: #888;
-          display: block;
-          margin: 8px 22px 8px 22px;
-          overflow: hidden;
-          width: 90%;
-        }
+  <hr />
+  <p style="text-align: center;"><strong>2018</strong></p>
+  <strong>Conferences </strong>
+  <ul>
+  <li>
+  <div>
+  <em>MORB: a multi-scale binary descriptor</em> <br>
+  <strong>A. Xompero</strong>, O. Lanz, and A. Cavallaro<br> 
+  IEEE International Conference on Image Processing, Athens (Greece), October, 7-10, 2018<br>
+  <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_morb')">Abstract</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Download" href="projects/icip2018/2018_ICIP_MORBaMultiScaleBinaryDescriptor_Xompero_Lanz_Cavallaro.pdf">PDF</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Downloadr" href="projects/icip2018/2018_ICIP_poster_Xompero_Lanz_Cavallaro.pdf">Poster</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Cite bib" onclick="AppearBib('bib_morb')">Bibtex</a>
+  </div>
+  <div id="abstract_morb" style="display:none;" class="abstract">
+  Local  image  features  play  an  important  role  in  matching  images
+  under different geometric and photometric transformations.   How-
+  ever,  as  the  scale  difference  across  views  increases,  the  matching
+  performance may considerably decrease.   To address this problem
+  we propose MORB, a multi-scale binary descriptor that is based on
+  ORB and that improves the accuracy of feature matching under scale
+  changes.  MORB describes an image patch at different scales using
+  an  oriented  sampling  pattern  of  intensity  comparisons  in  a  prede-
+  fined set of pixel pairs.  We also propose a matching strategy that
+  estimates the cross-scale match between MORB descriptors across
+  views.  Experiments show that MORB outperforms state-of-the-art
+  binary descriptors under several transformations.
+  </div>
+  <div id="bib_morb"  style="display:none;" class="bib">@INPROCEEDINGS{Xompero2018ICIP_MORB,
+  title = {{MORB: a multi-scale binary descriptor}},
+  author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
+  booktitle = ICIP,
+  address = {Athens, Greece},
+  month = "7--10~" # oct,
+  year = {2018}
+  }
+  </div>
+  </li>
+  <br>
+  <li>
+  <div>
+  <em>Multi-camera Matching of Spatio-Temporal Binary Features</em><br>
+  <strong>A. Xompero</strong>, O. Lanz, and A. Cavallaro<br>
+  International Conference on Information Fusion, Cambridge (United Kingdom), July, 10-13, 2018. <br>
+  <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_fusion')">Abstract</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Download" href="projects/fusion2018/2018_FUSION_MultiCameraMatchingOfSpatioTemporalBinaryFeatures_Xompero_Lanz_Cavallaro.pdf">PDF</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Download" href="">Slides</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Cite bib" onclick="AppearBib('bib_fusion')">Bibtex</a>
+  </div>
+  <div id="bib_fusion"  style="display:none;" class="answer_list">
+  @INPROCEEDINGS{Xompero2018FUSION,
+  title = {{Multi-camera Matching of Spatio-Temporal Binary Features}},
+  author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
+  booktitle = FUSION,
+  address = {Cambridge, UK},
+  month = "10--13~" # jul,
+  year = {2018}
+  }
+  </div>
+  <div id="abstract_fusion"  style="display:none;" class="abstract">
+  We address the 3D audio-visual mouth tracking problem when using
+  a compact platform with co-located audio-visual sensors, without a
+  depth camera.  In particular, we propose a multi-modal particle fil-
+  ter that combines a face detector and 3D hypothesis mapping to the
+  image plane. The audio likelihood computation is assisted by video,
+  which relies on a GCC-PHAT based acoustic map.  By combining
+  audio and video inputs, the proposed approach can cope with a re-
+  verberant and noisy environment, and can deal with situations when
+  the person is occluded, outside the Field of View (FoV), or not facing
+  the sensors.  Experimental results show that the proposed tracker is
+  accurate both in 3D and on the image plane. 
+  </div>
+  </li>
+  <br>
+  <li>
+  <div>
+  <em>3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera</em><br>
+  X. Qian, <strong>A. Xompero</strong>, A. Brutti, O. Lanz, M. Omologo, and A. Cavallaro<br>
+  International Conference on Acoustics, Speech and Signal Processing (ICASSP), Calgary (Canada), April, 15-20, 2018<br>
+  <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_qianicassp')">Abstract</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Download" href="http://www.eecs.qmul.ac.uk/~andrea/papers/2018_ICASSP_3DMouthTracking_Qian_Xompero_Brutti_Lanz_Omologo_Cavallaro.pdf">PDF</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Download" href="projects/icip2018/2018_ICIP_poster_Xompero_Lanz_Cavallaro.pdf">Poster</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_qianicassp')">Bibtex</a>
+  </div>
+  <div id="bib_qianicassp"  style="display:none;" class="bib">
+  @INPROCEEDINGS{Qian2018ICASSP,
+  title = {{3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera}},
+  author = {Qian, Xinyuan and Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
+  booktitle = ICASSP,
+  address = {Calgari, Canada},
+  month = "15--20~" # apr,
+  year = {2018}
+  }
+  </div>
+  <div id="abstract_qianicassp"  style="display:none;" class="abstract">
+  We address the 3D audio-visual mouth tracking problem when using
+  a compact platform with co-located audio-visual sensors, without a
+  depth camera.  In particular, we propose a multi-modal particle fil-
+  ter that combines a face detector and 3D hypothesis mapping to the
+  image plane. The audio likelihood computation is assisted by video,
+  which relies on a GCC-PHAT based acoustic map.  By combining
+  audio and video inputs, the proposed approach can cope with a re-
+  verberant and noisy environment, and can deal with situations when
+  the person is occluded, outside the Field of View (FoV), or not facing
+  the sensors.  Experimental results show that the proposed tracker is
+  accurate both in 3D and on the image plane. 
+  </div>
+  </li>
+  </ul>
 
-        nav ul {
-          margin: 0;
-          padding: 0;
-        }
+  <hr />
+  <p style="text-align: center;"><strong>2016</strong></p>
+  <strong>Journals </strong>
+  <ul>
+  <li>
+  <em>An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes</em><br>
+  S. Ba, <span class="papercite_highlight">X. Alameda-Pineda</span>, <strong>A. Xompero</strong>, and R. Horaud<br>
+  Computer Vision and Image Understanding, 2016<br>
+  <a class="papercite_pdf" title="Download" href="http://xavirema.eu/wp-content/papercite-data/pdf/Ba-CVIU-2016.pdf">PDF</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="arXiv" href="http://arxiv.org/abs/1509.01520">arXiv</a>
+  </li>
+  </ul>
 
-        nav ul li {
-          display: inline-block;
-          list-style-type: none;
+  <hr />
 
-          -webkit-transition: all 0.2s;
-          -moz-transition: all 0.2s;
-          -ms-transition: all 0.2s;
-          -o-transition: all 0.2s;
-          transition: all 0.2s;
-        }
+  <strong>Others</strong>
 
-        nav > ul > li > a {
-          color: #aaa;
-          display: block;
-          line-height: 56px;
-          padding: 0 24px;
-          text-decoration: none;
-        }
-        
-        nav > ul > li > a > .caret {
-    border-top: 4px solid #aaa;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    content: "";
-    display: inline-block;
-    height: 0;
-    width: 0;
-    vertical-align: middle;
- 
-    -webkit-transition: color 0.1s linear;
-    -moz-transition: color 0.1s linear;
-    -o-transition: color 0.1s linear;
-      transition: color 0.1s linear;
-}
+  I am also appearing in the acknowledgments of the following publications for my collaboration during some university projects:
+  <ul>
+  <li>Conci, N., De Natale, F., Mezaris, V. and Matton, M., 2015, September. <em>Synchronization of Multi-User Event Media at MediaEval 2015: Task Description, Datasets, and Evaluation</em>. In <i>MediaEval 2015 Workshop, Wurzen, Germany</i>. [<a href="https://www.semanticscholar.org/paper/Synchronization-of-Multi-User-Event-Media-at-Conci-Mezaris/3398aaea553389930485b0812570ed8ce2722e62/pdf">PDF</a>]</li>
+  <li>Conci, N., De Natale, F.G. and Mezaris, V., 2014, October. <em>Synchronization of Multi-User Event Media (SEM) at MediaEval 2014: Task Description, Datasets, and Evaluation</em>. In <i>MediaEval</i>. [<a href="https://www.semanticscholar.org/paper/Synchronization-of-Multi-User-Event-Media-SEM-at-Conci-Natale/9c1929db34b53304baf48278a8a99c70c12b495c/pdf">PDF</a>]</li>
+  </ul>
 
-nav > ul > li:hover {
-  background-color: rgb( 40, 44, 47 );
-}
- 
-nav > ul > li:hover > a {
-  color: rgb( 255, 255, 255 );
-}
- 
-nav > ul > li:hover > a > .caret {
-  border-top-color: rgb( 255, 255, 255 );
-      </style>
-
-<style>
-#bib_morb, #bib_qianicassp, #bib_fusion {
-    width: 45%;
-    padding: 10px 0px 0px 20px;
-    text-align: left;
-    background-color: rgba(128, 128, 128, 0);
-    margin-top: 0px;
-    white-space: pre;
-}
-
-#abstract_morb, #abstract_qianicassp, #abstract_fusion {
-    width: 45%;
-    padding: 10px 0px 0px 20px;
-    font-style: italic;
-    text-align: left;
-    background-color: rgba(128, 128, 128, 0);
-    margin-top: 0px;
-    white-space: break-all;
-}
-</style>
-	
-
-<script> 
-function AppearBib(bib_id) {
-    var x = document.getElementById(bib_id);
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function AppearAbstract(abstract_id) {
-    var x = document.getElementById(abstract_id);
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-</script>
-     
-      
-      <hr />
-<p style="text-align: center;"><strong>2018</strong></p>
-<strong>Conferences </strong>
-<ul>
-<li>
-<div>
-	<em>MORB: a multi-scale binary descriptor</em> <br>
-	<strong>A. Xompero</strong>, O. Lanz, and A. Cavallaro<br> 
-	IEEE International Conference on Image Processing, Athens (Greece), October, 7-10, 2018<br>
-	<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_morb')">Abstract</a>
-	&nbsp | &nbsp
-	<a class="papercite_pdf" title="Download" href="projects/icip2018/2018_ICIP_MORBaMultiScaleBinaryDescriptor_Xompero_Lanz_Cavallaro.pdf">PDF</a>
-	&nbsp | &nbsp
-	<a class="papercite_pdf" title="Downloadr" href="projects/icip2018/2018_ICIP_poster_Xompero_Lanz_Cavallaro.pdf">Poster</a>
-	&nbsp | &nbsp
-	<a class="papercite_pdf" title="Cite bib" onclick="AppearBib('bib_morb')">Bibtex</a>
-</div>
-<div id="abstract_morb" style="display:none;" class="abstract">
-	Local  image  features  play  an  important  role  in  matching  images
-under different geometric and photometric transformations.   How-
-ever,  as  the  scale  difference  across  views  increases,  the  matching
-performance may considerably decrease.   To address this problem
-we propose MORB, a multi-scale binary descriptor that is based on
-ORB and that improves the accuracy of feature matching under scale
-changes.  MORB describes an image patch at different scales using
-an  oriented  sampling  pattern  of  intensity  comparisons  in  a  prede-
-fined set of pixel pairs.  We also propose a matching strategy that
-estimates the cross-scale match between MORB descriptors across
-views.  Experiments show that MORB outperforms state-of-the-art
-binary descriptors under several transformations.
-</div>
-<div id="bib_morb"  style="display:none;" class="bib">@INPROCEEDINGS{Xompero2018ICIP_MORB,
-	   title = {{MORB: a multi-scale binary descriptor}},
-	   author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
-	   booktitle = ICIP,
-	   address = {Athens, Greece},
-	   month = "7--10~" # oct,
-	   year = {2018}
-	}
-</div>
-</li>
-<br>
-<li>
-<div>
-	<em>Multi-camera Matching of Spatio-Temporal Binary Features</em><br>
-	<strong>A. Xompero</strong>, O. Lanz, and A. Cavallaro<br>
-	International Conference on Information Fusion, Cambridge (United Kingdom), July, 10-13, 2018. <br>
-	<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_fusion')">Abstract</a>
-	&nbsp | &nbsp
-	<a class="papercite_pdf" title="Download" href="projects/fusion2018/2018_FUSION_MultiCameraMatchingOfSpatioTemporalBinaryFeatures_Xompero_Lanz_Cavallaro.pdf">PDF</a>
-	&nbsp | &nbsp
-	<a class="papercite_pdf" title="Download" href="">Slides</a>
-	&nbsp | &nbsp
-	<a class="papercite_pdf" title="Cite bib" onclick="AppearBib('bib_fusion')">Bibtex</a>
-</div>
-<div id="bib_fusion"  style="display:none;" class="answer_list">
-	@INPROCEEDINGS{Xompero2018FUSION,
-	   title = {{Multi-camera Matching of Spatio-Temporal Binary Features}},
-	   author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
-	   booktitle = FUSION,
-	   address = {Cambridge, UK},
-	   month = "10--13~" # jul,
-	   year = {2018}
-	}
-</div>
-<div id="abstract_fusion"  style="display:none;" class="abstract">
-	We address the 3D audio-visual mouth tracking problem when using
-	a compact platform with co-located audio-visual sensors, without a
-	depth camera.  In particular, we propose a multi-modal particle fil-
-	ter that combines a face detector and 3D hypothesis mapping to the
-	image plane. The audio likelihood computation is assisted by video,
-	which relies on a GCC-PHAT based acoustic map.  By combining
-	audio and video inputs, the proposed approach can cope with a re-
-	verberant and noisy environment, and can deal with situations when
-	the person is occluded, outside the Field of View (FoV), or not facing
-	the sensors.  Experimental results show that the proposed tracker is
-	accurate both in 3D and on the image plane. 
-</div>
-</li>
-<br>
-<li>
-<div>
-	<em>3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera</em><br>
-	X. Qian, <strong>A. Xompero</strong>, A. Brutti, O. Lanz, M. Omologo, and A. Cavallaro<br>
-	International Conference on Acoustics, Speech and Signal Processing (ICASSP), Calgary (Canada), April, 15-20, 2018<br>
-	<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_qianicassp')">Abstract</a>
-	&nbsp | &nbsp
-	<a class="papercite_pdf" title="Download" href="http://www.eecs.qmul.ac.uk/~andrea/papers/2018_ICASSP_3DMouthTracking_Qian_Xompero_Brutti_Lanz_Omologo_Cavallaro.pdf">PDF</a>
-	&nbsp | &nbsp
-	<a class="papercite_pdf" title="Download" href="projects/icip2018/2018_ICIP_poster_Xompero_Lanz_Cavallaro.pdf">Poster</a>
-	&nbsp | &nbsp
-	<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_qianicassp')">Bibtex</a>
-</div>
-<div id="bib_qianicassp"  style="display:none;" class="bib">
-	@INPROCEEDINGS{Qian2018ICASSP,
-	   title = {{3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera}},
-	   author = {Qian, Xinyuan and Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
-	   booktitle = ICASSP,
-	   address = {Calgari, Canada},
-	   month = "15--20~" # apr,
-	   year = {2018}
-	}
-</div>
-<div id="abstract_qianicassp"  style="display:none;" class="abstract">
-	We address the 3D audio-visual mouth tracking problem when using
-	a compact platform with co-located audio-visual sensors, without a
-	depth camera.  In particular, we propose a multi-modal particle fil-
-	ter that combines a face detector and 3D hypothesis mapping to the
-	image plane. The audio likelihood computation is assisted by video,
-	which relies on a GCC-PHAT based acoustic map.  By combining
-	audio and video inputs, the proposed approach can cope with a re-
-	verberant and noisy environment, and can deal with situations when
-	the person is occluded, outside the Field of View (FoV), or not facing
-	the sensors.  Experimental results show that the proposed tracker is
-	accurate both in 3D and on the image plane. 
-</div>
-</li>
-</ul>
-
-<hr />
-<p style="text-align: center;"><strong>2016</strong></p>
-<strong>Journals </strong>
-<ul>
- 	<li>
-		<em>An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes</em><br>
-		S. Ba, <span class="papercite_highlight">X. Alameda-Pineda</span>, <strong>A. Xompero</strong>, and R. Horaud<br>
-		Computer Vision and Image Understanding, 2016<br>
-		<a class="papercite_pdf" title="Download" href="http://xavirema.eu/wp-content/papercite-data/pdf/Ba-CVIU-2016.pdf">PDF</a>
-		&nbsp | &nbsp
-		<a class="papercite_pdf" title="arXiv" href="http://arxiv.org/abs/1509.01520">arXiv</a>
-	</li>
-</ul>
-
-<hr />
-
-<strong>Others</strong>
-
-I am also appearing in the acknowledgments of the following publications for my collaboration during some university projects:
-<ul>
- 	<li>Conci, N., De Natale, F., Mezaris, V. and Matton, M., 2015, September. <em>Synchronization of Multi-User Event Media at MediaEval 2015: Task Description, Datasets, and Evaluation</em>. In <i>MediaEval 2015 Workshop, Wurzen, Germany</i>. [<a href="https://www.semanticscholar.org/paper/Synchronization-of-Multi-User-Event-Media-at-Conci-Mezaris/3398aaea553389930485b0812570ed8ce2722e62/pdf">PDF</a>]</li>
- 	<li>Conci, N., De Natale, F.G. and Mezaris, V., 2014, October. <em>Synchronization of Multi-User Event Media (SEM) at MediaEval 2014: Task Description, Datasets, and Evaluation</em>. In <i>MediaEval</i>. [<a href="https://www.semanticscholar.org/paper/Synchronization-of-Multi-User-Event-Media-SEM-at-Conci-Natale/9c1929db34b53304baf48278a8a99c70c12b495c/pdf">PDF</a>]</li>
-</ul>
-      
-   </body>
+</body>
 </html>
 
 

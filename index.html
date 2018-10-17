@@ -4,161 +4,43 @@
    <head>
       <title>Alessio Xompero</title>
       <link href = "css/bootstrap.min.css" rel = "stylesheet">
+      <link rel="stylesheet" href="mystyle.css">
       
       <style>
-         body {
-            padding-top: 40px;
-            padding-bottom: 40px;
-            background-color: #ADABAB;
-         }
-         
-         .form-signin {
-            max-width: 330px;
-            padding: 15px;
-            margin: 0 auto;
+		     h2{
+            text-align: left;
             color: #017572;
          }
-         
-         .form-signin .form-signin-heading,
-         .form-signin .checkbox {
-            margin-bottom: 10px;
-         }
-         
-         .form-signin .checkbox {
-            font-weight: normal;
-         }
-         
-         .form-signin .form-control {
-            position: relative;
-            height: auto;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            padding: 10px;
-            font-size: 16px;
-         }
-         
-         .form-signin .form-control:focus {
-            z-index: 2;
-         }
-         
-         .form-signin input[type="email"] {
-            margin-bottom: -1px;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-            border-color:#017572;
-         }
-         
-         .form-signin input[type="password"] {
-            margin-bottom: 10px;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-            border-color:#017572;
-         }
-         
-         h2{
-            text-align: center;
-            color: #017572;
-         }
-      </style>
 
-      <style>
-        nav {
-          background-color: #fff;
-          border: 1px solid #dedede;
-          border-radius: 4px;
-          box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-          color: #888;
-          display: block;
-          margin: 8px 22px 8px 22px;
-          overflow: hidden;
-          width: 90%;
-        }
-
-        nav ul {
-          margin: 0;
-          padding: 0;
-        }
-
-        nav ul li {
-          display: inline-block;
-          list-style-type: none;
-
-          -webkit-transition: all 0.2s;
-          -moz-transition: all 0.2s;
-          -ms-transition: all 0.2s;
-          -o-transition: all 0.2s;
-          transition: all 0.2s;
-        }
-
-        nav > ul > li > a {
-          color: #aaa;
-          display: block;
-          line-height: 56px;
-          padding: 0 24px;
-          text-decoration: none;
-        }
-        
-        nav > ul > li > a > .caret {
-			border-top: 4px solid #aaa;
-			border-right: 4px solid transparent;
-			border-left: 4px solid transparent;
-			content: "";
-			display: inline-block;
-			height: 0;
-			width: 0;
-			vertical-align: middle;
-		 
-			-webkit-transition: color 0.1s linear;
-			-moz-transition: color 0.1s linear;
-			-o-transition: color 0.1s linear;
-			  transition: color 0.1s linear;
-		}
-
-		nav > ul > li:hover {
-		  background-color: rgb( 40, 44, 47 );
-		}
-		 
-		nav > ul > li:hover > a {
-		  color: rgb( 255, 255, 255 );
-		}
-		 
-		nav > ul > li:hover > a > .caret {
-		  border-top-color: rgb( 255, 255, 255 );
-		  }
-      </style>
-
-      <style>
-		body {
-			background-color: #EBE8E4;
-			color: #222;
-			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-			font-weight: 300;
-			font-size: 15px;
+		#about, #news {
+			width: 45%;
+			text-align: left;
+			margin-top: 0px;
+			margin:0 auto;
+			white-space: break-all;
 		}
     </style>   
    </head>
    
    <body>
-	<h1>Alessio Xompero</h1>
+	<h1 style="text-align:center">Alessio Xompero</h1>
      
 	<nav style="text-align:center">
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
 			<li><a href="publications.html">Publications</a></li>
 		</ul>
 	</nav>
 
-	<div style="text-align:center" style="width=40%">
-		<h2>About</h2><br>
+	<div id="about">
+		<h2>About</h2>
 		<p>Alessio is a third-year Postgraduate Research student in Electronic Engineering and Computer Science at Queen Mary University of London, UK. He works on an Audio-Visual Intelligent Sensing Project with a joint studentship (2015-2019) of Queen Mary University of London and Fondazione Bruno Kessler (FBK, Italy) under the supervision of Prof. Andrea Cavallaro (QMUL) and Dr. Oswald Lanz (FBK).</p>
 
 		<p>Alessio obtained both the Bachelor degree in Electronic and Telecommunications Engineering (2008-2012) and the Master degree (2-years) in Telecommunications Engineering (2012-2015) at University of Trento, Italy. He took his master thesis project (March-August 2014) on Multiple Object Tracking with the PERCEPTION team at INRIA Grenoble Rhone-Alpes, under the supervision of Prof. Radu Horaud (INRIA) and Nicola Conci (MMLAB, UNITN), and co-advised by Xavier-Alameda Pineda and Sileye Ba. After the Master, he also collaborated with the MMLAB (UNITN) for 5 months before starting the current PhD programme.</p>
    </div>
    
-	<div style="text-align:center">
-	  <h2>News</h2><br>
+	<div id="news">
+	  <h2>News</h2>
 	  <ul style="text-align:left">
 			<li>(August 13th, 2018) Presenting the paper "<em><span class="papertitle">Multi-camera Matching of Spatio-Temporal Binary Features</span></em>" at <a href="http://cis.eecs.qmul.ac.uk/school2018.html">Intelligent Sensing Summer School 2018</a> - 29-30 August 2018, Centre for Intelligent Sensing (CIS), Queen Mary University of London, London,  United Kingdom</li>
 			<li>(July 25th, 2018) The accepted paper "<em>MORB: a multi-scale binary descriptor</em>" will be presented as a poster at <a href="https://2018.ieeeicip.org/">IEEE International Conference on Image Processing</a> (ICIP) - 7-10 October 2018, Athens, Greece  (see <a href="https://2018.ieeeicip.org/RegularProgram.asp">here</a> the technical program, TA.P3.2 Interpolation and Multiresolution, Tuesday, October 9, 10:30 - 12:10)</li>
