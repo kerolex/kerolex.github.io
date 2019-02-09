@@ -13,7 +13,7 @@
         color: #017572;
       }
 
-      #bib_morb, #bib_qianicassp, #bib_fusion, #bib_lanzicassp {
+      #bib_morb, #bibdiv, #bib_fusion, #bib_lanzicassp {
         width: 50%;
         padding: 10px 0px 0px 20px;
         text-align: left;
@@ -91,7 +91,7 @@
   &nbsp | &nbsp
   <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_lanzcassp')">Bibtex</a>
   </div>
-  <div id="bib_lanzcassp"  style="display:none;" class="bib">
+  <div id="bib_lanzicassp"  style="display:none;" class="bib">
   @INPROCEEDINGS{Lanz20189ICASSP,
   title = {Accurate target annotation in 3D from multimodal streams},
   author = {Lanz, Oswald and Brutti, Alessio, and Xompero, Alessio and Xinyuan, Qian and Omologo, Maurizion and Cavallaro, Andrea},
@@ -207,11 +207,11 @@
   &nbsp | &nbsp
   <a class="papercite_pdf" title="Download" href="http://www.eecs.qmul.ac.uk/~andrea/papers/2018_ICASSP_3DMouthTracking_Qian_Xompero_Brutti_Lanz_Omologo_Cavallaro.pdf">PDF</a>
   &nbsp | &nbsp
-  <a class="papercite_pdf" title="Download" href="projects/icip2018/2018_ICIP_poster_Xompero_Lanz_Cavallaro.pdf">Poster</a>
+  <a class="papercite_pdf" title="Download" href="">Poster</a>
   &nbsp | &nbsp
   <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_qianicassp')">Bibtex</a>
   </div>
-  <div id="bib_qianicassp"  style="display:none;" class="bib">
+  <div id="bibdiv"  style="display:none;" class="bib">
   @INPROCEEDINGS{Qian2018ICASSP,
   title = {{3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera}},
   author = {Qian, Xinyuan and Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
@@ -242,12 +242,48 @@
   <h3>Journals</h3>
   <ul>
   <li>
+  <div>
   <em>An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes</em><br>
   S. Ba, <span class="papercite_highlight">X. Alameda-Pineda</span>, <strong>A. Xompero</strong>, and R. Horaud<br>
   Computer Vision and Image Understanding, 2016<br>
   <a class="papercite_pdf" title="Download" href="http://xavirema.eu/wp-content/papercite-data/pdf/Ba-CVIU-2016.pdf">PDF</a>
   &nbsp | &nbsp
   <a class="papercite_pdf" title="arXiv" href="http://arxiv.org/abs/1509.01520">arXiv</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_bacviu')">Bibtex</a>
+  </div>
+  <div id="bibdiv"  style="display:none;" class="bib">
+  @ARTICLES{bA2016cviu,
+  title = {An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes},
+  author = {Ba, S. and Alameda-Pineda, X. and Xompero, A. and Horaud, R.},
+  journal = {Computer Vision and Image Understanding},
+  vol={153},
+  num={},
+  pages={64--76},
+  month = apr,
+  year = {2016},
+  }
+  </div>
+  <div id="abstract_bacviu"  style="display:none;" class="abstract">
+   Object tracking is an ubiquitous problem that appears in many applications
+   such as remote sensing, audio processing, computer vision, human-machine
+   interfaces, human-robot interaction, etc.  Although thoroughly investigated
+   in  computer  vision,  tracking  a  time-varying  number  of  persons  remains  a
+   challenging open problem.  In this paper, we propose an on-line variational
+   Bayesian model for multi-person tracking from cluttered visual observations
+   provided  by  person  detectors.   The  paper  has  the  following  contributions.
+   We propose a variational Bayesian framework for tracking an unknown and
+   varying number of persons.  Our model results in a variational expectation-maximization  (VEM)
+   algorithm  with  closed-form  expressions  both  for  the
+   posterior distributions of the latent variables and for the estimation of the
+   model parameters.  The proposed model exploits observations from multiple
+   detectors,  and  it  is  therefore  multimodal  by  nature.   Finally,  we  propose
+   to  embed  both  object-birth  and  object-visibility  processes  in  an  effort  to
+   robustly  handle  temporal  appearances  and  disappearances.   Evaluated  on
+   classical  multiple  person  tracking  datasets,  our  method  shows  competitive
+   results with respect to state-of-the-art multiple-object tracking algorithms, 
+   such as the probability hypothesis density (PHD) filter, among others.
+  </div>
   </li>
   </ul>
 
