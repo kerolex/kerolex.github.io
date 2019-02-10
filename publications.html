@@ -12,7 +12,17 @@
         text-align: left;
         color: #017572;
       }
-
+      
+      .bib {
+        width: 50%;
+        padding: 10px 0px 0px 20px;
+        text-align: left;
+        background-color: rgba(128, 128, 128, 0);
+        margin-top: 0px;
+        white-space: pre;
+      }
+	 
+	 <!---
       #bib_morb, #bibdiv, #bib_fusion, #bib_lanzicassp {
         width: 50%;
         padding: 10px 0px 0px 20px;
@@ -21,8 +31,9 @@
         margin-top: 0px;
         white-space: pre;
       }
+      -->
 
-      #abstract_morb, #abstract_qianicassp, #abstract_fusion, #abstract_lanzicassp {
+      .abstract {
         width: 50%;
         padding: 10px 0px 0px 20px;
         font-style: italic;
@@ -169,11 +180,11 @@
   &nbsp | &nbsp
   <a class="papercite_pdf" title="Download" href="projects/fusion2018/2018_FUSION_MultiCameraMatchingOfSpatioTemporalBinaryFeatures_Xompero_Lanz_Cavallaro.pdf">PDF</a>
   &nbsp | &nbsp
-  <a class="papercite_pdf" title="Download" href="">Slides</a>
+  <a class="papercite_pdf" title="Download" href="http://cis.eecs.qmul.ac.uk/2018SummerSchool/AlessioXompero_CIS_SummerSchool2018.pdf">Slides</a>
   &nbsp | &nbsp
   <a class="papercite_pdf" title="Cite bib" onclick="AppearBib('bib_fusion')">Bibtex</a>
   </div>
-  <div id="bib_fusion"  style="display:none;" class="answer_list">
+  <div id="bib_fusion"  style="display:none;" class="bib">
   @INPROCEEDINGS{Xompero2018FUSION,
   title = {{Multi-camera Matching of Spatio-Temporal Binary Features}},
   author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
@@ -184,17 +195,20 @@
   }
   </div>
   <div id="abstract_fusion"  style="display:none;" class="abstract">
-  We address the 3D audio-visual mouth tracking problem when using
-  a compact platform with co-located audio-visual sensors, without a
-  depth camera.  In particular, we propose a multi-modal particle fil-
-  ter that combines a face detector and 3D hypothesis mapping to the
-  image plane. The audio likelihood computation is assisted by video,
-  which relies on a GCC-PHAT based acoustic map.  By combining
-  audio and video inputs, the proposed approach can cope with a re-
-  verberant and noisy environment, and can deal with situations when
-  the person is occluded, outside the Field of View (FoV), or not facing
-  the sensors.  Experimental results show that the proposed tracker is
-  accurate both in 3D and on the image plane. 
+	Local  image  features  are  generally  robust  to  different  geometric
+	and  photometric  transformations  on  planar surfaces or under narrow  
+	baseline  views.  However,  the  matching  performance  decreases  
+	considerably  across  cameras  with unknown  poses  separated  by  a
+	wide  baseline.  To  address  this problem, we accumulate temporal 
+	information within each view by  tracking  local  binary  features,  
+	which  encode  intensity  comparisons  of  pixel  pairs  in  an  image
+	patch.  We  then  encode  the spatio-temporal  features  into  fixed-length
+	binary  descriptors  by selecting  temporally  dominant  binary  values.  
+	We  complement the   descriptor   with   a   binary   vector   that   identifies   intensity
+	comparisons  that  are  temporally  unstable.  Finally,  we  use  this
+	additional vector to ignore the corresponding binary values in the
+	fixed-length binary descriptor when matching the features across
+	cameras. We analyse the performance of the proposed approachand  compare  it  with  baselines. 
   </div>
   </li>
   <br>
@@ -211,7 +225,7 @@
   &nbsp | &nbsp
   <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_qianicassp')">Bibtex</a>
   </div>
-  <div id="bibdiv"  style="display:none;" class="bib">
+  <div id="bib_qianicassp"  style="display:none;" class="bib">
   @INPROCEEDINGS{Qian2018ICASSP,
   title = {{3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera}},
   author = {Qian, Xinyuan and Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
@@ -252,7 +266,7 @@
   &nbsp | &nbsp
   <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_bacviu')">Bibtex</a>
   </div>
-  <div id="bibdiv"  style="display:none;" class="bib">
+  <div id="bib_bacviu"  style="display:none;" class="bib">
   @ARTICLES{bA2016cviu,
   title = {An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes},
   author = {Ba, S. and Alameda-Pineda, X. and Xompero, A. and Horaud, R.},
