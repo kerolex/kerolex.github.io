@@ -2,6 +2,16 @@
 <html lang = "en">
 
   <head>
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139569814-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139569814-1');
+</script>
+
     <title>Alessio Xompero</title>
 
     <link href = "css/bootstrap.min.css" rel = "stylesheet">
@@ -86,26 +96,28 @@
 
   <div id="pubslist">
   
-  <h2 style="text-align: center;">2019</h2>
-  <h3>Conferences </h3>
-  <ul>
-  <li>
   <div>
-  <em>Accurate target annotation in 3D from multimodal streams</em><br>
-  O. Lanz, A. Brutti, <strong>A. Xompero</strong>, X. Qian, M. Omologo, and A. Cavallaro<br>
+  <h2 style="text-align: left;">2019</h2>
+  <h3>Conferences </h3>
+  <div class="paper-teaser">
+	<img src="images/multisensor.png" alt="[img]">
+  </div>
+  <div class="paper-data">
+	  <em style="color:#008000">Accurate target annotation in 3D from multimodal streams</em><br>
+  O. Lanz, A. Brutti, <b>A. Xompero</b>, X. Qian, M. Omologo, and A. Cavallaro<br>
   International Conference on Acoustics, Speech and Signal Processing (ICASSP), Brighton (UK), May, 12-17, 2019<br>
   <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_lanzicassp')">Abstract</a>
   &nbsp | &nbsp
-  <a class="papercite_pdf" title="Download" href="">PDF</a>
+  <a class="papercite_pdf" title="Download" href="http://www.eecs.qmul.ac.uk/~andrea/papers/2019_ICASSP__AccurateTargetAnnotationIn3DFromMultimodalStreams_Lanz_Brutti_Xompero_Qian_Omologo_Cavallaro.pdf">PDF</a>
   &nbsp | &nbsp
   <a class="papercite_pdf" title="Download" href="">Slides</a>
   &nbsp | &nbsp
-  <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_lanzcassp')">Bibtex</a>
+  <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_lanzicassp')">Bibtex</a>
   </div>
   <div id="bib_lanzicassp"  style="display:none;" class="bib">
-  @INPROCEEDINGS{Lanz20189ICASSP,
+  @INPROCEEDINGS{Lanz2019ICASSP,
   title = {Accurate target annotation in 3D from multimodal streams},
-  author = {Lanz, Oswald and Brutti, Alessio, and Xompero, Alessio and Xinyuan, Qian and Omologo, Maurizion and Cavallaro, Andrea},
+  author = {Lanz, Oswald and Brutti, Alessio, and Xompero, Alessio and Xinyuan, Qian and Omologo, Maurizio and Cavallaro, Andrea},
   booktitle = ICASSP,
   address = {Brighton, UK},
   month = "12--17~" # may,
@@ -113,36 +125,35 @@
   }
   </div>
   <div id="abstract_lanzicassp"  style="display:none;" class="abstract">
-  Accurate  ground-truth annotation is fundamental for quantifying the 
-  performance of multi-sensor and multi-modal object detectors and trackers. 
-  However, these scenarios require invasive or expensive instrumentation 
-  to automatically generate a ground-truth annotation. To mitigate this 
-  problem, we present a multi-modal approach that leverages annotations 
-  from reference streams (e.g. individual camera views) and measurements 
-  from non-annotated additional streams (e.g.~audio) to infer 3D trajectories 
-  through an optimization. The core of our approach is a multi-modal 
-  extension of Bundle Adjustment with a cross-modal correspondence 
-  detection to selectively use measurements in the optimization. 
-  We apply this approach to fully annotate a new multi-modal and 
-  multi-view dataset for 3D tracking of multiple speakers. 
+  Accurate annotation  is  fundamental  to  quantify  the  performance of
+  multi-sensor  and  multi-modal  object  detectors  and  trackers.
+  However,  invasive  or  expensive  instrumentation  is  needed  to 
+  automatically  generate  these  annotations. To  mitigate this problem,
+  we present a multi-modal approach that leverages annotations from 
+  reference streams (e.g. individual camera views) and measurements
+  from  unannotated  additional  streams  (e.g.  audio)  to  infer  3D  
+  trajectories  through  an  optimization.   The  core  of  our  approach
+  is a multi-modal  extension  of Bundle  Adjustment  with  a cross-modal 
+  correspondence detection that selectively uses measurements in the
+  optimization. We  apply the  proposed approach to  fully  annotate
+  a new multi-modal and multi-view dataset for multi-speaker 3D tracking. 
   </div>
-  </li>	 
-  </ul>
+  </div>
+  <br>
   
-   <hr />
-  <h2 style="text-align: center;">2018</h2>
-  <h3>Conferences </h3>
-  <ul>
-  <li>
+  <hr />
+  <h2 style="text-align: left;">2018</h2>
+  <h3 style="text-align: left;">Conferences </h3>
+
   <div>
-  <em>MORB: a multi-scale binary descriptor</em> <br>
+  <em style="color:#008000">MORB: a multi-scale binary descriptor</em> <br>
   <strong>A. Xompero</strong>, O. Lanz, and A. Cavallaro<br> 
   IEEE International Conference on Image Processing, Athens (Greece), October, 7-10, 2018<br>
   <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_morb')">Abstract</a>
   &nbsp | &nbsp
   <a class="papercite_pdf" title="Download" href="projects/icip2018/2018_ICIP_MORBaMultiScaleBinaryDescriptor_Xompero_Lanz_Cavallaro.pdf">PDF</a>
   &nbsp | &nbsp
-  <a class="papercite_pdf" title="Downloadr" href="projects/icip2018/2018_ICIP_poster_Xompero_Lanz_Cavallaro.pdf">Poster</a>
+  <a class="papercite_pdf" title="Download" href="projects/icip2018/2018_ICIP_poster_Xompero_Lanz_Cavallaro.pdf">Poster</a>
   &nbsp | &nbsp
   <a class="papercite_pdf" title="Cite bib" onclick="AppearBib('bib_morb')">Bibtex</a>
   </div>
@@ -169,11 +180,11 @@
   year = {2018}
   }
   </div>
-  </li>
+
   <br>
-  <li>
+
   <div>
-  <em>Multi-camera Matching of Spatio-Temporal Binary Features</em><br>
+  <em style="color:#008000">Multi-camera Matching of Spatio-Temporal Binary Features</em><br>
   <strong>A. Xompero</strong>, O. Lanz, and A. Cavallaro<br>
   International Conference on Information Fusion, Cambridge (United Kingdom), July, 10-13, 2018. <br>
   <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_fusion')">Abstract</a>
@@ -210,11 +221,10 @@
 	fixed-length binary descriptor when matching the features across
 	cameras. We analyse the performance of the proposed approachand  compare  it  with  baselines. 
   </div>
-  </li>
+
   <br>
-  <li>
   <div>
-  <em>3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera</em><br>
+  <em style="color:#008000">3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera</em><br>
   X. Qian, <strong>A. Xompero</strong>, A. Brutti, O. Lanz, M. Omologo, and A. Cavallaro<br>
   International Conference on Acoustics, Speech and Signal Processing (ICASSP), Calgary (Canada), April, 15-20, 2018<br>
   <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_qianicassp')">Abstract</a>
@@ -228,9 +238,9 @@
   <div id="bib_qianicassp"  style="display:none;" class="bib">
   @INPROCEEDINGS{Qian2018ICASSP,
   title = {{3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera}},
-  author = {Qian, Xinyuan and Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
+  author = {Qian, Xinyuan and Xompero, Alessio and Brutti, Alessio and Lanz, Oswald and Omologo, Maurizio and Cavallaro, Andrea},
   booktitle = ICASSP,
-  address = {Calgari, Canada},
+  address = {Calgary, Canada},
   month = "15--20~" # apr,
   year = {2018}
   }
@@ -248,16 +258,14 @@
   the sensors.  Experimental results show that the proposed tracker is
   accurate both in 3D and on the image plane. 
   </div>
-  </li>
-  </ul>
+
 
   <hr />
-  <h2 style="text-align: center;">2016</h2>
+  <h2 style="text-align: left;">2016</h2>
   <h3>Journals</h3>
-  <ul>
-  <li>
+
   <div>
-  <em>An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes</em><br>
+  <em style="color:#008000">An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes</em><br>
   S. Ba, <span class="papercite_highlight">X. Alameda-Pineda</span>, <strong>A. Xompero</strong>, and R. Horaud<br>
   Computer Vision and Image Understanding, 2016<br>
   <a class="papercite_pdf" title="Download" href="http://xavirema.eu/wp-content/papercite-data/pdf/Ba-CVIU-2016.pdf">PDF</a>
@@ -297,35 +305,25 @@
    classical  multiple  person  tracking  datasets,  our  method  shows  competitive
    results with respect to state-of-the-art multiple-object tracking algorithms, 
    such as the probability hypothesis density (PHD) filter, among others.
-  </div>
-  </li>
-  </ul>
-
+</div>
   <hr />
-
-  <h2 style="text-align: center;">Others</h2>
   
   I am also appearing in the acknowledgments of the following publications for my collaboration/help:
-  <ul>
-  <li>
-	  <em>Detecting group formations using iBeacon technology</em><br>
-	  Kleomenis K., Hamed H., Laurissa T., and Richard G. C.<br>
-	  Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing: Adjunct (UbiComp '16)<br>
-	  <a href="https://qmro.qmul.ac.uk/xmlui/bitstream/handle/123456789/14410/Tokarchuk%20Detecting%20Group%20Formations%202016%20Accepted.pdf?sequence=1">PDF</a>
-  </li>
-  <li>
-	  <em>Synchronization of Multi-User Event Media at MediaEval 2015: Task Description, Datasets, and Evaluation</em><br>
-	  Conci, N., De Natale, F.G. and Mezaris, V.<br>
-	  MediaEval 2015 Workshop, Wurzen, Germany, September, 2015<br>
-	  <a href="https://www.semanticscholar.org/paper/Synchronization-of-Multi-User-Event-Media-at-Conci-Mezaris/3398aaea553389930485b0812570ed8ce2722e62/pdf">PDF</a>
-  </li>
-  <li>
-	  <em>Synchronization of Multi-User Event Media (SEM) at MediaEval 2014: Task Description, Datasets, and Evaluation</em><br>
-	  Conci, N., De Natale, F., Mezaris, V. and Matton, M.<br>
-	  MediaEval 2014 October, 2014<br>
-	  <a href="https://www.semanticscholar.org/paper/Synchronization-of-Multi-User-Event-Media-SEM-at-Conci-Natale/9c1929db34b53304baf48278a8a99c70c12b495c/pdf">PDF</a>
-  </li>
-  </ul>
+	<br><br>
+  <em style="color:#008000">Detecting group formations using iBeacon technology</em><br>
+  Kleomenis K., Hamed H., Laurissa T., and Richard G. C.<br>
+  Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing: Adjunct (UbiComp '16)<br>
+  <a href="https://qmro.qmul.ac.uk/xmlui/bitstream/handle/123456789/14410/Tokarchuk%20Detecting%20Group%20Formations%202016%20Accepted.pdf?sequence=1">PDF</a>
+  <br><br>
+  <em style="color:#008000">Synchronization of Multi-User Event Media at MediaEval 2015: Task Description, Datasets, and Evaluation</em><br>
+  Conci, N., De Natale, F.G. and Mezaris, V.<br>
+  MediaEval 2015 Workshop, Wurzen, Germany, September, 2015<br>
+  <a href="https://www.semanticscholar.org/paper/Synchronization-of-Multi-User-Event-Media-at-Conci-Mezaris/3398aaea553389930485b0812570ed8ce2722e62/pdf">PDF</a>
+  <br><br>
+  <em style="color:#008000">Synchronization of Multi-User Event Media (SEM) at MediaEval 2014: Task Description, Datasets, and Evaluation</em><br>
+  Conci, N., De Natale, F., Mezaris, V. and Matton, M.<br>
+  MediaEval 2014 October, 2014<br>
+  <a href="https://www.semanticscholar.org/paper/Synchronization-of-Multi-User-Event-Media-SEM-at-Conci-Natale/9c1929db34b53304baf48278a8a99c70c12b495c/pdf">PDF</a>
  </div>
 </body>
 </html>

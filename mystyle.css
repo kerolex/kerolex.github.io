@@ -125,3 +125,23 @@ nav > ul > li > a.active {
   color: white;
 }
 
+div.paper-teaser {
+	float: left;
+	width: 250x;
+	padding: 0;
+	margin-bottom: 1.5em;
+}
+
+div.paper-teaser img {
+	width: 250px;
+	border: none;
+}
+
+div.paper-data {
+	width: auto;
+	margin-left: 250px;
+	padding-left: 2em;
+	line-height: 140%;
+	margin-bottom: 1.5em;
+}
+
