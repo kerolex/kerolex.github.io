@@ -139,6 +139,7 @@ div.paper-teaser img {
 
 div.paper-data {
 	width: auto;
+	height: 150px;
 	margin-left: 250px;
 	padding-left: 2em;
 	line-height: 140%;
