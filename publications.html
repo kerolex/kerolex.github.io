@@ -44,7 +44,7 @@
       -->
 
       .abstract {
-        width: 50%;
+        width: 100%;
         padding: 10px 0px 0px 20px;
         font-style: italic;
         text-align: left;
@@ -125,18 +125,12 @@
   }
   </div>
   <div id="abstract_lanzicassp"  style="display:none;" class="abstract">
-  Accurate annotation  is  fundamental  to  quantify  the  performance of
-  multi-sensor  and  multi-modal  object  detectors  and  trackers.
-  However,  invasive  or  expensive  instrumentation  is  needed  to 
-  automatically  generate  these  annotations. To  mitigate this problem,
-  we present a multi-modal approach that leverages annotations from 
-  reference streams (e.g. individual camera views) and measurements
-  from  unannotated  additional  streams  (e.g.  audio)  to  infer  3D  
-  trajectories  through  an  optimization.   The  core  of  our  approach
-  is a multi-modal  extension  of Bundle  Adjustment  with  a cross-modal 
-  correspondence detection that selectively uses measurements in the
-  optimization. We  apply the  proposed approach to  fully  annotate
-  a new multi-modal and multi-view dataset for multi-speaker 3D tracking. 
+  Accurate annotation  is  fundamental  to  quantify  the  performance of multi-sensor  and  multi-modal object detectors and trackers.
+  However,  invasive  or  expensive  instrumentation  is  needed  to automatically  generate  these  annotations. To  mitigate this problem,
+  we present a multi-modal approach that leverages annotations from reference streams (e.g. individual camera views) and measurements
+  from  unannotated  additional  streams  (e.g.  audio)  to  infer  3D trajectories  through  an  optimization.   The  core  of  our  approach
+  is a multi-modal  extension  of Bundle  Adjustment  with  a cross-modal correspondence detection that selectively uses measurements in the
+  optimization. We apply the proposed approach to fully annotate a new multi-modal and multi-view dataset for multi-speaker 3D tracking. 
   </div>
   </div>
   <br>
@@ -144,8 +138,10 @@
   <hr />
   <h2 style="text-align: left;">2018</h2>
   <h3 style="text-align: left;">Conferences </h3>
-
-  <div>
+  <div class="paper-teaser">
+	<img src="images/MORB.png" alt="[img]">
+  </div>
+  <div class="paper-data">	  
   <em style="color:#008000">MORB: a multi-scale binary descriptor</em> <br>
   <strong style="font-weight: bold;">A. Xompero</strong>, O. Lanz, and A. Cavallaro<br> 
   IEEE International Conference on Image Processing, Athens (Greece), October, 7-10, 2018<br>
@@ -182,7 +178,9 @@
   </div>
 
   <br>
-
+  <div class="paper-teaser">
+	<img src="" alt="[img]">
+  </div>
   <div>
   <em style="color:#008000">Multi-camera Matching of Spatio-Temporal Binary Features</em><br>
   <strong style="font-weight: bold;">A. Xompero</strong>, O. Lanz, and A. Cavallaro<br>
@@ -223,6 +221,10 @@
   </div>
 
   <br>
+    <div class="paper-teaser">
+	<img src="" alt="[img]">
+  </div>
+  <div>
   <div>
   <em style="color:#008000">3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera</em><br>
   X. Qian, <strong style="font-weight: bold;">A. Xompero</strong>, A. Brutti, O. Lanz, M. Omologo, and A. Cavallaro<br>
@@ -307,9 +309,55 @@
    such as the probability hypothesis density (PHD) filter, among others.
 </div>
   <hr />
+  <hr />
+  <h2 style="text-align: left;">2015</h2>
+  <h3>Master Thesis</h3>
+
+  <div>
+  <em style="color:#008000">An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes</em><br>
+  S. Ba, <span class="papercite_highlight">X. Alameda-Pineda</span>, <strong style="font-weight: bold;">A. Xompero</strong>, and R. Horaud<br>
+  Computer Vision and Image Understanding, 2016<br>
+  <a class="papercite_pdf" title="Download" href="http://xavirema.eu/wp-content/papercite-data/pdf/Ba-CVIU-2016.pdf">PDF</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="arXiv" href="http://arxiv.org/abs/1509.01520">arXiv</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_bacviu')">Bibtex</a>
+  </div>
+  <div id="bib_bacviu"  style="display:none;" class="bib">
+  @ARTICLES{bA2016cviu,
+  title = {An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes},
+  author = {Ba, S. and Alameda-Pineda, X. and Xompero, A. and Horaud, R.},
+  journal = {Computer Vision and Image Understanding},
+  vol={153},
+  num={},
+  pages={64--76},
+  month = apr,
+  year = {2016},
+  }
+  </div>
+  <div id="abstract_bacviu"  style="display:none;" class="abstract">
+   Object tracking is an ubiquitous problem that appears in many applications
+   such as remote sensing, audio processing, computer vision, human-machine
+   interfaces, human-robot interaction, etc.  Although thoroughly investigated
+   in  computer  vision,  tracking  a  time-varying  number  of  persons  remains  a
+   challenging open problem.  In this paper, we propose an on-line variational
+   Bayesian model for multi-person tracking from cluttered visual observations
+   provided  by  person  detectors.   The  paper  has  the  following  contributions.
+   We propose a variational Bayesian framework for tracking an unknown and
+   varying number of persons.  Our model results in a variational expectation-maximization  (VEM)
+   algorithm  with  closed-form  expressions  both  for  the
+   posterior distributions of the latent variables and for the estimation of the
+   model parameters.  The proposed model exploits observations from multiple
+   detectors,  and  it  is  therefore  multimodal  by  nature.   Finally,  we  propose
+   to  embed  both  object-birth  and  object-visibility  processes  in  an  effort  to
+   robustly  handle  temporal  appearances  and  disappearances.   Evaluated  on
+   classical  multiple  person  tracking  datasets,  our  method  shows  competitive
+   results with respect to state-of-the-art multiple-object tracking algorithms, 
+   such as the probability hypothesis density (PHD) filter, among others.
+</div>
+  <hr />
   
-  I am also appearing in the acknowledgments of the following publications for my collaboration/help:
-	<br><br>
+  I also collaborated for the data collection and annotation of the following works (acknowledgments): <br><br>
   <em style="color:#008000">Detecting group formations using iBeacon technology</em><br>
   Kleomenis K., Hamed H., Laurissa T., and Richard G. C.<br>
   Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing: Adjunct (UbiComp '16)<br>
