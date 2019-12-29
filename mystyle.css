@@ -127,9 +127,8 @@ nav > ul > li > a.active {
 
 div.paper-teaser {
 	float: left;
-	width: 250x;
+	width: 250px;
 	padding: 0;
-	margin-bottom: 1.5em;
 }
 
 div.paper-teaser img {
