@@ -127,12 +127,16 @@ nav > ul > li > a.active {
 
 div.paper-teaser {
 	float: left;
+	text-align: center;
 	width: 250px;
 	padding: 0;
 }
 
 div.paper-teaser img {
-	width: 250px;
+	max-height: 150px;
+	max-width: 250px;
+	width: auto;
+  height: auto;
 	border: none;
 }
 
