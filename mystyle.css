@@ -5,7 +5,7 @@ background-color: #ADABAB;
 }
 
 body {
-background-color: #EBE8E4;
+background-color: #ffffff;
 color: #222;
 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 font-weight: 300;
@@ -61,7 +61,7 @@ background-color: #fff;
 border: 1px solid #dedede;
 border-radius: 4px;
 box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-color: #888;
+color: #6699ff;
 display: block;
 margin: 8px auto;
 overflow: hidden;
@@ -109,7 +109,7 @@ transition: color 0.1s linear;
 }
 
 nav > ul > li:hover {
-background-color: rgb( 40, 44, 47 );
+background-color: #6699ff;
 }
 
 nav > ul > li:hover > a {
@@ -121,7 +121,7 @@ border-top-color: rgb( 255, 255, 255 );
 }
 
 nav > ul > li > a.active {
-  background-color: rgb( 40, 44, 47 );
+  background-color: #6699ff;
   color: white;
 }
 

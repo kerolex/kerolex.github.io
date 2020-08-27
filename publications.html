@@ -20,9 +20,17 @@
 <style>
   h2{
     text-align: left;
-    color: #017572;
-  }
+    /*color: #017572;*/
+      color: #6699ff;
+    }
 
+  #about, #news, #interests {
+      width: 50%;
+      text-align: left;
+      margin-top: 0px;
+      margin:0 auto;
+      white-space: break-all;
+    }
   .bib {
     width: 50%;
     padding: 10px 0px 0px 20px;
@@ -84,15 +92,19 @@
 </head>
 
 <body>
-	<nav style="text-align:center">
-		<ul>
-			<li>Alessio Xompero</a></li>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="publications.html" class="active">Publications</a></li>
+<div id="about">
+  <p style="float:left">Alessio Xompero</p>
+  <nav style="text-align:center">
+    <ul>
+      <!-- <li>Alessio Xompero</li> -->
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="publications.html">Publications</a></li>
       <li><a href="data.html">Data</a></li>
-			<li><a href="bio.html">Biography</a></li>
-		</ul>
-	</nav>
+      <li><a href="bio.html">Biography</a></li>
+    </ul>
+  </nav>
+</div>
+
 
 
   <div id="pubslist">
@@ -102,7 +114,7 @@
       <div class="paper-teaser"><img src="images/tip20_mst.png" alt="[img]">
       </div>
       <div class="paper-data">
-        <em style="color:#008000">A spatio-temporal multi-scale binary descriptor</em><br>
+        <em style="color:#6699ff">A spatio-temporal multi-scale binary descriptor</em><br>
         <b style="font-weight: bold;">A. Xompero</b>, O. Lanz, and A. Cavallaro<br>
         IEEE Transactions on Image Processing, vol. 29, no. 1, pp. 4362-4375, Dec. 2020<br>
         <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_xomperotip')">Abstract</a>
@@ -135,7 +147,7 @@
     <img src="http://corsmal.eecs.qmul.ac.uk/benchmark/resources/handover.gif" alt="[Handover header]">
   </div>
   <div class="paper-data">
-    <em style="color:#008000">Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling</em><br>
+    <em style="color:#6699ff">Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling</em><br>
     R. Sanchez-Matilla, K. Chatzilygeroudis, A. Modas, N. Ferreira Duarte, <b style="font-weight: bold;">A. Xompero</b>, P. Frossard, A. Billard, and A. Cavallaro<br>
     IEEE Robotics and Automation Letters, vol. 5, no. 2, pp. 1642-1649, Apr. 2020<br>
     <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_sanchezral')">Abstract</a>
@@ -172,7 +184,7 @@
   <img src="images/diagram_ICASSP20.png" alt="[img]">
 </div>
 <div class="paper-data">
- <em style="color:#008000">Multi-view shape estimation of transparent containers</em><br>
+ <em style="color:#6699ff">Multi-view shape estimation of transparent containers</em><br>
  <b style="font-weight: bold;">A. Xompero</b>, R. Sanchez-Matilla, A. Modas, P. Frossard, and A. Cavallaro<br>
  Accepted at IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Barcelona, Spain, 4-8 May 2020<br>
  <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_xomperoicassp')">Abstract</a>
@@ -211,7 +223,7 @@
     <img src="images/phdthesis_main.jpg" alt="[img]">
   </div>
   <div class="paper-data">
-    <em style="color:#008000">Local features for view matching across independently moving cameras</em> 
+    <em style="color:#6699ff">Local features for view matching across independently moving cameras</em> 
     <a class="papercite_pdf" title="Download" href="">PDF</a><br>
     Supervisors: Prof. Andrea Cavallaro (QMUL, UK), Dr. Oswald Lanz (FBK, IT)<br>
     Examiners: Dr. Stefan Leutenegger (Imperial College London, UK), Dr. Jean-Yves Guillemaut (University of Surrey, UK)<br>
@@ -233,7 +245,7 @@
 	<img src="images/multisensor.png" alt="[img]">
 </div>
 <div class="paper-data">
- <em style="color:#008000">Accurate target annotation in 3D from multimodal streams</em><br>
+ <em style="color:#6699ff">Accurate target annotation in 3D from multimodal streams</em><br>
  O. Lanz, A. Brutti, <b style="font-weight: bold;">A. Xompero</b>, X. Qian, M. Omologo, and A. Cavallaro<br>
  International Conference on Acoustics, Speech and Signal Processing (ICASSP), Brighton (UK), May, 12-17, 2019<br>
  <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_lanzicassp')">Abstract</a>
@@ -273,7 +285,7 @@
    <img src="images/MORB.png" alt="[img]">
  </div>
  <div class="paper-data">	  
-  <em style="color:#008000">MORB: a multi-scale binary descriptor</em> <br>
+  <em style="color:#6699ff">MORB: a multi-scale binary descriptor</em> <br>
   <strong style="font-weight: bold;">A. Xompero</strong>, O. Lanz, and A. Cavallaro<br> 
   IEEE International Conference on Image Processing, Athens (Greece), October, 7-10, 2018<br>
   <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_morb')">Abstract</a>
@@ -314,7 +326,7 @@
     <img src="images/fusion18_tds.png" alt="[img]">
   </div>
   <div class="paper-data">
-    <em style="color:#008000">Multi-camera Matching of Spatio-Temporal Binary Features</em><br>
+    <em style="color:#6699ff">Multi-camera Matching of Spatio-Temporal Binary Features</em><br>
     <strong style="font-weight: bold;">A. Xompero</strong>, O. Lanz, and A. Cavallaro<br>
     International Conference on Information Fusion, Cambridge (United Kingdom), July, 10-13, 2018. <br>
     <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_fusion')">Abstract</a>
@@ -351,7 +363,7 @@
     <img src="images/icassp17.png" alt="[img]">
   </div>
   <div class="paper-data">
-    <em style="color:#008000">3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera</em><br>
+    <em style="color:#6699ff">3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera</em><br>
     X. Qian, <strong style="font-weight: bold;">A. Xompero</strong>, A. Brutti, O. Lanz, M. Omologo, and A. Cavallaro<br>
     International Conference on Acoustics, Speech and Signal Processing (ICASSP), Calgary (Canada), April, 15-20, 2018<br>
     <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_qianicassp')">Abstract</a>
@@ -385,7 +397,7 @@
   <img src="images/cviu2016.jpg" alt="[img]">
 </div>
 <div class="paper-data">
-  <em style="color:#008000">An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes</em><br>
+  <em style="color:#6699ff">An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes</em><br>
   S. Ba, <span class="papercite_highlight">X. Alameda-Pineda</span>, <strong style="font-weight: bold;">A. Xompero</strong>, and R. Horaud<br>
   Computer Vision and Image Understanding, 2016<br>
   <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_bacviu')">Abstract</a>
@@ -430,7 +442,7 @@
 <h2 style="text-align: left;">2015</h2>
 <h3>Master Thesis</h3>
 <div>
-  <em style="color:#008000">ViProT: A visual probabilistic model for moving interest points clusters tracking</em> 
+  <em style="color:#6699ff">ViProT: A visual probabilistic model for moving interest points clusters tracking</em> 
   <a class="papercite_pdf" title="Download" href="projects/MasterThesis_ViProT.pdf">PDF</a><br>
   Thesis Advisors: N. Conci (UNITN), R. Horaud (INRIA Rhône-Alpes)<br>
   Co-advisors: <a href="http://xavirema.eu/">X. Alameda-Pineda</a>, S. Ba (INRIA Rhône-Alpes)<br>
@@ -441,17 +453,17 @@
   <hr />
 
   I also collaborated for the data collection and annotation of the following works (acknowledgments): <br><br>
-  <em style="color:#008000">Detecting group formations using iBeacon technology</em> 
+  <em style="color:#6699ff">Detecting group formations using iBeacon technology</em> 
   <a href="https://qmro.qmul.ac.uk/xmlui/bitstream/handle/123456789/14410/Tokarchuk%20Detecting%20Group%20Formations%202016%20Accepted.pdf?sequence=1">PDF</a><br>
   Kleomenis K., Hamed H., Laurissa T., and Richard G. C.<br>
   Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing: Adjunct (UbiComp '16)<br>
   <br>
-  <em style="color:#008000">Synchronization of Multi-User Event Media at MediaEval 2015: Task Description, Datasets, and Evaluation</em> 
+  <em style="color:#6699ff">Synchronization of Multi-User Event Media at MediaEval 2015: Task Description, Datasets, and Evaluation</em> 
   <a href="https://www.semanticscholar.org/paper/Synchronization-of-Multi-User-Event-Media-at-Conci-Mezaris/3398aaea553389930485b0812570ed8ce2722e62/pdf">PDF</a><br>
   Conci, N., De Natale, F.G. and Mezaris, V.<br>
   MediaEval 2015 Workshop, Wurzen, Germany, September, 2015<br>
   <br>
-  <em style="color:#008000">Synchronization of Multi-User Event Media (SEM) at MediaEval 2014: Task Description, Datasets, and Evaluation</em> 
+  <em style="color:#6699ff">Synchronization of Multi-User Event Media (SEM) at MediaEval 2014: Task Description, Datasets, and Evaluation</em> 
   <a href="https://www.semanticscholar.org/paper/Synchronization-of-Multi-User-Event-Media-SEM-at-Conci-Natale/9c1929db34b53304baf48278a8a99c70c12b495c/pdf">PDF</a>
   <br>
   Conci, N., De Natale, F., Mezaris, V. and Matton, M.<br>
