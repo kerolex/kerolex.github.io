@@ -18,56 +18,48 @@
 <link rel="stylesheet" href="mystyle.css">
 
 <style>
-  h2{
-    text-align: left;
-    /*color: #017572;*/
-      color: #6699ff;
-    }
+h2{
+  text-align: left;
+  /*color: #017572;*/
+  color: #6699ff;
+}
 
-  #about, #news, #interests {
-      width: 50%;
-      text-align: left;
-      margin-top: 0px;
-      margin:0 auto;
-      white-space: break-all;
-    }
-  .bib {
-    width: 50%;
-    padding: 10px 0px 0px 20px;
-    text-align: left;
-    background-color: rgba(128, 128, 128, 0);
-    margin-top: 0px;
-    white-space: pre;
-  }
+#about, #news, #interests {
+  width: 50%;
+  text-align: left;
+  margin-top: 0px;
+  margin:0 auto;
+  white-space: break-all;
+}
+.bib {
+  width: 600px;
+  padding: 10px 0px 0px 10px;
+  text-align: left;
+  background-color: rgba(128, 128, 128, 0);
+  white-space: pre;
+  word-break: break-word;
+  white-space: -moz-pre-wrap !important;
+  white-space: pre-wrap; 
+  word-break: break-all;
+}
 
-  <!---
-  #bib_morb, #bibdiv, #bib_fusion, #bib_lanzicassp {
-    width: 50%;
-    padding: 10px 0px 0px 20px;
-    text-align: left;
-    background-color: rgba(128, 128, 128, 0);
-    margin-top: 0px;
-    white-space: pre;
-  }
-  -->
 
-  .abstract {
-    width: 100%;
-    padding: 1px 0px 0px 20px;
-    font-style: italic;
-    text-align: left;
-    background-color: rgba(128, 128, 128, 0);
-    margin-top: 0px;
-    white-space: break-all;
-  }
+.abstract {
+  width: 90%;
+  padding: 10px 0px 0px 10px;
+  font-style: italic;
+  text-align: justify-all;
+  background-color: rgba(128, 128, 128, 0);
+  white-space: break-all;
+}
 
-  #pubslist {
-    width: 50%;
-    text-align: left;
-    margin-top: 0px;
-    margin:0 auto;
-    white-space: break-all;
-  }
+#pubslist {
+  width: 50%;
+  text-align: left;
+  margin-top: 0px;
+  margin:0 auto;
+  white-space: break-all;
+}
 </style>
 
 <script> 
@@ -91,29 +83,29 @@
 </script>
 
 <style type="text/css">
-  tr:hover {background-color: #f5f5f5;}
-  .tg  {border-collapse:collapse;border-spacing:0;}
-  .tg td{border-color:black;border-style:solid;border-width:1px;overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg th{border-color:black;border-style:solid;border-width:1px;font-weight:normal;font-size:12.0pt;overflow:hidden;padding:10px 5px;word-break:normal;}
-      .tg .tg-km2t{border-color:#ffffff;font-weight:bold;font-size:12.0pt;text-align:left;vertical-align:top}
-      .tg .tg-zv4m{border-color:#ffffff;font-size:13.0pt;text-align:left;vertical-align:top}
+tr:hover {background-color: #f5f5f5;width: 100%;}
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-weight:normal;font-size:11.0pt;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-km2t{border-color:#ffffff;font-weight:bold;font-size:12.0pt;text-align:left;vertical-align:top;width: 30%;}
+.tg .tg-zv4m{border-color:#ffffff;font-size:11.0pt;text-align:left;vertical-align:top;width: 70%;}
 </style>
 
 </head>
 
 <body>
-<div id="about">
-  <p style="float:left">Alessio Xompero</p>
-  <nav style="text-align:center">
-    <ul>
-      <!-- <li>Alessio Xompero</li> -->
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="data.html">Data</a></li>
-      <li><a href="bio.html">Biography</a></li>
-    </ul>
-  </nav>
-</div>
+  <div id="about">
+    <p style="float:left; font-size: 13.0pt;"><b style="font-weight: bold;">Alessio Xompero, Ph.D.</b></p>
+    <nav style="text-align:right">
+      <ul>
+        <!-- <li>Alessio Xompero</li> -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="publications.html" class="active">Publications</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="bio.html">Biography</a></li>
+      </ul>
+    </nav>
+  </div>
 
 
   <div id="pubslist">
@@ -124,107 +116,149 @@
     <div>
       <table class="tg" width="100%">
         <tr>
-          <td class="tg-zv4m" style="vertical-align: middle;">
-            <a href="https://arxiv.org/abs/2103.15999" TARGET = "_blank">
-              <img src="" alt="EUSIPCO21" width="200"/>
+          <td class="tg-km2t" style="vertical-align: text-top;">
+            <a href="https://arxiv.org/pdf/2103.15999.pdf" TARGET = "_blank">
+              <img src="http://corsmal.eecs.qmul.ac.uk/images/RTL/abstract.png" alt="ICIP21" width=100%/>
             </a>
           </td>
           <td class="tg-zv4m" style="vertical-align: middle;">
-            <p>
-              <em style="color:#6699ff">Audio classification of the content of food containers and drinking glasses</em><br>
-              S. Donhaer, <b style="font-weight: bold;">A. Xompero</b>, and A.Cavallaro<br>
-              Accepted at European Signal Processing Conference (EUSIPCO), Dublin, Ireland, 23-27 August 2021.<br>
-              [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_eusipco21')"><u>Abstract</u></a>]
-              [<a href="https://arxiv.org/abs/2103.15999" TARGET = "_blank"><u>arxiv</u></a>]
-              [<a href="http://corsmal.eecs.qmul.ac.uk/audio_classification.html" TARGET = "_blank"><u>webpage</u></a>]
-              [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_eusipco21')"><u>Bibtex</u></a>]
-            </p>
-            <div id="bib_eusipco21"  style="display:none;" class="bib">
-               @Article{Donhaer2021EUSIPCO,
-                 title={Audio classification of the content of food containers and drinking glasses,
-                 author={Santiago Donhaer and Alessio Xompero and Andrea Cavallaro},
-                 booktitle={European Signal Processing Conference},
-                 address={Dubline, Ireland},
-                 month = "23-27~" # aug,
-                 year={2021},
-               }
-           </div>
-           <p id="abstract_eusipco21"  style="display:none;" class="abstract">
-             Food containers, drinking glasses and cups handled by a person generate sounds that vary with the type and amount of their content. In this paper, we propose a new model for sound-based classification of the type and amount of content in a container. The proposed model is based on the decomposition of the problem into two steps, namely action recognition and content classification. We consider the scenario of the recent CORSMAL Containers Manipulation dataset and consider two actions (shaking and pouring), and seven material and filling level combinations. The first step identifies the action a person performs while manipulating a container. The second step is an appropriate classifier trained for the specific interaction identified by the first step to classify the amount and type of content. Experiments show that the proposed model achieves 76.02, 78.24, and 41.89 weighted average F1 score on the three test sets, respectively, and outperforms baselines and existing approaches that classify either independently content level and content type or directly the combination of content type and level together. 
-          </p>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </div>
-  <div id="pubslist">
-    <div>
-      <h2 style="text-align: left;">2020</h2>
-      <h3>Journals</h3>
-      <div class="paper-teaser"><img src="images/tip20_mst.png" alt="[img]">
-      </div>
-      <div class="paper-data">
-        <em style="color:#6699ff">A spatio-temporal multi-scale binary descriptor</em><br>
-        <b style="font-weight: bold;">A. Xompero</b>, O. Lanz, and A. Cavallaro<br>
-        IEEE Transactions on Image Processing, vol. 29, no. 1, pp. 4362-4375, Dec. 2020<br>
-        <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_xomperotip')">Abstract</a>
-        &nbsp | &nbsp
-        <a class="papercite_pdf" title="Download" href="https://ieeexplore.ieee.org/document/8960644">PDF</a>
-        &nbsp | &nbsp
-        <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_xomperotip')">Bibtex</a>
-        &nbsp | &nbsp
-        <a class="papercite_pdf" title="Link" href="">Webpage</a>
-      </div>
-      <div id="bib_xomperotip"  style="display:none;" class="bib">
-       @Article{Xompero2020TIP_MST,
-       title={A spatio-temporal multi-scale binary descriptor},
-       author={Alessio Xompero and Oswald Lanz and Andrea Cavallaro},
-       journal={IEEE Transactions on Image Processing},
-       volume={29},
-       number={1},
-       pages={4362--4375},
-       month={Dec},
-       year={2020},
-       issn={1057-7149},
-       doi={10.1109/TIP.2020.2965277}
-     }
-   </div>
-   <p id="abstract_xomperotip"  style="display:none;" class="abstract">
-    Binary descriptors are widely used for multi-view matching and robotic navigation. However, their matching performance decreases considerably under severe scale and viewpoint changes in non-planar scenes. To overcome this problem, we propose to encode the varying appearance of selected 3D scene points tracked by a moving camera with compact spatio-temporal descriptors. To this end, we first track interest points and capture their temporal variations at multiple scales. Then, we validate feature tracks through 3D reconstruction and compress the temporal sequence of descriptors by encoding the most frequent and stable binary values. Finally, we determine  multi-scale correspondences across views with a matching strategy that handles severe scale differences. The proposed spatio-temporal multi-scale approach is generic and can be used with a variety of binary descriptors. 
-    We show the effectiveness of the joint multi-scale extraction and temporal reduction through comparisons of different temporal reduction strategies and the application to several binary descriptors.
-  </p>
-  <div class="paper-teaser">
-    <img src="http://corsmal.eecs.qmul.ac.uk/benchmark/resources/handover.gif" alt="[Handover header]">
-  </div>
-  <div class="paper-data">
-    <em style="color:#6699ff">Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling</em><br>
-    R. Sanchez-Matilla, K. Chatzilygeroudis, A. Modas, N. Ferreira Duarte, <b style="font-weight: bold;">A. Xompero</b>, P. Frossard, A. Billard, and A. Cavallaro<br>
-    IEEE Robotics and Automation Letters, vol. 5, no. 2, pp. 1642-1649, Apr. 2020<br>
-    <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_sanchezral')">Abstract</a>
-    &nbsp | &nbsp
-    <a class="papercite_pdf" title="Download" href="https://ieeexplore.ieee.org/document/8968407">PDF</a>
-    &nbsp | &nbsp
-    <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_sanchezral')">Bibtex</a>
-    &nbsp | &nbsp
-    <a class="papercite_pdf" title="Link" href="http://corsmal.eecs.qmul.ac.uk/benchmark.html">Webpage</a>
-    &nbsp | &nbsp
-    <a class="papercite_pdf" title="Video" href="http://corsmal.eecs.qmul.ac.uk/benchmark/resources/Benchmark.mp4">Video</a>
-    &nbsp | &nbsp
-    <a class="papercite_pdf" title="Code" href="https://github.com/CORSMAL/Benchmark">Code</a>
-  </div>
-  <div id="bib_sanchezral"  style="display:none;" class="bib">
-   @Article{SanchezMatilla2020RAL_Benchmark,
-   title={Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling},
-   author={Ricardo Sanchez-Matilla, Konstantinos Chatzilygeroudis, Apostolos Modas, Nuno Ferreira Duarte, Alessio Xompero, Pascal Frossard, Aude Billard, and Andrea Cavallaro},
-   journal={IEEE Robotics and Automation Letters},
-   volume={5},
-   number={2},
-   pages={1642--1649},
-   month={Apr},
-   year={2020},
-   issn={2377-3766},
-   doi={10.1109/LRA.2020.2969200}
- }
+            <em style="color:#6699ff">Improving filling level classification with adversarial training</em><br>
+            A. Modas, <b style="font-weight: bold;">A. Xompero</b>, R. Sanchez-Matilla, P. Frossard, and A.Cavallaro<br>
+            Accepted at IEEE International Conference on Image Processing (ICIP),<br>
+            Anchorage, Alaska, USA, 19-22 Sep 2021.<br><br>
+            [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_icip21')"><u>abstract</u></a>]
+            [<a href="https://arxiv.org/abs/2103.15999" TARGET = "_blank"><u>arxiv</u></a>]
+            [<a href="http://corsmal.eecs.qmul.ac.uk/filling.html" TARGET = "_blank"><u>webpage</u></a>]
+            [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_icip21')"><u>bibtex</u></a>]
+            [<a href="https://zenodo.org/record/4642577#.YGJnnxLTU5k" TARGET = "_blank"><u>data</u></a>]
+            [<a href="https://zenodo.org/record/4518951#.YEIHk_6nw5k" TARGET = "_blank"><u>models</u></a>]
+            <p id="abstract_icip21"  style="display:none;" class="abstract">
+             We investigate the problem of classifying -- from a single image -- the level of content in a cup or a drinking glass. This problem is made challenging by several ambiguities caused by transparencies, shape variations and partial occlusions, and by the availability of only small training datasets. In this paper, we tackle this problem with an appropriate strategy for transfer learning. Specifically, we use adversarial training in a generic source dataset and then refine the training with a task-specific dataset. We also discuss and experimentally evaluate several training strategies and their combination on a range of container types of the CORSMAL Containers Manipulation dataset. We show that transfer learning with adversarial training in the source domain consistently improves the classification accuracy on the test set and limits the overfitting of the classifier to specific features of the training data. 
+           </p>
+           <div id="bib_icip21"  style="display:none;" class="bib">
+             @Article{Modas2021ICIP,
+             title = {Improving filling level classification with adversarial training},
+             author = {Apostolos Modas and Alessio Xompero and Ricardo Sanchez-Matilla and Pascal Frossard and Andrea Cavallaro},
+             booktitle = {IEEE International Conference on Image Processing},
+             address = {Anchorage, Alaska, USA},
+             month = "19-22~" # sep,
+             year = {2021},
+           }
+         </div>
+       </td>
+     </tr>
+     <tr>
+      <td class="tg-km2t" style="vertical-align: text-top;">
+        <a href="https://arxiv.org/abs/2103.15999" TARGET = "_blank">
+          <img src="http://corsmal.eecs.qmul.ac.uk/images/acc_image.png" alt="EUSIPCO21" width=100%/>
+        </a>
+      </td>
+      <td class="tg-zv4m" style="vertical-align: middle;">
+        <em style="color:#6699ff">Audio classification of the content of food containers and drinking glasses</em><br>
+        S. Donhaer, <b style="font-weight: bold;">A. Xompero</b>, and A.Cavallaro<br>
+        Accepted at European Signal Processing Conference (EUSIPCO),<br>
+        Dublin, Ireland, 23-27 August 2021.<br><br>
+        [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_eusipco21')"><u>abstract</u></a>]
+        [<a href="https://arxiv.org/abs/2103.15999" TARGET = "_blank"><u>arxiv</u></a>]
+        [<a href="http://corsmal.eecs.qmul.ac.uk/audio_classification.html" TARGET = "_blank"><u>webpage</u></a>]
+        [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_eusipco21')"><u>bibtex</u></a>]
+        [<a href="https://github.com/CORSMAL/ACC/" TARGET = "_blank"><u>code</u></a>]
+        [<a href="https://corsmal.eecs.qmul.ac.uk/containers_manip.html" TARGET = "_blank"><u>data</u></a>]
+        [<a href="https://zenodo.org/record/4770439#.YKjeFybTU5l" TARGET = "_blank"><u>data2</u></a>]
+        [<a href="https://zenodo.org/record/4770061#.YKPJtCbTU5k" TARGET = "_blank"><u>models</u></a>]
+        <p id="abstract_eusipco21"  style="display:none;" class="abstract">
+         Food containers, drinking glasses and cups handled by a person generate sounds that vary with the type and amount of their content. In this paper, we propose a new model for sound-based classification of the type and amount of content in a container. The proposed model is based on the decomposition of the problem into two steps, namely action recognition and content classification. We consider the scenario of the recent CORSMAL Containers Manipulation dataset and consider two actions (shaking and pouring), and seven material and filling level combinations. The first step identifies the action a person performs while manipulating a container. The second step is an appropriate classifier trained for the specific interaction identified by the first step to classify the amount and type of content. Experiments show that the proposed model achieves 76.02, 78.24, and 41.89 weighted average F1 score on the three test sets, respectively, and outperforms baselines and existing approaches that classify either independently content level and content type or directly the combination of content type and level together. 
+       </p>
+       <p id="bib_eusipco21"  style="display:none;" class="bib">
+         @Article{Donhaer2021EUSIPCO,
+         title={Audio classification of the content of food containers and drinking glasses},
+         author={Santiago Donhaer and Alessio Xompero and Andrea Cavallaro},
+         booktitle={European Signal Processing Conference},
+         address={Dubline, Ireland},
+         month = "23-27~" # aug,
+         year={2021},
+       }
+     </p>
+   </td>
+ </tr>
+</table>
+</div>
+<hr />
+<div>
+  <h2 style="text-align: left;">2020</h2>
+  <h3>Journals</h3>
+  <div>
+    <table class="tg" width="100%">
+      <tr>
+        <td class="tg-km2t" style="vertical-align: text-top;">
+          <a href="https://arxiv.org/pdf/2103.15999.pdf" TARGET = "_blank">
+            <img src="images/tip20_mst.png" alt="TIP2020" width=100%/>
+          </a>
+        </td>
+        <td class="tg-zv4m" style="vertical-align: middle;">
+          <em style="color:#6699ff">A spatio-temporal multi-scale binary descriptor</em><br>
+          <b style="font-weight: bold;">A. Xompero</b>, O. Lanz, and A. Cavallaro<br>
+          IEEE Transactions on Image Processing, vol. 29, no. 1, pp. 4362-4375, Dec. 2020.<br><br>
+          [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_xomperotip')"><u>abstract</u></a>]
+          [<a href="https://ieeexplore.ieee.org/document/8960644" TARGET = "_blank"><u>pdf</u></a>]
+          <!-- [<a href="http://corsmal.eecs.qmul.ac.uk/filling.html" TARGET = "_blank"><u>webpage</u></a>] -->
+          [<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_xomperotip')"><u>bibtex</u></a>]
+          <!-- [<a href="https://zenodo.org/record/4642577#.YGJnnxLTU5k" TARGET = "_blank"><u>data</u></a>] -->
+          <!-- [<a href="https://zenodo.org/record/4518951#.YEIHk_6nw5k" TARGET = "_blank"><u>models</u></a>] -->
+          <p id="abstract_xomperotip"  style="display:none;" class="abstract">
+           Binary descriptors are widely used for multi-view matching and robotic navigation. However, their matching performance decreases considerably under severe scale and viewpoint changes in non-planar scenes. To overcome this problem, we propose to encode the varying appearance of selected 3D scene points tracked by a moving camera with compact spatio-temporal descriptors. To this end, we first track interest points and capture their temporal variations at multiple scales. Then, we validate feature tracks through 3D reconstruction and compress the temporal sequence of descriptors by encoding the most frequent and stable binary values. Finally, we determine  multi-scale correspondences across views with a matching strategy that handles severe scale differences. The proposed spatio-temporal multi-scale approach is generic and can be used with a variety of binary descriptors. 
+           We show the effectiveness of the joint multi-scale extraction and temporal reduction through comparisons of different temporal reduction strategies and the application to several binary descriptors.
+         </p>
+         <div id="bib_xomperotip"  style="display:none;" class="bib">
+           @Article{Xompero2020TIP_MST,
+           title={A spatio-temporal multi-scale binary descriptor},
+           author={Alessio Xompero and Oswald Lanz and Andrea Cavallaro},
+           journal={IEEE Transactions on Image Processing},
+           volume={29},
+           number={1},
+           pages={4362--4375},
+           month={Dec},
+           year={2020},
+           issn={1057-7149},
+           doi={10.1109/TIP.2020.2965277}
+         }
+       </div>
+     </td>
+   </tr>
+ </table>
+</div> 
+<div class="paper-teaser">
+  <img src="http://corsmal.eecs.qmul.ac.uk/benchmark/resources/handover.gif" alt="[Handover header]">
+</div>
+<div class="paper-data">
+  <em style="color:#6699ff">Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling</em><br>
+  R. Sanchez-Matilla, K. Chatzilygeroudis, A. Modas, N. Ferreira Duarte, <b style="font-weight: bold;">A. Xompero</b>, P. Frossard, A. Billard, and A. Cavallaro<br>
+  IEEE Robotics and Automation Letters, vol. 5, no. 2, pp. 1642-1649, Apr. 2020<br>
+  <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_sanchezral')">Abstract</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Download" href="https://ieeexplore.ieee.org/document/8968407">PDF</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_sanchezral')">Bibtex</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Link" href="http://corsmal.eecs.qmul.ac.uk/benchmark.html">Webpage</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Video" href="http://corsmal.eecs.qmul.ac.uk/benchmark/resources/Benchmark.mp4">Video</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Code" href="https://github.com/CORSMAL/Benchmark">Code</a>
+</div>
+<div id="bib_sanchezral"  style="display:none;" class="bib">
+ @Article{SanchezMatilla2020RAL_Benchmark,
+ title={Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling},
+ author={Ricardo Sanchez-Matilla, Konstantinos Chatzilygeroudis, Apostolos Modas, Nuno Ferreira Duarte, Alessio Xompero, Pascal Frossard, Aude Billard, and Andrea Cavallaro},
+ journal={IEEE Robotics and Automation Letters},
+ volume={5},
+ number={2},
+ pages={1642--1649},
+ month={Apr},
+ year={2020},
+ issn={2377-3766},
+ doi={10.1109/LRA.2020.2969200}
+}
 </div>
 <p id="abstract_sanchezral"  style="display:none;" class="abstract">
   The real-time estimation through vision of the physical properties of objects manipulated by humans is important to inform the control of robots for performing accurate and safe grasps of objects handed over by humans. However, estimating the 3D pose and dimensions of previously unseen objects using only RGB cameras is challenging due to illumination variations, reflective surfaces, transparencies, and occlusions caused both by the human and the robot. In this paper we present a benchmark for dynamic human-to-robot handovers that do not rely on a motion capture system, markers, or prior knowledge of specific objects. To facilitate comparisons, the benchmark focuses on cups with different levels of transparencies and with an unknown amount of an unknown filling. The performance scores assess the overall system as well as its components in order to help isolate modules of the pipeline that need improvements. In addition to the task description and the performance scores, we also present and distribute as open source a baseline implementation for the overall pipeline to enable comparisons and facilitate progress.
