@@ -31,6 +31,28 @@
 		white-space: break-all;
 	}
 </style>
+
+<script> 
+	function AppearBib(bib_id) {
+		var x = document.getElementById(bib_id);
+		if (x.style.display === "none") {
+			x.style.display = "block";
+			x,style.ackground.color = "transparent";
+		} else {
+			x.style.display = "none";
+		}
+	}
+
+	function AppearAbstract(abstract_id) {
+		var x = document.getElementById(abstract_id);
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+	}
+</script>
+
 </head>
 
 <body>
@@ -48,27 +70,58 @@
 
 
 	<div id="about">
-
-		<h2 style="text-align: left;">CORSMAL Containers Manipulation</h2>
+		<h2> Data</h2>
 		<p>
-			A dataset with 1140 audio-visual-inertial recordings of people interacting with (15) containers, using 4 cameras (RGB, depth, and infrared) and a 8-element circular microphone array. Containers are either empty of filled at 2 different levels (50%, 90%) with 3 different types of content (water, pasta, rice). For example, people can pour a liquid in a glass/cup or shake a food box.
+			A list of dataset that I contributed to the collection, annotation, and release. 
 		</p>
-		<a href="http://corsmal.eecs.qmul.ac.uk/containers_manip.html">Link</a>
+		<div>
+			<table class="tg" width="100%">
+				<tr>
+					<td class="tg-km2t" style="vertical-align: text-top;">
+						<a href="http://corsmal.eecs.qmul.ac.uk/containers_manip.html" TARGET = "_blank">
+							<div class="imglnews" style="border:0">
+								<video width="100%" autoplay loop><source  src="http://corsmal.eecs.qmul.ac.uk/resources/output_4.mp4" type="video/mp4"> Your browser does not support HTML5 video. </video></div>			  
+								</a>
+							</td>
+							<td class="tg-zv4m" style="vertical-align: top;">
+								<em style="color:#6699ff">CORSMAL Containers Manipulation</em><br><br>
+								A dataset with 1140 audio-visual-inertial recordings of people interacting with (15) containers, using 4 cameras (RGB, depth, and infrared) and a 8-element circular microphone array. Containers are either empty of filled at 2 different levels (50%, 90%) with 3 different types of content (water, pasta, rice). For example, people can pour a liquid in a glass/cup or shake a food box.
+								<br><br>
+								[<a title="Dataset" href="http://corsmal.eecs.qmul.ac.uk/containers_manip.html" TARGET = "_blank"><u>details</u></a>]
+								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_ccm')"><u>bibtex</u></a>]      
+								<div id="bib_ccm"  style="display:none;" class="bib pre-white-space">
+									@misc{Xompero2020CCM,
+									title = {CORSMAL Containers Manipulation},
+									author = {Xompero, Alessio and Sanchez-Matilla, Ricardo, and Mazzon, Riccardo and Cavallaro, Andrea},
+									year = {2020}
+								}
+							</div>
+						</td>
+					</tr>
+				</table>
+				<br>
+			</div>
 
-		<h2 style="text-align: left;">CORSMAL Containers</h2>
-		<p>
-			A vision dataset of 23 transparent and non-transparent containers, such as drinking cups, drinking glasses and bottles. Each container lies on a table in two different setups with different lighting and background conditions, and is observed by two cameras with a wide-baseline, acquiring RGB, depth, and narrow-baseline stereo infrared images. 
-		</p>
-		<a href="http://corsmal.eecs.qmul.ac.uk/containers.html">Link</a>
+			<h2 style="text-align: left;">CORSMAL Containers Manipulation</h2>
+			<p>
+				A dataset with 1140 audio-visual-inertial recordings of people interacting with (15) containers, using 4 cameras (RGB, depth, and infrared) and a 8-element circular microphone array. Containers are either empty of filled at 2 different levels (50%, 90%) with 3 different types of content (water, pasta, rice). For example, people can pour a liquid in a glass/cup or shake a food box.
+			</p>
+			<a href="http://corsmal.eecs.qmul.ac.uk/containers_manip.html">Link</a>
 
-		<h2 style="text-align: left;">CAV3D (Co-located Audio-Visual streams with 3D tracks)</h2>
-		<p>
-			A dataset for 3D speaker tracking was collected with a sensing platform consisting of a monocular colour camera co-located with an 8-element circular microphone array. The audio sampling rate is 96 kHz. Video was recorded at 15 frames per second. The sensing platform was placed on a table in a room with dimensions 4.77 x 5.95 x 4.5 m and reverberation time of approximately 0.7s to record up to three simultaneous speakers. In addition to the sensing platform, 4 hardware-triggered CCD colour cameras installed at the top corners of the room recorded the scene. The dataset is synchronized, calibrated and annotated.
-		</p>
-		<a href="https://ict.fbk.eu/units/speechtek/cav3d/">Link</a>
-		
-	</div>
-</body>
-</html>
+			<h2 style="text-align: left;">CORSMAL Containers</h2>
+			<p>
+				A vision dataset of 23 transparent and non-transparent containers, such as drinking cups, drinking glasses and bottles. Each container lies on a table in two different setups with different lighting and background conditions, and is observed by two cameras with a wide-baseline, acquiring RGB, depth, and narrow-baseline stereo infrared images. 
+			</p>
+			<a href="http://corsmal.eecs.qmul.ac.uk/containers.html">Link</a>
+
+			<h2 style="text-align: left;">CAV3D (Co-located Audio-Visual streams with 3D tracks)</h2>
+			<p>
+				A dataset for 3D speaker tracking was collected with a sensing platform consisting of a monocular colour camera co-located with an 8-element circular microphone array. The audio sampling rate is 96 kHz. Video was recorded at 15 frames per second. The sensing platform was placed on a table in a room with dimensions 4.77 x 5.95 x 4.5 m and reverberation time of approximately 0.7s to record up to three simultaneous speakers. In addition to the sensing platform, 4 hardware-triggered CCD colour cameras installed at the top corners of the room recorded the scene. The dataset is synchronized, calibrated and annotated.
+			</p>
+			<a href="https://ict.fbk.eu/units/speechtek/cav3d/">Link</a>
+
+		</div>
+	</body>
+	</html>
 
 
