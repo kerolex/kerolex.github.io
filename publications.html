@@ -89,6 +89,16 @@
     }
   }
 </script>
+
+<style type="text/css">
+  tr:hover {background-color: #f5f5f5;}
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{border-color:black;border-style:solid;border-width:1px;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-weight:normal;font-size:12.0pt;overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg .tg-km2t{border-color:#ffffff;font-weight:bold;font-size:12.0pt;text-align:left;vertical-align:top}
+      .tg .tg-zv4m{border-color:#ffffff;font-size:13.0pt;text-align:left;vertical-align:top}
+</style>
+
 </head>
 
 <body>
@@ -106,7 +116,47 @@
 </div>
 
 
-
+  <div id="pubslist">
+    <div>
+      <h2 style="text-align: left;">2021</h2>
+      <h3>Conferences</h3>
+    </div>
+    <div>
+      <table class="tg" width="100%">
+        <tr>
+          <td class="tg-zv4m" style="vertical-align: middle;">
+            <a href="https://arxiv.org/abs/2103.15999" TARGET = "_blank">
+              <img src="" alt="EUSIPCO21" width="200"/>
+            </a>
+          </td>
+          <td class="tg-zv4m" style="vertical-align: middle;">
+            <p>
+              <em style="color:#6699ff">Audio classification of the content of food containers and drinking glasses</em><br>
+              S. Donhaer, <b style="font-weight: bold;">A. Xompero</b>, and A.Cavallaro<br>
+              Accepted at European Signal Processing Conference (EUSIPCO), Dublin, Ireland, 23-27 August 2021.<br>
+              [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_eusipco21')"><u>Abstract</u></a>]
+              [<a href="https://arxiv.org/abs/2103.15999" TARGET = "_blank"><u>arxiv</u></a>]
+              [<a href="http://corsmal.eecs.qmul.ac.uk/audio_classification.html" TARGET = "_blank"><u>webpage</u></a>]
+              [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_eusipco21')"><u>Bibtex</u></a>]
+            </p>
+            <div id="bib_eusipco21"  style="display:none;" class="bib">
+               @Article{Donhaer2021EUSIPCO,
+                 title={Audio classification of the content of food containers and drinking glasses,
+                 author={Santiago Donhaer and Alessio Xompero and Andrea Cavallaro},
+                 booktitle={European Signal Processing Conference},
+                 address={Dubline, Ireland},
+                 month = "23-27~" # aug,
+                 year={2021},
+               }
+           </div>
+           <p id="abstract_eusipco21"  style="display:none;" class="abstract">
+             Food containers, drinking glasses and cups handled by a person generate sounds that vary with the type and amount of their content. In this paper, we propose a new model for sound-based classification of the type and amount of content in a container. The proposed model is based on the decomposition of the problem into two steps, namely action recognition and content classification. We consider the scenario of the recent CORSMAL Containers Manipulation dataset and consider two actions (shaking and pouring), and seven material and filling level combinations. The first step identifies the action a person performs while manipulating a container. The second step is an appropriate classifier trained for the specific interaction identified by the first step to classify the amount and type of content. Experiments show that the proposed model achieves 76.02, 78.24, and 41.89 weighted average F1 score on the three test sets, respectively, and outperforms baselines and existing approaches that classify either independently content level and content type or directly the combination of content type and level together. 
+          </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
   <div id="pubslist">
     <div>
       <h2 style="text-align: left;">2020</h2>
