@@ -15,7 +15,9 @@
 	<title>Alessio Xompero</title>
 
 	<link href = "css/bootstrap.min.css" rel = "stylesheet">
-	<link rel="stylesheet" href="mystyle.css">
+	<link rel="stylesheet" href="css/mystyle.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/academicons.css">
 
 	<style>
 	h2{
@@ -56,13 +58,14 @@
 </head>
 
 <body>
-	<div id="about">
-		<p style="float:left; font-size: 13.0pt;"><b style="font-weight: bold;">Alessio Xompero, Ph.D.</b></p>
-		<nav style="text-align:right">
+	<div id="menu">
+		<!-- <p style="float:left; font-size: 14.0pt;"><b style="font-weight: bold;">Alessio Xompero, Ph.D.</b></p> -->
+		<nav style="text-align:left">
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html" class="active"><b style="font-weight: bold;font-size: 13.0pt;padding-right:20px">Alessio Xompero, Ph.D.</b></a></li>
 				<li><a href="publications.html">Publications</a></li>
-				<li><a href="data.html" class="active">Data</a></li>
+				<li><a href="talks.html">Talks</a></li>
+				<li><a href="data.html">Data</a></li>
 				<li><a href="services.html">Services</a></li>
 				<li><a href="bio.html">Biography</a></li>
 			</ul>
@@ -151,6 +154,38 @@
 				<br>
 			</div>
 		</div>
+		<div id="about">
+		<h2> Software</h2>
+		<p>
+			A list of software that I released or contributed to. 
+		</p>
+		<table class="tg" width="100%">
+				<tr>
+					<td class="tg-km2t" style="vertical-align: text-top;">
+						<a href="https://github.com/kerolex/MORB" TARGET = "_blank">
+							<div class="imglnews" style="border:0"><img src="images/MORB.png" alt="[img]" width="100%" style="vertical-align: middle;"></div>			  
+								</a>
+							</td>
+							<td class="tg-zv4m" style="vertical-align: top;">
+								<em style="color:#6699ff">MORB: a multi-scale binary descriptor </em><br><br>
+								Official GitHub repository of the C++ code for the multi-scale binary descriptor based on ORB that improves the accuracy of feature matching under scale changes.
+								<br><br>
+								[<a title="Code" href="https://github.com/kerolex/MORB" TARGET = "_blank"><u>code</u></a>]
+								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_morb')"><u>bibtex</u></a>]      
+								<div id="bib_morb"  style="display:none;" class="bib pre-white-space">@INPROCEEDINGS{Xompero2018ICIP_MORB,
+								  title = {{MORB: a multi-scale binary descriptor}},
+								  author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
+								  booktitle = ICIP,
+								  address = {Athens, Greece},
+								  month = "7--10~" # oct,
+								  year = {2018}
+								}
+								</div>
+						</td>
+					</tr>
+				</table>
+	</div>
+	<br><br><br>
 	</body>
 	</html>
 
