@@ -390,7 +390,7 @@ a.reversef<i class="fas fa-fw fa-envelope" aria-hidden="true" style="padding-rig
 
 
 
-#news, #interests , #section{
+#section{
   width: 50%;
   text-align: left;
   margin-top: 0px;
@@ -410,71 +410,17 @@ h2{
   background-color: #FFFFFF;
 }
 
-
-
-/* NAVIGATION */
-/*  nav {0
-    width: 100%;
-    margin: 0 auto;
-    background: #fff;
-    position: static;
+.abstract {
+    width: 90%;
+    padding: 10px 0px 0px 10px;
+    font-style: italic;
+    text-align: justify-all;
+    background-color: rgba(128, 128, 128, 0);
+    white-space: break-all;
   }
 
-  .fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-  }*/
 
-  /* By Dominik Biedebach @domobch */
-/*  nav ul {
-    list-style: none;
-    text-align: center;
-  }
-  nav ul li {
-    display: inline-block;
-  }
-  nav ul li a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: #aaa;
-    font-weight: 300;
-    margin: 0 10px;
-  }
-  nav ul li a,
-  nav ul li a:after,
-  nav ul li a:before {
-    transition: all .5s;
-  }
-  nav ul li a:hover {
-    color: #555;
-  }*/
-
-  /* stroke */
-/*  nav.stroke ul li a,
-  nav.fill ul li a {
-    position: relative;
-  }
-  nav.stroke ul li a:after,
-  nav.fill ul li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: #333;
-    height: 1px;
-  }
-  nav.stroke ul li a:hover:after {
-    width: 100%;
-  }*/
-
-  #about {
+#about {
     width: 60%;
     height: 60%;
     margin-top: 0px;
@@ -506,10 +452,6 @@ h2{
   .scrolling-content {
     width:77%;
     overflow: hidden;
-    -ms-overflow-style: none;  /*for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
-    /*float: right;*/
   }
 
   #about::after {
