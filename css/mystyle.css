@@ -324,7 +324,7 @@ a.reversef<i class="fas fa-fw fa-envelope" aria-hidden="true" style="padding-rig
 .icon {
  display:inline-block;
  fill:currentColor;
- width:1em;
+ width:1.5em;
  height:1.1em;
  line-height:1;
  position:relative;
@@ -339,7 +339,8 @@ a.reversef<i class="fas fa-fw fa-envelope" aria-hidden="true" style="padding-rig
  font-family:-apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
  z-index:10;
  position:relative;
- cursor:pointer
+ cursor:pointer;
+ text-align:center;
 }
 .author__urls-wrapper li:last-child a {
  margin-bottom:0
@@ -418,7 +419,8 @@ a.reversef<i class="fas fa-fw fa-envelope" aria-hidden="true" style="padding-rig
 }
 }
 .author__urls li {
- white-space:nowrap
+ white-space:nowrap;
+ float:  left;
 }
 .author__urls a {
  display:block;
@@ -427,11 +429,20 @@ a.reversef<i class="fas fa-fw fa-envelope" aria-hidden="true" style="padding-rig
  padding-top:2px;
  padding-bottom:2px;
  color:inherit;
- font-size:1em;
+ font-size:1.5em;
  text-decoration:none
 }
 .author__urls a:hover {
  text-decoration:underline
+}
+
+.social-col a {
+/*  display:block;*/
+/*  margin-bottom:5px;
+ padding-right:5px;
+ padding-top:2px;
+ padding-bottom:2px;*/
+  font-size:2.5em;
 }
 
 
@@ -451,7 +462,7 @@ a.reversef<i class="fas fa-fw fa-envelope" aria-hidden="true" style="padding-rig
 
 
 #section{
-  width: 50%;
+  width: 75%;
   text-align: left;
   margin-top: 0px;
   margin:0 auto;
@@ -481,22 +492,22 @@ h2{
 
 
 #about {
-    width: 60%;
-    height: 60%;
+    width: 75%;
+/*    height: 60%;*/
     margin-top: 0px;
     margin:0 auto;
     white-space: break-all;
     /*overflow: hidden;*/
     /*position: -webkit-sticky; /* Safari */*/
     /*position: sticky;*/
-    position: relative;
+/*    position: relative;*/
     /*height:20px;*/
-    top:75px;
+/*    top:75px;*/
   }
 
   .fixed-content {
     float:left;
-    width:23%;
+    width:25%;
     padding-top:30px;
     padding-right:20px;
     padding-left:20px;
@@ -510,7 +521,7 @@ h2{
   }
 
   .scrolling-content {
-    width:77%;
+    width:75%;
     overflow: hidden;
   }
 
