@@ -52,6 +52,7 @@
         <li><a href="talks.html">Talks</a></li>
         <li><a href="data.html">Data & Code</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="bio.html">Biography</a></li>
       </ul>
@@ -60,46 +61,19 @@
 
 
   <div id="section">
-    <div>
-      <h2 style="text-align: left;">2022</h2>
-    </div>
-    <div>
-      <table class="tg" width="100%">
-        <tr>
-          <td class="tg-km2t" style="vertical-align: text-top;">
-            <a href="https://doi.org/10.48550/arXiv.2208.11661" TARGET = "_blank">
-              <img src="images/xview_iwdsc22.svg" alt="" width="100%"/><br>
-            </a>
-          </td>
-          <td class="tg-zv4m" style="vertical-align: middle;">
-            <em style="color:#6699ff">Cross-Camera View-Overlap Recognition</em><br>
-            <b style="font-weight: bold;">A. Xompero</b>, A. Cavallaro<br>
-            Internation Workshop on Smart Distributed Cameras (IWDSC) at European Conference on Computer Vision (ECCV), 2022.<br><br>
-            [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_iwdsc22')"><u>abstract</u></a>]
-            <!-- [<a href="https://doi.org/10.1109/ACCESS.2022.3166906" TARGET = "_blank"><u>paper</u></a>] -->
-            [<a href="https://doi.org/10.48550/arXiv.2208.11661" TARGET = "_blank"><u>arxiv</u></a>]
-            [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_iwdsc22')"><u>bibtex</u></a>]
-            [<a href="https://www.eecs.qmul.ac.uk/~ax300/xview" TARGET = "_blank"><u>webpage</u></a>]
-            [<a href="https://doi.org/10.5281/zenodo.7235890" TARGET = "_blank"><u>data</u></a>]
-            [<a href="https://github.com/kerolex/CrossCameraViewOverlapRecognition" TARGET = "_blank"><u>code</u></a>]
-            [<a href="https://youtu.be/MoFhI40Wd0s" TARGET = "_blank"><u>video</u></a>]
-            <p id="abstract_iwdsc22"  style="display:none;" class="abstract">
-              We propose a decentralised view-overlap recognition framework that operates across freely moving cameras without the need of a reference 3D map. Each camera independently extracts, aggregates into a hierarchical structure, and shares feature-point descriptors over time. A view overlap is recognised by view-matching and geometric validation to discard wrongly matched views. The proposed framework is generic and can be used with different descriptors. We conduct the experiments on publicly available sequences as well as new sequences we collected with hand-held cameras. We show that Oriented FAST and Rotated BRIEF (ORB) features with Bags of Binary Words within the proposed framework lead to higher precision and a higher or similar accuracy compared to NetVLAD, RootSIFT, and SuperGlue.   
-            </p>
-            <div id="bib_iwdsc22"  style="display:none;" class="bib pre-white-space">
-             @Article{Xompero2022IWDSC,
-             title = {Cross-Camera View-Overlap Recognition},
-             author = {Xompero, A. and and Cavallaro, A.},
-             booktitle = {Proceedings of the European Conference on Computer Vision Workshops},
-             note = {Internation Workshop on Distributed Smart Cameras},
-             address={Online},
-             month="24" # OCT,
-             year = {2022},
-           }
-         </div>
-       </td>
-     </tr>
-     <!-- -->
+
+  <div style="text-align:left;">
+    Jump: <a href="#journals">Journals</a> | <a href="#conferences">Conferences</a>  | <a href="#workshops">Workshops</a> | <a href="#chapters"> Book chapters</a> | <a href="#thesis">Thesis</a>
+  </div>
+
+<hr />
+<div id=journals>
+  <div>
+    <h2 style="text-align: left;">Journals</h2>  
+  </div>
+  <div>
+    <table class="tg" width="100%">
+      <!-- -->
         <tr>
           <td class="tg-km2t" style="vertical-align: text-top;">
             <a href="https://doi.org/10.48550/arXiv.2107.12719" TARGET = "_blank">
@@ -131,47 +105,6 @@
          </div>
        </td>
      </tr>
-     <!-- -->
-     <tr>
-      <td class="tg-km2t" style="vertical-align: text-top;">
-        <a href="challenge.html" TARGET = "_blank">
-          <img src="images/overviewpaper_main.png" alt="" width="100%"/><br>
-          <img src="images/diagram_tasks.png" alt="" width="100%"/><br>
-        </a>
-      </td>
-      <td class="tg-zv4m" style="vertical-align: middle;">
-        <em style="color:#6699ff">Audio-Visual Object Classification for Human-Robot Collaboration</em><br>
-        <b style="font-weight: bold;">A. Xompero</b>, Y. L. Pang, T. Patten, A. Prabhakar, B. Calli, A. Cavallaro<br>
-        IEEE International Conference on Acoustic, Speech and Signal Processing (ICASSP), Singapore and Virtual, 22-27 May 2022.<br><br>
-        [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_icassp22')"><u>abstract</u></a>]
-        [<a href="https://doi.org/10.48550/arXiv.2203.01977" TARGET = "_blank"><u>arxiv</u></a>]
-        [<a href="https://corsmal.eecs.qmul.ac.uk/challenge.html" TARGET = "_blank"><u>challenge webpage</u></a>]
-        <!-- [<a href="https://youtu.be/yJ51a4e3v-Q" TARGET = "_blank"><u>video</u></a>] -->
-        <!-- [<a href="https://youtu.be/yJ51a4e3v-Q" TARGET = "_blank"><u>poster</u></a>] -->
-        [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_icassp22')"><u>bibtex</u></a>]
-        <p id="abstract_icassp22"  style="display:none;" class="abstract">
-          Human-robot collaboration requires the contactless estimation of the physical properties of containers manipulated by a person, for example while pouring content in a cup or moving a food box. Acoustic and visual signals can be used to estimate the physical properties of such objects, which may vary substantially in shape, material and size, and also be occluded by the hands of the person. To facilitate comparisons and stimulate progress in solving this problem, we present the CORSMAL challenge and a dataset to assess the performance of the algorithms through a set of well-defined performance scores. The tasks of the challenge are the estimation of the mass, capacity, and dimensions of the object (container), and the classification of the type and amount of its content. A novel feature of the challenge is our real-to-simulation framework for visualising and assessing the impact of estimation errors in human-to-robot handovers.
-        </p>
-        <div id="bib_icassp22"  style="display:none;" class="bib pre-white-space">
-         @InProceedings{Xompero2022ICASSP,
-         title = {Audio-Visual Object Classification for Human-Robot Collaboration},
-         author = {Xompero, A. and Pang, Y. L. and Patten, T. and Prabhakar, A. and Calli, B. and Cavallaro, A.},
-         booktitle = {IEEE International Conference on Acoustic, Speech and Signal Processing},
-         address={Singapore},
-         month="22--27~" # MAY,
-         year = {2022},
-       }
-     </div>
-   </td>
- </tr>
-</table>
-</div>
-<hr />
-<div>
-  <h2 style="text-align: left;">Journals</h2>
-  <!-- <h3></h3> -->
-  <div>
-    <table class="tg" width="100%">
       <tr>
         <td class="tg-km2t" style="vertical-align: text-top;">
           <a href="https://qmro.qmul.ac.uk/xmlui/handle/123456789/71349" TARGET = "_blank">
@@ -248,13 +181,96 @@
 </tr>
 </table>
 </div>
+<div class="paper-teaser">
+  <img src="images/cviu2016.jpg" alt="[img]">
+</div>
+<div class="paper-data">
+  <em style="color:#6699ff">An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes</em><br>
+  S. Ba, <span class="papercite_highlight">X. Alameda-Pineda</span>, <strong style="font-weight: bold;">A. Xompero</strong>, and R. Horaud<br>
+  Computer Vision and Image Understanding, 2016<br>
+  <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_bacviu')">Abstract</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Download" href="http://xavirema.eu/wp-content/papercite-data/pdf/Ba-CVIU-2016.pdf">PDF</a>
+  &nbsp | &nbsp
+  <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_bacviu')">Bibtex</a>
+</div>
+<div id="bib_bacviu"  style="display:none;" class="bib pre-white-space">
+  @ARTICLES{bA2016cviu,
+  title = {An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes},
+  author = {Ba, S. and Alameda-Pineda, X. and Xompero, A. and Horaud, R.},
+  journal = {Computer Vision and Image Understanding},
+  vol={153},
+  num={},
+  pages={64--76},
+  month = apr,
+  year = {2016},
+}
+</div>
+<div id="abstract_bacviu"  style="display:none;" class="abstract">
+ Object tracking is an ubiquitous problem that appears in many applications
+ such as remote sensing, audio processing, computer vision, human-machine
+ interfaces, human-robot interaction, etc.  Although thoroughly investigated
+ in  computer  vision,  tracking  a  time-varying  number  of  persons  remains  a
+ challenging open problem.  In this paper, we propose an on-line variational
+ Bayesian model for multi-person tracking from cluttered visual observations
+ provided  by  person  detectors.   The  paper  has  the  following  contributions.
+ We propose a variational Bayesian framework for tracking an unknown and
+ varying number of persons.  Our model results in a variational expectation-maximization  (VEM)
+ algorithm  with  closed-form  expressions  both  for  the
+ posterior distributions of the latent variables and for the estimation of the
+ model parameters.  The proposed model exploits observations from multiple
+ detectors,  and  it  is  therefore  multimodal  by  nature.   Finally,  we  propose
+ to  embed  both  object-birth  and  object-visibility  processes  in  an  effort  to
+ robustly  handle  temporal  appearances  and  disappearances.   Evaluated  on
+ classical  multiple  person  tracking  datasets,  our  method  shows  competitive
+ results with respect to state-of-the-art multiple-object tracking algorithms, 
+ such as the probability hypothesis density (PHD) filter, among others.
+</div>
+</div>
+<div style="text-align:left;">
+    Jump: <a href="#journals">Journals</a> | <a href="#conferences">Conferences</a>  | <a href="#workshops">Workshops</a> | <a href="#chapters"> Book chapters</a> | <a href="#thesis">Thesis</a>
+  </div>
 <hr />
+<div id=conferences>
 <div>
   <h2 style="text-align: left;">Conferences</h2>
   <!-- <h2>Conferences</h3> -->
 </div>
 <div>
   <table class="tg" width="100%">
+     <tr>
+      <td class="tg-km2t" style="vertical-align: text-top;">
+        <a href="challenge.html" TARGET = "_blank">
+          <img src="images/overviewpaper_main.png" alt="" width="100%"/><br>
+          <img src="images/diagram_tasks.png" alt="" width="100%"/><br>
+        </a>
+      </td>
+      <td class="tg-zv4m" style="vertical-align: middle;">
+        <em style="color:#6699ff">Audio-Visual Object Classification for Human-Robot Collaboration</em><br>
+        <b style="font-weight: bold;">A. Xompero</b>, Y. L. Pang, T. Patten, A. Prabhakar, B. Calli, A. Cavallaro<br>
+        IEEE International Conference on Acoustic, Speech and Signal Processing (ICASSP), Singapore and Virtual, 22-27 May 2022.<br><br>
+        [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_icassp22')"><u>abstract</u></a>]
+        [<a href="https://doi.org/10.48550/arXiv.2203.01977" TARGET = "_blank"><u>arxiv</u></a>]
+        [<a href="https://corsmal.eecs.qmul.ac.uk/challenge.html" TARGET = "_blank"><u>challenge webpage</u></a>]
+        <!-- [<a href="https://youtu.be/yJ51a4e3v-Q" TARGET = "_blank"><u>video</u></a>] -->
+        <!-- [<a href="https://youtu.be/yJ51a4e3v-Q" TARGET = "_blank"><u>poster</u></a>] -->
+        [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_icassp22')"><u>bibtex</u></a>]
+        <p id="abstract_icassp22"  style="display:none;" class="abstract">
+          Human-robot collaboration requires the contactless estimation of the physical properties of containers manipulated by a person, for example while pouring content in a cup or moving a food box. Acoustic and visual signals can be used to estimate the physical properties of such objects, which may vary substantially in shape, material and size, and also be occluded by the hands of the person. To facilitate comparisons and stimulate progress in solving this problem, we present the CORSMAL challenge and a dataset to assess the performance of the algorithms through a set of well-defined performance scores. The tasks of the challenge are the estimation of the mass, capacity, and dimensions of the object (container), and the classification of the type and amount of its content. A novel feature of the challenge is our real-to-simulation framework for visualising and assessing the impact of estimation errors in human-to-robot handovers.
+        </p>
+        <div id="bib_icassp22"  style="display:none;" class="bib pre-white-space">
+         @InProceedings{Xompero2022ICASSP,
+         title = {Audio-Visual Object Classification for Human-Robot Collaboration},
+         author = {Xompero, A. and Pang, Y. L. and Patten, T. and Prabhakar, A. and Calli, B. and Cavallaro, A.},
+         booktitle = {IEEE International Conference on Acoustic, Speech and Signal Processing},
+         address={Singapore},
+         month="22--27~" # MAY,
+         year = {2022},
+       }
+     </div>
+   </td>
+ </tr>
+ <!-- -->
     <tr>
     <td class="tg-km2t" style="vertical-align: text-top;">
       <a href="https://arxiv.org/abs/2107.01309" TARGET = "_blank">
@@ -540,53 +556,63 @@
   the person is occluded, outside the Field of View (FoV), or not facing the sensors.  Experimental results show that the proposed tracker is
   accurate both in 3D and on the image plane. 
 </div>
-<div class="paper-teaser">
-  <img src="images/cviu2016.jpg" alt="[img]">
 </div>
-<div class="paper-data">
-  <em style="color:#6699ff">An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes</em><br>
-  S. Ba, <span class="papercite_highlight">X. Alameda-Pineda</span>, <strong style="font-weight: bold;">A. Xompero</strong>, and R. Horaud<br>
-  Computer Vision and Image Understanding, 2016<br>
-  <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_bacviu')">Abstract</a>
-  &nbsp | &nbsp
-  <a class="papercite_pdf" title="Download" href="http://xavirema.eu/wp-content/papercite-data/pdf/Ba-CVIU-2016.pdf">PDF</a>
-  &nbsp | &nbsp
-  <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_bacviu')">Bibtex</a>
-</div>
-<div id="bib_bacviu"  style="display:none;" class="bib pre-white-space">
-  @ARTICLES{bA2016cviu,
-  title = {An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes},
-  author = {Ba, S. and Alameda-Pineda, X. and Xompero, A. and Horaud, R.},
-  journal = {Computer Vision and Image Understanding},
-  vol={153},
-  num={},
-  pages={64--76},
-  month = apr,
-  year = {2016},
-}
-</div>
-<div id="abstract_bacviu"  style="display:none;" class="abstract">
- Object tracking is an ubiquitous problem that appears in many applications
- such as remote sensing, audio processing, computer vision, human-machine
- interfaces, human-robot interaction, etc.  Although thoroughly investigated
- in  computer  vision,  tracking  a  time-varying  number  of  persons  remains  a
- challenging open problem.  In this paper, we propose an on-line variational
- Bayesian model for multi-person tracking from cluttered visual observations
- provided  by  person  detectors.   The  paper  has  the  following  contributions.
- We propose a variational Bayesian framework for tracking an unknown and
- varying number of persons.  Our model results in a variational expectation-maximization  (VEM)
- algorithm  with  closed-form  expressions  both  for  the
- posterior distributions of the latent variables and for the estimation of the
- model parameters.  The proposed model exploits observations from multiple
- detectors,  and  it  is  therefore  multimodal  by  nature.   Finally,  we  propose
- to  embed  both  object-birth  and  object-visibility  processes  in  an  effort  to
- robustly  handle  temporal  appearances  and  disappearances.   Evaluated  on
- classical  multiple  person  tracking  datasets,  our  method  shows  competitive
- results with respect to state-of-the-art multiple-object tracking algorithms, 
- such as the probability hypothesis density (PHD) filter, among others.
-</div>
+<div style="text-align:left;">
+    Jump: <a href="#journals">Journals</a> | <a href="#conferences">Conferences</a>  | <a href="#workshops">Workshops</a> | <a href="#chapters"> Book chapters</a> | <a href="#thesis">Thesis</a>
+  </div>
 <hr />
-<h2 style="text-align: left;">Book chapters</h2>
+  <div id=workshops>
+  <div>
+      <h2 style="text-align: left;">Workshops</h2>
+    </div>
+    <div>
+      <table class="tg" width="100%">
+        <tr>
+          <td class="tg-km2t" style="vertical-align: text-top;">
+            <a href="https://doi.org/10.48550/arXiv.2208.11661" TARGET = "_blank">
+              <img src="images/xview_iwdsc22.svg" alt="" width="100%"/><br>
+            </a>
+          </td>
+          <td class="tg-zv4m" style="vertical-align: middle;">
+            <em style="color:#6699ff">Cross-Camera View-Overlap Recognition</em><br>
+            <b style="font-weight: bold;">A. Xompero</b>, A. Cavallaro<br>
+            Internation Workshop on Smart Distributed Cameras (IWDSC) at European Conference on Computer Vision (ECCV), 2022.<br><br>
+            [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_iwdsc22')"><u>abstract</u></a>]
+            <!-- [<a href="https://doi.org/10.1109/ACCESS.2022.3166906" TARGET = "_blank"><u>paper</u></a>] -->
+            [<a href="https://doi.org/10.48550/arXiv.2208.11661" TARGET = "_blank"><u>arxiv</u></a>]
+            [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_iwdsc22')"><u>bibtex</u></a>]
+            [<a href="https://www.eecs.qmul.ac.uk/~ax300/xview" TARGET = "_blank"><u>webpage</u></a>]
+            [<a href="https://doi.org/10.5281/zenodo.7235890" TARGET = "_blank"><u>data</u></a>]
+            [<a href="https://github.com/kerolex/CrossCameraViewOverlapRecognition" TARGET = "_blank"><u>code</u></a>]
+            [<a href="https://youtu.be/MoFhI40Wd0s" TARGET = "_blank"><u>video</u></a>]
+            <p id="abstract_iwdsc22"  style="display:none;" class="abstract">
+              We propose a decentralised view-overlap recognition framework that operates across freely moving cameras without the need of a reference 3D map. Each camera independently extracts, aggregates into a hierarchical structure, and shares feature-point descriptors over time. A view overlap is recognised by view-matching and geometric validation to discard wrongly matched views. The proposed framework is generic and can be used with different descriptors. We conduct the experiments on publicly available sequences as well as new sequences we collected with hand-held cameras. We show that Oriented FAST and Rotated BRIEF (ORB) features with Bags of Binary Words within the proposed framework lead to higher precision and a higher or similar accuracy compared to NetVLAD, RootSIFT, and SuperGlue.   
+            </p>
+            <div id="bib_iwdsc22"  style="display:none;" class="bib pre-white-space">
+             @Article{Xompero2022IWDSC,
+             title = {Cross-Camera View-Overlap Recognition},
+             author = {Xompero, A. and and Cavallaro, A.},
+             booktitle = {Proceedings of the European Conference on Computer Vision Workshops},
+             note = {Internation Workshop on Distributed Smart Cameras},
+             address={Online},
+             month="24" # OCT,
+             year = {2022},
+           }
+         </div>
+       </td>
+     </tr>     
+</table>
+</div>
+</div>
+<div style="text-align:left;">
+    Jump: <a href="#journals">Journals</a> | <a href="#conferences">Conferences</a>  | <a href="#workshops">Workshops</a> | <a href="#chapters"> Book chapters</a> | <a href="#thesis">Thesis</a>
+  </div>
+<hr />
+<div id=chapters>
+<div>
+  <h2 style="text-align: left;">Book chapters</h2>  
+</div>
+
 <div>
   <table class="tg" width="100%">
    <tr>
@@ -622,10 +648,15 @@
 </tr>
 </table>
 </div>
-<br>
-<!-- -->
+</div>
+<div style="text-align:left;">
+    Jump: <a href="#journals">Journals</a> | <a href="#conferences">Conferences</a>  | <a href="#workshops">Workshops</a> | <a href="#chapters"> Book chapters</a> | <a href="#thesis">Thesis</a>
+  </div>
 <hr />
-<h2 style="text-align: left;">Thesis</h2>
+<div id=thesis>
+<div>
+  <h2 style="text-align: left;">Thesis</h2>
+</div>
 <h3 style="text-align:left;">PhD</h3>
 <div>
   <table class="tg" width="100%">
@@ -667,7 +698,11 @@
    </tr>
  </table>
 </div>
-
+</div>
+<div style="text-align:left;">
+    Jump: <a href="#journals">Journals</a> | <a href="#conferences">Conferences</a>  | <a href="#workshops">Workshops</a> | <a href="#chapters"> Book chapters</a> | <a href="#thesis">Thesis</a>
+  </div>
+<br><br>
 </div>
 <!-- <div>
   <hr />
@@ -678,5 +713,10 @@
     Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing: Adjunct (UbiComp '16)<br>
   </div> -->
 </div>
+<footer class="site-footer">
+    <p>
+      Copyright 2023 - Alessio Xompero
+    </p>
+</footer>
 </body>
 </html>
