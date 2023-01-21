@@ -122,8 +122,8 @@ nav > ul > li:hover > a > .caret {
 
 
 nav > ul > li > a.active {
-  background-color:  #fff;
-  color: #6699ff;
+  background-color:  #6699ff;
+  color: white;
 }
 
 .subnav .subnavbtn {
