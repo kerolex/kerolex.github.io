@@ -14,7 +14,7 @@
 
 <title>Alessio Xompero</title>
 <meta name="image" property="og:image" content="images/AlessioXompero.JPG">
-<link rel="shortcut icon" href="images/AlessioXompero.JPG" />
+<link rel="shortcut icon" href="images/profile_icon_ax.JPG" />
 <link href = "css/bootstrap.min.css" rel = "stylesheet">
 <link rel="stylesheet" href="css/mystyle.css">
 <link rel="stylesheet" href="css/all.css">
@@ -60,14 +60,14 @@
   </div>
 
   <div id="section">
-    <div class="fixed-content">
+    <div class="vertical-menu-pubs">
       <h3>Publications</h3>
-      <a href="#journals">Journals</a><br>
-      <a href="#conferences">Conferences</a><br>
-      <a href="#workshops">Workshops</a><br>
-      <a href="#pre-prints">Pre-prints</a><br>
-      <a href="#chapters">Book chapters</a><br>
-      <a href="#thesis">Thesis</a><br>
+      <a href="#journals">Journals</a>
+      <a href="#conferences">Conferences</a>
+      <a href="#workshops">Workshops</a>
+      <a href="#pre-prints">Pre-prints</a>
+      <a href="#chapters">Book chapters</a>
+      <a href="#thesis">Thesis</a>
     </div>
     <div class="scrolling-content">
       <!-- <div style="text-align:left;">
@@ -430,121 +430,115 @@
 </div>
 </td>
 </tr>
+  <!-- -->
+  <tr>
+    <td class="tg-km2t" style="vertical-align: text-top;">
+      <a href="projects/icip2018/2018_ICIP_MORBaMultiScaleBinaryDescriptor_Xompero_Lanz_Cavallaro.pdf" TARGET = "_blank">
+        <img src="images/MORB.png" alt="ICIP2018" width=100%/>
+      </a>
+    </td>
+    <td class="tg-zv4m" style="vertical-align: top;">
+      <em style="color:#6699ff">MORB: a multi-scale binary descriptor</em><br>
+      <strong style="font-weight: bold;">A. Xompero</strong>, O. Lanz, and A. Cavallaro<br> 
+      IEEE International Conference on Image Processing, Athens (Greece), October, 7-10, 2018<br><br>
+      [<a class="papercite_pdf" title="Abstract" onclick="AppearAbstract('abstract_morb')"><u>abstract</u></a>]
+      [<a title="Download PDF" href="projects/icip2018/2018_ICIP_MORBaMultiScaleBinaryDescriptor_Xompero_Lanz_Cavallaro.pdf" TARGET = "_blank"><u>pdf</u></a>]
+      [<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_morb')"><u>bibtex</u></a>]      
+      [<a title="Dataset" href="projects/icip2018/2018_ICIP_poster_Xompero_Lanz_Cavallaro.pdf" TARGET = "_blank"><u>poster</u></a>] 
+      <p id="abstract_morb"  style="display:none;" class="abstract">
+       Local  image  features  play  an  important  role  in  matching  images under different geometric and photometric transformations. However, as the scale difference across views increases, the  matching performance may considerably decrease.   To address this problem we propose MORB, a multi-scale binary descriptor that is based on ORB and that improves the accuracy of feature matching under scale changes.  MORB describes an image patch at different scales using an  oriented  sampling  pattern  of  intensity  comparisons  in  a  predefined set of pixel pairs.  We also propose a matching strategy that estimates the cross-scale match between MORB descriptors across views.  Experiments show that MORB outperforms state-of-the-art binary descriptors under several transformations.
+     </p>
+     <div id="bib_morb"  style="display:none;" class="bib pre-white-space">
+      INPROCEEDINGS{Xompero2018ICIP_MORB,
+        title = {{MORB: a multi-scale binary descriptor}},
+        author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
+        booktitle = ICIP,
+        address = {Athens, Greece},
+        month = "7--10~" # oct,
+        year = {2018}
+      }
+  </div>
+  </td>
+  </tr>
+  <!-- -->
+  <tr>
+    <td class="tg-km2t" style="vertical-align: text-top;">
+      <a href="projects/fusion2018/2018_FUSION_MultiCameraMatchingOfSpatioTemporalBinaryFeatures_Xompero_Lanz_Cavallaro.pdf" TARGET = "_blank">
+        <img src="images/fusion18_tds.png" alt="ICIP2018" width=100%/>
+      </a>
+    </td>
+    <td class="tg-zv4m" style="vertical-align: top;">
+      <em style="color:#6699ff">Multi-camera Matching of Spatio-Temporal Binary Features</em><br>
+      <strong style="font-weight: bold;">A. Xompero</strong>, O. Lanz, and A. Cavallaro<br> 
+      International Conference on Information Fusion, Cambridge (United Kingdom), July, 10-13, 2018<br><br>
+      [<a class="papercite_pdf" title="Abstract" onclick="AppearAbstract('abstract_fusion')"><u>abstract</u></a>]
+      [<a title="Download PDF" href="projects/fusion2018/2018_FUSION_MultiCameraMatchingOfSpatioTemporalBinaryFeatures_Xompero_Lanz_Cavallaro.pdf" TARGET = "_blank"><u>pdf</u></a>]
+      [<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_fusion')"><u>bibtex</u></a>]      
+      [<a title="Dataset" href="http://cis.eecs.qmul.ac.uk/2018SummerSchool/AlessioXompero_CIS_SummerSchool2018.pdf" TARGET = "_blank"><u>slides</u></a>] 
+      <p id="abstract_fusion"  style="display:none;" class="abstract">
+        Local image features are generally robust to different geometric and 
+        photometric transformations on planar surfaces or under narrow baseline views. 
+        However, the matching performance decreases considerably across cameras with 
+        unknown poses separated by a wide baseline. To address this problem, we 
+        accumulate temporal information within each view by tracking local binary 
+        features, which encode intensity comparisons of pixel pairs in an image patch. 
+        We then encode the spatio-temporal features into fixed-length binary 
+        descriptors by selecting temporally dominant binary values. We complement the 
+        descriptor with a binary vector that identifies intensity comparisons that are 
+        temporally unstable. Finally, we use this additional vector to ignore the 
+        corresponding binary values in the   fixed-length binary descriptor when 
+        matching the features across cameras. We analyse the performance of the 
+        proposed approachand compare it with baselines.
+     </p>
+     <div id="bib_fusion"  style="display:none;" class="bib pre-white-space">
+      @INPROCEEDINGS{Xompero2018FUSION,
+        title = {{Multi-camera Matching of Spatio-Temporal Binary Features}},
+        author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
+        booktitle = FUSION,
+        address = {Cambridge, UK},
+        month = "10--13~" # jul,
+        year = {2018}
+      }
+  </div>
+  </td>
+  </tr>
+  <!-- -->
+  <tr>
+    <td class="tg-km2t" style="vertical-align: text-top;">
+      <a href="http://www.eecs.qmul.ac.uk/~andrea/papers/2018_ICASSP_3DMouthTracking_Qian_Xompero_Brutti_Lanz_Omologo_Cavallaro.pdf" TARGET = "_blank">
+        <img src="images/icassp17.png" alt="ICASSP2017" width=100%/>
+      </a>
+    </td>
+    <td class="tg-zv4m" style="vertical-align: top;">
+      <em style="color:#6699ff">3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera</em><br>
+      X. Qian, <strong style="font-weight: bold;">A. Xompero</strong>, A. Brutti, O. Lanz, M. Omologo, and A. Cavallaro<br>
+      IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Calgary (Canada), April, 15-20, 2018<br><br>
+      [<a class="papercite_pdf" title="Abstract" onclick="AppearAbstract('abstract_qianicassp')"><u>abstract</u></a>]
+      [<a title="Download PDF" href="http://www.eecs.qmul.ac.uk/~andrea/papers/2018_ICASSP_3DMouthTracking_Qian_Xompero_Brutti_Lanz_Omologo_Cavallaro.pdf" TARGET = "_blank"><u>pdf</u></a>]
+      [<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_qianicassp')"><u>bibtex</u></a>]      
+      <p id="abstract_qianicassp"  style="display:none;" class="abstract">
+         We address the 3D audio-visual mouth tracking problem when using a compact platform with co-located audio-visual sensors, without a
+        depth camera.  In particular, we propose a multi-modal particle filter that combines a face detector and 3D hypothesis mapping to the
+        image plane. The audio likelihood computation is assisted by video, which relies on a GCC-PHAT based acoustic map. By combining
+        audio and video inputs, the proposed approach can cope with a reverberant and noisy environment, and can deal with situations when
+        the person is occluded, outside the Field of View (FoV), or not facing the sensors.  Experimental results show that the proposed tracker is
+        accurate both in 3D and on the image plane.
+      </p>
+     <div id="bib_qianicassp"  style="display:none;" class="bib pre-white-space">
+      @INPROCEEDINGS{Qian2018ICASSP,
+        title = {{3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera}},
+        author = {Qian, Xinyuan and Xompero, Alessio and Brutti, Alessio and Lanz, Oswald and Omologo, Maurizio and Cavallaro, Andrea},
+        booktitle = ICASSP,
+        address = {Calgary, Canada},
+        month = "15--20~" # apr,
+        year = {2018}
+      }
+  </div>
+  </td>
+  </tr>
 </table>
 <br>
 </div>
-</div>
-</div>
-
-<div id="section">
-  <div class="paper-teaser">
-   <img src="images/MORB.png" alt="[img]">
- </div>
- <div class="paper-data">   
-  <em style="color:#6699ff">MORB: a multi-scale binary descriptor</em> <br>
-  <strong style="font-weight: bold;">A. Xompero</strong>, O. Lanz, and A. Cavallaro<br> 
-  IEEE International Conference on Image Processing, Athens (Greece), October, 7-10, 2018<br>
-  <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_morb')">Abstract</a>
-  &nbsp | &nbsp
-  <a class="papercite_pdf" title="Download" href="projects/icip2018/2018_ICIP_MORBaMultiScaleBinaryDescriptor_Xompero_Lanz_Cavallaro.pdf">PDF</a>
-  &nbsp | &nbsp
-  <a class="papercite_pdf" title="Download" href="projects/icip2018/2018_ICIP_poster_Xompero_Lanz_Cavallaro.pdf">Poster</a>
-  &nbsp | &nbsp
-  <a class="papercite_pdf" title="Cite bib" onclick="AppearBib('bib_morb')">Bibtex</a>
-</div>
-<div id="abstract_morb" style="display:none;" class="abstract">
-  Local  image  features  play  an  important  role  in  matching  images
-  under different geometric and photometric transformations.   How-
-  ever,  as  the  scale  difference  across  views  increases,  the  matching
-  performance may considerably decrease.   To address this problem
-  we propose MORB, a multi-scale binary descriptor that is based on
-  ORB and that improves the accuracy of feature matching under scale
-  changes.  MORB describes an image patch at different scales using
-  an  oriented  sampling  pattern  of  intensity  comparisons  in  a  prede-
-  fined set of pixel pairs.  We also propose a matching strategy that
-  estimates the cross-scale match between MORB descriptors across
-  views.  Experiments show that MORB outperforms state-of-the-art
-  binary descriptors under several transformations.
-</div>
-<div id="bib_morb"  style="display:none;" class="bib pre-white-space">@INPROCEEDINGS{Xompero2018ICIP_MORB,
-  title = {{MORB: a multi-scale binary descriptor}},
-  author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
-  booktitle = ICIP,
-  address = {Athens, Greece},
-  month = "7--10~" # oct,
-  year = {2018}
-}
-</div>
-
-<br>
-<div>
-  <div class="paper-teaser">
-    <img src="images/fusion18_tds.png" alt="[img]">
-  </div>
-  <div class="paper-data">
-    <em style="color:#6699ff">Multi-camera Matching of Spatio-Temporal Binary Features</em><br>
-    <strong style="font-weight: bold;">A. Xompero</strong>, O. Lanz, and A. Cavallaro<br>
-    International Conference on Information Fusion, Cambridge (United Kingdom), July, 10-13, 2018. <br>
-    <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_fusion')">Abstract</a>
-    &nbsp | &nbsp
-    <a class="papercite_pdf" title="Download" href="projects/fusion2018/2018_FUSION_MultiCameraMatchingOfSpatioTemporalBinaryFeatures_Xompero_Lanz_Cavallaro.pdf">PDF</a>
-    &nbsp | &nbsp
-    <a class="papercite_pdf" title="Download" href="http://cis.eecs.qmul.ac.uk/2018SummerSchool/AlessioXompero_CIS_SummerSchool2018.pdf">Slides</a>
-    &nbsp | &nbsp
-    <a class="papercite_pdf" title="Cite bib" onclick="AppearBib('bib_fusion')">Bibtex</a>
-  </div>
-  <div id="bib_fusion"  style="display:none;" class="bib pre-white-space">
-    @INPROCEEDINGS{Xompero2018FUSION,
-    title = {{Multi-camera Matching of Spatio-Temporal Binary Features}},
-    author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
-    booktitle = FUSION,
-    address = {Cambridge, UK},
-    month = "10--13~" # jul,
-    year = {2018}
-  }
-</div>
-<p id="abstract_fusion"  style="display:none;" class="abstract">
-  Local  image  features  are  generally  robust  to  different  geometric and  photometric  transformations  on  planar surfaces or under narrow  
-  baseline  views.  However,  the  matching  performance  decreases considerably  across  cameras  with unknown  poses  separated  by  a
-  wide  baseline.  To  address  this problem, we accumulate temporal information within each view by  tracking  local  binary  features,  
-  which  encode  intensity  comparisons  of  pixel  pairs  in  an  image patch.  We then  encode  the spatio-temporal  features  into  fixed-length
-  binary  descriptors  by selecting  temporally  dominant  binary  values. We complement the descriptor with a binary vector that identifies intensity
-  comparisons  that  are  temporally  unstable.  Finally, we use this additional vector to ignore the corresponding binary values in the
-  fixed-length binary descriptor when matching the features across cameras. We analyse the performance of the proposed approachand  compare it with baselines. 
-</p>
-</div>
-<br>
-<div>
-  <div class="paper-teaser">
-    <img src="images/icassp17.png" alt="[img]">
-  </div>
-  <div class="paper-data">
-    <em style="color:#6699ff">3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera</em><br>
-    X. Qian, <strong style="font-weight: bold;">A. Xompero</strong>, A. Brutti, O. Lanz, M. Omologo, and A. Cavallaro<br>
-    International Conference on Acoustics, Speech and Signal Processing (ICASSP), Calgary (Canada), April, 15-20, 2018<br>
-    <a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_qianicassp')">Abstract</a>
-    &nbsp | &nbsp
-    <a class="papercite_pdf" title="Download" href="http://www.eecs.qmul.ac.uk/~andrea/papers/2018_ICASSP_3DMouthTracking_Qian_Xompero_Brutti_Lanz_Omologo_Cavallaro.pdf">PDF</a>
-    &nbsp | &nbsp
-    <a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_qianicassp')">Bibtex</a>
-  </div>
-  <div id="bib_qianicassp"  style="display:none;" class="bib pre-white-space">
-    @INPROCEEDINGS{Qian2018ICASSP,
-    title = {{3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera}},
-    author = {Qian, Xinyuan and Xompero, Alessio and Brutti, Alessio and Lanz, Oswald and Omologo, Maurizio and Cavallaro, Andrea},
-    booktitle = ICASSP,
-    address = {Calgary, Canada},
-    month = "15--20~" # apr,
-    year = {2018}
-  }
-</div>
-<div id="abstract_qianicassp"  style="display:none;" class="abstract">
-  We address the 3D audio-visual mouth tracking problem when using a compact platform with co-located audio-visual sensors, without a
-  depth camera.  In particular, we propose a multi-modal particle filter that combines a face detector and 3D hypothesis mapping to the
-  image plane. The audio likelihood computation is assisted by video, which relies on a GCC-PHAT based acoustic map. By combining
-  audio and video inputs, the proposed approach can cope with a reverberant and noisy environment, and can deal with situations when
-  the person is occluded, outside the Field of View (FoV), or not facing the sensors.  Experimental results show that the proposed tracker is
-  accurate both in 3D and on the image plane. 
 </div>
 </div>
 <hr />
@@ -710,7 +704,7 @@
     <tr>
       <td class="tg-km2t" style="vertical-align: text-top;">
         <a href="projects/MasterThesis_ViProT.pdf" TARGET = "_blank">
-          <img src="" alt="Master Thesis" width=100%/>
+          <img src="images/viprot_demo.gif" alt="Master Thesis" width=100%/>
         </a>
       </td>
       <td class="tg-zv4m" style="vertical-align: top;">
