@@ -689,3 +689,9 @@ h2{
   background-color: #6699ff; /* Grey background color */
   color: white;
 }
+
+
+
+img {
+    pointer-events: none;
+}
