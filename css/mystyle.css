@@ -518,6 +518,7 @@ h2{
     position: sticky;
     /*height:20px;*/
     top:75px;
+    overflow-y: auto;
   }
 
   .scrolling-content {
