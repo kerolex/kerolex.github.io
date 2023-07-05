@@ -524,8 +524,11 @@ h2{
 }
 
 .scrolling-content {
-  width:90%;
+  width:75%;
   overflow: hidden;
+  margin-top: 0px;
+  margin:0 auto;
+  white-space: break-all;
 }
 
 
