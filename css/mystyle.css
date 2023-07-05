@@ -1,15 +1,12 @@
 body {
+  background-color: #ffffff;
   padding-top: 0px;
   padding-bottom: 10px;
-  background-color: #ADABAB;
-}
-
-body {
-  background-color: #ffffff;
   color: #222;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   font-size: 15px;
+
 }
 
 .form-signin {
@@ -505,48 +502,51 @@ h2{
 /*    top:75px;*/
   }
 
-  .fixed-content {
-    float:left;
-    width:25%;
-    padding-top:30px;
-    padding-right:20px;
-    padding-left:20px;
-    /*height: 60%;*/
-    /*position: relative;*/
-    /*overflow: hidden;*/
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    /*height:20px;*/
-    top:75px;
-    overflow-y: auto;
-  }
+#about::after {
+  content: "";
+  clear: both;
+}
 
-  .scrolling-content {
-    width:75%;
-    overflow: hidden;
-  }
+.fixed-content {
+  float:left;
+  width:25%;
+  padding-top:30px;
+  padding-right:20px;
+  padding-left:20px;
+  /*height: 60%;*/
+  /*position: relative;*/
+  /*overflow: hidden;*/
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  /*height:20px;*/
+  top:75px;
+  overflow-y: auto;
+}
 
-  .scrolling-content .video-container {
-  position: relative;
+.scrolling-content {
+  width:90%;
+  overflow: hidden;
+}
+
+
+.scrolling-content .video-container {
+/*  position: relative;*/
   width:100%;
   /*padding-bottom: 56.25%; /* 16:9 */*/
   height: 0;
 }
-  }
-
-  .video-container iframe{
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    /*height: 100%;*/
-  }
-
-  #about::after {
-  content: "";
-  clear: both;
 }
+
+.video-container iframe{
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  /*height: 100%;*/
+}
+
+
 
 
 
