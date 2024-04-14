@@ -66,11 +66,11 @@
   <div id="section">
     <div class="vertical-menu-pubs">
       <h3>Publications</h3>
+      <a href="#chapters">Book chapters</a>
       <a href="#journals">Journals</a>
       <a href="#conferences">Conferences</a>
       <a href="#workshops">Workshops</a>
       <a href="#pre-prints">Pre-prints</a>
-      <a href="#chapters">Book chapters</a>
       <a href="#thesis">Thesis</a>
     </div>
     <div class="scrolling-content">
@@ -78,6 +78,48 @@
         Jump: <a href="#journals">Journals</a> | <a href="#conferences">Conferences</a>  | <a href="#workshops">Workshops</a> | <a href="#chapters"> Book chapters</a> | <a href="#thesis">Thesis</a>
       </div>
       <hr /> -->
+      <div id=chapters>
+  <div>
+    <h2 style="text-align: left;">Book chapters</h2>  
+  </div>
+  <div>
+    <table class="tg" width="100%">
+     <tr>
+      <td class="tg-km2t" style="vertical-align: text-top;">
+        <a href="https://doi.org/10.1016/B978-0-12-822109-9.00024-2" TARGET = "_blank">
+          <img src="images/visualadversarial.png" alt="CHAPTER22" width=100%/>
+        </a>
+      </td>
+      <td class="tg-zv4m" style="vertical-align: middle;">
+        <em style="color:#6699ff">Chapter 15 - Visual adversarial attacks and defenses</em><br>
+        C. Oh, <b style="font-weight: bold;">A. Xompero</b>, A. Cavallaro<br>
+        In Advanced Methods And Deep Learning In Computer Vision,<br>
+        Editors: E. R. Davies, Matthew Turk, 1st Edition, Elsevier, pages 511-543, November 2021.<br><br>
+        [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_chapter22')"><u>abstract</u></a>]
+        [<a href="https://doi.org/10.1016/B978-0-12-822109-9.00024-2" TARGET = "_blank"><u>chapter</u></a>]
+        [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_chapter22')"><u>bibtex</u></a>]
+        [<a href="https://cis.eecs.qmul.ac.uk/visualadversarial.html" TARGET = "_blank"><u>webpage</u></a>]
+        <p id="abstract_chapter22"  style="display:none;" class="abstract">
+          Visual adversarial examples are images and videos purposefully perturbed to mislead machine learning models. This chapter presents an overview of methods that craft adversarial perturbations to generate visual adversarial examples for image classification, object detection, motion estimation and video recognition tasks. We define the key properties of an adversarial attack and the types of perturbations that an attack generates. We then analyze the main design choices for methods that craft adversarial attacks for images and videos, and discuss the knowledge they use of the target model. Finally, we review defense mechanisms that increase the robustness of machine learning models to adversarial attacks or detect manipulated input data. 
+        </p>
+        <div id="bib_chapter22"  style="display:none;" class="bib pre-white-space">
+         @incollection{Oh2022VisualAdversarial,
+         title = {Chapter 15 - Visual adversarial attacks and defenses},
+         author = {Changjae Oh and Alessio Xompero and Andrea Cavallaro},
+         booktitle = {Advanced Methods and Deep Learning in Computer Vision},
+         editor = {E.R. Davies and Matthew A. Turk},
+         series = {Computer Vision and Pattern Recognition},
+         publisher = {Academic Press},
+         pages = {511-543},
+         year = {2022},
+       }
+     </div>
+   </td>
+ </tr>
+</table>
+</div>
+</div>
+<hr />
       <div id=journals>
         <div>
           <h2 style="text-align: left;">Journals</h2>  
@@ -560,6 +602,46 @@
       <tr>
         <td class="tg-km2t" style="vertical-align: text-top;">
           <a href="" TARGET = "_blank">
+            <img src="" alt="" width="100%"/><br>
+          </a>
+        </td>
+        <td class="tg-zv4m" style="vertical-align: middle;">
+          <em style="color:#6699ff">Explaining models relating objects and privacy</em><br>
+          <b style="font-weight: bold;">A. Xompero</b>, M. Bontonou, J. Arbona, E. Benetos, A. Cavallaro<br>
+          The 3rd Explainable AI for Computer Vision (XAI4CV) Workshop at the IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR), 2024.<br><br>
+          [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_cvpr2024')"><u>abstract</u></a>]
+          <!-- [<a href="https://openaccess.thecvf.com/content/ICCV2023W/ACVR/papers/Apicella_Affordance_Segmentation_of_Hand-Occluded_Containers_from_Exocentric_Images_ICCVW_2023_paper.pdf" TARGET = "_blank"><u>paper</u></a>] -->
+          <!-- [<a href="https://arxiv.org/abs/2308.11233" TARGET = "_blank"><u>arxiv</u></a>] -->
+          [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_cvpr2024')"><u>bibtex</u></a>]
+          <!-- [<a href="https://apicis.github.io/projects/acanet.html" TARGET = "_blank"><u>webpage</u></a>] -->
+          <!-- [<a href="https://doi.org/10.5281/zenodo.5085800" TARGET = "_blank"><u>CHOC-AFF data</u></a>] -->
+          [<a href="https://github.com/graphnex/ig-privacy" TARGET = "_blank"><u>code</u></a>]
+          <!-- [<a href="https://youtu.be/MoFhI40Wd0s" TARGET = "_blank"><u>video</u></a>] -->
+          <!-- [<a href="https://doi.org/10.5281/zenodo.8364196" TARGET = "_blank"><u>trained model</u></a>] -->
+          <p id="abstract_cvpr2024"  style="display:none;" class="abstract">
+            Accurately predicting whether an image is private before sharing it online is difficult due to the vast variety of content and the subjective nature of privacy itself. 
+            In this paper, we evaluate privacy models that use objects extracted from an image to determine why the image is predicted as private. 
+            To explain the decision of these models, we use feature-attribution to identify and quantify which objects (and which of their features) are more relevant to privacy classification with respect to a reference input (i.e., no objects localised in an image) predicted as public. 
+            We show that the presence of the person category and its cardinality is the main factor for the privacy decision. 
+            Therefore, these models mostly fail to identify private images depicting documents with sensitive data, vehicle ownership, and internet activity, or public images with people (e.g., an outdoor concert or people walking in a public space next to a famous landmark). 
+            As baselines for future benchmarks, we also devise two logic strategies that are based on the person presence and cardinality and achieve comparable classification performance of the privacy models on an existing dataset for image privacy.
+          </p>
+          <div id="bib_cvpr2024"  style="display:none;" class="bib pre-white-space">
+           @Article{Xompero2024CPVRW_XAI4CV,
+           title = {Explaining models relating objects and privacy},
+           author={Xompero, A. and Bontonou, M. and Arbona, J. and Benetos, E. and Cavallaro, A.},
+           booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision and Pattern Recognition Workshops},
+           note = {The 3rd Explainable AI for Computer Vision (XAI4CV) Workshop},
+           month="18" # JUN,
+           year = {2024},
+         }
+       </div>
+     </td>
+   </tr>     
+   <!-- -->
+      <tr>
+        <td class="tg-km2t" style="vertical-align: text-top;">
+          <a href="" TARGET = "_blank">
             <img src="images/acvr2023.png" alt="" width="100%"/><br>
           </a>
         </td>
@@ -671,48 +753,6 @@
      </td>
    </tr>     
  </table>
-</div>
-</div>
-<hr />
-<div id=chapters>
-  <div>
-    <h2 style="text-align: left;">Book chapters</h2>  
-  </div>
-  <div>
-    <table class="tg" width="100%">
-     <tr>
-      <td class="tg-km2t" style="vertical-align: text-top;">
-        <a href="https://doi.org/10.1016/B978-0-12-822109-9.00024-2" TARGET = "_blank">
-          <img src="images/visualadversarial.png" alt="CHAPTER22" width=100%/>
-        </a>
-      </td>
-      <td class="tg-zv4m" style="vertical-align: middle;">
-        <em style="color:#6699ff">Chapter 15 - Visual adversarial attacks and defenses</em><br>
-        C. Oh, <b style="font-weight: bold;">A. Xompero</b>, A. Cavallaro<br>
-        In Advanced Methods And Deep Learning In Computer Vision,<br>
-        Editors: E. R. Davies, Matthew Turk, 1st Edition, Elsevier, pages 511-543, November 2021.<br><br>
-        [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_chapter22')"><u>abstract</u></a>]
-        [<a href="https://doi.org/10.1016/B978-0-12-822109-9.00024-2" TARGET = "_blank"><u>chapter</u></a>]
-        [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_chapter22')"><u>bibtex</u></a>]
-        [<a href="https://cis.eecs.qmul.ac.uk/visualadversarial.html" TARGET = "_blank"><u>webpage</u></a>]
-        <p id="abstract_chapter22"  style="display:none;" class="abstract">
-          Visual adversarial examples are images and videos purposefully perturbed to mislead machine learning models. This chapter presents an overview of methods that craft adversarial perturbations to generate visual adversarial examples for image classification, object detection, motion estimation and video recognition tasks. We define the key properties of an adversarial attack and the types of perturbations that an attack generates. We then analyze the main design choices for methods that craft adversarial attacks for images and videos, and discuss the knowledge they use of the target model. Finally, we review defense mechanisms that increase the robustness of machine learning models to adversarial attacks or detect manipulated input data. 
-        </p>
-        <div id="bib_chapter22"  style="display:none;" class="bib pre-white-space">
-         @incollection{Oh2022VisualAdversarial,
-         title = {Chapter 15 - Visual adversarial attacks and defenses},
-         author = {Changjae Oh and Alessio Xompero and Andrea Cavallaro},
-         booktitle = {Advanced Methods and Deep Learning in Computer Vision},
-         editor = {E.R. Davies and Matthew A. Turk},
-         series = {Computer Vision and Pattern Recognition},
-         publisher = {Academic Press},
-         pages = {511-543},
-         year = {2022},
-       }
-     </div>
-   </td>
- </tr>
-</table>
 </div>
 </div>
 <hr />
