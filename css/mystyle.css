@@ -53,16 +53,84 @@ body {
   border-color:#017572;
 }
 
-nav {
-  background-color: #fff;
+/****************************************************************************/
+
+.logo {
+  float:left;
+  width: 15%;
+  background-color: white;
   border: 0px solid #dedede;
-  border-radius: 4px;
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
   color: #6699ff;
   display: block;
-  margin: 8px auto;
+  margin: 0px auto;
   overflow: hidden;
-  width: 75%;
+}
+
+.logo a{
+  font-weight: bold;
+  font-size: 13.0pt;
+  padding: 5px 20px;
+}
+
+.logo > a {
+  color: #6699ff;
+  display: block;
+  line-height: 56px;
+  padding: 0 24px;
+  text-decoration: none;
+  width:auto;
+  white-space: nowrap;
+}
+
+.logo a > .caret {
+  border-top: 4px solid #aaa;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+  display: inline-block;
+  height: 0;
+  width: 0;
+  vertical-align: middle;
+
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+
+.logo:hover {
+  background-color: #6699ff;
+}
+
+.logo:hover > a {
+  color: rgb( 255, 255, 255 );
+}
+
+.logo:hover > a > .caret {
+  border-top-color: rgb( 255, 255, 255 );
+}
+
+
+/*.logo > a.active {
+  background-color:  #6699ff;
+  color: white;
+}*/
+
+/****************************************************************************/
+
+nav {
+/*  background-color: #fff;*/
+  background-color: white;
+  border: 0px solid #dedede;
+/*  border-radius: 4px;*/
+/*  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);*/
+  color: #6699ff;
+  display: block;
+  margin: 0px auto;
+  overflow: hidden;
+  width: 80%;
+  float:left;
+  text-align: right;
 }
 
 nav ul {
@@ -82,11 +150,13 @@ nav ul li {
 }
 
 nav > ul > li > a {
-  color: #aaa;
+  color: #6699ff;
   display: block;
   line-height: 56px;
   padding: 0 24px;
   text-decoration: none;
+  width:auto;
+  white-space: nowrap;
 }
 
 nav > ul > li > a > .caret {
@@ -106,7 +176,7 @@ nav > ul > li > a > .caret {
 }
 
 nav > ul > li:hover {
-  background-color: #6699ff;
+  background-color: white;
 }
 
 nav > ul > li:hover > a {
@@ -123,64 +193,79 @@ nav > ul > li > a.active {
   color: white;
 }
 
-.subnav .subnavbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: #aaa;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-
+/****************************************************************************/
+/* The subnavigation menu */
 .subnav {
+  float: left;
+  overflow: hidden;
   border: 0px solid #dedede;
-  border-radius: 4px;
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+/*  border-radius: 4px;*/
+/*  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);*/
   color: #6699ff;
-  margin: 8px auto;
+  margin: 0px auto;
+  text-align:left;
 }
 
-nav > ul > li:hover > a > .subnav {
-  border-top-color: rgb( 255, 255, 255 );
-}
-
-nav > ul > li:hover > a > .subnav {
-  color: rgb( 255, 255, 255 );
-}
-
+/* Style the subnav content - positioned absolute */
 .subnav-content {
   display: none;
   position: absolute;
-/*  left: 0;*/
   background-color: #6699ff;
-  width: 50%;
   z-index: 1;
   border: 0px solid #dedede;
   border-radius: 4px;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-  color: #aaa;
-/*  margin: 8px auto;*/
-}
-
-.subnav-content a {
-  float: left;
-  color: #aaa;
-  line-height: 40px;
-  padding: 0 24px;
-  text-decoration: none;
-}
-
-.subnav-content a:hover {
-  background-color: black;
+  padding: 5px 0 5px 0;
   color: white;
 }
 
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+}
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+/*  background-color: #eee;*/
+/*  color: black;*/
+  text-decoration: underline;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
 .subnav:hover .subnav-content {
   display: block;
 }
+
+nav > ul > li > .subnav >a {
+  color: #6699ff;
+  display: block;
+  line-height: 56px;
+  padding: 0 24px 0px;
+  text-decoration: none;
+  width:auto;
+}
+
+nav > ul > li > .subnav > a > .caret {
+  border-top: 4px solid #aaa;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+  display: inline-block;
+  height: 0;
+  width: 0;
+  vertical-align: middle;
+  width:auto;
+
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+
+/****************************************************************************/
+
 
 div.paper-teaser {
 	float: left;
@@ -445,15 +530,16 @@ a.reversef<i class="fas fa-fw fa-envelope" aria-hidden="true" style="padding-rig
 
 
 #menu {
-  width: 100%;
-  text-align: center;
+  width: 75%;
+  text-align: left;
   margin-top: 0px;
   margin:0 auto;
   white-space: break-all;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  background: #fff;
+  background-color: white;
+  overflow: visible;
 }
 
 
@@ -464,6 +550,7 @@ a.reversef<i class="fas fa-fw fa-envelope" aria-hidden="true" style="padding-rig
   margin-top: 0px;
   margin:0 auto;
   white-space: break-all;
+  overflow: hidden;
 }
 
 h2{
@@ -494,7 +581,7 @@ h2{
     margin-top: 0px;
     margin:0 auto;
     white-space: break-all;
-    /*overflow: hidden;*/
+    overflow: hidden;
     /*position: -webkit-sticky; /* Safari */*/
     /*position: sticky;*/
 /*    position: relative;*/
