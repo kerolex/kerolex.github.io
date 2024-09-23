@@ -12,18 +12,18 @@
 		gtag('config', 'UA-139569814-1');
 	</script>
 
-	<title>Alessio Xompero's Personal Website</title>
+	<title>Alessio Xompero, PhD</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="image" property="og:image" content="images/AlessioXompero.JPG">
-	
-	<link rel="shortcut icon" href="images/profile_icon_ax.JPG" />
 
-	<link href = "css/bootstrap.min.css" rel = "stylesheet">
+	<link rel="shortcut icon" href="images/profile_icon_ax.JPG" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css" >
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="css/mystyle.css">
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/academicons.css">
-
+	
 	<style>
 	h2{
 		text-align: left;
@@ -69,56 +69,48 @@
       <a href="index.html" class="active"><b>Alessio Xompero, Ph.D.</b></a>     
     </div>    
     <nav>
-      <ul>
-        <!-- <li><a href="index.html" class="active"><b style="font-weight: bold;font-size: 13.0pt;padding-right:20px">Alessio Xompero, Ph.D.</b></a>
-        </li> -->       
-        <li>
-          <div class="subnav">
-            <a class="active">Research</a>
-            <div class="subnav-content">
-              <a href="publications.html">Publications</a><br>
-              <a href="data.html">Data & Code</a><br>
-              <a href="projects.html">Projects</a><br>
-              <a href="talks.html">Talks</a>
-            </div>
-        </div>
-      </li>
-      <li>
-        <div class="subnav">
-          <a>Services</a>
-            <div class="subnav-content">
-              <a href="teaching.html">Teaching</a><br>
-              <a href="services.html">Reviewing</a>
-            </div>
-        </div>
-      </li>
-      <li>
-        <div class="subnav">
-          <a>News</a>
-            <div class="subnav-content">
-              <a href="news.html">All news</a><br>
-              <a href="blog.html">Blog</a>
-            </div>
-        </div>
-      </li>
-      <li>
-        <div class="subnav">
-          <a>About</a>
-            <div class="subnav-content">
-              <a href="bio.html">Biography</a>
-            </div>
-        </div>
-      </li>
-        <!-- <li><a href="publications.html">Publications</a></li> -->
-            <!-- <li><a href="talks.html">Talks</a></li> -->
-            <!-- <li><a href="data.html">Data & Code</a></li> -->
-            <!-- <li><a href="teaching.html">Teaching</a></li> -->
-            <!-- <li><a href="services.html">Services</a></li> -->
-            <!-- <li><a href="projects.html">Projects</a></li> -->
-            <!-- <li><a href="blog.html">Blog</a></li> -->
-            <!-- <li><a href="bio.html">Biography</a></li> -->
-      </ul>
-    </nav>
+			<ul>			
+			  <li>
+			  	<div class="subnav">
+				    <a >Research</a>
+				    <div class="subnav-content">
+				    	<a href="publications.html">Publications</a><br>
+					    <a href="data.html">Data</a><br>
+					    <a href="software.html">Software</a><br>
+					    <a href="projects.html">Projects</a><br>
+					    <a href="talks.html">Talks</a>
+				    </div>
+				</div>
+			</li>
+			<li>
+				<div class="subnav">
+					<a>Services</a>
+				    <div class="subnav-content">
+				    	<a href="services/teaching.html">Teaching</a><br>
+				    	<a href="services/reviewing.html">Reviewing</a><br>
+				    	<a href="services/openscience.html">Open Science</a>
+				    </div>
+				</div>
+			</li>
+			<li>
+				<div class="subnav">
+					<a>News</a>
+				    <div class="subnav-content">
+				    	<a href="news.html">All news</a><br>
+				    	<a href="blog.html">Blog</a>
+				    </div>
+				</div>
+			</li>
+			<li>
+				<div class="subnav">
+					<a>About</a>
+				    <div class="subnav-content">
+				    	<a href="bio.html">Biography</a>
+				    </div>
+				</div>
+			</li>
+			</ul>
+		</nav>
   </div>
 
 
@@ -254,84 +246,6 @@
 				<br>
 			</div>
 		</div>
-		<div id="about">
-		<h2> Software</h2>
-		<p>
-			A list of software that I released or contributed to. 
-		</p>
-		<table class="tg" width="100%">
-				<tr>
-					<td class="tg-km2t" style="vertical-align: text-top;">
-						<a href="https://github.com/kerolex/CrossCameraViewOverlapRecognition" TARGET = "_blank">
-							<div class="imglnews" style="border:0"><img src="https://kerolex.github.io/images/xview_iwdsc22.svg" alt="[img]" width="100%" style="vertical-align: middle;"></div>			  
-								</a>
-							</td>
-							<td class="tg-zv4m" style="vertical-align: top;">
-								<em style="color:#6699ff">Cross-Camera View-Overlap Recognition</em><br><br>
-								Official GitHub repository of the code for the work on Cross-Camera View-Overlap Recognition. The software include the developed framework in C++ and ZeroMQ, the evaluation scripts, and the Python code for the alternative frameworks under comparison.
-								<br><br>
-								[<a title="Code" href="https://github.com/kerolex/CrossCameraViewOverlapRecognition" TARGET = "_blank"><u>code</u></a>]
-								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_xview')"><u>bibtex</u></a>]      
-								<div id="bib_xview"  style="display:none;" class="bib pre-white-space">@Article{Xompero2022IWDSC,
-				             title = {Cross-Camera View-Overlap Recognition},
-				             author = {Xompero, A. and and Cavallaro, A.},
-				             booktitle = {Proceedings of the European Conference on Computer Vision Workshops},
-				             note = {Internation Workshop on Distributed Smart Cameras},
-				             address={Online},
-				             month="24" # OCT,
-				             year = {2022},
-           }
-								</div>
-						</td>
-					</tr>
-					<tr>
-					<td class="tg-km2t" style="vertical-align: text-top;">
-						<a href="https://github.com/CORSMAL/LoDE" TARGET = "_blank">
-							<div class="imglnews" style="border:0"><img src="https://corsmal.eecs.qmul.ac.uk/images/lode_img.png" alt="[img]" width="100%" style="vertical-align: middle;"></div>			  
-								</a>
-							</td>
-							<td class="tg-zv4m" style="vertical-align: top;">
-								<em style="color:#6699ff">LoDE: Localisation and Object Dimensions Estimator</em><br><br>
-								Software of the method that jointly localises container-like objects and estimates their dimensions with a generative 3D sampling model and a multi-view 3D-2D iterative shape fitting, using two wide-baseline, calibrated RGB cameras.
-								<br><br>
-								[<a title="Code" href="https://github.com/CORSMAL/LoDE" TARGET = "_blank"><u>code</u></a>]
-								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_lode')"><u>bibtex</u></a>]      
-								<div id="bib_lode"  style="display:none;" class="bib pre-white-space">@InProceedings{Xompero2020ICASSP_LoDE,
-							        title={Multi-view shape estimation of transparent containers},
-							        author={Alessio Xompero and Ricardo Sanchez-Matilla and Apostolos Modas and Pascal Frossard and Andrea Cavallaro},
-							        booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing},
-							        address = {Barcelona, Spain},
-							        month = "4-8~" # may,
-							        year = {2020}
-							      }
-								</div>
-						</td>
-					</tr>
-				<tr>
-					<td class="tg-km2t" style="vertical-align: text-top;">
-						<a href="https://github.com/kerolex/MORB" TARGET = "_blank">
-							<div class="imglnews" style="border:0"><img src="images/MORB.png" alt="[img]" width="100%" style="vertical-align: middle;"></div>			  
-								</a>
-							</td>
-							<td class="tg-zv4m" style="vertical-align: top;">
-								<em style="color:#6699ff">MORB: a multi-scale binary descriptor </em><br><br>
-								Official GitHub repository of the C++ code for the multi-scale binary descriptor based on ORB that improves the accuracy of feature matching under scale changes.
-								<br><br>
-								[<a title="Code" href="https://github.com/kerolex/MORB" TARGET = "_blank"><u>code</u></a>]
-								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_morb')"><u>bibtex</u></a>]      
-								<div id="bib_morb"  style="display:none;" class="bib pre-white-space">@INPROCEEDINGS{Xompero2018ICIP_MORB,
-								  title = {{MORB: a multi-scale binary descriptor}},
-								  author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
-								  booktitle = ICIP,
-								  address = {Athens, Greece},
-								  month = "7--10~" # oct,
-								  year = {2018}
-								}
-								</div>
-						</td>
-					</tr>
-				</table>
-	</div>
 <br><br><br>
 <footer class="site-footer">
 		<div class="footer-col social-col" style="text-align:center;">  
@@ -344,8 +258,6 @@
 		<p>
 			Copyright © 2015-2023 - Alessio Xompero
 		</p>
-	</footer>
-	</body>
-	</html>
-
-
+</footer>
+</body>
+</html>
