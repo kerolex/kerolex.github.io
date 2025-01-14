@@ -594,6 +594,14 @@ h2{
   clear: both;
 }
 
+#about, #services {
+  width: 50%;
+  text-align: left;
+  margin-top: 0px;
+  margin:0 auto;
+  white-space: break-all;
+}
+
 .fixed-content {
   float:left;
   width:25%;
