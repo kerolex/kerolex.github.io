@@ -150,10 +150,19 @@
                 Proceedings on Privacy Enhancing Technologies (PoPETs), vol. 2025, n. 3, pp. 1-21, March 2025 (accepted and to appear).<br><br>
                 [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_popets25')"><u>abstract</u></a>]
                 <!-- [<a href="https://doi.org/10.1109/MRA.2024.3481609" TARGET = "_blank"><u>paper</u></a>] -->
+                [<a href="https://doi.org/10.48550/arXiv.2503.12464" TARGET = "_blank"><u>arxiv</u></a>]
                 [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_popets25')"><u>bibtex</u></a>]
+                [<a title="Link" href="https://github.com/graphnex/privacy-from-visual-entities" TARGET = "_blank"><u>code</u></a>]
                 <!-- [<a href="https://cse.usf.edu/~yusun/rgmc/2024.html" TARGET = "_blank"><u>webpage</u></a>] -->
                 <p id="abstract_popets25"  style="display:none;" class="abstract">
-                  
+                  Subjective interpretation and content diversity make predicting whether an image is private or public a challenging task. 
+                  Graph neural networks combined with convolutional neural networks (CNNs), which consist of 14,000 to 500 millions parameters, 
+                  generate features for visual entities (e.g., scene and object types) and identify the entities that contribute to the decision. 
+                  In this paper, we show that using a simpler combination of transfer learning and a CNN to relate privacy with scene types optimises 
+                  only 732 parameters while achieving comparable performance to that of graph-based methods. 
+                  On the contrary, end-to-end training of graph-based methods can mask the contribution of individual components to the classification performance. 
+                  Furthermore, we show that a high-dimensional feature vector, extracted with CNNs for each visual entity, is unnecessary and complexifies the model. 
+                  The graph component has also negligible impact on performance, which is driven by fine-tuning the CNN to optimise image features for privacy nodes. 
                 </p>
                 <div id="bib_popets25"  style="display:none;" class="bib pre-white-space">
                  @Article{Xompero2025PoPETs,
@@ -172,6 +181,39 @@
              <div data-badge-type="medium-donut" data-doi="10.1109/MRA.2024.3481609" data-condensed="true" data-hide-no-mentions="true" data-hide-less-than="0" data-badge-popover='left' class="altmetric-embed"></div>
            </td>   -->        
          </tr>
+         <tr>
+          <td class="tg-km2t" style="vertical-align: text-top;">
+            <a href="https://doi.org/10.48550/arXiv.2412.07487" TARGET = "_blank">
+              <img src="images/pang24stereoho.jpg" alt="" width="100%"/><br>
+            </a>
+          </td>
+          <td class="tg-zv4m" style="vertical-align: middle;">
+            <em style="color:#6699ff">Stereo Hand-Object Reconstruction for Human-to-Robot Handover</em><br>
+            Y. L. Pang, <b style="font-weight: bold;">A. Xompero</b>, C. Oh, A. Cavallaro<br>
+            IEEE Robotics and Automation Letters, 2025 (to appear)<br><br>
+            [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_pang24arxiv')"><u>abstract</u></a>]
+            [<a href="https://doi.org/10.48550/arXiv.2412.07487" TARGET = "_blank"><u>arxiv</u></a>]
+            [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_pang24arxiv')"><u>bibtex</u></a>]
+            [<a href="https://qm-ipalab.github.io/StereoHO/" TARGET = "_blank"><u>webpage</u></a>]
+            <p id="abstract_pang24arxiv"  style="display:none;" class="abstract">
+              Jointly estimating hand and object shape ensures the success of the robot grasp in human-to-robot handovers. However, relying on hand-crafted prior knowledge about the geometric structure of the object fails when generalising to unseen objects, and depth sensors fail to detect transparent objects such as drinking glasses. In this work, we propose a stereo-based method for hand-object reconstruction that combines single-view reconstructions probabilistically to form a coherent stereo reconstruction. We learn 3D shape priors from a large synthetic hand-object dataset to ensure that our method is generalisable, and use RGB inputs instead of depth as RGB can better capture transparent objects. We show that our method achieves a lower object Chamfer distance compared to existing RGB based hand-object reconstruction methods on single view and stereo settings. We process the reconstructed hand-object shape with a projection-based outlier removal step and use the output to guide a human-to-robot handover pipeline with wide-baseline stereo RGB cameras. Our hand-object reconstruction enables a robot to successfully receive a diverse range of household objects from the human. 
+            </p>
+            <div id="bib_pang24arxiv"  style="display:none;" class="bib pre-white-space">
+             @misc{Pang2024ArXiv,
+              title = {Stereo Hand-Object Reconstruction for Human-to-Robot Handover},
+               author = {Pang, Y. L. and Xompero, A. and Oh, C. and Cavallaro, A.},
+               eprint={2412.07487},
+              archivePrefix={arXiv},
+              primaryClass={cs.RO},
+              url={https://doi.org/10.48550/arXiv.2412.07487}
+           }
+         </div>
+       </td>
+       <td class="tg-zv4m">
+       <div data-badge-type="medium-donut" data-arxiv-id="10.48550/arXiv.2412.07487" data-condensed="true" data-hide-no-mentions="true" data-hide-less-than="0" data-badge-popover='left' class="altmetric-embed"></div>
+     </td>
+     </tr> 
+        <!--  -->
             <!-- -->
             <tr>
               <td class="tg-km2t" style="vertical-align: text-top;">
@@ -904,37 +946,6 @@
   </div>
   <div>
     <table class="tg" width="100%">
-      <tr>
-        <td class="tg-km2t" style="vertical-align: text-top;">
-          <a href="https://doi.org/10.48550/arXiv.2412.07487" TARGET = "_blank">
-            <img src="images/pang24stereoho.jpg" alt="" width="100%"/><br>
-          </a>
-        </td>
-        <td class="tg-zv4m" style="vertical-align: middle;">
-          <em style="color:#6699ff">Stereo Hand-Object Reconstruction for Human-to-Robot Handover</em><br>
-          Y. L. Pang, <b style="font-weight: bold;">A. Xompero</b>, C. Oh, A. Cavallaro<br>
-          [<a class="papercite_pdf" title="Cite" onclick="AppearAbstract('abstract_pang24arxiv')"><u>abstract</u></a>]
-          [<a href="https://doi.org/10.48550/arXiv.2412.07487" TARGET = "_blank"><u>arxiv</u></a>]
-          [<a class="papercite_pdf" title="Cite" onclick="AppearBib('bib_pang24arxiv')"><u>bibtex</u></a>]
-          [<a href="https://qm-ipalab.github.io/StereoHO/" TARGET = "_blank"><u>webpage</u></a>]
-          <p id="abstract_pang24arxiv"  style="display:none;" class="abstract">
-            Jointly estimating hand and object shape ensures the success of the robot grasp in human-to-robot handovers. However, relying on hand-crafted prior knowledge about the geometric structure of the object fails when generalising to unseen objects, and depth sensors fail to detect transparent objects such as drinking glasses. In this work, we propose a stereo-based method for hand-object reconstruction that combines single-view reconstructions probabilistically to form a coherent stereo reconstruction. We learn 3D shape priors from a large synthetic hand-object dataset to ensure that our method is generalisable, and use RGB inputs instead of depth as RGB can better capture transparent objects. We show that our method achieves a lower object Chamfer distance compared to existing RGB based hand-object reconstruction methods on single view and stereo settings. We process the reconstructed hand-object shape with a projection-based outlier removal step and use the output to guide a human-to-robot handover pipeline with wide-baseline stereo RGB cameras. Our hand-object reconstruction enables a robot to successfully receive a diverse range of household objects from the human. 
-          </p>
-          <div id="bib_pang24arxiv"  style="display:none;" class="bib pre-white-space">
-           @misc{Pang2024ArXiv,
-            title = {Stereo Hand-Object Reconstruction for Human-to-Robot Handover},
-             author = {Pang, Y. L. and Xompero, A. and Oh, C. and Cavallaro, A.},
-             eprint={2412.07487},
-            archivePrefix={arXiv},
-            primaryClass={cs.RO},
-            url={https://arxiv.org/abs/2412.07487}
-         }
-       </div>
-     </td>
-     <td class="tg-zv4m">
-     <div data-badge-type="medium-donut" data-arxiv-id="10.48550/arXiv.2412.07487" data-condensed="true" data-hide-no-mentions="true" data-hide-less-than="0" data-badge-popover='left' class="altmetric-embed"></div>
-   </td>
-   </tr> 
       <!--  -->
       <tr>
         <td class="tg-km2t" style="vertical-align: text-top;">
