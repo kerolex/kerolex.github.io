@@ -378,6 +378,10 @@ tr:hover {background-color: #f5f5f5;width: 100%;}
 .social-icons .fa-twitter-square {
  color:#55acee
 }
+.social-icons .fa-x-twitter,
+.social-icons .fa-x-twitter-square {
+ color:#55acee
+}
 .social-icons .fa-vimeo,
 .social-icons .fa-vimeo-square {
  color:#1ab7ea
