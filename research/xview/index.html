@@ -1,0 +1,391 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Cross-Camera View-Overlap Recognition</title> 
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="layout.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+		h1 {
+			font-size: 200%;
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 150%;
+			text-align: center;
+		}
+
+		h3 {
+			font-size: 100%;
+			text-align: center;
+		}
+
+		.center-justified {
+			text-align: justify;
+			margin: 0 auto;
+			width: 1000px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+	/* NAVIGATION */
+	nav {0
+		width: 100%;
+		margin: 0 auto;
+		background: #fff;
+	}
+
+	/* By Dominik Biedebach @domobch */
+	nav ul {
+		list-style: none;
+		text-align: center;
+	}
+	nav ul li {
+		display: inline-block;
+	}
+	nav ul li a {
+		display: block;
+		padding: 0px;
+		text-decoration: none;
+		color: #aaa;
+		font-weight: 800;
+		margin: 0 10px;
+	}
+	nav ul li a,
+	nav ul li a:after,
+	nav ul li a:before {
+		transition: all .5s;
+	}
+	nav ul li a:hover {
+		color: #555;
+	}
+
+	/* stroke */
+	nav.stroke ul li a,
+	nav.fill ul li a {
+		position: relative;
+	}
+	nav.stroke ul li a:after,
+	nav.fill ul li a:after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 0%;
+		content: '.';
+		color: transparent;
+		background: #333;
+		height: 1px;
+	}
+	nav.stroke ul li a:hover:after {
+		width: 100%;
+	}
+
+    .data-table {
+        border-collapse: collapse;
+    }
+    .border-top {
+        border-top: 1px solid #000;
+    }
+    .border-bottom {
+        border-bottom: 1px solid #000;
+    }
+    .border-left {
+        border-left: 1px solid #000;
+    }
+    .border-right {
+        border-right: 1px solid #000;
+    }
+</style>
+
+</head>
+
+<body>
+	<div class="center-justified" style="width:1000px;"> 
+		<h1>Cross-Camera View-Overlap Recognition</h1>
+		<h3>Alessio Xompero and Andrea Cavallaro</h3>
+	</div>
+	<div class="center-justified">
+		<p>
+			We propose a decentralised view-overlap recognition framework that operates across freely moving cameras without the need of a reference 3D map. Each camera independently extracts, aggregates into a hierarchical structure, and shares feature-point descriptors over time. A view overlap is recognised by view-matching and geometric validation to discard wrongly matched views. The proposed framework is generic and can be used with different descriptors. We conduct the experiments on publicly available sequences as well as new sequences we collected with hand-held cameras. We show that Oriented FAST and Rotated BRIEF (ORB) features with Bags of Binary Words within the proposed framework lead to higher precision and a higher or similar accuracy compared to  NetVLAD, RootSIFT, and SuperGlue. 
+		</p>
+	<br>
+	<div align="center">
+		<img src="blockdiagram.svg" width=50%>
+	<p>
+		Block diagram of the proposed decentralised framework for cross-camera view-overlap recognition. 
+	</p>
+	</div>
+	<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+	<p>
+		For each camera, the framework decouples the extraction of view features \(\boldsymbol{v}_t\) and local features \(\mathcal{F}_t = \{ \boldsymbol{x}_{i,t}, \boldsymbol{d}_{i,t} \}_{i=1}^{F_t}\), for each frame \(I_t\), from the recognition of view overlaps. While features are aggregated into a hierarchical structure over time (bag of binary words, shown as a red registry), each camera shares the set of local features \(\mathcal{Q}_t\) at a pre-defined sharing rate \(f\) and after an initialisation window of length \(L\) (clock symbol). The camera receiving \(\mathcal{Q}_t\) re-aggregates the received local features into the view feature \(\boldsymbol{v}_q\) if their number is higher than \(\mu\), and matches \(\boldsymbol{v}_q\) with all the view features up to frame \(t\). The local features of the matched view \(m_t\), \(\mathcal{F}_m\), whose score \(s_{q,m}\) was the highest and higher than the threshold \(\alpha\), are then matched with the query local features, obtaining \(\hat{\mathcal{M}}_{m,q}\). The matched view \(m_t\) is validated through robust fitting of the epipolar geometry only if the number of inliers \(|\hat{\mathcal{M}}_{m,q}|>\rho\). For keeping the notation simple, we use the camera indexes 1 and 2 only for denoting the shared query features and matched view.
+	</p>
+	<br>
+
+	<div align="left">
+		<a href="https://arxiv.org/pdf/2208.11661.pdf">ArXiv pre-print</a>
+		<a href="https://github.com/kerolex/CrossCameraViewOverlapRecognition">Code</a>
+	</div>
+	<br><br>
+
+	<h2 class="dataset" style="text-align: left;">Dataset</h2>
+		<br>
+		<table align="center" style="border:0px;padding-left:0px"> 
+			<tr>
+				<td width="10%" style="border:0px;padding:0px" align="center">Scenario</td>
+				<td width="18%" style="border:0px;padding:0px" align="center">Camera 1</td>
+				<td width="18%" style="border:0px;padding:0px" align="center">Camera 2</td>
+				<td width="18%" style="border:0px;padding:0px" align="center">Camera 3</td>
+				<td width="18%" style="border:0px;padding:0px" align="center">Camera 4</td>
+			</tr>
+			<tr>
+				<td style="border:0px;padding:0px;vertical-align: middle;"><i>gate</i></td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<video width="200" controls autoplay loop style="vertical-align: middle;"><source src="gifs/gate_seq1.mp4" type="video/mp4" >Your browser does not support the video tag.
+					</video> 
+				</td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<video width="200" controls autoplay loop style="vertical-align: middle;"><source src="gifs/gate_seq2.mp4" type="video/mp4" >Your browser does not support the video tag.
+					</video> 
+				</td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<video width="200" controls autoplay loop style="vertical-align: middle;"><source src="gifs/gate_seq3.mp4" type="video/mp4" >Your browser does not support the video tag.
+					</video> 
+				</td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<video width="200" controls autoplay loop style="vertical-align: middle;"><source src="gifs/gate_seq4.mp4" type="video/mp4" >Your browser does not support the video tag.
+					</video> 
+				</td>
+			</tr>
+			<tr>
+				<td style="border:0px;padding:0px;vertical-align: middle;"><i>courtyard</i></td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<video width="200" controls autoplay loop style="vertical-align: middle;"><source src="gifs/courtyard_seq1.mp4" type="video/mp4" >Your browser does not support the video tag.
+					</video> 
+				</td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<video width="200" controls autoplay loop style="vertical-align: middle;"><source src="gifs/courtyard_seq2.mp4" type="video/mp4" >Your browser does not support the video tag.
+					</video> 
+				</td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<video width="200" controls autoplay loop style="vertical-align: middle;"><source src="gifs/courtyard_seq3.mp4" type="video/mp4" >Your browser does not support the video tag.
+					</video> 
+				</td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<video width="200" controls autoplay loop style="vertical-align: middle;"><source src="gifs/courtyard_seq4.mp4" type="video/mp4" >Your browser does not support the video tag.
+					</video> 
+				</td>
+			</tr> 
+			<tr>
+				<td style="border:0px;padding:0px;vertical-align: middle;"><i>backyard</i></td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<video width="200" controls autoplay loop style="vertical-align: middle;"><source src="gifs/backyard_seq1.mp4" type="video/mp4" >Your browser does not support the video tag.
+					</video> 
+				</td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<video width="200" controls autoplay loop style="vertical-align: middle;"><source src="gifs/backyard_seq2.mp4" type="video/mp4" >Your browser does not support the video tag.
+					</video> 
+				</td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<video width="200" controls autoplay loop style="vertical-align: middle;"><source src="gifs/backyard_seq3.mp4" type="video/mp4" >Your browser does not support the video tag.
+					</video> 
+				</td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<video width="200" controls autoplay loop style="vertical-align: middle;"><source src="gifs/backyard_seq4.mp4" type="video/mp4" >Your browser does not support the video tag.
+					</video> 
+				</td>
+			</tr> 
+		</table>
+		Note that the visualisation is 2x faster than the original framerate.
+		<br><br>
+		<p>
+			Camera sequences for the scenario <i>office</i> can be found at <a href="https://vision.in.tum.de/data/datasets/rgbd-dataset/download">TUM RGB-D SLAM</a> (fr1_desk, fr1_desk2, fr1_room).
+		</p>
+		<p>
+			Original videos of the camera sequences belonging to the scenario <i>courtyard</i> can be found at the CoSLAM project <a href="https://drone.sjtu.edu.cn/dpzou/dataset/CoSLAM/">webpage</a> (the webpage seems currently not available). 
+		</p>
+		<p>
+			We provide RGB image sequences, and calibration and camera poses data for each scenario, as well as annotations (Euclidean distance, angular, distance, visual overlap) for each sequence pairs.
+		</p>
+		<p>
+			<a href="https://doi.org/10.5281/zenodo.7235890">Download dataset</a><br><br>
+		</p>
+		
+		<!-- <h3 style="text-align: left;">Download links</h3>
+		<p>
+			We provide RGB image sequences, and calibration and camera poses data for each scenario, as well as annotations (Euclidean distance, angular, distance, visual overlap) for each sequence pairs.
+		</p>
+		<table class="data-table" align="center" style="border:0px;padding-left:0px"> 
+			<tr>
+				<th class="border-top" width="20%" style="padding:0px" align="left">Scenario</th>
+				<th class="border-top" width="14%" style="padding:0px" align="center">Sequence</th>
+				<th class="border-top" width="12%" style="padding:0px" align="center"># Frames</th>
+				<th class="border-top" width="18%" style="padding:0px" align="center">Duration (mm:ss)</th>
+				<th class="border-top" width="8%" style="padding:0px" align="center">fps</th>
+				<th class="border-top" width="16%" style="padding:0px" align="center">Resolution (px)</th>
+				<th class="border-top" width="16%" style="padding:0px" align="center">Platform</th>
+			</tr>
+			<tr>
+				<td class="border-top" rowspan="3"><a href="dataset/office.zip" TARGET = "_blank"><u>office</u></a> (1.2 GB)</td>
+				<td class="border-top" align="center">seq1</td>
+				<td class="border-top" align="center">573</td>
+				<td class="border-top" align="center">00:19</td>
+				<td class="border-top" rowspan="3" align="center">30</td>
+				<td class="border-top" rowspan="3" align="center">640x480</td>
+				<td class="border-top" rowspan="3" align="center">Hand-held</td>
+			</tr>
+			<tr>
+				<td align="center">seq2</td>
+				<td align="center">612</td>
+				<td align="center">00:21</td>
+			</tr>
+			<tr>
+				<td align="center">seq3</td>
+				<td align="center">1352</td>
+				<td align="center">00:45</td>
+			</tr>
+		<tr>
+				<td class="border-top" rowspan="4"><a href="dataset/courtyard.zip" TARGET = "_blank"><u>courtyard</u></a> (7.1 GB)</td>
+				<td class="border-top" align="center">seq1</td>
+				<td class="border-top" align="center">2849</td>
+				<td class="border-top" align="center">03:10</td>
+				<td class="border-top" rowspan="4" align="center">25</td>
+				<td class="border-top" rowspan="4" align="center">800x450</td>
+				<td class="border-top" rowspan="4" align="center">Hand-held</td>
+			</tr>
+			<tr>
+				<td align="center">seq2</td>
+				<td align="center">3118</td>
+				<td align="center">03:28</td>
+			</tr>
+			<tr>
+				<td align="center">seq3</td>
+				<td align="center">3528</td>
+				<td align="center">03:55</td>
+			</tr>
+			<tr>
+				<td align="center">seq4</td>
+				<td align="center">3454</td>
+				<td align="center">03:50</td>
+			</tr>
+			<tr>
+				<td class="border-top" rowspan="4"><a href="dataset/gate.zip" TARGET = "_blank"><u>gate</u></a> (1.8 GB)</td>
+				<td class="border-top" align="center">seq1</td>
+				<td class="border-top" align="center">330</td>
+				<td class="border-top" align="center">00:11</td>
+				<td class="border-top" rowspan="4" align="center">30</td>
+				<td class="border-top" rowspan="4" align="center">1280x720</td>
+				<td class="border-top" rowspan="4" align="center">Hand-held</td>
+			</tr>
+			<tr>
+				<td align="center">seq2</td>
+				<td align="center">450</td>
+				<td align="center">00:15</td>
+			</tr>
+			<tr>
+				<td align="center">seq3</td>
+				<td align="center">480</td>
+				<td align="center">00:16</td>
+			</tr>
+			<tr>
+				<td align="center">seq4</td>
+				<td align="center">375</td>
+				<td align="center">00:13</td>
+			</tr>
+			<tr>
+				<td class="border-top border-bottom" rowspan="4"><a href="dataset/backyard.zip" TARGET = "_blank"><u>backyard</u></a> (5.2 GB)</td>
+				<td class="border-top" align="center">seq1</td>
+				<td class="border-top" align="center">1217</td>
+				<td class="border-top" align="center">02:02</td>
+				<td class="border-top border-bottom" rowspan="4" align="center">10</td>
+				<td class="border-top border-bottom" rowspan="4" align="center">1280x720</td>
+				<td class="border-top border-bottom" rowspan="4" align="center">Hand-held/ Wearable</td>
+			</tr>
+			<tr>
+				<td align="center">seq2</td>
+				<td align="center">1213</td>
+				<td align="center">02:01</td>
+			</tr>
+			<tr>
+				<td align="center">seq3</td>
+				<td align="center">1233</td>
+				<td align="center">02:03</td>
+			</tr>
+			<tr>
+				<td class="border-bottom" align="center">seq4</td>
+				<td class="border-bottom" align="center">1235</td>
+				<td class="border-bottom" align="center">02:03</td>
+			</tr>
+		</table>
+		<p>
+			<a href="dataset/annotations.zip" TARGET = "_blank"><u>Annotations + calibration + camera poses</u></a> (169 MB)<br>
+			<a href="dataset/readme.md" TARGET = "_blank"><u>README</u></a><br><br>
+			In addition to the image sequences and annotations, we provide the NetVLAD and DeepBit features that we extracted for each image for our experiments: <a href="dataset/NetVLAD_DeepBit_features.zip" TARGET = "_blank"><u>NetVLAD and DeepBit features</u></a> (290 MB).<br><br>
+			Note that we use the best model (VGG-16 + NetVLAD + whitening), trained on Pitts30k as suggested by the authors for <a href="https://www.di.ens.fr/willow/research/netvlad/" TARGET = "_blank"><u>NetVLAD</u></a> (first 128 components), whereas we use DeepBit 32-bit model trained on CIFAR10 for <a href="https://github.com/kevinlin311tw/cvpr16-deepbit" TARGET = "_blank"><u>DeepBit</u></a>.
+		</p> -->
+
+		<h3 style="text-align: left;">Reconstructions</h3>
+		<p>
+			Sparse point clouds and camera poses reconstrcuted using <a href="https://colmap.github.io/" TARGET = "_blank"><u>COLMAP</u></a> to visualise the trajectories performed by the moving cameras.
+		</p>
+		<table>
+			<tr>
+				<td width="33%" style="border:0px;padding:0px" align="center"><i>gate</i></td>
+				<td width="33%" style="border:0px;padding:0px" align="center"><i>courtyard</i></td>
+				<td width="33%" style="border:0px;padding:0px" align="center"><i>backyard</i></td>
+			</tr>
+			<tr>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<img style="width:340px" src="images/gate_rec_colmap.png" alt="gate reconstruction">
+				</td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<img style="width:340px" src="images/courtyard_rec_colmap.png" alt="courtyard reconstruction">
+				</td>
+				<td style="border:0px;padding:0px 0px 10px 0px;vertical-align: middle;" align="center">
+					<img style="width:340px" src="images/backyard_rec_colmap.png" alt="bak
+					yard reconstruction">
+				</td>
+			</tr>
+		</table>	
+	<br>
+	<br>
+	<h2 style="text-align: left;">Acknowledgments</h2>
+	<p>
+		If you use the data, please cite:<br><br>
+		A. Xompero and A. Cavallaro, <a href="" TARGET = "_blank"><u><b>Cross-camera view-overlap recognition</b></u></a>, International Workshop on Distributed Smart Cameras (IWDSC), European Conference on Computer Vision Workshops, 24 October 2022.
+<!-- 		<br>
+		<br>
+		<a href="https://ieeexplore.ieee.org/document/6193110" TARGET = "_blank"><u><b>CoSLAM:  Collaborative Visual SLAM in Dynamic Environments</b></u></a><br>
+		D.  Zou, and P.  Tan<br>
+		IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 35, pp. 354–366, Feb. 2013
+		<br>
+		<br>
+		<a href="https://ieeexplore.ieee.org/document/6385773" TARGET = "_blank"><u><b>A Benchmark for the  Evaluation of RGB-D SLAM Systems</b></u></a><br>
+		J.  Sturm,  N.  Engelhard,  F.  Endres,  W.  Burgard,  and  D.  Cremers<br>
+		IEEE International Conference on Intelligent Robot  Systems, Vilamoura-Algarve, Portugal, 7–12 Oct. 2012 -->
+	</p>
+	<br>
+	<h2 style="text-align: left;">Contacts</h2>
+	<p>
+		If you have any further enquiries, question, or comments, please contact 
+		<a href="mailto:a.xompero@qmul.ac.uk"><u>a.xompero@qmul.ac.uk</u></a>.
+	</p>
+
+		</div>
+	<br>
+	<br>
+</body> 
+</html>
