@@ -871,3 +871,22 @@ h4 a {
   margin-left: 15px;
   margin-right: -15px;
 }
+
+
+#pubs-sel {
+  width:100%;
+  display: -webkit-flex;
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items:center;
+	justify-content:top;
+}
+
+#pubs-sel .elem-pub {
+  width:33%;
+  float: left;
+  padding-bottom: 20px;
+}
