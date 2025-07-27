@@ -581,6 +581,8 @@ h2{
   opacity: 1;
 }
 
+/*************************************************/
+/* SITE FOOTER */
 
 .site-footer {
   background-color: #6699ff;
@@ -589,6 +591,22 @@ h2{
   padding: 30px 0;
 }
 
+.site-footer .social-col a {
+  margin: 0 8px;
+  color: #fff;
+  font-size: 2em;
+  transition: color 0.2s;
+}
+.site-footer .social-col a:hover {
+  color: #666; /* Twitter blue or your brand color */
+}
+.site-footer p {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #fff;
+}
+
+/*************************************************/
 
 img {
     pointer-events: none;
