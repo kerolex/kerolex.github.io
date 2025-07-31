@@ -1,5 +1,6 @@
 // FOOTER SITE
-fetch('/footer.html')
+const footerPath = window.location.pathname.includes('/js/') ? '../footer.html' : 'footer.html';
+fetch(footerPath)
   .then(response => {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
