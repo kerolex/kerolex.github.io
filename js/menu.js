@@ -50,13 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-// FOOTER SITE
-
-// Optional: Automatically update year
-document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-
 // var ddmenuOptions=
 // {
 //     menuId: "menu",

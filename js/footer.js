@@ -1,9 +1,12 @@
 // FOOTER SITE
 fetch('/footer.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('site-footer').innerHTML = data;
-  });
+.then(response => response.text())
+.then(data => {
+	document.getElementById('site-footer').innerHTML = data;
+});
+
+// Optional: Automatically update year
+document.getElementById('currentYear').textContent = new Date().getFullYear();
 
 
 // const footerTemplate = document.createElement('template');
