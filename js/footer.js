@@ -8,7 +8,7 @@ fetch(footerPath)
     return response.text();
   })
   .then(data => {
-    const footer = document.getElementById('footer-site');
+    const footer = document.getElementById('site-footer');
     if (footer) {
       footer.innerHTML = data;
 
@@ -18,7 +18,7 @@ fetch(footerPath)
         yearSpan.textContent = new Date().getFullYear();
       }
     } else {
-      console.warn('No footer-site element found');
+      console.warn('No site-footer element found');
     }
   })
   .catch(err => {
