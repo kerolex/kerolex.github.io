@@ -1,30 +1,38 @@
-const footerTemplate = document.createElement('template');
+// FOOTER SITE
+fetch('/footer.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('site-footer').innerHTML = data;
+  });
 
-footerTemplate.innerHTML = `
-		<div class="footer-col social-col" aria-label="Social media" style="text-align:center;">  
-		<a href="https://orcid.org/0000-0002-8227-8529" aria-label="ORCID" rel="noopener noreferrer" target="_blank"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i></a>
-		<a href="https://scholar.google.com/citations?user=r7jxqOAAAAAJ&hl=en&oi=ao" aria-label="Google Scholar" rel="noopener noreferrer" target="_blank"><i class="ai ai-fw ai-google-scholar" aria-hidden="true"></i></a>
-		<a href="https://github.com/kerolex/" aria-label="GitHub" rel="noopener noreferrer" target="_blank" ><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>				
-		<a href="https://www.linkedin.com/in/alessioxompero/?locale=en_US" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>
-		<a href="https://x.com/aXompi" target="_blank" aria-label="X (formerly Twitter)" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-		<a href="https://bsky.app/profile/axompi.bsky.social" target="_blank" aria-label="Bluesky" rel="noopener noreferrer"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a>
-	</div>
-	<p>
-		Copyright &copy; 2015-<span id="currentYear"></span> - Alessio Xompero
-	</p>
-`;
 
-class Footer extends HTMLElement {
-  constructor() {
-    super();
-  }
+// const footerTemplate = document.createElement('template');
 
-  connectedCallback() {
-    const shadowRoot = this.attachShadow({ mode: 'closed' });
+// footerTemplate.innerHTML = `
+// 		<div class="footer-col social-col" aria-label="Social media" style="text-align:center;">  
+// 		<a href="https://orcid.org/0000-0002-8227-8529" aria-label="ORCID" rel="noopener noreferrer" target="_blank"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i></a>
+// 		<a href="https://scholar.google.com/citations?user=r7jxqOAAAAAJ&hl=en&oi=ao" aria-label="Google Scholar" rel="noopener noreferrer" target="_blank"><i class="ai ai-fw ai-google-scholar" aria-hidden="true"></i></a>
+// 		<a href="https://github.com/kerolex/" aria-label="GitHub" rel="noopener noreferrer" target="_blank" ><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>				
+// 		<a href="https://www.linkedin.com/in/alessioxompero/?locale=en_US" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>
+// 		<a href="https://x.com/aXompi" target="_blank" aria-label="X (formerly Twitter)" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+// 		<a href="https://bsky.app/profile/axompi.bsky.social" target="_blank" aria-label="Bluesky" rel="noopener noreferrer"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a>
+// 	</div>
+// 	<p>
+// 		Copyright &copy; 2015-<span id="currentYear"></span> - Alessio Xompero
+// 	</p>
+// `;
 
-    shadowRoot.appendChild(footerTemplate.content);
-  }
-}
+// class Footer extends HTMLElement {
+//   constructor() {
+//     super();
+//   }
 
-customElements.define('footer-component', Footer);
+//   connectedCallback() {
+//     const shadowRoot = this.attachShadow({ mode: 'closed' });
+
+//     shadowRoot.appendChild(footerTemplate.content);
+//   }
+// }
+
+// customElements.define('footer-component', Footer);
 
