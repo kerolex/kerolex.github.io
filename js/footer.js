@@ -1,18 +1,17 @@
 const footerTemplate = document.createElement('template');
 
 footerTemplate.innerHTML = `
-  <footer class="site-footer">
-		<div class="footer-col social-col" style="text-align:center;">  
-				<a href="https://twitter.com/aXompi"><i class="fab fa-fw fa-twitter" aria-hidden="true" style="padding-right: 1.5em;"></i></a>
-				<a href="https://www.linkedin.com/in/alessioxompero/?locale=en_US"><i class="fab fa-fw fa-linkedin" aria-hidden="true" style="padding-right: 1.5em;"></i></a>
-				<a href="https://github.com/kerolex/"><i class="fab fa-fw fa-github" aria-hidden="true" style="padding-right: 1.5em;"></i></a>
-				<a href="https://orcid.org/0000-0002-8227-8529"><i class="ai ai-orcid ai-fw" aria-hidden="true" style="padding-right: 1.5em;"></i></a>
-				<a href="https://scholar.google.com/citations?user=r7jxqOAAAAAJ&hl=en&oi=ao"><i class="ai ai-fw ai-google-scholar" aria-hidden="true" style="padding-right: 1.5em;"></i></a>
-			</div>
-		<p>
-			Copyright © 2015-2023 - Alessio Xompero
-		</p>
-	</footer>
+		<div class="footer-col social-col" aria-label="Social media" style="text-align:center;">  
+		<a href="https://orcid.org/0000-0002-8227-8529" aria-label="ORCID" rel="noopener noreferrer" target="_blank"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i></a>
+		<a href="https://scholar.google.com/citations?user=r7jxqOAAAAAJ&hl=en&oi=ao" aria-label="Google Scholar" rel="noopener noreferrer" target="_blank"><i class="ai ai-fw ai-google-scholar" aria-hidden="true"></i></a>
+		<a href="https://github.com/kerolex/" aria-label="GitHub" rel="noopener noreferrer" target="_blank" ><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>				
+		<a href="https://www.linkedin.com/in/alessioxompero/?locale=en_US" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>
+		<a href="https://x.com/aXompi" target="_blank" aria-label="X (formerly Twitter)" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+		<a href="https://bsky.app/profile/axompi.bsky.social" target="_blank" aria-label="Bluesky" rel="noopener noreferrer"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a>
+	</div>
+	<p>
+		Copyright &copy; 2015-<span id="currentYear"></span> - Alessio Xompero
+	</p>
 `;
 
 class Footer extends HTMLElement {

@@ -585,6 +585,7 @@ h2{
 /* SITE FOOTER */
 
 .site-footer {
+  width: 100%;
   background-color: #6699ff;
   text-align: center;
   color: white;
