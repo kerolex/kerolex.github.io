@@ -11,6 +11,12 @@ fetch(footerPath)
     const footer = document.getElementById('footer-site');
     if (footer) {
       footer.innerHTML = data;
+
+      // Now the footer is in the DOM, so you can set the year
+      const yearSpan = document.getElementById('currentYear');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
     } else {
       console.warn('No footer-site element found');
     }
@@ -18,10 +24,6 @@ fetch(footerPath)
   .catch(err => {
     console.error('Error loading footer:', err);
   });
-
-
-// Optional: Automatically update year
-document.getElementById('currentYear').textContent = new Date().getFullYear();
 
 
 // const footerTemplate = document.createElement('template');
