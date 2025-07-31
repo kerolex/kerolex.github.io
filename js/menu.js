@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Optional: Automatically update year
+document.getElementById('currentYear').textContent = new Date().getFullYear();
 
 // var ddmenuOptions=
 // {

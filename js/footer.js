@@ -26,6 +26,7 @@ fetch(footerPath)
   });
 
 
+
 // const footerTemplate = document.createElement('template');
 
 // footerTemplate.innerHTML = `
