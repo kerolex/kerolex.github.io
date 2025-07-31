@@ -1,9 +1,23 @@
 // FOOTER SITE
 fetch('/footer.html')
-.then(response => response.text())
-.then(data => {
-	document.getElementById('site-footer').innerHTML = data;
-});
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.text();
+  })
+  .then(data => {
+    const footer = document.getElementById('footer-site');
+    if (footer) {
+      footer.innerHTML = data;
+    } else {
+      console.warn('No footer-site element found');
+    }
+  })
+  .catch(err => {
+    console.error('Error loading footer:', err);
+  });
+
 
 // Optional: Automatically update year
 document.getElementById('currentYear').textContent = new Date().getFullYear();
