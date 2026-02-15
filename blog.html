@@ -386,8 +386,8 @@
 		        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
 		        this.classList.add('active');
 		        
-		        // Filter posts
-		        document.querySelectorAll('[data-filter]').forEach(post => {
+		        // Filter posts (exclude filter buttons by using class selectors)
+		        document.querySelectorAll('.featured-post, .blog-post-card').forEach(post => {
 		            const postFilter = post.getAttribute('data-filter');
 		            if (filter === 'all' || postFilter === filter) {
 		                post.style.display = 'block';
