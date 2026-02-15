@@ -1,5 +1,122 @@
 /* Blog-specific styling - complements mystyle.css */
 
+/* Filter Buttons */
+.filters {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #d97706;
+    background: white;
+    color: #1a365d;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: #fbbf24;
+    border-color: #d97706;
+    color: #1a365d;
+}
+
+.filter-btn.active {
+    border-color: #d97706;
+    background: #d97706;
+    color: white;
+}
+
+/* Featured Post Styling */
+.featured-post {
+    background: linear-gradient(135deg, #1a365d 0%, #2d5a8c 100%);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(26, 54, 93, 0.3);
+    border-left: 5px solid #fbbf24;
+}
+
+.featured-post::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.featured-post-content {
+    position: relative;
+    z-index: 1;
+}
+
+.featured-badge {
+    display: inline-block;
+    background: #fbbf24;
+    color: #1a365d;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.featured-post h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    color: white;
+}
+
+.featured-post-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    opacity: 0.95;
+    flex-wrap: wrap;
+}
+
+.featured-post p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.read-more-btn {
+    display: inline-block;
+    background: #fbbf24;
+    color: #1a365d;
+    padding: 0.8rem 1.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    border: 2px solid #fbbf24;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background: transparent;
+    color: #fbbf24;
+    transform: translateX(4px);
+}
+
 /* Image Styling */
 .responsive-image {
     width: 100%;

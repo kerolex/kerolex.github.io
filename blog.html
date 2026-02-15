@@ -23,7 +23,12 @@
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/academicons.css">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
 	<script src="js/menu.js" defer></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/blog.css">
 </head>
 <body>
 		<div id="menu">
@@ -87,6 +92,29 @@
 	<div id="section">
 		<div class="scrolling-content">
 			<h2>Blog</h2>
+			<p>Research insights, conference updates, and reflections on robotics and computer vision</p>
+			<div class="filters">
+				<button class="filter-btn active" data-filter="all">All Posts</button>
+				<button class="filter-btn" data-filter="competitions">Competitions</button>
+				<button class="filter-btn" data-filter="conferences">Conferences</button>
+				<button class="filter-btn" data-filter="announcements">Announcements</button>
+			</div>
+
+			<!-- Featured Post -->
+			<div class="featured-post" data-filter="competitions">
+				<div class="featured-post-content">
+					<span class="featured-badge">Featured</span>
+					<h2>Human-to-Robot Handovers of Unknown Containers: Join the 11th RGMC at ICRA 2026</h2>
+					<div class="featured-post-meta">
+						<span>📅 15 February 2026</span>
+						<span>✍️ Alessio Xompero</span>
+					</div>
+					<p>Discover the Human-to-Robot Handover track at the 11th Robotic Grasping and Manipulation Competition in Vienna. Learn about research opportunities, competition details, and how to register your team.</p>
+					<!-- <p>Call for Contributions for the workshop on "Benchmarking via Competitions in Robotic Grasping and Manipulation" (2nd edition) in conjunction with IROS 2025. Learn about submission deadlines, topics of interest, and how to participate.</p> -->
+					<a href="blog/icra26-rgmc11-handover-track.html" class="read-more-btn">Read Full Post</a>
+				</div>
+			</div>
+
 			See also my former WordPress site <a href="https://whataboutcomputervision.wordpress.com/"><u>whataboutcomputervision</u></a> for older blog posts.
 			<br><br>
 			<div id="rgmcw25-cfc">
@@ -340,5 +368,30 @@
 		Copyright &copy; 2015-<span id="currentYear"></span> - Alessio Xompero
 	</p>
 	</footer>
+
+	<script>
+		// Filter functionality
+		document.querySelectorAll('.filter-btn').forEach(btn => {
+		    btn.addEventListener('click', function() {
+		        const filter = this.getAttribute('data-filter');
+		        
+		        // Update active button
+		        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+		        this.classList.add('active');
+		        
+		        // Filter posts
+		        document.querySelectorAll('[data-filter]').forEach(post => {
+		            const postFilter = post.getAttribute('data-filter');
+		            if (filter === 'all' || postFilter === filter) {
+		                post.style.display = 'block';
+		                post.style.opacity = '1';
+		            } else {
+		                post.style.display = 'none';
+		                post.style.opacity = '0';
+		            }
+		        });
+		    });
+		});
+	</script>
 </body>
 </html>
