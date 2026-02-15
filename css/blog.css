@@ -15,6 +15,16 @@
     border-bottom: 2px solid #6699ff;
 }
 
+.article-image {
+  position: relative;
+  width: 40%;
+  text-align: center;
+  margin-top: 0px;
+  margin:0 auto;
+  white-space: break-all;
+    /*top:75px;*/
+}
+
 .post-category-badge {
     display: inline-block;
     background: #fbbf24;
