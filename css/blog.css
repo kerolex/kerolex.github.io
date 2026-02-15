@@ -1,5 +1,29 @@
 /* Blog-specific styling - complements mystyle.css */
 
+/* Image Styling */
+.responsive-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.image-caption {
+    background: #f9fafb;
+    border-left: 4px solid #d97706;
+    padding: 1rem;
+    margin: 0 0 1.5rem 0;
+    font-size: 0.9rem;
+    color: #6b7280;
+    border-radius: 6px;
+    text-align: justify;
+    line-height: 1.6;
+    font-style: italic;
+}
+
 .blog-article {
     background: white;
     border-radius: 8px;
@@ -13,16 +37,6 @@
     text-align: center;
     padding-bottom: 1.5rem;
     border-bottom: 2px solid #6699ff;
-}
-
-.article-image {
-  position: relative;
-  width: 40%;
-  text-align: center;
-  margin-top: 0px;
-  margin:0 auto;
-  white-space: break-all;
-    /*top:75px;*/
 }
 
 .post-category-badge {
@@ -386,6 +400,15 @@
 
     .cta-section {
         padding: 1.5rem;
+    }
+
+    .responsive-image {
+        margin: 1rem 0;
+    }
+
+    .image-caption {
+        padding: 0.8rem;
+        font-size: 0.85rem;
     }
 }
 
