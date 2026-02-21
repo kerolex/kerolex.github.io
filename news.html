@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139569814-1"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-364488019"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'UA-139569814-1');
+		gtag('config', 'G-364488019');
 	</script>
 
 	<title>Alessio Xompero, PhD</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="News and updates from Alessio Xompero - publications, awards, research events, and community contributions.">
 	<meta name="image" property="og:image" content="images/AlessioXompero.JPG">
 
 	<link rel="shortcut icon" href="images/profile_icon_ax.JPG" />
-	<link rel="stylesheet" href="../css/bootstrap.min.css" >
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="css/mystyle.css">
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/academicons.css"> 
+	<link rel="stylesheet" href="css/news.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
 	<script src="js/menu.js" defer></script>
+	<script src="js/news-filter.js" defer></script>
 </head>
 
 <body>     
@@ -40,7 +46,7 @@
 			<div class="menu-toggle"><span></span></div>
 			<ul>			
 				<li class="subnav">
-					<a>Research</a>
+					<a href="#research" role="button" aria-expanded="false" aria-haspopup="true">Research</a>
 					<div class="subnav-content">
 						<a href="research/publications.html">Publications</a>
 						<!-- <br> -->
@@ -90,200 +96,459 @@
 
 	<div id="section">
 		<div class="scrolling-content">
-			<h2>News</h2>
-			<article class="news-feed">
-				<section class="news-item">
-                    <time datetime="2026-01-15" class="news-date">2026/01/15</time>
-                    <p>Topical Collection on "Advancing Robotic Grasping and Manipulation for the Real-World" within Autonomous Robots now online <a href="https://link.springer.com/collections/ifcjfbbgji">link</a></p>
-                </section>
-                <section class="news-item">
-                    <time datetime="2025-12-15" class="news-date">2025/12/15</time>
-                    <p>Collection proposal on "Advancing Robotic Grasping and Manipulation for the Real-World" (Guest Editor) accepted within the journal Autonomous Robots</p>
-                </section>
-                <section class="news-item">
-                    <time datetime="2025-11-05" class="news-date">2025/11/5</time>
-                    <p>Accepted proposal for the "11th Robotic Grasping and Manipulation Competition" at ICRA 2026 (see <a href="https://sites.google.com/view/rgmcomp">webpage</a>)</p>
-                </section>
-                <section class="news-item">
-                    <time datetime="2025-06-25" class="news-date">2025/06/25</time>
-                    <p>Awarded the available and functional badges for the peer-reviewed artifact (source code) of our PoPETs paper (see <a href="https://github.com/graphnex/privacy-from-visual-entities">github repo</a>)</p>
-                </section>
-			</article>
-			<table class="tg" width="100%">
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2025/05/09</td>
-					<td class="tg-zv4m" style="text-align:left;">Pre-print of our article "Visual Affordances: Enabling robots to understand object functionality", currently under review, available on <a href="https://doi.org/10.48550/arXiv.2505.05074"><u>ArXiv</u></a></td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2025/05/09</td>
-					<td class="tg-zv4m" style="text-align:left;">Workshop "Benchmarking via Competitions in Robotic Grasping and Manipulation (2nd Edition)" accepted at IROS 2025 (see <a href="https://sites.google.com/view/iros2025-bench-competitions/"><u>webpage</u></a>)</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2025/03/31</td>
-					<td class="tg-zv4m" style="text-align:left;">Article, titled "Stereo Hand-Object Reconstruction for Human-to-Robot Handover", accepted at IEEE Robotics and Automation Letters (RA-L) [<a href="https://doi.org/10.48550/arXiv.2412.07487"><u>arxiv</u></a>]</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2025/03/01</td>
-					<td class="tg-zv4m" style="text-align:left;">Paper accepted at Privacy Enhancing Technologies Symposium (PETS) 2025 and in the journal Proceedings on Privacy Enhancing Technologies (PoPETs), Volume 2025, Issue 3, 2025</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2025/01/15</td>
-					<td class="tg-zv4m" style="text-align:left;">I am a guest editor for the IEEE RA-P Special Collection of "Autonomous Robotic Grasping and Manipulation in Real-World Applications" [<a href="blog.html#rap-special-collection"><u>link</u></a>]</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/12/15</td>
-					<td class="tg-zv4m" style="text-align:left;">The Robotic Grasping and Manipulation Competition at ICRA 2025 is now live and accepting applications. Join our handover track competition [<a href="https://sites.google.com/view/rgmc2025/home"><u>link</u></a>]</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/12/11</td>
-					<td class="tg-zv4m" style="text-align:left;">Pre-print and webpage of our recent work on Stereo Hand-Object Reconstruction for Human-to-Robot Handover now online [<a href="https://qm-ipalab.github.io/StereoHO/"><u>link</u></a>]</td>
-				</tr>				
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/12/11</td>
-					<td class="tg-zv4m" style="text-align:left;">Competition column about the Robotic Grasping and Manipulation Competition at ICRA 2024 is online in the IEEE Robotics & Automation Magazine (Issue 4: December 2024) [<a href="https://doi.org/10.1109/MRA.2024.3481609"><u>link</u></a>]</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/11/20</td>
-					<td class="tg-zv4m" style="text-align:left;">Competition column about the Robotic Grasping and Manipulation Competition at ICRA 2024 to appear in IEEE Robotics & Automation Magazine (December 2024) [<a href="https://doi.org/10.1109/MRA.2024.3481609"><u>link</u></a>]</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/11/20</td>
-					<td class="tg-zv4m" style="text-align:left;">The 10th Robotic Grasping and Manipulation Competition has been accepted at ICRA 2025 [<a href="https://sites.google.com/view/rgmc2025"><u>link</u></a>]</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/11/17</td>
-					<td class="tg-zv4m" style="text-align:left;">I will serve as a reviewer for the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2025 (CVPR)  [<a href="https://cvpr.thecvf.com/"><u>link</u></a>]</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/09/23</td>
-					<td class="tg-zv4m" style="text-align:left;">Recognised as an outstanding reviewer for ECCV 2024 [<a href="https://eccv.ecva.net/Conferences/2024/Reviewers"><u>link</u></a>]</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/08/14</td>
-					<td class="tg-zv4m" style="text-align:left;">Accepted paper at the 12th International Workshop on Assistive Computer Vision and Robotics (ACVR) at ECCV 2024</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/06/26</td>
-					<td class="tg-zv4m" style="text-align:left;">Accepted proposal for the 2024 Idiap Create Challenge</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/06/17</td>
-					<td class="tg-zv4m" style="text-align:left;">Attending the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024) in Seattle, USA, and presenting "Explaining models relating objects and privacy" as poster at the XAI4CV workshop</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/05/23</td>
-					<td class="tg-zv4m" style="text-align:left;">Recognised as outstanding reviewer for CVPR 2024</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/01/20</td>
-					<td class="tg-zv4m" style="text-align:left;">Attending the 2024 International Conference on Robotics and Automation (ICRA) in Yokohama, Japan, and co-organising the Human-to-Robot Handovers Sub-track within the Robotic Grasping and Manipulation Competition</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/04/16</td>
-					<td class="tg-zv4m" style="text-align:left;">Presenting the project GraphNEx at the annual CHIST-ERA Projects Seminar 2024</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/04/07</td>
-					<td class="tg-zv4m" style="text-align:left;">Paper accepted as poster at XAI4CV Workshop at CVPR 2024</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/02/07</td>
-					<td class="tg-zv4m" style="text-align:left;">Reviewer for the European Conference on Computer Vision (ECCV) 2024</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/01/30</td>
-					<td class="tg-zv4m" style="text-align:left;">Reviewer for the IEEE International Conference on Image Processing (ICIP) 2024</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2024/01/20</td>
-					<td class="tg-zv4m" style="text-align:left;">Co-organiser of the Human-to-Robot Handovers Sub-track within the Robotic Grasping and Manipulation Competition at the 2024 International Conference on Robotics and Automation (ICRA)</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/11/20</td>
-					<td class="tg-zv4m" style="text-align:left;">Attending the 3rd GraphNEx workshop in Lyon</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/11/19</td>
-					<td class="tg-zv4m" style="text-align:left;">Reviewer for the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/10/17</td>
-					<td class="tg-zv4m" style="text-align:left;">Reviewer for the 2024 IEEE International Conference on Acoustic, Speech and Signal Processing (ICASSP)</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/10/04</td>
-					<td class="tg-zv4m" style="text-align:left;">Reviewer for the 2024 IEEE International Conference on Robotics and Automation (ICRA)</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/10/02</td>
-					<td class="tg-zv4m" style="text-align:left;">Attending the International Conference on Computer Vision (ICCV) in Paris</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/08/05</td>
-					<td class="tg-zv4m" style="text-align:left;">Paper (that I co-authored) accepted at the 11th Int. Workshop on Assistive Computer Vision and Robotics (ACVR) at ICCV 2023</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/06/11</td>
-					<td class="tg-zv4m" style="text-align:left;">Awarded outstanding reviewer recognition at IEEE ICASSP 2023</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/04/28</td>
-					<td class="tg-zv4m" style="text-align:left;">Visiting at Idiap Research Institute, in Martigny, Switzerland (29 April - 25 May)</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/05/03</td>
-					<td class="tg-zv4m" style="text-align:left;">Attending GraphNEx workshop (3-5 May) at Idiap Research Institute, in Martigny, Switzerland</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/04/26</td>
-					<td class="tg-zv4m" style="text-align:left;">Internal tutorial (day 2): "The reviewer doesn't understand & is wrong! Transitioning into the reviewer's shoes" (online & in-person)</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/04/01</td>
-					<td class="tg-zv4m" style="text-align:left;">Attending and presenting the project GraphNEx at the <a href="https://www.chistera.eu/news/join-chist-era-projects-seminar-2023-april-4"><u>CHIST-ERA Projects Seminar 2023</u></a> (poster, presentation)</td>
-				</tr>
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/03/22</td>
-					<td class="tg-zv4m" style="text-align:left;">Internal tutorial: "The reviewer doesn't understand & is wrong! Transitioning into the reviewer's shoes" (online & in-person)</td>
-				</tr>
 
-				<tr>
-					<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2023/01/01</td>
-					<td class="tg-zv4m" style="text-align:left;">Joining and contributing for the next year into the project <a href="https://graphnex.eecs.qmul.ac.uk"><u>GraphNEx</u></a></td>
-				</tr>
-				<tr>
-				<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2022/12/07</td>
-				<td class="tg-zv4m" style="text-align: left;">Lecture on interest points (from SIFT, binary descriptor to recent deep learning based methods) at the ECS709 Module: Introduction to Computer Vision (QMUL)</td>	
-				</tr>
-				<tr>
-				<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2022/12/06</td>
-				<td class="tg-zv4m" style="text-align: left;">Presenting the project CORSMAL and its achievements at the <a href="https://www.robotics.qmul.ac.uk/events/4645/arq-robotics-centre-research-day-2022"><u>ARQ-Robotics Centre Research Day 2022</u></a></td>
-				</tr>				
-				<tr>
-				<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2022/10/21</td>
-				<td class="tg-zv4m" style="text-align: left;">Released the <a href="https://doi.org/10.5281/zenodo.7235890"><u>data</u></a> and <a href="https://github.com/kerolex/CrossCameraViewOverlapRecognition"><u>code</u></a> associated to the work on <i>Cross-Camera View-Overlap Recognition</i></td>	
-				</tr>
-				<tr>
-				<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2022/10/07</td>
-				<td class="tg-zv4m" style="text-align: left;">Lecture on Deep Learning Models for Computer Vision at the ECS709 Module: Introduction to Computer Vision (QMUL)</td>	
-				</tr>
-				<tr>
-				<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2022/09/14</td>
-				<td class="tg-zv4m" style="text-align: left;">Presented a video demo of the project CORSMAL at <a href="https://icdl2022.qmul.ac.uk"><u>IEEE International Conference on Development and Learning (ICDL 2022)</u></a></td>	
-				</tr>
-				<!-- <tr>
-				<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2022/05/27</td>
-				<td class="tg-zv4m" style="text-align: left;">Our paper "Audio-Visual Object Classification for Human-Robot Collaboration" has been ranked 4th for <a href="https://2022.ieeeicassp.org/stats/TopPosters.php"><u>the most viewed posters</u></a> and 22nd for <a href="https://2022.ieeeicassp.org/stats/TopPapers.php"><u>the most downloaded papers</u></a> at IEEE ICASSP 2022</td>	
-				</tr> -->
-				<tr>
-				<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2022/04/21</td>
-				<td class="tg-zv4m" style="text-align: left;"><a href="http://cis.eecs.qmul.ac.uk/visualadversarial.html"><u>Webpage</u></a> of the chapter on Visual Adversarial Attacks and Defenses is now online!</td>	
-				</tr>
-				<tr>
-				<td class="tg-km2t" style="width:10%;font-weight: normal;text-align: center;">2022/03/28</td>
-				<td class="tg-zv4m" style="text-align: left;">CORSMAL features as <a href="https://youtu.be/WeTaFZkoyuc?t=7333">CHIST-ERA Open Science Success Story</a> at the CHIST-ERA Projects Seminar 2022</td>	
-				</tr>
-			</table>
+			<h2>News</h2>
+
+			<!-- Filter Controls -->
+            <div class="news-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="publication">Publications</button>
+                <button class="filter-btn" data-filter="award">Awards</button>
+                <button class="filter-btn" data-filter="event">Events</button>
+                <button class="filter-btn" data-filter="service">Services</button>
+				<button class="filter-btn" data-filter="update">Update</button>
+            </div>
+
+			<div class="news-archive compact" id="newsArchive" aria-label="Archive by year">
+                <h3>Archive</h3>
+                <!-- JS will populate year links here -->
+            </div>
+
+			<!-- News Feed -->
+			<div class="news-feed">
+				<!-- 2026 -->
+				<section class="news-item" data-category="publication" data-year="2026">
+                    <time datetime="2026-01-15" class="news-date">Jan 15, 2026</time>
+					<div class="news-content">
+                        <h3>Topical Collection in Autonomous Robots live</h3>
+                    	<p>Topical Collection on "Advancing Robotic Grasping and Manipulation for the Real-World" within Autonomous Robots now online <a href="https://link.springer.com/collections/ifcjfbbgji">link</a></p>
+						<span class="news-tag publication">Publication</span>
+					</div>
+                </section>
+
+               <section class="news-item" data-category="publication" data-year="2025">
+                    <time datetime="2025-12-15" class="news-date">Dec 15, 2025</time>
+                    <div class="news-content">
+                        <h3>Collection Proposal Accepted at Autonomous Robots</h3>
+                        <p>Collection proposal on "Advancing Robotic Grasping and Manipulation for the Real-World" (Guest Editor) accepted within the journal Autonomous Robots</p>
+                        <span class="news-tag publication">Publication</span>
+                    </div>
+                </section>
+
+				<section class="news-item" data-category="event" data-year="2025">
+                    <time datetime="2025-11-05" class="news-date">Nov 5, 2025</time>
+                    <div class="news-content">
+                        <h3>ICRA 2026 Competition Proposal Accepted</h3>
+                        <p>Accepted proposal for the "11th Robotic Grasping and Manipulation Competition" at ICRA 2026 (<a href="https://sites.google.com/view/rgmcomp">webpage</a>)</p>
+                        <span class="news-tag event">Event</span>
+                    </div>
+                </section>
+
+                <section class="news-item" data-category="award" data-year="2025">
+                    <time datetime="2025-06-25" class="news-date">Jun 25, 2025</time>
+                    <div class="news-content">
+                        <h3>Artifact Badges Awarded for PoPETs Paper</h3>
+                        <p>Awarded the available and functional badges for the peer-reviewed artifact (source code) of our PoPETs paper (<a href="https://github.com/graphnex/privacy-from-visual-entities">github repo</a>)</p>
+                        <span class="news-tag award">Award</span>
+                    </div>
+                </section>
+
+				<section class="news-item" data-category="publication" data-year="2025">
+                    <time datetime="2025-05-09" class="news-date">May 9, 2025</time>
+                    <div class="news-content">
+                        <h3>Visual Affordances Preprint Released</h3>
+                        <p>Pre-print of our article "Visual Affordances: Enabling robots to understand object functionality", currently under review, available on <a href="https://doi.org/10.48550/arXiv.2505.05074">ArXiv</a></p>
+                        <span class="news-tag publication">Publication</span>
+                    </div>
+                </section>
+
+				<section class="news-item" data-category="event" data-year="2025">
+                    <time datetime="2025-05-09" class="news-date">May 9, 2025</time>
+                    <div class="news-content">
+                        <h3>IROS 2025 Workshop Accepted</h3>
+                        <p>Workshop "Benchmarking via Competitions in Robotic Grasping and Manipulation (2nd Edition)" accepted at IROS 2025 (<a href="https://sites.google.com/view/iros2025-bench-competitions/">webpage</a>)</p>
+                        <span class="news-tag event">Event</span>
+                    </div>
+                </section>
+
+                <section class="news-item" data-category="publication" data-year="2025">
+                    <time datetime="2025-03-31" class="news-date">Mar 31, 2025</time>
+                    <div class="news-content">
+                        <h3>Hand-Object Reconstruction Paper Accepted at RA-L</h3>
+                        <p>Article titled "Stereo Hand-Object Reconstruction for Human-to-Robot Handover" accepted at IEEE Robotics and Automation Letters (RA-L) [<a href="https://doi.org/10.48550/arXiv.2412.07487">arxiv</a>]</p>
+                        <span class="news-tag publication">Publication</span>
+                    </div>
+                </section>
+
+                <section class="news-item" data-category="publication" data-year="2025">
+                    <time datetime="2025-03-01" class="news-date">Mar 1, 2025</time>
+                    <div class="news-content">
+                        <h3>Paper Accepted at PoPETs 2025</h3>
+                        <p>Paper accepted at Privacy Enhancing Technologies Symposium (PETS) 2025 and in the journal Proceedings on Privacy Enhancing Technologies (PoPETs), Volume 2025, Issue 3</p>
+                        <span class="news-tag publication">Publication</span>
+                    </div>
+                </section>
+
+                <section class="news-item" data-category="service" data-year="2025">
+                    <time datetime="2025-01-15" class="news-date">Jan 15, 2025</time>
+                    <div class="news-content">
+                        <h3>Guest Editor for IEEE RA-P Special Collection</h3>
+                        <p>Guest editor for the IEEE RA-P Special Collection of "Autonomous Robotic Grasping and Manipulation in Real-World Applications" [<a href="blog.html#rap-special-collection">link</a>]</p>
+                        <span class="news-tag review">Service</span>
+                    </div>
+                </section>
+
+			<!-- Converted table rows to semantic news items -->
+			<section class="news-item" data-category="event" data-year="2024">
+				<time datetime="2024-12-15" class="news-date">Dec 15, 2024</time>
+				<div class="news-content">
+					<h3>RGM Competition at ICRA 2025 is live</h3>
+					<p>The Robotic Grasping and Manipulation Competition at ICRA 2025 is now live and accepting applications. Join our handover track competition <a href="https://sites.google.com/view/rgmc2025/home" target="_blank" rel="noopener">link</a>.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="publication" data-year="2024">
+				<time datetime="2024-12-11" class="news-date">Dec 11, 2024</time>
+				<div class="news-content">
+					<h3>Stereo Hand-Object Reconstruction preprint & webpage</h3>
+					<p>Pre-print and webpage of our recent work on Stereo Hand-Object Reconstruction for Human-to-Robot Handover now online <a href="https://qm-ipalab.github.io/StereoHO/" target="_blank" rel="noopener">link</a>.</p>
+					<span class="news-tag publication">Publication</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="publication" data-year="2024">
+				<time datetime="2024-12-11" class="news-date">Dec 11, 2024</time>
+				<div class="news-content">
+					<h3>Competition column online - IEEE R&A Magazine</h3>
+					<p>Competition column about the Robotic Grasping and Manipulation Competition at ICRA 2024 is online in the IEEE Robotics & Automation Magazine (Issue 4: December 2024) <a href="https://doi.org/10.1109/MRA.2024.3481609" target="_blank" rel="noopener">link</a>.</p>
+					<span class="news-tag publication">Publication</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="publication" data-year="2024">
+				<time datetime="2024-11-20" class="news-date">Nov 20, 2024</time>
+				<div class="news-content">
+					<h3>Competition column - IEEE R&A Magazine (Dec 2024)</h3>
+					<p>Competition column about the Robotic Grasping and Manipulation Competition at ICRA 2024 to appear in IEEE Robotics & Automation Magazine (December 2024) <a href="https://doi.org/10.1109/MRA.2024.3481609" target="_blank" rel="noopener">link</a>.</p>
+					<span class="news-tag publication">Publication</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2024">
+				<time datetime="2024-11-20" class="news-date">Nov 20, 2024</time>
+				<div class="news-content">
+					<h3>10th RGM Competition accepted at ICRA 2025</h3>
+					<p>The 10th Robotic Grasping and Manipulation Competition has been accepted at ICRA 2025 <a href="https://sites.google.com/view/rgmc2025" target="_blank" rel="noopener">link</a>.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="service" data-year="2024">
+				<time datetime="2024-11-17" class="news-date">Nov 17, 2024</time>
+				<div class="news-content">
+					<h3>Reviewer for CVPR 2025</h3>
+					<p>I will serve as a reviewer for the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2025 (CVPR) <a href="https://cvpr.thecvf.com/" target="_blank" rel="noopener">link</a>.</p>
+					<span class="news-tag review">Service</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="award" data-year="2024">
+				<time datetime="2024-09-23" class="news-date">Sep 23, 2024</time>
+				<div class="news-content">
+					<h3>Outstanding Reviewer - ECCV 2024</h3>
+					<p>Recognised as an outstanding reviewer for ECCV 2024 <a href="https://eccv.ecva.net/Conferences/2024/Reviewers" target="_blank" rel="noopener">link</a>.</p>
+					<span class="news-tag award">Award</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="publication" data-year="2024">
+				<time datetime="2024-08-14" class="news-date">Aug 14, 2024</time>
+				<div class="news-content">
+					<h3>Accepted at ACVR (ECCV 2024)</h3>
+					<p>Accepted paper at the 12th International Workshop on Assistive Computer Vision and Robotics (ACVR) at ECCV 2024.</p>
+					<span class="news-tag publication">Publication</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2024">
+				<time datetime="2024-06-26" class="news-date">Jun 26, 2024</time>
+				<div class="news-content">
+					<h3>Accepted proposal - Idiap Create Challenge 2024</h3>
+					<p>Accepted proposal for the 2024 Idiap Create Challenge.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2024">
+				<time datetime="2024-06-17" class="news-date">Jun 17, 2024</time>
+				<div class="news-content">
+					<h3>Presenting at CVPR 2024 (XAI4CV)</h3>
+					<p>Attending CVPR 2024 in Seattle and presenting "Explaining models relating objects and privacy" as a poster at the XAI4CV workshop.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="award" data-year="2024">
+				<time datetime="2024-05-23" class="news-date">May 23, 2024</time>
+				<div class="news-content">
+					<h3>Outstanding Reviewer - CVPR 2024</h3>
+					<p>Recognised as an outstanding reviewer for CVPR 2024.</p>
+					<span class="news-tag award">Award</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2024">
+				<time datetime="2024-01-20" class="news-date">Jan 20, 2024</time>
+				<div class="news-content">
+					<h3>ICRA 2024 - Attending & co-organising</h3>
+					<p>Attending the 2024 International Conference on Robotics and Automation (ICRA) in Yokohama and co-organising the Human-to-Robot Handovers Sub-track within the Robotic Grasping and Manipulation Competition.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2024">
+				<time datetime="2024-04-16" class="news-date">Apr 16, 2024</time>
+				<div class="news-content">
+					<h3>Presenting GraphNEx at CHIST-ERA Seminar 2024</h3>
+					<p>Presenting the project GraphNEx at the annual CHIST-ERA Projects Seminar 2024.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="publication" data-year="2024">
+				<time datetime="2024-04-07" class="news-date">Apr 07, 2024</time>
+				<div class="news-content">
+					<h3>Poster accepted at XAI4CV Workshop (CVPR 2024)</h3>
+					<p>Paper accepted as poster at XAI4CV Workshop at CVPR 2024.</p>
+					<span class="news-tag publication">Publication</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="service" data-year="2024">
+				<time datetime="2024-02-07" class="news-date">Feb 07, 2024</time>
+				<div class="news-content">
+					<h3>Reviewer - ECCV 2024</h3>
+					<p>Reviewer for the European Conference on Computer Vision (ECCV) 2024.</p>
+					<span class="news-tag review">Service</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="service" data-year="2024">
+				<time datetime="2024-01-30" class="news-date">Jan 30, 2024</time>
+				<div class="news-content">
+					<h3>Reviewer - ICIP 2024</h3>
+					<p>Reviewer for the IEEE International Conference on Image Processing (ICIP) 2024.</p>
+					<span class="news-tag review">Service</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2024">
+				<time datetime="2024-01-20" class="news-date">Jan 20, 2024</time>
+				<div class="news-content">
+					<h3>Co-organiser - Human-to-Robot Handovers Sub-track (ICRA 2024)</h3>
+					<p>Co-organiser of the Human-to-Robot Handovers Sub-track within the Robotic Grasping and Manipulation Competition at ICRA 2024.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2023">
+				<time datetime="2023-11-20" class="news-date">Nov 20, 2023</time>
+				<div class="news-content">
+					<h3>Attending GraphNEx workshop (Lyon)</h3>
+					<p>Attending the 3rd GraphNEx workshop in Lyon.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="service" data-year="2023">
+				<time datetime="2023-11-19" class="news-date">Nov 19, 2023</time>
+				<div class="news-content">
+					<h3>Reviewer - CVPR 2024</h3>
+					<p>Reviewer for the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024.</p>
+					<span class="news-tag review">Service</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="service" data-year="2023">
+				<time datetime="2023-10-17" class="news-date">Oct 17, 2023</time>
+				<div class="news-content">
+					<h3>Reviewer - ICASSP 2024</h3>
+					<p>Reviewer for the 2024 IEEE International Conference on Acoustic, Speech and Signal Processing (ICASSP).</p>
+					<span class="news-tag review">Service</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="service" data-year="2023">
+				<time datetime="2023-10-04" class="news-date">Oct 04, 2023</time>
+				<div class="news-content">
+					<h3>Reviewer - ICRA 2024</h3>
+					<p>Reviewer for the 2024 IEEE International Conference on Robotics and Automation (ICRA).</p>
+					<span class="news-tag review">Service</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2023">
+				<time datetime="2023-10-02" class="news-date">Oct 02, 2023</time>
+				<div class="news-content">
+					<h3>Attending ICCV 2023 (Paris)</h3>
+					<p>Attending the International Conference on Computer Vision (ICCV) in Paris.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="publication" data-year="2023">
+				<time datetime="2023-08-05" class="news-date">Aug 05, 2023</time>
+				<div class="news-content">
+					<h3>Paper accepted - ACVR at ICCV 2023</h3>
+					<p>Paper (that I co-authored) accepted at the 11th Int. Workshop on Assistive Computer Vision and Robotics (ACVR) at ICCV 2023.</p>
+					<span class="news-tag publication">Publication</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="award" data-year="2023">
+				<time datetime="2023-06-11" class="news-date">Jun 11, 2023</time>
+				<div class="news-content">
+					<h3>Outstanding Reviewer - ICASSP 2023</h3>
+					<p>Awarded outstanding reviewer recognition at IEEE ICASSP 2023.</p>
+					<span class="news-tag award">Award</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2023">
+				<time datetime="2023-04-28" class="news-date">Apr 28, 2023</time>
+				<div class="news-content">
+					<h3>Visiting - Idiap Research Institute</h3>
+					<p>Visiting at Idiap Research Institute, in Martigny, Switzerland (29 April - 25 May).</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2023">
+				<time datetime="2023-05-03" class="news-date">May 03, 2023</time>
+				<div class="news-content">
+					<h3>Attending GraphNEx workshop - Idiap</h3>
+					<p>Attending GraphNEx workshop (3-5 May) at Idiap Research Institute, in Martigny, Switzerland.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="service" data-year="2023">
+				<time datetime="2023-04-26" class="news-date">Apr 26, 2023</time>
+				<div class="news-content">
+					<h3>Internal tutorial: transitioning into the reviewer's shoes</h3>
+					<p>Internal tutorial (day 2): "The reviewer doesn't understand & is wrong! Transitioning into the reviewer's shoes" (online & in-person).</p>
+					<span class="news-tag review">Service</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2023">
+				<time datetime="2023-04-01" class="news-date">Apr 01, 2023</time>
+				<div class="news-content">
+					<h3>Presenting GraphNEx at CHIST-ERA Seminar 2023</h3>
+					<p>Attending and presenting the project GraphNEx at the CHIST-ERA Projects Seminar 2023 (poster, presentation) <a href="https://www.chistera.eu/news/join-chist-era-projects-seminar-2023-april-4" target="_blank" rel="noopener">link</a>.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="service" data-year="2023">
+				<time datetime="2023-03-22" class="news-date">Mar 22, 2023</time>
+				<div class="news-content">
+					<h3>Internal tutorial (repeat)</h3>
+					<p>Internal tutorial: "The reviewer doesn't understand & is wrong! Transitioning into the reviewer's shoes" (online & in-person).</p>
+					<span class="news-tag review">Service</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="update" data-year="2023">
+				<time datetime="2023-01-01" class="news-date">Jan 01, 2023</time>
+				<div class="news-content">
+					<h3>Joining GraphNEx project</h3>
+					<p>Joining and contributing for the next year to the project <a href="https://graphnex.eecs.qmul.ac.uk" target="_blank" rel="noopener">GraphNEx</a>.</p>
+					<span class="news-tag other">Update</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2022">
+				<time datetime="2022-12-07" class="news-date">Dec 07, 2022</time>
+				<div class="news-content">
+					<h3>Lecture on interest points (ECS709)</h3>
+					<p>Lecture on interest points (from SIFT, binary descriptor to recent deep learning based methods) at the ECS709 Module: Introduction to Computer Vision (QMUL).</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2022">
+				<time datetime="2022-12-06" class="news-date">Dec 06, 2022</time>
+				<div class="news-content">
+					<h3>Presenting CORSMAL at ARQ-Robotics Centre Research Day</h3>
+					<p>Presenting the project CORSMAL and its achievements at the ARQ-Robotics Centre Research Day 2022 <a href="https://www.robotics.qmul.ac.uk/events/4645/arq-robotics-centre-research-day-2022" target="_blank" rel="noopener">link</a>.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="publication" data-year="2022">
+				<time datetime="2022-10-21" class="news-date">Oct 21, 2022</time>
+				<div class="news-content">
+					<h3>Released data & code: Cross-Camera View-Overlap Recognition</h3>
+					<p>Released the <a href="https://doi.org/10.5281/zenodo.7235890" target="_blank" rel="noopener">data</a> and <a href="https://github.com/kerolex/CrossCameraViewOverlapRecognition" target="_blank" rel="noopener">code</a> associated to the work on <i>Cross-Camera View-Overlap Recognition</i>.</p>
+					<span class="news-tag publication">Publication</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2022">
+				<time datetime="2022-10-07" class="news-date">Oct 07, 2022</time>
+				<div class="news-content">
+					<h3>Lecture - Deep Learning Models for Computer Vision (ECS709)</h3>
+					<p>Lecture on Deep Learning Models for Computer Vision at the ECS709 Module: Introduction to Computer Vision (QMUL).</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2022">
+				<time datetime="2022-09-14" class="news-date">Sep 14, 2022</time>
+				<div class="news-content">
+					<h3>CORSMAL demo presented at ICDL 2022</h3>
+					<p>Presented a video demo of the project CORSMAL at ICDL 2022 <a href="https://icdl2022.qmul.ac.uk" target="_blank" rel="noopener">link</a>.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="resource" data-year="2022">
+				<time datetime="2022-04-21" class="news-date">Apr 21, 2022</time>
+				<div class="news-content">
+					<h3>Chapter webpage - Visual Adversarial Attacks & Defenses</h3>
+					<p>Webpage of the chapter on Visual Adversarial Attacks and Defenses is now online <a href="http://cis.eecs.qmul.ac.uk/visualadversarial.html" target="_blank" rel="noopener">Webpage</a>.</p>
+					<span class="news-tag resource">Resource</span>
+				</div>
+			</section>
+
+			<section class="news-item" data-category="event" data-year="2022">
+				<time datetime="2022-03-28" class="news-date">Mar 28, 2022</time>
+				<div class="news-content">
+					<h3>CORSMAL featured at CHIST-ERA Projects Seminar 2022</h3>
+					<p>CORSMAL features as a CHIST-ERA Open Science Success Story at the CHIST-ERA Projects Seminar 2022 <a href="https://youtu.be/WeTaFZkoyuc?t=7333" target="_blank" rel="noopener">video</a>.</p>
+					<span class="news-tag event">Event</span>
+				</div>
+			</section>
+
+		</div>
+
+			<div id="loadMoreWrapper" style="text-align:center; margin:20px 0;">
+  				<button type="button" id="loadMoreBtn" class="filter-btn">Load more</button>
+			</div>
+
+			<!-- Archive by Year -->
+            <!-- <div class="news-archive">
+                <h3>Archive by Year</h3>
+                <ul>
+                    <li><a href="#" data-year="2026">2026</a> (3)</li>
+                    <li><a href="#" data-year="2025">2025</a> (15)</li>
+                    <li><a href="#" data-year="2024">2024</a> (12)</li>
+                    <li><a href="#" data-year="2023">2023</a> (8)</li>
+                    <li><a href="#" data-year="2022">2022</a> (4)</li>
+                </ul>
+            </div> -->
 			<!--
 			<p>
 				- 2023/01/01: Joining and contributing for the next year into the project <a href="https://graphnex.eecs.qmul.ac.uk"><u>GraphNEx</u></a><br>
