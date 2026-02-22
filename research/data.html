@@ -91,16 +91,16 @@
 			<table class="tg" width="100%">
 				<tr>
 					<td class="tg-km2t" style="vertical-align: text-top;">
-						<a href="http://corsmal.eecs.qmul.ac.uk/containers_manip.html" TARGET = "_blank">
+						<a href="http://corsmal.github.io/containers_manip.html" TARGET = "_blank">
 							<div class="imglnews" style="border:0">
-								<video width="100%" autoplay loop><source  src="http://corsmal.eecs.qmul.ac.uk/resources/output_4.mp4" type="video/mp4"> Your browser does not support HTML5 video. </video></div>			  
+								<video width="100%" autoplay loop><source  src="http://corsmal.github.io/resources/output_4.mp4" type="video/mp4"> Your browser does not support HTML5 video. </video></div>			  
 								</a>
 							</td>
 							<td class="tg-zv4m" style="vertical-align: top;">
 								<em style="color:#6699ff">CORSMAL Containers Manipulation</em><br><br>
 								A dataset with 1140 audio-visual-inertial recordings of people interacting with (15) containers, using 4 cameras (RGB, depth, and infrared) and a 8-element circular microphone array. Containers are either empty of filled at 2 different levels (50%, 90%) with 3 different types of content (water, pasta, rice). For example, people can pour a liquid in a glass/cup or shake a food box.
 								<br><br>
-								[<a title="Dataset" href="http://corsmal.eecs.qmul.ac.uk/containers_manip.html" TARGET = "_blank"><u>details</u></a>]
+								[<a title="Dataset" href="http://corsmal.github.io/containers_manip.html" TARGET = "_blank"><u>details</u></a>]
 								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_ccm')"><u>bibtex</u></a>]      
 								<div id="bib_ccm"  style="display:none;" class="bib pre-white-space">
 									@misc{Xompero2020CCM,
@@ -116,14 +116,14 @@
 					<!--  -->
 					<tr>
 					<td class="tg-km2t" style="vertical-align: text-top;">
-						<a href="http://corsmal.eecs.qmul.ac.uk/containers.html" TARGET = "_blank">
+						<a href="http://corsmal.github.io/containers.html" TARGET = "_blank">
 							<img src="../images/corsmal_containers.png" alt="Containers"  width="100%" style="vertical-align: middle;"/></a>
 							</td>
 							<td class="tg-zv4m" style="vertical-align: top;">
 								<em style="color:#6699ff">CORSMAL Containers</em><br><br>
 								A vision dataset of 23 transparent and non-transparent containers, such as drinking cups, drinking glasses and bottles. Each container lies on a table in two different setups with different lighting and background conditions, and is observed by two cameras with a wide-baseline, acquiring RGB, depth, and narrow-baseline stereo infrared images.
 								<br><br>
-								[<a title="Dataset" href="http://corsmal.eecs.qmul.ac.uk/containers.html" TARGET = "_blank"><u>details</u></a>]
+								[<a title="Dataset" href="http://corsmal.github.io/containers.html" TARGET = "_blank"><u>details</u></a>]
 								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_containers')"><u>bibtex</u></a>]      
 								<div id="bib_containers"  style="display:none;" class="bib pre-white-space">
 									@misc{Xompero2020CCM,
@@ -229,9 +229,9 @@
 				</table>
 				<br>
 			</div>
-			<div>
+			<!-- <div>
 				<h3 style="text-align: left;">Learning-based models (trained weights)</h3>
-			</div>
+			</div> -->
 		</div>
 <br><br><br>
 <footer class="site-footer">
@@ -240,12 +240,14 @@
 		<a href="https://scholar.google.com/citations?user=r7jxqOAAAAAJ&hl=en&oi=ao" aria-label="Google Scholar" rel="noopener noreferrer" target="_blank"><i class="ai ai-fw ai-google-scholar" aria-hidden="true"></i></a>
 		<a href="https://github.com/kerolex/" aria-label="GitHub" rel="noopener noreferrer" target="_blank" ><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>				
 		<a href="https://www.linkedin.com/in/alessioxompero/?locale=en_US" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>
-		<a href="https://x.com/aXompi" target="_blank" aria-label="X (formerly Twitter)" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
 		<a href="https://bsky.app/profile/axompi.bsky.social" target="_blank" aria-label="Bluesky" rel="noopener noreferrer"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a>
 	</div>
 	<p>
 		Copyright &copy; 2015-<span id="currentYear"></span> - Alessio Xompero
 	</p>
 </footer>
+<script>
+	document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
