@@ -1,6 +1,7 @@
 /**
- * News Filter Module
- * Handles filtering, pagination, and year grouping for news items
+ * News Filter Module - SIMPLIFIED
+ * Handles filtering, pagination, and year archive browsing
+ * Removed confusing year grouping - shows flat list with year filtering option
  */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -11,8 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // State management
   let currentFilter = 'all';
-  let currentPage = 0;
+  let currentYear = null; // null = all years
   let currentList = [];
+  let shownCount = 0;
 
   /**
    * Get all news items from DOM
@@ -23,15 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
    * Extract year from news item
    */
   const getItemYear = (item) => {
-    // Try data-year attribute first
     if (item.dataset.year) return item.dataset.year;
-    
-    // Try datetime attribute on news-date element
     const dateEl = item.querySelector('.news-date');
     if (dateEl?.getAttribute('datetime')) {
       return dateEl.getAttribute('datetime').slice(0, 4);
     }
-    
     return 'Unknown';
   };
 
@@ -58,11 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
    */
   const addNewBadges = () => {
     getAllNewsItems().forEach(item => {
-      // Remove existing badge first
       const existingBadge = item.querySelector('.news-badge');
       if (existingBadge) existingBadge.remove();
 
-      // Add new badge if recent
       if (isRecentItem(item)) {
         const badge = document.createElement('span');
         badge.className = 'news-badge';
@@ -78,50 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   /**
-   * Group news items by year into <details> elements
-   */
-  const groupNewsByYear = () => {
-    const feed = document.querySelector('.news-feed');
-    if (!feed) return;
-
-    const items = getAllNewsItems();
-    if (items.length === 0) return;
-
-    // Group items by year
-    const yearMap = items.reduce((acc, item) => {
-      const year = getItemYear(item);
-      if (!acc[year]) acc[year] = [];
-      acc[year].push(item);
-      return acc;
-    }, {});
-
-    // Sort years in descending order
-    const sortedYears = Object.keys(yearMap).sort((a, b) => b - a);
-
-    // Clear feed and rebuild with grouped structure
-    feed.innerHTML = '';
-
-    sortedYears.forEach((year, index) => {
-      const details = document.createElement('details');
-      details.className = 'year-group';
-      details.open = index === 0; // Open first year by default
-
-      const summary = document.createElement('summary');
-      summary.textContent = `${year} (${yearMap[year].length})`;
-      details.appendChild(summary);
-
-      // Add items to details element
-      yearMap[year].forEach(item => {
-        details.appendChild(item);
-      });
-
-      feed.appendChild(details);
-    });
-
-    addNewBadges();
-  };
-
-  /**
    * Hide all news items
    */
   const hideAllItems = () => {
@@ -129,85 +81,77 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   /**
-   * Show items from list with pagination
+   * Show specific number of items from current list
    */
-  const showItemsPage = (list, startIndex, count) => {
-    const itemsToShow = list.slice(startIndex, startIndex + count);
-    itemsToShow.forEach(item => item.classList.remove('hidden'));
-    return itemsToShow.length;
+  const showItemsCount = (count) => {
+    let shown = 0;
+    for (let i = 0; i < currentList.length && shown < count; i++) {
+      currentList[i].classList.remove('hidden');
+      shown++;
+    }
   };
 
   /**
-   * Update load more button visibility
+   * Update load more button visibility and label
    */
   const updateLoadMoreButton = () => {
     if (!loadMoreBtn) return;
     
     const totalItems = currentList.length;
-    const shownItems = getAllNewsItems().filter(item => !item.classList.contains('hidden')).length;
+    const visibleItems = currentList.filter(item => !item.classList.contains('hidden')).length;
     
-    loadMoreBtn.style.display = totalItems > shownItems ? 'block' : 'none';
-    
-    // Update button label for screen readers
-    if (totalItems > shownItems) {
-      const remaining = totalItems - shownItems;
+    if (totalItems > visibleItems) {
+      loadMoreBtn.style.display = 'block';
+      const remaining = totalItems - visibleItems;
+      loadMoreBtn.textContent = `Load More News (${remaining} remaining)`;
       loadMoreBtn.setAttribute('aria-label', `Load ${remaining} more news items`);
+    } else {
+      loadMoreBtn.style.display = 'none';
+      if (totalItems > 0) {
+        loadMoreBtn.setAttribute('aria-label', 'All news loaded');
+      }
     }
   };
 
   /**
-   * Initialize: Group by year, setup filters, and show initial items
+   * Initialize: Show last 10 items
    */
   const initializeNewsDisplay = () => {
-    groupNewsByYear();
+    addNewBadges();
     
-    // Get ALL items (unfiltered) and show last 10
+    // Get all items and show last 10
     const allItems = getAllNewsItems();
-    hideAllItems();
-    
-    // Show last 10 items of ALL news (not filtered)
-    const startIndex = Math.max(0, allItems.length - PAGE_SIZE);
-    showItemsPage(allItems, startIndex, PAGE_SIZE);
-    
-    // Set currentList to all items for load more functionality
     currentList = allItems;
-    currentPage = Math.ceil((startIndex + PAGE_SIZE) / PAGE_SIZE);
+    
+    hideAllItems();
+    showItemsCount(PAGE_SIZE);
+    shownCount = PAGE_SIZE;
 
     updateLoadMoreButton();
   };
 
   /**
-   * Load More button handler - loads older items (backwards pagination)
+   * Load More button - show next PAGE_SIZE items
    */
   if (loadMoreBtn) {
     loadMoreBtn.addEventListener('click', function() {
-      // Calculate which items are currently visible
-      const visibleItems = getAllNewsItems().filter(i => !i.classList.contains('hidden'));
-      const firstVisibleIndex = currentList.indexOf(visibleItems[0]);
-      
-      // Load PAGE_SIZE items before the first visible item
-      const startIndex = Math.max(0, firstVisibleIndex - PAGE_SIZE);
-      const endIndex = firstVisibleIndex;
-      
-      // Show items in the range
-      currentList.slice(startIndex, endIndex).forEach(item => {
-        item.classList.remove('hidden');
-      });
-
+      const nextCount = shownCount + PAGE_SIZE;
+      showItemsCount(nextCount);
+      shownCount = nextCount;
       updateLoadMoreButton();
 
-      // Announce to screen readers
-      if (startIndex === 0) {
-        this.setAttribute('aria-label', 'All news loaded');
-      } else {
-        const remaining = startIndex;
-        this.setAttribute('aria-label', `Load ${remaining} more older news items`);
+      // Smooth scroll to newly loaded items
+      if (currentList.length > shownCount - PAGE_SIZE) {
+        const nextItem = currentList[shownCount - PAGE_SIZE];
+        if (nextItem) {
+          nextItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }
     });
   }
 
   /**
-   * Build archive and add event listeners
+   * Build year archive - simple link list (NO grouping)
    */
   if (archiveEl) {
     // Count items by year
@@ -218,6 +162,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Create archive list
+    // const wrapper = document.createElement('div');
+    const heading = document.createElement('h3');
+    heading.textContent = 'Browse by Year';
+    // wrapper.appendChild(heading);
+
     const ul = document.createElement('ul');
     const sortedYears = Object.keys(yearCounts).sort((a, b) => b - a);
 
@@ -233,11 +182,16 @@ document.addEventListener('DOMContentLoaded', function() {
       ul.appendChild(li);
     });
 
-    archiveEl.innerHTML = '<h3>Archive by Year</h3>';
+    // wrapper.className = 'news-archive-wrapper';
+    // wrapper.appendChild(ul);
+    archiveEl.innerHTML = '';
+    // archiveEl.appendChild(wrapper);
+    archiveEl.className = 'news-archive-wrapper';
+    archiveEl.appendChild(heading);
     archiveEl.appendChild(ul);
 
     /**
-     * Archive link click handler
+     * Year link click handler - filter by year
      */
     ul.addEventListener('click', (event) => {
       const link = event.target.closest('a');
@@ -246,42 +200,40 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault();
       const year = link.dataset.year;
 
-      // Find the corresponding details element
-      const detailsElements = document.querySelectorAll('.year-group');
-      const targetDetails = Array.from(detailsElements).find(details => {
-        const summary = details.querySelector('summary');
-        return summary && summary.textContent.startsWith(year);
-      });
+      // Reset filters to "All" if year is selected
+      filterBtns.forEach(b => b.classList.remove('active'));
+      const allBtn = filterBtns.find(b => b.dataset.filter === 'all');
+      if (allBtn) allBtn.classList.add('active');
 
-      if (!targetDetails) return;
-
-      // Close all, open target
-      detailsElements.forEach(details => { details.open = false; });
-      targetDetails.open = true;
-
-      // Smooth scroll to details
-      targetDetails.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-      // Update filtered list and pagination - show first 10 items from that year
-      currentList = Array.from(targetDetails.querySelectorAll('.news-item'));
-      currentPage = 0;
+      // Filter items by year
+      const allItems = getAllNewsItems();
+      currentList = allItems.filter(item => getItemYear(item) === year);
+      
+      currentYear = year;
+      shownCount = 0;
 
       hideAllItems();
-      
-      // Show first 10 items from selected year
-      showItemsPage(currentList, 0, PAGE_SIZE);
-      currentPage = 1;
+      showItemsCount(PAGE_SIZE);
+      shownCount = PAGE_SIZE;
 
       updateLoadMoreButton();
 
-      // Announce action to screen readers
-      link.setAttribute('aria-pressed', 'true');
-      setTimeout(() => link.removeAttribute('aria-pressed'), 500);
+      // Scroll to news feed
+      const feed = document.querySelector('.news-feed');
+      if (feed) {
+        feed.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      // Update active state on archive links
+      document.querySelectorAll('[data-year]').forEach(el => {
+        el.classList.remove('active');
+      });
+      link.classList.add('active');
     });
   }
 
   /**
-   * Filter button handlers
+   * Filter button handlers - by category
    */
   filterBtns.forEach(btn => {
     btn.addEventListener('click', function() {
@@ -291,42 +243,35 @@ document.addEventListener('DOMContentLoaded', function() {
       filterBtns.forEach(b => b.classList.remove('active'));
       this.classList.add('active');
 
-      // Get all items from DOM (respects current grouping)
+      // Get all items
       const allItems = getAllNewsItems();
 
-      // Filter items
+      // Filter by category and year
       if (filterValue === 'all') {
-        currentList = allItems;
-        // For "All" filter, show last 10 items (initial behavior)
-        currentPage = 0;
-        hideAllItems();
-        const startIndex = Math.max(0, currentList.length - PAGE_SIZE);
-        showItemsPage(currentList, startIndex, PAGE_SIZE);
-        currentPage = Math.ceil((startIndex + PAGE_SIZE) / PAGE_SIZE);
+        currentList = currentYear 
+          ? allItems.filter(item => getItemYear(item) === currentYear)
+          : allItems;
       } else {
         currentList = allItems.filter(item => {
           const category = (item.dataset.category || '').toLowerCase();
-          return category === filterValue;
+          const year = getItemYear(item);
+          const yearMatch = currentYear ? year === currentYear : true;
+          return category === filterValue && yearMatch;
         });
-        // For specific filters, show first 10 items
-        currentPage = 0;
-        hideAllItems();
-        showItemsPage(currentList, 0, PAGE_SIZE);
-        currentPage = 1;
       }
+
+      shownCount = 0;
+      hideAllItems();
+      showItemsCount(PAGE_SIZE);
+      shownCount = PAGE_SIZE;
 
       updateLoadMoreButton();
 
-      // Scroll to feed and announce
+      // Scroll to feed
       const feed = document.querySelector('.news-feed');
       if (feed) {
         feed.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-
-      // Screen reader announcement
-      const count = currentList.length;
-      this.setAttribute('aria-pressed', 'true');
-      setTimeout(() => this.removeAttribute('aria-pressed'), 300);
     });
   });
 

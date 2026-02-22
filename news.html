@@ -12,10 +12,12 @@
 		gtag('config', 'G-364488019');
 	</script>
 
-	<title>Alessio Xompero, PhD</title>
+	<title>News | Alessio Xompero, PhD</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="News and updates from Alessio Xompero - publications, awards, research events, and community contributions.">
+	<meta name="description" content="Latest news and updates from Alessio Xompero - publications, awards, research events, and community contributions.">
+	<meta property="og:title" content="News | Alessio Xompero, PhD">
+	<meta property="og:description" content="Stay updated with latest publications, awards, events and research activities.">
 	<meta name="image" property="og:image" content="images/AlessioXompero.JPG">
 
 	<link rel="shortcut icon" href="images/profile_icon_ax.JPG" />
@@ -28,6 +30,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
   	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
@@ -38,11 +42,11 @@
 <body>     
 	<div id="menu">
 		<div class="logo">
-			<a href="index.html" class="active"><b>Alessio Xompero, Ph.D.</b></a>			
+			<a href="index.html" class="active"><strong>Alessio Xompero, Ph.D.</strong></a>			
 		</div>
 
 		<!-- From https://www.menucool.com/ddmenu/one-menu-for-all-pages -->
-		<nav>
+		<nav aria-label="Primary Navigation">
 			<div class="menu-toggle"><span></span></div>
 			<ul>			
 				<li class="subnav">
@@ -97,22 +101,37 @@
 	<div id="section">
 		<div class="scrolling-content">
 
-			<h2>News</h2>
+			<h1>Latest News</h1>
 
-			<!-- Filter Controls -->
-            <div class="news-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="publication">Publications</button>
-                <button class="filter-btn" data-filter="award">Awards</button>
-                <button class="filter-btn" data-filter="event">Events</button>
-                <button class="filter-btn" data-filter="service">Services</button>
-				<button class="filter-btn" data-filter="update">Update</button>
-            </div>
+			<main id="main-content">
+			<section id="news-section">
 
-			<div class="news-archive compact" id="newsArchive" aria-label="Archive by year">
-                <h3>Archive</h3>
-                <!-- JS will populate year links here -->
-            </div>
+			<!-- Intro Section -->
+			<article class="news-intro-section">
+				<p>
+					Stay updated with my latest research activities, publications, awards, and contributions to the academic community. Below you'll find the most recent updates, with options to filter by type or explore news by year.
+				</p>
+			</article>
+
+			<!-- Filter Controls with Better UX -->
+			<section class="news-controls-section" aria-label="Filter and navigation controls">
+				<div class="news-filters-wrapper">
+					<h2 class="filters-label">Filter by Type</h2>
+					<div class="news-filters">
+						<button class="filter-btn active" data-filter="all" aria-pressed="true">All News</button>
+						<button class="filter-btn" data-filter="publication">Publications</button>
+						<button class="filter-btn" data-filter="award">Awards</button>
+						<button class="filter-btn" data-filter="event">Events</button>
+						<button class="filter-btn" data-filter="service">Services</button>
+						<button class="filter-btn" data-filter="update">Updates</button>
+					</div>
+				</div>
+
+				<!-- Archive by Year - Only ONE option, replaces the grouped year view -->
+				<div class="news-archive-wrapper" id="newsArchive" aria-label="Browse news by year">
+					<!-- JS will populate year links here -->
+				</div>
+			</section>
 
 			<!-- News Feed -->
 			<div class="news-feed">
@@ -532,23 +551,15 @@
 				</div>
 			</section>
 
-		</div>
+			</div>
 
 			<div id="loadMoreWrapper" style="text-align:center; margin:20px 0;">
   				<button type="button" id="loadMoreBtn" class="filter-btn">Load more</button>
 			</div>
 
-			<!-- Archive by Year -->
-            <!-- <div class="news-archive">
-                <h3>Archive by Year</h3>
-                <ul>
-                    <li><a href="#" data-year="2026">2026</a> (3)</li>
-                    <li><a href="#" data-year="2025">2025</a> (15)</li>
-                    <li><a href="#" data-year="2024">2024</a> (12)</li>
-                    <li><a href="#" data-year="2023">2023</a> (8)</li>
-                    <li><a href="#" data-year="2022">2022</a> (4)</li>
-                </ul>
-            </div> -->
+			</section>
+			</main>
+
 			<!--
 			<p>
 				- 2023/01/01: Joining and contributing for the next year into the project <a href="https://graphnex.eecs.qmul.ac.uk"><u>GraphNEx</u></a><br>
@@ -571,7 +582,6 @@
 		</div>
 		<div style="clear:both"></div>
 	</div>
-	<br><br><br>
 	<footer class="site-footer">
 	<div class="footer-col social-col" aria-label="Social media" style="text-align:center;">  
 		<a href="https://orcid.org/0000-0002-8227-8529" aria-label="ORCID" rel="noopener noreferrer" target="_blank"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i></a>
