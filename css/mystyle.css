@@ -344,13 +344,28 @@ a.reversef<i class="fas fa-fw fa-envelope" aria-hidden="true" style="padding-rig
 }
 
 
-#section{
-  width: 75%;
+#section {
+  width: 90%;  /* was 75% */
+  max-width: 1000px;
   text-align: left;
   margin-top: 0px;
-  margin:0 auto;
+  margin: 0 auto;
   white-space: break-all;
-/*  overflow: hidden;*/
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  #section {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  #section {
+    width: 100%;
+    padding: 0 8px;
+  }
 }
 
 h2{
@@ -395,11 +410,35 @@ h2{
 }
 
 #about, #services {
-  width: 50%;
+  width: 90%;
+  max-width: 1000px;
   text-align: left;
   margin-top: 0px;
-  margin:0 auto;
+  margin: 0 auto;
   white-space: break-all;
+  padding: 0 12px;  /* Add horizontal padding for extra small screens */
+  box-sizing: border-box;  /* Ensure padding is included in width calculation */
+}
+
+/* Add responsive breakpoints */
+@media (max-width: 1024px) {
+  #about, #services {
+    width: 92%;
+  }
+}
+
+@media (max-width: 768px) {
+  #about, #services {
+    width: 95%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #about, #services {
+    width: 100%;
+    padding: 0 8px;
+  }
 }
 
 /* Vertical menu in publications */
