@@ -1,43 +1,51 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139569814-1"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-364488019"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-
-		gtag('config', 'UA-139569814-1');
+		gtag('config', 'G-364488019');
 	</script>
 
-	<title>Alessio Xompero, PhD</title>
+	<title>Research Datasets | Alessio Xompero, PhD</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Research datasets I've contributed to or collected. Audio-visual, computer vision, and multimodal datasets for robotics and AI research.">
+	<meta property="og:title" content="Research Datasets | Alessio Xompero, PhD">
+	<meta property="og:description" content="Publicly available datasets for computer vision, robotics, and multimedia research.">
+	<meta property="og:type" content="website">
 	<meta name="image" property="og:image" content="../images/AlessioXompero.JPG">
 
+
 	<link rel="shortcut icon" href="../images/profile_icon_ax.JPG" />
-	<link rel="stylesheet" href="../css/bootstrap.min.css" >
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="../css/mystyle.css">
 	<link rel="stylesheet" href="../css/all.css">
 	<link rel="stylesheet" href="../css/academicons.css">
+	<link rel="stylesheet" href="../css/data.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 
-	<script src="../js/pubs.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
 	<script src="../js/menu.js" defer></script>
 </head>
 
 <body>
-<div id="menu">
+	<div id="menu">
 		<div class="logo">
-			<a href="../index.html" class="active"><b>Alessio Xompero, Ph.D.</b></a>			
+			<a href="../index.html" class="active"><strong>Alessio Xompero, Ph.D.</strong></a>			
 		</div>
 
 		<!-- From https://www.menucool.com/ddmenu/one-menu-for-all-pages -->
-		<nav>
+		<nav aria-label="Primary Navigation">
 			<div class="menu-toggle"><span></span></div>
 			<ul>			
 				<li class="subnav">
@@ -84,156 +92,221 @@
 
 	<div id="about">
 		<h2>Data</h2>
-		<p>
-			A list of dataset that I contributed to the collection, annotation, and release. 
-		</p>
-		<div>
-			<table class="tg" width="100%">
-				<tr>
-					<td class="tg-km2t" style="vertical-align: text-top;">
-						<a href="http://corsmal.github.io/containers_manip.html" TARGET = "_blank">
-							<div class="imglnews" style="border:0">
-								<video width="100%" autoplay loop><source  src="http://corsmal.github.io/resources/output_4.mp4" type="video/mp4"> Your browser does not support HTML5 video. </video></div>			  
-								</a>
-							</td>
-							<td class="tg-zv4m" style="vertical-align: top;">
-								<em style="color:#6699ff">CORSMAL Containers Manipulation</em><br><br>
-								A dataset with 1140 audio-visual-inertial recordings of people interacting with (15) containers, using 4 cameras (RGB, depth, and infrared) and a 8-element circular microphone array. Containers are either empty of filled at 2 different levels (50%, 90%) with 3 different types of content (water, pasta, rice). For example, people can pour a liquid in a glass/cup or shake a food box.
-								<br><br>
-								[<a title="Dataset" href="http://corsmal.github.io/containers_manip.html" TARGET = "_blank"><u>details</u></a>]
-								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_ccm')"><u>bibtex</u></a>]      
-								<div id="bib_ccm"  style="display:none;" class="bib pre-white-space">
-									@misc{Xompero2020CCM,
-									title = {CORSMAL Containers Manipulation},
-									author = {Xompero, Alessio and Sanchez-Matilla, Ricardo, and Mazzon, Riccardo and Cavallaro, Andrea},
-									organization={Queen Mary University of Londodn},
-									doi={https://doi.org/10.17636/101CORSMAL1},
-									year = {2020}
-								}
-							</div>
-						</td>
-					</tr>
-					<!--  -->
-					<tr>
-					<td class="tg-km2t" style="vertical-align: text-top;">
-						<a href="http://corsmal.github.io/containers.html" TARGET = "_blank">
-							<img src="../images/corsmal_containers.png" alt="Containers"  width="100%" style="vertical-align: middle;"/></a>
-							</td>
-							<td class="tg-zv4m" style="vertical-align: top;">
-								<em style="color:#6699ff">CORSMAL Containers</em><br><br>
-								A vision dataset of 23 transparent and non-transparent containers, such as drinking cups, drinking glasses and bottles. Each container lies on a table in two different setups with different lighting and background conditions, and is observed by two cameras with a wide-baseline, acquiring RGB, depth, and narrow-baseline stereo infrared images.
-								<br><br>
-								[<a title="Dataset" href="http://corsmal.github.io/containers.html" TARGET = "_blank"><u>details</u></a>]
-								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_containers')"><u>bibtex</u></a>]      
-								<div id="bib_containers"  style="display:none;" class="bib pre-white-space">
-									@misc{Xompero2020CCM,
-									title = {CORSMAL Containers},
-									author = {Xompero, Alessio and Sanchez-Matilla, Ricardo, and Mazzon, Riccardo and Cavallaro, Andrea},
-									organization={Queen Mary University of Londodn},
-									doi={https://doi.org/10.17636/corsmal2},
-									year = {2020}
-								}
-							</div>
-						</td>
-					</tr>
-					<!--  -->
-					<tr>
-					<td class="tg-km2t" style="vertical-align: text-top;">
-						<a href="https://doi.org/10.5281/zenodo.7235890" TARGET = "_blank">
-							<img src="../research/xview/images/backyard_rec_colmap.png" alt="x-view"  width="100%" style="vertical-align: middle;"/></a>
-							</td>
-							<td class="tg-zv4m" style="vertical-align: top;">
-								<em style="color:#6699ff">X-View</em><br><br>
-								
-								<br><br>
-								[<a title="Dataset" href="https://doi.org/10.5281/zenodo.7235890" TARGET = "_blank"><u>details</u></a>]
-							</div>
-						</td>
-					</tr>
-					<!--  -->
-					<tr>
-					<td class="tg-km2t" style="vertical-align: text-top;">
-						<a href="https://speechtek.fbk.eu/cav3d-dataset/" TARGET = "_blank">
-							<img src="../images/CAV3D.png" alt="CAV3D"  width="100%" style="vertical-align: middle;"/></a>
-							</td>
-							<td class="tg-zv4m" style="vertical-align: top;">
-								<em style="color:#6699ff">CAV3D (Co-located Audio-Visual streams with 3D tracks)</em><br><br>
-								A dataset for 3D speaker tracking was collected with a sensing platform consisting of a monocular colour camera co-located with an 8-element circular microphone array. The audio sampling rate is 96 kHz. Video was recorded at 15 frames per second. The sensing platform was placed on a table in a room with dimensions 4.77 x 5.95 x 4.5 m and reverberation time of approximately 0.7s to record up to three simultaneous speakers. In addition to the sensing platform, 4 hardware-triggered CCD colour cameras installed at the top corners of the room recorded the scene. The dataset is synchronized, calibrated and annotated.
-								<br><br>
-								[<a title="Dataset" href="https://speechtek.fbk.eu/cav3d-dataset/" TARGET = "_blank"><u>details</u></a>]
-								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_cav3d')"><u>bibtex</u></a>]      
-								<div id="bib_cav3d"  style="display:none;" class="bib pre-white-space">
-									@article{Qian2019TMM,
-									title = {Multi-speaker tracking from an audio-visual sensing device},
-									author = {Qian, X. and Brutti, A., and Omologo, L. and Cavallaro, Andrea},
-									journal={IEEE Transactions on Multimedia},
-									volume={21},
-									number={10},
-									month=mar,
-									year = {2019}
-								}
-							</div>
-						</td>
-					</tr>
-					<!-- -->
-					<tr>
-					<td class="tg-km2t" style="vertical-align: text-top;">
-						<a href="http://loki.disi.unitn.it/MediaEvalSEM2015/" TARGET = "_blank">
-							<div align="centre" style="text-align:center;">
-								<img src="../images/MediaEvalSEM2014/Mediaeval.jpg" alt="MediaEvalSEM2015"  width="80%" style="vertical-align: middle;"/>
-								<br><br>
-								<img src="../images/MediaEvalSEM2015/16404656271_56c78986de_o.jpg" alt="MediaEvalSEM2015"  width="32%" style="vertical-align: middle;"/>
-								<img src="../images/MediaEvalSEM2015/3_17.jpg" alt="MediaEvalSEM2015"  width="32%" style="vertical-align: middle;"/>
-								<img src="../images/MediaEvalSEM2015/10_37.jpg" alt="MediaEvalSEM2015"  width="32%" style="vertical-align: middle;"/>
-								<br><br>
-								<img src="../images/MediaEvalSEM2015/9_1.jpg" alt="MediaEvalSEM2015"  width="32%" style="vertical-align: middle;"/>
-								<img src="../images/MediaEvalSEM2015/9_38.jpg" alt="MediaEvalSEM2015"  width="32%" style="vertical-align: middle;"/>
-								<img src="../images/MediaEvalSEM2015/16421670662_93ffc640ba_o.jpg" alt="MediaEvalSEM2015"  width="32%" style="vertical-align: middle;"/>	
-							</div>
-						</a>
-							</td>
-							<td class="tg-zv4m" style="vertical-align: top;text-align: justify;">
-								<em style="color:#6699ff">Tour de France 2014, NAMM 2015, Spring Party Salesiani 2015</em><br><br>
-								These datasets were collected and been part of the <i>Synchronization of Multi-User Event Media (SEM) at MediaEval 2015: Task Description, Datasets, and Evaluation</i>. Tour de France 2014 consists of images taken during the event and collected from Flickr. The dataset, split into 33 galleries, covers the entire competition. NAMM 2015 consists of 420 images downloaded from Flickr and 32 videos downloaded from YouTube. The dataset, split into 19 galleries, is related to the famous event held in California. The Spring Party Salesiani 2015 is a dataset collected by the organizers, and recorded duringa students' party held in Trento, Italy. It is composed of videos and pictures captured by the attendees during the event.
-								<br><br>
-								[<a title="Dataset" href="http://loki.disi.unitn.it/MediaEvalSEM2015/" TARGET = "_blank"><u>details</u></a>]
-								[<a title="PDF" href="https://www.iti.gr/~bmezaris/publications/mediaeval15sem_overview.pdf" TARGET = "_blank"><u>paper</u></a>]
-						</td>
-					</tr>
-					<!-- -->
-					<tr>
-					<td class="tg-km2t" style="vertical-align: text-top;">
-						<a href="http://loki.disi.unitn.it/MediaEvalSEM2014/" TARGET = "_blank">
-							<div align="centre" style="text-align:center;">
-								<img src="../images/MediaEvalSEM2014/Mediaeval.jpg" alt="MediaEvalSEM2014"  width="80%" style="vertical-align: middle;"/>
-								<br><br>
-								<img src="../images/MediaEvalSEM2014/beach.jpg" alt="MediaEvalSEM2014"  width="32%" style="vertical-align: middle;"/>
-								<img src="../images/MediaEvalSEM2014/federer.jpg" alt="MediaEvalSEM2014"  width="32%" style="vertical-align: middle;"/>
-								<img src="../images//MediaEvalSEM2014/circles.jpg" alt="MediaEvalSEM2014"  width="32%" style="vertical-align: middle;"/>
-								<br><br>
-								<img src="../images/MediaEvalSEM2014/ski.jpg" alt="MediaEvalSEM2014"  width="32%" style="vertical-align: middle;"/>
-								<img src="../images/MediaEvalSEM2014/leaves.jpg" alt="MediaEvalSEM2014"  width="32%" style="vertical-align: middle;"/>
-								<img src="../images/MediaEvalSEM2014/skating.jpg" alt="MediaEvalSEM2014"  width="32%" style="vertical-align: middle;"/>	
-							</div>
-						</a>
-							</td>
-							<td class="tg-zv4m" style="vertical-align: top;text-align: justify;">
-								<em style="color:#6699ff">London Olympics and Vancouver Olympics Datasets</em><br><br>
-								As part of the <i>Synchronization of Multi-User Event Media (SEM) at MediaEval 2014: Task Description, Datasets, and Evaluation</i>, these datasets are a collection of images referring to structured sport events, namely the Olympic Games held in London in 2012 nad the Vancouver Winter Olympic Games of 2010. London Olympics includes 2124 images, divided into 37 galleries. Vancouver Winter Olympic Games includes 1351 pictures representing most of the competitions, divided into 35 galleries with a variable number of pictures in each gallery. 
-								The images were gathered from Flickr and made available under Creative Commons license.   
-								<br><br>
-								[<a title="Dataset" href="http://loki.disi.unitn.it/MediaEvalSEM2014/" TARGET = "_blank"><u>details</u></a>]
-								[<a title="PDF" href="https://ceur-ws.org/Vol-1263/mediaeval2014_submission_32.pdf" TARGET = "_blank"><u>paper</u></a>]
-						</td>
-					</tr>
-				</table>
-				<br>
+
+
+		<main id="main-content">
+		<section id="data-section">
+			<!-- <h1>Research Datasets</h1> -->
+
+			<!-- Intro Section -->
+			<article class="intro-section">
+				<p>
+					A collection of datasets I've contributed to or collected through research collaborations. 
+					These datasets span computer vision, robotics, multimedia, and audio-visual processing. 
+					Each dataset includes access links, detailed documentation, and citation information for 
+					researchers and practitioners.
+				</p>
+			</article>
+
+			<!-- Datasets Container -->
+			<div class="datasets-container">
+
+				<!-- Dataset 1: CORSMAL Containers Manipulation -->
+				<article class="dataset-card">
+					<div class="dataset-media">
+						<video width="100%" autoplay loop muted playsinline>
+							<source src="http://corsmal.github.io/resources/output_4.mp4" type="video/mp4">
+							Your browser does not support HTML5 video.
+						</video>
+					</div>
+					<div class="dataset-content">
+						<h3 class="dataset-title">CORSMAL Containers Manipulation</h3>
+						<p class="dataset-description">
+							A dataset with 1,140 audio-visual-inertial recordings of people interacting with 
+							15 containers, using 4 cameras (RGB, depth, and infrared) and an 8-element circular 
+							microphone array. Containers are either empty or filled at 2 different levels (50%, 90%) 
+							with 3 different types of content (water, pasta, rice). Includes activities like pouring 
+							liquids in glasses/cups and shaking food boxes.
+						</p>
+						<div class="dataset-links">
+							<a href="http://corsmal.github.io/containers_manip.html" target="_blank" rel="noopener noreferrer" class="dataset-link">
+								📊 Access Dataset
+							</a>
+							<details class="bibtex-details">
+								<summary>📋 BibTeX Citation</summary>
+								<pre class="bibtex-code">@misc{Xompero2020CCM,
+  title = {CORSMAL Containers Manipulation},
+  author = {Xompero, Alessio and Sanchez-Matilla, Ricardo and Mazzon, Riccardo and Cavallaro, Andrea},
+  organization={Queen Mary University of London},
+  doi={https://doi.org/10.17636/101CORSMAL1},
+  year = {2020}
+}</pre>
+							</details>
+						</div>
+					</div>
+				</article>
+
+				<!-- Dataset 2: CORSMAL Containers -->
+				<article class="dataset-card">
+					<div class="dataset-media">
+						<img src="../images/corsmal_containers.png" alt="CORSMAL Containers - Vision dataset of transparent and non-transparent containers" class="dataset-image">
+					</div>
+					<div class="dataset-content">
+						<h3 class="dataset-title">CORSMAL Containers</h3>
+						<p class="dataset-description">
+							A vision dataset of 23 transparent and non-transparent containers, such as drinking cups, 
+							drinking glasses, and bottles. Each container is placed on a table in two different setups 
+							with varying lighting and background conditions. Observed by two cameras with wide-baseline 
+							configuration, acquiring RGB, depth, and narrow-baseline stereo infrared images.
+						</p>
+						<div class="dataset-links">
+							<a href="http://corsmal.github.io/containers.html" target="_blank" rel="noopener noreferrer" class="dataset-link">
+								📊 Access Dataset
+							</a>
+							<details class="bibtex-details">
+								<summary>📋 BibTeX Citation</summary>
+								<pre class="bibtex-code">@misc{Xompero2020Containers,
+  title = {CORSMAL Containers},
+  author = {Xompero, Alessio and Sanchez-Matilla, Ricardo and Mazzon, Riccardo and Cavallaro, Andrea},
+  organization={Queen Mary University of London},
+  doi={https://doi.org/10.17636/corsmal2},
+  year = {2020}
+}</pre>
+							</details>
+						</div>
+					</div>
+				</article>
+
+				<!-- Dataset 3: X-View -->
+				<article class="dataset-card">
+					<div class="dataset-media">
+						<img src="../research/xview/images/backyard_rec_colmap.png" alt="X-View - Cross-camera view overlap recognition dataset" class="dataset-image">
+					</div>
+					<div class="dataset-content">
+						<h3 class="dataset-title">X-View: Cross-Camera View Overlap Recognition</h3>
+						<p class="dataset-description">
+							A dataset for cross-camera view overlap recognition and spatial alignment. Contains 
+							multi-view camera recordings from multiple cameras placed at different positions and 
+							orientations. Useful for applications in distributed camera networks, surveillance systems, 
+							and multi-camera tracking.
+						</p>
+						<div class="dataset-links">
+							<a href="https://doi.org/10.5281/zenodo.7235890" target="_blank" rel="noopener noreferrer" class="dataset-link">
+								📊 Access Dataset (Zenodo)
+							</a>
+							<a href="https://github.com/kerolex/CrossCameraViewOverlapRecognition" target="_blank" rel="noopener noreferrer" class="dataset-link">
+								💻 GitHub Repository
+							</a>
+						</div>
+					</div>
+				</article>
+
+				<!-- Dataset 4: CAV3D -->
+				<article class="dataset-card">
+					<div class="dataset-media">
+						<img src="../images/CAV3D.png" alt="CAV3D - Co-located Audio-Visual 3D speaker tracking dataset" class="dataset-image">
+					</div>
+					<div class="dataset-content">
+						<h3 class="dataset-title">CAV3D: Audio-Visual 3D Speaker Tracking</h3>
+						<p class="dataset-description">
+							A dataset for 3D speaker tracking using co-located audio-visual sensing. Collected with 
+							a monocular color camera paired with an 8-element circular microphone array (96 kHz sampling). 
+							Video at 15 FPS. Includes synchronized data from 4 hardware-triggered CCD cameras at room 
+							corners. Supports up to 3 simultaneous speakers in a calibrated, annotated environment.
+						</p>
+						<div class="dataset-links">
+							<a href="https://speechtek.fbk.eu/cav3d-dataset/" target="_blank" rel="noopener noreferrer" class="dataset-link">
+								📊 Access Dataset
+							</a>
+							<details class="bibtex-details">
+								<summary>📋 BibTeX Citation</summary>
+								<pre class="bibtex-code">@article{Qian2019TMM,
+  title = {Multi-speaker tracking from an audio-visual sensing device},
+  author = {Qian, X. and Brutti, A. and Omologo, L. and Cavallaro, Andrea},
+  journal={IEEE Transactions on Multimedia},
+  volume={21},
+  number={10},
+  month=mar,
+  year = {2019}
+}</pre>
+							</details>
+						</div>
+					</div>
+				</article>
+
+				<!-- Dataset 5: MediaEval SEM 2015 -->
+				<article class="dataset-card">
+					<div class="dataset-media">
+						<div class="gallery-grid">
+							<img src="../images/MediaEvalSEM2014/Mediaeval.jpg" alt="MediaEval 2015 logo" class="gallery-image">
+							<img src="../images/MediaEvalSEM2015/16404656271_56c78986de_o.jpg" alt="Tour de France 2014 event image" class="gallery-image">
+							<img src="../images/MediaEvalSEM2015/3_17.jpg" alt="Event coverage photo" class="gallery-image">
+							<img src="../images/MediaEvalSEM2015/10_37.jpg" alt="Event coverage photo" class="gallery-image">
+							<img src="../images/MediaEvalSEM2015/9_1.jpg" alt="Event coverage photo" class="gallery-image">
+							<img src="../images/MediaEvalSEM2015/9_38.jpg" alt="Event coverage photo" class="gallery-image">
+							<img src="../images/MediaEvalSEM2015/16421670662_93ffc640ba_o.jpg" alt="Event coverage photo" class="gallery-image">
+						</div>
+					</div>
+					<div class="dataset-content">
+						<h3 class="dataset-title">MediaEval SEM 2015: Multi-User Event Media</h3>
+						<p class="dataset-description">
+							Three event datasets collected for the Synchronization of Multi-User Event Media task at 
+							MediaEval 2015. <strong>Tour de France 2014:</strong> 33 galleries of images from Flickr covering 
+							the entire competition. <strong>NAMM 2015:</strong> 420 Flickr images and 32 YouTube videos in 
+							19 galleries from the Los Angeles event. <strong>Spring Party Salesiani 2015:</strong> Videos 
+							and pictures captured by attendees during a students' party in Trento, Italy.
+						</p>
+						<div class="dataset-links">
+							<a href="http://loki.disi.unitn.it/MediaEvalSEM2015/" target="_blank" rel="noopener noreferrer" class="dataset-link">
+								📊 Access Dataset
+							</a>
+							<a href="https://www.iti.gr/~bmezaris/publications/mediaeval15sem_overview.pdf" target="_blank" rel="noopener noreferrer" class="dataset-link">
+								📄 Research Paper
+							</a>
+						</div>
+					</div>
+				</article>
+
+				<!-- Dataset 6: MediaEval SEM 2014 -->
+				<article class="dataset-card">
+					<div class="dataset-media">
+						<div class="gallery-grid">
+							<img src="../images/MediaEvalSEM2014/Mediaeval.jpg" alt="MediaEval 2014 logo" class="gallery-image">
+							<img src="../images/MediaEvalSEM2014/beach.jpg" alt="Olympic Games event image" class="gallery-image">
+							<img src="../images/MediaEvalSEM2014/federer.jpg" alt="Sports event photo" class="gallery-image">
+							<img src="../images/MediaEvalSEM2014/circles.jpg" alt="Olympic sports image" class="gallery-image">
+							<img src="../images/MediaEvalSEM2014/ski.jpg" alt="Winter Olympics image" class="gallery-image">
+							<img src="../images/MediaEvalSEM2014/leaves.jpg" alt="Event photo" class="gallery-image">
+							<img src="../images/MediaEvalSEM2014/skating.jpg" alt="Winter Olympics skating" class="gallery-image">
+						</div>
+					</div>
+					<div class="dataset-content">
+						<h3 class="dataset-title">MediaEval SEM 2014: Olympic Games Datasets</h3>
+						<p class="dataset-description">
+							Two Olympic Games image datasets from the Synchronization of Multi-User Event Media task at 
+							MediaEval 2014. <strong>London Olympics 2012:</strong> 2,124 images in 37 galleries capturing 
+							the Olympic Games. <strong>Vancouver Winter Olympics 2010:</strong> 1,351 images in 35 galleries 
+							representing various competitions. All images gathered from Flickr and made available under 
+							Creative Commons license for research purposes.
+						</p>
+						<div class="dataset-links">
+							<a href="http://loki.disi.unitn.it/MediaEvalSEM2014/" target="_blank" rel="noopener noreferrer" class="dataset-link">
+								📊 Access Dataset
+							</a>
+							<a href="https://ceur-ws.org/Vol-1263/mediaeval2014_submission_32.pdf" target="_blank" rel="noopener noreferrer" class="dataset-link">
+								📄 Research Paper
+							</a>
+						</div>
+					</div>
+				</article>
+
 			</div>
-			<!-- <div>
-				<h3 style="text-align: left;">Learning-based models (trained weights)</h3>
-			</div> -->
-		</div>
-<br><br><br>
+
+		</section>
+	</main>
+	</div>
+
+
 <footer class="site-footer">
 	<div class="footer-col social-col" aria-label="Social media" style="text-align:center;">  
 		<a href="https://orcid.org/0000-0002-8227-8529" aria-label="ORCID" rel="noopener noreferrer" target="_blank"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i></a>

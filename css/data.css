@@ -1,0 +1,390 @@
+/* ============================================
+   DATA PAGE STYLES - Blog Aligned Design
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+#data-section {
+    max-width: 1100px;              /* ← NEW */
+    margin: 0 auto;                 /* ← NEW */
+    padding: 0 12px;                /* ← NEW */
+}
+
+/* Page Title */
+#data-section h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: #1a365d;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+/* Intro Section - like featured post */
+.intro-section {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-left: 4px solid #d97706;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin: 1.5em 0 2.5em 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.intro-section p {
+    margin: 0;
+    line-height: 1.7;
+    color: #1f2937;
+    font-size: 1rem;
+}
+
+/* Datasets Container - Grid Layout */
+
+.datasets-container {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    max-width: 1100px;              /* ← NEW */
+    margin-left: auto;              /* ← NEW */
+    margin-right: auto;             /* ← NEW */
+}
+
+/* Dataset Card */
+.dataset-card {
+    display: grid;
+    grid-template-columns: 350px 1fr;  /* Image | Content */
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid #d97706;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.dataset-card:hover {
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.12);
+    transform: translateY(-2px);
+    border-left-color: #fbbf24;
+}
+
+/* Dataset Media (Video/Image) */
+.dataset-media {
+    position: relative;
+    overflow: hidden;
+    background: #f3f4f6;
+    aspect-ratio: 16 / 9;
+}
+
+.dataset-media img,
+.dataset-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.dataset-card:hover .dataset-media img,
+.dataset-card:hover .dataset-media video {
+    transform: scale(1.05);
+}
+
+/* Dataset Content */
+.dataset-content {
+    padding: 1.5rem;
+}
+
+.dataset-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    color: #1a365d;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.dataset-description {
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0 0 1rem 0;
+}
+
+/* Dataset Links Container */
+.dataset-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.dataset-link {
+    color: #d97706;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.dataset-link:hover {
+    border-bottom-color: #d97706;
+    color: #1a365d;
+}
+
+.dataset-link:focus {
+    outline: 2px solid rgba(217, 119, 6, 0.3);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* BibTeX Details Element */
+.bibtex-details {
+    display: inline-block;
+}
+
+.bibtex-details summary {
+    cursor: pointer;
+    color: #d97706;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+    user-select: none;
+    list-style: none;
+    border-bottom: 2px solid transparent;
+    font-size: 0.9rem;
+}
+
+.bibtex-details summary:hover {
+    border-bottom-color: #d97706;
+    color: #1a365d;
+}
+
+.bibtex-details summary:focus {
+    outline: 2px solid rgba(217, 119, 6, 0.3);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.bibtex-code {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid #d97706;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    overflow-x: auto;
+    color: #1f2937;
+}
+
+/* Gallery Grid for Multiple Images */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.8rem;
+    margin: 0;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design - Tablet */
+@media (max-width: 768px) {
+    .datasets-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .dataset-card {
+        grid-template-columns: 1fr;    /* Stacks vertically */
+    }
+
+    #data-section h1 {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .intro-section {
+        padding: 1.2rem;
+        margin: 1rem 0 1.5rem 0;
+    }
+
+    .dataset-title {
+        font-size: 1.2rem;
+    }
+
+    .dataset-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 0.6rem;
+    }
+
+    .dataset-media {
+        aspect-ratio: auto;
+        min-height: 250px;
+    }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 480px) {
+    .datasets-container {
+        gap: 1.2rem;
+    }
+
+    #data-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .dataset-content {
+        padding: 1rem;
+    }
+
+    .dataset-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .dataset-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .dataset-link,
+    .bibtex-details summary {
+        font-size: 0.85rem;
+    }
+
+    .bibtex-code {
+        font-size: 0.75rem;
+        padding: 0.8rem;
+        margin-top: 0.3rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+
+    .intro-section {
+        padding: 1rem;
+    }
+
+    .intro-section p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .dataset-card {
+        background: #1f2937;
+        border-color: #374151;
+    }
+
+    .dataset-media {
+        background: #111827;
+    }
+
+    .dataset-title {
+        color: #fbbf24;
+    }
+
+    .dataset-description {
+        color: #d1d5db;
+    }
+
+    .dataset-link {
+        color: #fbbf24;
+    }
+
+    .dataset-link:hover {
+        color: #fef3c7;
+    }
+
+    .bibtex-details summary {
+        color: #fbbf24;
+    }
+
+    .bibtex-details summary:hover {
+        color: #fef3c7;
+    }
+
+    .bibtex-code {
+        background: #111827;
+        border-color: #374151;
+        border-left-color: #fbbf24;
+        color: #e0e0e0;
+    }
+
+    .intro-section {
+        background: #332800;
+        border-left-color: #fbbf24;
+    }
+
+    .intro-section p {
+        color: #e0e0e0;
+    }
+
+    #data-section h1 {
+        color: #fbbf24;
+    }
+
+    .dataset-card {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .dataset-card:hover {
+        box-shadow: 0 4px 12px rgba(217, 119, 6, 0.2);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .dataset-links {
+        display: none;
+    }
+
+    .dataset-card {
+        page-break-inside: avoid;
+        border: 1px solid #ddd;
+        box-shadow: none;
+    }
+
+    .intro-section {
+        page-break-inside: avoid;
+    }
+}
+
+/* Accessibility - Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .dataset-card,
+    .dataset-media img,
+    .dataset-media video,
+    .gallery-image,
+    .dataset-link,
+    .bibtex-details summary {
+        transition: none;
+        animation: none;
+    }
+}
