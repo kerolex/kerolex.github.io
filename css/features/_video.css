@@ -1,0 +1,5 @@
+/* Video feature styles */
+.video-container { text-align: center; margin: 20px 0; }
+.video-container iframe { max-width: 100%; height: auto; aspect-ratio: 16 / 9; }
+.talk-title { font-weight: bold; margin-top: 15px; color: #333; }
+.talk-subtitle { font-style: italic; color: #666; margin: 5px 0; }

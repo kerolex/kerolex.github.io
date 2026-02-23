@@ -1,0 +1,81 @@
+/* Container and column layout rules */
+.container { max-width: var(--max-content-width); margin: 0 auto; padding: 0 var(--space-md); }
+
+/* Gallery container (kept for legacy slideshow) */
+.gallery-container { position: relative; width: 100%; text-align: center; margin: 0 auto; }
+
+.vertical-menu-pubs { display: flex; width: auto; flex-direction: column; padding: var(--space-md); position: sticky; top:75px; overflow-y: auto; }
+.vertical-menu-pubs a { background-color: #eee; color: black; display: block; padding: 12px; text-decoration: none; }
+.vertical-menu-pubs a:hover { background-color: #6699ff; color: white; }
+
+.fixed-content { float:left; width:25%; padding-top:30px; padding-right:20px; padding-left:20px; position: sticky; top:75px; overflow-y: auto; }
+.scrolling-content { width:75%; overflow: hidden; margin:0 auto; }
+
+.profile-container { width: 100%; overflow: hidden; }
+.profile-image { width: 18%; float: left; }
+.profile-image img { border-radius: 0; padding: 30px 30px 10px 0; width: 100%; display: block; }
+.profile-bio { padding-top: 30px; text-align: justify; }
+#section {
+  width: 90%;  /* was 75% */
+  max-width: 1000px;
+  text-align: left;
+  margin-top: 0px;
+  margin: 0 auto;
+  white-space: break-all;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+#about {
+    width: 75%;
+    margin-top: 0px;
+    margin:0 auto;
+    white-space: break-all;
+    overflow: hidden;
+}
+
+#about::after {
+  content: "";
+  clear: both;
+}
+
+#about, #services {
+  width: 90%;
+  max-width: 1000px;
+  text-align: left;
+  margin-top: 0px;
+  margin: 0 auto;
+  white-space: break-all;
+  padding: 0 12px;  /* Add horizontal padding for extra small screens */
+  box-sizing: border-box;  /* Ensure padding is included in width calculation */
+}
+
+/* Add responsive breakpoints */
+@media (max-width: 1024px) {
+  #about, #services {
+    width: 92%;
+  }
+}
+
+@media (max-width: 768px) {
+  #about, #services {
+    width: 95%;
+    max-width: 100%;
+  }
+
+  #section {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  #about, #services {
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  #section {
+    width: 100%;
+    padding: 0 8px;
+  }
+}

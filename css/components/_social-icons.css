@@ -1,0 +1,99 @@
+/* Author urls, social icons and related dropdowns */
+.author__urls-wrapper { position: relative; display: inline-block; vertical-align: middle; font-family: var(--font-sans); z-index:10; cursor:pointer; text-align:center; }
+.author__urls { display:none; position:absolute; right:0; margin-top:15px; padding:10px; list-style:none; border:1px solid #f2f3f3; border-radius:4px; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.12); }
+.author__urls li { white-space:nowrap; }
+.author__urls a { display:block; margin-bottom:5px; padding:2px 5px; color:inherit; font-size:1.1em; }
+.author__urls a:hover { text-decoration:underline; }
+.social-col a { font-size:2.5em; }
+
+.social-icons .fa {
+ color:#000
+}
+.social-icons .fa-behance,
+.social-icons .fa-behance-square {
+ color:#1769FF
+}
+.social-icons .fa-dribbble {
+ color:#ea4c89
+}
+.social-icons .fa-facebook,
+.social-icons .fa-facebook-square {
+ color:#3b5998
+}
+.social-icons .fa-flickr {
+ color:#ff0084
+}
+.social-icons .fa-foursquare {
+ color:#0072b1
+}
+.social-icons .fa-github,
+.social-icons .fa-github-alt,
+.social-icons .fa-github-square {
+ color:#171516
+}
+.social-icons .fa-gitlab {
+ color:#FCA121
+}
+.social-icons .fa-google-plus,
+.social-icons .fa-google-plus-square {
+ color:#dd4b39
+}
+.social-icons .fa-instagram {
+ color:#517fa4
+}
+.social-icons .fa-lastfm,
+.social-icons .fa-lastfm-square {
+ color:#d51007
+}
+.social-icons .fa-linkedin,
+.social-icons .fa-linkedin-square {
+ color:#007bb6
+}
+.social-icons .fa-pinterest,
+.social-icons .fa-pinterest-p,
+.social-icons .fa-pinterest-square {
+ color:#cb2027
+}
+.social-icons .fa-rss,
+.social-icons .fa-rss-square {
+ color:#fa9b39
+}
+.social-icons .fa-soundcloud {
+ color:#f30
+}
+.social-icons .fa-stack-exchange,
+.social-icons .fa-stack-overflow {
+ color:#fe7a15
+}
+.social-icons .fa-tumblr,
+.social-icons .fa-tumblr-square {
+ color:#32506d
+}
+.social-icons .fa-twitter,
+.social-icons .fa-twitter-square {
+ color:#55acee
+}
+.social-icons .fa-x-twitter,
+.social-icons .fa-x-twitter-square {
+ color:#55acee
+}
+.social-icons .fa-vimeo,
+.social-icons .fa-vimeo-square {
+ color:#1ab7ea
+}
+.social-icons .fa-vine {
+ color:#00bf8f
+}
+.social-icons .fa-youtube,
+.social-icons .fa-youtube-square,
+.social-icons .fa-youtube-play {
+ color:#b00
+}
+.social-icons .fa-xing,
+.social-icons .fa-xing-square {
+ color:#006567
+}
+.social-icons .ai-orcid,
+.social-icons .ai-orcid-square {
+ color:#a6ce39
+}

@@ -1,0 +1,90 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --link-color: #1a73e8;
+  --muted-color: #6b7280;
+  --accent: #d97706;
+  --accent-2: #fbbf24;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --max-content-width: 1100px;
+  --font-sans: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #eeeeee;
+  --link-color: #8ab4f8;
+}
+:root {
+  /* Primary - Deep Blue (from blog/news) */
+  --color-primary: #1a365d;
+  --color-primary-light: #2d5a8c;
+  --color-primary-lighter: #f9fafb;
+  
+  /* Accent - Warm Amber */
+  --color-accent: #d97706;
+  --color-accent-light: #fbbf24;
+  --color-accent-lighter: #fef3c7;
+  
+  /* Semantic */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+  
+  /* Neutral */
+  --color-bg: #ffffff;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-divider: #d1d5db;
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 2.5rem;
+  
+  /* Typography */
+  --font-sans: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: 'Merriweather', Georgia, serif;
+  --font-mono: 'Courier New', monospace;
+  
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 999px;
+}
+
+/* Dark Mode Override */
+[data-theme="dark"],
+@media (prefers-color-scheme: dark) {
+  --color-bg: #121212;
+  --color-text: #e0e0e0;
+  --color-text-muted: #9ca3af;
+  --color-border: #374151;
+}

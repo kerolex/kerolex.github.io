@@ -1,0 +1,8 @@
+/* Minimal reset / sensible defaults */
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #app { height: 100%; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-family: var(--font-sans); background: var(--bg-color); color: var(--text-color); }
+img, picture, video, svg { max-width: 100%; display: block; }
+button { font: inherit; }
+a { text-decoration: none; }

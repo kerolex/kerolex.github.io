@@ -1,0 +1,37 @@
+/* Master stylesheet - imports modular files in recommended order */
+
+/* 1. BASE */
+@import url('base/_variables.css');
+@import url('base/_reset.css');
+@import url('base/_typography.css');
+@import url('base/_accessibility.css');
+
+/* 2. LAYOUT */
+@import url('layout/_container.css');
+@import url('layout/_header.css');
+@import url('layout/_footer.css');
+@import url('layout/_grid.css');
+@import url('layout/_responsive.css');
+
+/* 3. COMPONENTS */
+@import url('components/_buttons.css');
+@import url('components/_cards.css');
+@import url('components/_badges.css');
+@import url('components/_highlights.css');
+@import url('components/_forms.css');
+@import url('components/_images.css');
+@import url('components/_tables.css');
+@import url('components/_carousel.css');
+@import url('components/_social-icons.css');
+
+/* 4. FEATURES */
+@import url('features/_blog.css');
+@import url('features/_news.css');
+@import url('features/_publications.css');
+@import url('features/_events.css');
+@import url('features/_profile.css');
+@import url('features/_video.css');
+@import url('features/_awards.css');
+
+/* Site overrides (optional) */
+@import url('site-overrides.css');

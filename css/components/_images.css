@@ -1,0 +1,30 @@
+/* Image related component styles */
+img { pointer-events: none; }
+.blog-image-wrapper img, .profile-image img { width: 100%; height: auto; display: block; }
+
+/* Legacy gallery classes kept here for carousel */
+.container.gallery { position: relative; width: 100%; text-align: center; margin: 0 auto; }
+.caption-container { text-align: center; background-color: #222; padding: 2px 16px; color: white; }
+/* Image Styling */
+.responsive-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.image-caption {
+    background: #f9fafb;
+    border-left: 4px solid #d97706;
+    padding: 1rem;
+    margin: 0 0 1.5rem 0;
+    font-size: 0.9rem;
+    color: #6b7280;
+    border-radius: 6px;
+    text-align: justify;
+    line-height: 1.6;
+    font-style: italic;
+}

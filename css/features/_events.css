@@ -1,0 +1,58 @@
+.mec-event-date {
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+  padding: 12px 16px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  transition: all .37s ease-in-out;
+  box-shadow: 0 2px 0 0 rgba(0,0,0,.016);
+}
+
+.mec-event-date span {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4px;
+  color: #2a2a2a;
+  transition: color .3s ease;
+}
+
+.mec-event-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 21px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: color .3s ease;
+}
+
+.mec-event-article .mec-color-hover {
+  box-shadow: none;
+  border: none;
+}
+
+.mec-wrap {
+  font: 14px/25px;
+  font-weight: 400;
+  color: #626262;
+}
+
+.event-detail-wrap .mec-event-title h4 {
+  color: #171c24;
+  font-weight: 300;
+/*  font-style: inherit;*/
+  letter-spacing: normal;
+  clear: none;
+}
+
+.event-card {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  border-left: 4px solid #0550A1;
+}

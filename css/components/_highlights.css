@@ -1,0 +1,75 @@
+/* Highlights, abstracts and CTA sections */
+.abstract { width: 90%; padding: 10px 0 0 10px; font-style: italic; text-align: justify; background-color: transparent; }
+.highlight-box { background: #f8fafc; padding: 1rem; border-radius: 8px; border-left: 4px solid var(--accent); }
+.deadline-box { background: linear-gradient(90deg, #fff7ed, #ffedd5); padding: 0.8rem; border-radius: 6px; }
+.cta-section { padding: 1.5rem; text-align:center; }
+
+/* Shared intro/featured block used across data/services/news */
+.intro-section { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-left: 4px solid var(--accent); border-radius: 8px; padding: 1.5em; margin: 1.5em 0 2.5em 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.intro-section p { margin: 0; line-height: 1.7; color: #1f2937; font-size: 1rem; }
+
+/* Highlight Box */
+.highlight-box {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-left: 4px solid #d97706;
+    border-radius: 6px;
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+    color: #1f2937;
+}
+
+.highlight-box strong {
+    color: #1a365d;
+}
+
+/* Deadline Box */
+.deadline-box {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    border-left: 4px solid #10b981;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.deadline-box .deadline-label {
+    font-weight: 600;
+    color: #1a365d;
+    margin-bottom: 0.5rem;
+}
+
+.deadline-box .deadline-date {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a365d;
+    margin: 0.6rem 0;
+}
+
+.deadline-box .deadline-note {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 0.6rem;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #1a365d 0%, #2d5a8c 100%);
+    border-radius: 6px;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    margin: 2rem 0;
+}
+
+.cta-section h3 {
+    color: white;
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+.cta-section p {
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}

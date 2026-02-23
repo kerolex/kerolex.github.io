@@ -1,0 +1,29 @@
+/* Grid and utility layout rules */
+#pubs-sel { width:100%; display:flex; flex-wrap: wrap; align-items:center; justify-content:flex-start; }
+#pubs-sel .elem-pub { width:33%; float: left; padding-bottom: 20px; }
+#pubs-sel .elem-pub img { max-width: 100%; height: auto; object-fit: cover; }
+
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0; }
+.blog-item { display: flex; flex-direction: column; text-align: left; }
+.blog-image-wrapper { text-align: center; margin-bottom: 15px; overflow: hidden; border-radius: 8px; }
+.blog-image-wrapper img { max-width: 100%; height: auto; display: block; }
+
+.events-wrapper { display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0; }
+.row {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  margin-right: -15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}

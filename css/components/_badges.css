@@ -1,0 +1,30 @@
+/* Badges and category tags */
+.blog-category { color: #999; font-size: 0.9rem; margin: 10px 0 5px 0; }
+.post-category-badge, .featured-badge { display:inline-block; padding:0.25rem 0.6rem; border-radius:4px; font-weight:700; text-transform:uppercase; letter-spacing:0.3px; }
+.featured-badge { background: var(--accent-2); color: #1a365d; }
+.post-category-badge { background:#f3f4f6; color: #374151; }
+.featured-badge {
+    display: inline-block;
+    background: #fbbf24;
+    color: #1a365d;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.post-category-badge {
+    display: inline-block;
+    background: #fbbf24;
+    color: #1a365d;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
