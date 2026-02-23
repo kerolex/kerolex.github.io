@@ -12,11 +12,11 @@
 }
 
 /* Dark Mode overrides */
-[data-theme="dark"] {
+/* [data-theme="dark"] {
   --bg-color: #121212;
   --text-color: #eeeeee;
   --link-color: #8ab4f8;
-}
+} */
 
 /* Use variables */
 body {
@@ -424,27 +424,6 @@ h2{
   box-sizing: border-box;  /* Ensure padding is included in width calculation */
 }
 
-/* Add responsive breakpoints */
-@media (max-width: 1024px) {
-  #about, #services {
-    width: 92%;
-  }
-}
-
-@media (max-width: 768px) {
-  #about, #services {
-    width: 95%;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  #about, #services {
-    width: 100%;
-    padding: 0 8px;
-  }
-}
-
 /* Vertical menu in publications */
 /* https://www.w3schools.com/howto/howto_css_vertical_menu.asp */
 .vertical-menu-pubs {
@@ -495,11 +474,14 @@ h2{
 }
 
 .scrolling-content {
-  width:75%;
-  overflow: hidden;
-  margin-top: 0px;
+  width:100%;
+  max-width: 1000px;
   margin:0 auto;
-  white-space: break-all;
+  padding: 0 12px;
+  box-sizing: border-box;
+  overflow: visible;  /* Allow content to flow naturally */
+  display: block;  /* Change from flex to block */
+  white-space: normal;  /* Remove break-all */
 }
 
 .scrolling-content .video-container {
@@ -654,9 +636,6 @@ img {
     pointer-events: none;
 }
 
-
-
-
 .mec-event-date {
   width: 70px;
   float: left;
@@ -757,28 +736,28 @@ h4 a {
 
 @media screen and (max-width:640px) {
   #pubs-sel {
-  width:100%;
-  display: -webkit-flex;
-  display: flex;
-  /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  align-items:center;
-	justify-content:top;
-}
+    width:100%;
+    display: -webkit-flex;
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:top;
+  }
 
-#pubs-sel .elem-pub {
-  display: block;
-  width:100%;
-  padding-bottom: 20px;
-}
+  #pubs-sel .elem-pub {
+    display: block;
+    width:100%;
+    padding-bottom: 20px;
+  }
 
-#pubs-sel .elem-pub img {
-  max-width:  100%;
-  height: auto;
-  object-fit: cover;
-}
+  #pubs-sel .elem-pub img {
+    max-width:  100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 
@@ -809,27 +788,35 @@ h4 a {
   text-decoration: underline;
 }
 
-/* Profile Section */
-.profile-container {
+/* ===== PROFILE SECTION (Profile image + bio) ===== */
+.profile-section {
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
+  display: flex;
+  flex-wrap: nowrap;  /* FIX: force items to stay on same line */
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
 }
 
-.profile-image {
-  width: 18%;
-  float: left;
+.profile-image-wrapper {
+  flex: 0 0 18%;
+  min-width: 150px;
 }
 
-.profile-image img {
-  border-radius: 0;
+.profile-image-wrapper img {
+  width: 100%;
+  border-radius: 0%;
   padding: 30px 30px 10px 0;
-  width: 100%;
   display: block;
+  box-sizing: border-box;
 }
 
 .profile-bio {
+  flex: 1 1 auto;
   padding-top: 30px;
   text-align: justify;
+  min-width: auto;
 }
 
 /* Video Section */
@@ -1013,14 +1000,33 @@ h4 a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .profile-image {
+  .scrolling-content {
+    padding: 0 8px;
+    max-width: 100%;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .profile-image-wrapper {
+    flex: 0 0 100%;
     width: 100%;
-    float: none;
-    margin-bottom: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .profile-image-wrapper img {
+    padding: 0;
   }
 
   .profile-bio {
-    padding-top: 0;
+    flex: 1 1 100%;
+    padding-top: 1rem;
+    text-align: left;
+    min-width: auto;
   }
 
   .event-card {
@@ -1039,7 +1045,7 @@ h4 a {
 }
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     background-color: #1a1a1a;
     color: #e0e0e0;
@@ -1060,6 +1066,35 @@ h4 a {
 
   a {
     color: #88bbff;
+  }
+} */
+
+/* Add responsive breakpoints */
+@media (max-width: 1024px) {
+  #about, #services {
+    width: 92%;
+  }
+}
+
+@media (max-width: 768px) {
+  #about, #services {
+    width: 95%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #about, #services {
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .profile-image-wrapper {
+    max-width: 100%;
+  }
+
+  .scrolling-content {
+    padding: 0 6px;
   }
 }
 
