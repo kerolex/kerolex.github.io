@@ -196,21 +196,23 @@ nav ul li a.active {
 /* RESPONSIVE: MOBILE FRIENDLY MENU */
 @media (max-width: 900px) {
   #menu {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .logo {
-    width: 100%;
-    border-bottom: 1px solid var(--border-color);
+    flex: 0 0 auto;
+    border-bottom: none;  /* Remove border since it's inline now */
   }
 
   nav {
-    width: 100%;
-    justify-content: space-between;
+    flex: 0 0 auto;
+    justify-content: flex-end;
     align-items: center;
-    background: var(--bg-white);
+    background: transparent;  /* No background needed */
   }
+
   .menu-toggle {
     display: block;
   }
@@ -219,13 +221,13 @@ nav ul li a.active {
     flex-direction: column;
     align-items: stretch;
     background: var(--primary-blue);
-    width: 100%;
-    position: absolute;
-    top: 100%;
+    width: 100%vw;
+    position: fixed;
+    top: var(--nav-height);  /* Below logo bar */
     left: 0;
     right: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    border-radius: 0 0 var(--radius) var(--radius);
+    border-radius: 0;
     z-index: var(--z-nav-ul);
     display: none;
     padding: 0;

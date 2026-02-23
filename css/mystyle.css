@@ -1,4 +1,8 @@
-@import url('nav_menu.css');
+@import url('legacy/nav_menu.css');
+@import url('legacy/blog.css');
+@import url('legacy/data.css');
+@import url('legacy/news.css');
+@import url('legacy/services.css');
 
 /* Default: Light Mode */
 :root {
