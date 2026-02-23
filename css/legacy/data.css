@@ -2,6 +2,8 @@
    DATA PAGE STYLES - Blog Aligned Design
    ============================================ */
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
 #data-section {
     max-width: 1100px;              /* ← NEW */
     margin: 0 auto;                 /* ← NEW */
@@ -18,7 +20,22 @@
     font-weight: 700;
 }
 
-/* Intro Section moved to components/_highlights.css */
+/* Intro Section - like featured post */
+.intro-section {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-left: 4px solid #d97706;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin: 1.5em 0 2.5em 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.intro-section p {
+    margin: 0;
+    line-height: 1.7;
+    color: #1f2937;
+    font-size: 1rem;
+}
 
 /* Datasets Container - Grid Layout */
 
@@ -205,7 +222,8 @@
     }
 
     .intro-section {
-        /* Responsive rules for .intro-section moved to components/_highlights.css */
+        padding: 1.2rem;
+        margin: 1rem 0 1.5rem 0;
     }
 
     .dataset-title {
@@ -268,7 +286,13 @@
         grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     }
 
-    /* Mobile spacing for .intro-section moved to components/_highlights.css */
+    .intro-section {
+        padding: 1rem;
+    }
+
+    .intro-section p {
+        font-size: 0.95rem;
+    }
 }
 
 /* Dark Mode Support */
@@ -313,7 +337,14 @@
         color: #e0e0e0;
     }
 
-    /* Dark-mode rules for .intro-section are in components/_highlights.css */
+    .intro-section {
+        background: #332800;
+        border-left-color: #fbbf24;
+    }
+
+    .intro-section p {
+        color: #e0e0e0;
+    }
 
     #data-section h1 {
         color: #fbbf24;
@@ -340,7 +371,9 @@
         box-shadow: none;
     }
 
-    /* Print styles for .intro-section moved to components/_highlights.css */
+    .intro-section {
+        page-break-inside: avoid;
+    }
 }
 
 /* Accessibility - Reduced Motion */

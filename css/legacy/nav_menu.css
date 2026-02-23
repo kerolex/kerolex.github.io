@@ -326,7 +326,7 @@ nav > ul > li:hover > a {
     /*padding: 0.75em 2em;*/
     padding: 5px 10px;  /* Slightly more for touch, but still compact */
     /*line-height: 1.2;*/
-    min-height: 0px;/*;
+    min-height: 0px/*;
     font-size: 1em;*/
     /*border-bottom: 1px solid #dedede;*/
     text-align: right;

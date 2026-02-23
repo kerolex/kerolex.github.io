@@ -1,5 +1,8 @@
 /* services.css - Unified styling aligned with blog.css aesthetic */
 
+/* Import serif font for consistent typography */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
 /* Section Headings - aligned with blog style */
 .section-heading {
     text-align: left;
@@ -63,7 +66,24 @@
     line-height: 1.6;
 }
 
-/* Note: .intro-section moved to components/_highlights.css */
+.award-event strong {
+    color: #1a365d;
+    font-weight: 700;
+}
+
+/* Award Statistics */
+.award-stat {
+    color: #d97706;
+    font-weight: 700;
+    margin: 0.5em 0;
+    font-size: 0.95em;
+}
+
+/* Award Links */
+.award-link {
+    display: inline-block;
+    margin-top: 0.8em;
+}
 
 .award-link a {
     color: #d97706;
@@ -160,7 +180,22 @@
     color: white;
 }
 
-/* Intro Section moved to components/_highlights.css */
+/* Intro Section */
+.intro-section {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    border-left: 4px solid #d97706;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.intro-section p {
+    margin: 0;
+    line-height: 1.7;
+    color: #1f2937;
+    font-size: 1rem;
+}
 
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
@@ -182,7 +217,14 @@
         color: #ddd;
     }
 
-    /* Dark-mode styles for intro-section are now in components/_highlights.css */
+    .intro-section {
+        background: linear-gradient(135deg, #332800 0%, #4a3600 100%);
+        color: #fbbf24;
+    }
+
+    .intro-section p {
+        color: #ddd;
+    }
 
     .section-heading {
         color: #fbbf24;
@@ -223,7 +265,9 @@
         margin-top: 1.3em;
     }
 
-    /* Responsive rules for .intro-section moved to components/_highlights.css */
+    .intro-section {
+        padding: 1.2em;
+    }
 
     .award-title {
         font-size: 1.05em;
