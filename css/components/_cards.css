@@ -102,3 +102,55 @@
     margin-top: 0;
     font-size: 1.2rem;
 }
+
+
+.software-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.software-card-image {
+    max-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.software-card-content {
+    flex: 1;
+}
+
+.software-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.citation-box {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background: #f9fafb;
+    border-left: 4px solid #d97706;
+    border-radius: 6px;
+}
+
+.citation-box pre {
+    background: white;
+    padding: 0.8rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    margin: 0.8rem 0 0 0;
+}
+
+@media (max-width: 768px) {
+    .software-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .software-card-image {
+        max-height: 200px;
+    }
+}

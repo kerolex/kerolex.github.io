@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-364488019"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-364488019');
+	</script>
+
+	<title>Software | Alessio Xompero, PhD</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Research datasets I've contributed to or collected. Audio-visual, computer vision, and multimodal datasets for robotics and AI research.">
+	<meta property="og:title" content="Software | Alessio Xompero, PhD">
+	<meta property="og:description" content="Publicly available datasets for computer vision, robotics, and multimedia research.">
+	<meta property="og:type" content="website">
+	<meta name="image" property="og:image" content="../images/AlessioXompero.JPG">
+
+	<link rel="shortcut icon" href="../images/profile_icon_ax.JPG" />
+	<link rel="stylesheet" href="../css/mystyle.css">
+	<link rel="stylesheet" href="../css/legacy/data.css">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/academicons.css">
+
+	<link rel="stylesheet" href="../css/components/_cards.css">
+	<link rel="stylesheet" href="../css/layout/_responsive.css">
+	<link rel="stylesheet" href="../css/components/_images.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+	<script src="../js/menu.js" defer></script>
+</head>
+
+<body>
+<div id="menu">
+		<div class="logo">
+			<a href="../index.html" class="active"><b>Alessio Xompero, Ph.D.</b></a>			
+		</div>
+
+		<!-- From https://www.menucool.com/ddmenu/one-menu-for-all-pages -->
+		<nav>
+			<div class="menu-toggle"><span></span></div>
+			<ul>			
+				<li class="subnav">
+					<a>Research</a>
+					<div class="subnav-content">
+						<a href="../research/publications.html">Publications</a>
+						<a href="../research/data.html">Data</a>
+						<a href="../research/software.html">Software</a>
+						<a href="../research/projects.html">Projects</a>
+						<a href="../research/talks.html">Talks</a>
+					</div>
+				</li>
+				<li class="subnav">
+					<a>Services</a>
+					<div class="subnav-content">
+						<a href="../services/reviewing.html">Reviewing</a>
+						<a href="../services/openscience.html">Community</a>
+					</div>
+				</li>
+				<li class="subnav">
+					<a>Teaching</a>
+					<div class="subnav-content">
+						<a href="../teaching/teaching.html">Teaching</a>
+					</div>
+				</li>
+				<li class="subnav">
+					<a>News</a>
+					<div class="subnav-content">
+						<a href="../news.html">All news</a>
+						<a href="../blog.html">Blog</a>
+					</div>
+				</li>
+				<li class="subnav">
+					<a>About</a>
+					<div class="subnav-content">
+						<a href="../bio.html">Biography</a>
+						<a href="../gallery.html">Gallery</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+	<div id="about">
+		<h2>Software</h2>
+		
+		<main id="main-content">
+		<section id="data-section">
+
+			<!-- Intro Section -->
+			<article class="intro-section">
+				<p>
+					A list of software that I released or contributed to. 
+				</p>
+			</article>
+
+		<div class="blog-posts-section">
+			<article class="blog-post-card software-card">
+				<!-- Software content -->
+				 <div class="article-card-image">
+					<img src="https://kerolex.github.io/images/popets25.png" 
+					alt="Project thumbnail" class="responsive-image">
+				</div>
+				<div class="blog-post-header">
+					<span class="blog-post-category">PoPETS 2025</span>
+					<span class="blog-post-date">May 2025</span>
+				</div>
+				<h3><a href="https://github.com/graphnex/privacy-from-visual-entities">
+					Learning Privacy from Visual Entities
+				</a></h3>
+				<p class="blog-post-excerpt">
+					Official GitHub repository of the code. Peer-reviewed by selected 
+					reviewers at PoPETS 2025. Awarded Available and Functional badges.
+				</p>
+
+				<div class="software-actions">
+					<a href="https://github.com/graphnex/privacy-from-visual-entities" 
+						class="blog-post-link" target="_blank">
+						<i class="fab fa-github"></i> View Code on GitHub
+					</a>
+					<button class="blog-post-link" onclick="toggleCitation(this, 'bib_popets25')"
+							style="background: none; border: none; padding: 0; cursor: pointer;">
+						<i class="fas fa-quote-left"></i> Show Citation
+					</button>
+				</div>
+
+				<div class="citation-box" id="bib_popets25" style="display:none;">
+						<strong>BibTeX :</strong>
+						<pre>
+@Article{Xompero2025PoPETs,
+	title = {Learning Privacy from Visual Entities},
+	author = {Xompero, A. and Cavallaro, A.},
+	journal = {Proceedings on Privacy Enhancing Technologies},
+	volume = {2025},
+	number = {3},
+	pages={1--21},
+	month = {Mar},
+	year = {2025},
+}
+						</pre>
+					</div>
+
+			</article>
+
+			<!-- SOFTWARE ITEM 2: IG-Privacy -->
+			<article class="blog-post-card software-card">
+				<div class="software-card-image">
+					<img src="https://kerolex.github.io/images/ig-privacy.png" 
+					     alt="IG-Privacy project thumbnail"
+					     class="responsive-image">
+				</div>
+				
+				<div class="software-card-content">
+					<div class="blog-post-header" style="flex-wrap: wrap; gap: 0.5rem;">
+						<span class="blog-post-category">CVPRW 2024</span>
+						<span class="blog-post-category" style="background: #d1d5db;">Computer Vision</span>
+						<span class="blog-post-date">Jun 2024</span>
+					</div>
+					
+					<h3><a href="https://github.com/graphnex/ig-privacy" target="_blank">
+						IG-Privacy
+					</a></h3>
+					
+					<p class="blog-post-excerpt">
+						Official GitHub repository of the code for the paper on explaining models 
+						relating objects and privacy. Includes research on interpretable AI for privacy.
+					</p>
+					
+					<div class="software-actions">
+						<a href="https://github.com/graphnex/ig-privacy" 
+						   class="blog-post-link" target="_blank">
+							<i class="fab fa-github"></i> View Code on GitHub
+						</a>
+						<button class="blog-post-link" onclick="toggleCitation(this, 'bib_cvprw24')"
+						        style="background: none; border: none; padding: 0; cursor: pointer;">
+							<i class="fas fa-quote-left"></i> Show Citation
+						</button>
+					</div>
+					
+					<div class="citation-box" id="bib_cvprw24" style="display:none;">
+						<strong>BibTeX Citation:</strong>
+						<pre>
+							@Article{Xompero2024CPVRW_XAI4CV,
+								title = {Explaining models relating objects and privacy},
+								author = {Xompero, A. and Bontonou, M. and Arbona, J. and Benetos, E. and Cavallaro, A.},
+								booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision and Pattern Recognition Workshops},
+								note = {The 3rd Explainable AI for Computer Vision (XAI4CV) Workshop},
+								month = {18~June},
+								year = {2024},
+							}
+						</pre>
+					</div>
+				</div>
+			</article>
+		</div>
+		
+		<table class="tg" width="100%">
+			<tr>
+					<td class="tg-km2t" style="vertical-align: text-top;">
+						<a href="https://github.com/graphnex/privacy-from-visual-entities" TARGET = "_blank">
+							<div class="imglnews" style="border:0">
+								<img src="https://kerolex.github.io/images/popets25.png" alt="[img]" width="100%" style="vertical-align: middle;"></div>
+								</a>
+							</td>
+							<td class="tg-zv4m" style="vertical-align: top;">
+								<em style="color:#6699ff">Learning Privacy from Visual Entities</em><br><br>
+								Official GitHub repository of the code. <br>
+								Peer-reviewed by selected reviewers at PoPETS 2025. Awarded Available and Functional badges.
+								<br><br>
+								[<a title="Code" href="https://github.com/graphnex/privacy-from-visual-entities" TARGET = "_blank"><u>code</u></a>]
+								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_popets25')"><u>bibtex</u></a>]      
+								<div id="bib_popets25"  style="display:none;" class="bib pre-white-space">
+									@Article{Xompero2025PoPETs,
+	                 title = {Learning Privacy from Visual Entities},
+	                 author = {Xompero, A. and Cavallaro, A.},
+	                 journal = {Proceedings on Privacy Enhancing Technologies},
+	                 volume = {2025},
+	                 number = {3},
+	                 pages={1--21},
+	                 month = {Mar},
+	                 year = {2025},
+	               }
+								</div>
+						</td>
+					</tr>
+					<!-- -->
+					<tr>
+					<td class="tg-km2t" style="vertical-align: text-top;">
+						<a href="https://github.com/graphnex/ig-privacy" TARGET = "_blank">
+							<div class="imglnews" style="border:0"><img src="https://kerolex.github.io/images/ig-privacy.png" alt="[img]" width="100%" style="vertical-align: middle;"></div>			  
+								</a>
+							</td>
+							<td class="tg-zv4m" style="vertical-align: top;">
+								<em style="color:#6699ff">IG-Privacy</em><br><br>
+								Official GitHub repository of the code for the paper Explaining models relating objects and privacy. <br>
+								<br><br>
+								[<a title="Code" href="https://github.com/graphnex/ig-privacy" TARGET = "_blank"><u>code</u></a>]
+								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_cvprw24')"><u>bibtex</u></a>]      
+								<div id="bib_cvprw24"  style="display:none;" class="bib pre-white-space">
+									@Article{Xompero2024CPVRW_XAI4CV,
+					           title = {Explaining models relating objects and privacy},
+					           author={Xompero, A. and Bontonou, M. and Arbona, J. and Benetos, E. and Cavallaro, A.},
+					           booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision and Pattern Recognition Workshops},
+					           note = {The 3rd Explainable AI for Computer Vision (XAI4CV) Workshop},
+					           month="18" # JUN,
+					           year = {2024},
+					         }
+								</div>
+						</td>
+					</tr>
+					<!-- -->
+				<tr>
+					<td class="tg-km2t" style="vertical-align: text-top;">
+						<a href="https://github.com/kerolex/CrossCameraViewOverlapRecognition" TARGET = "_blank">
+							<div class="imglnews" style="border:0"><img src="https://kerolex.github.io/images/xview_iwdsc22.svg" alt="[img]" width="100%" style="vertical-align: middle;"></div>			  
+								</a>
+							</td>
+							<td class="tg-zv4m" style="vertical-align: top;">
+								<em style="color:#6699ff">Cross-Camera View-Overlap Recognition</em><br><br>
+								Official GitHub repository of the code for the work on Cross-Camera View-Overlap Recognition. The software include the developed framework in C++ and ZeroMQ, the evaluation scripts, and the Python code for the alternative frameworks under comparison.
+								<br><br>
+								[<a title="Code" href="https://github.com/kerolex/CrossCameraViewOverlapRecognition" TARGET = "_blank"><u>code</u></a>]
+								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_xview')"><u>bibtex</u></a>]      
+								<div id="bib_xview"  style="display:none;" class="bib pre-white-space">@Article{Xompero2022IWDSC,
+				             title = {Cross-Camera View-Overlap Recognition},
+				             author = {Xompero, A. and and Cavallaro, A.},
+				             booktitle = {Proceedings of the European Conference on Computer Vision Workshops},
+				             note = {Internation Workshop on Distributed Smart Cameras},
+				             address={Online},
+				             month="24" # OCT,
+				             year = {2022},
+           }
+								</div>
+						</td>
+					</tr>
+					<!-- -->
+					<tr>
+					<td class="tg-km2t" style="vertical-align: text-top;">
+						<a href="https://github.com/CORSMAL/LoDE" TARGET = "_blank">
+							<div class="imglnews" style="border:0"><img src="https://corsmal.github.io/images/lode_img.png" alt="[img]" width="100%" style="vertical-align: middle;"></div>			  
+								</a>
+							</td>
+							<td class="tg-zv4m" style="vertical-align: top;">
+								<em style="color:#6699ff">LoDE: Localisation and Object Dimensions Estimator</em><br><br>
+								Software of the method that jointly localises container-like objects and estimates their dimensions with a generative 3D sampling model and a multi-view 3D-2D iterative shape fitting, using two wide-baseline, calibrated RGB cameras.
+								<br><br>
+								[<a title="Code" href="https://github.com/CORSMAL/LoDE" TARGET = "_blank"><u>code</u></a>]
+								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_lode')"><u>bibtex</u></a>]      
+								<div id="bib_lode"  style="display:none;" class="bib pre-white-space">@InProceedings{Xompero2020ICASSP_LoDE,
+							        title={Multi-view shape estimation of transparent containers},
+							        author={Alessio Xompero and Ricardo Sanchez-Matilla and Apostolos Modas and Pascal Frossard and Andrea Cavallaro},
+							        booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing},
+							        address = {Barcelona, Spain},
+							        month = "4-8~" # may,
+							        year = {2020}
+							      }
+								</div>
+						</td>
+					</tr>
+				<tr>
+					<td class="tg-km2t" style="vertical-align: text-top;">
+						<a href="https://github.com/kerolex/MORB" TARGET = "_blank">
+							<div class="imglnews" style="border:0"><img src="../images/MORB.png" alt="[img]" width="100%" style="vertical-align: middle;"></div>			  
+								</a>
+							</td>
+							<td class="tg-zv4m" style="vertical-align: top;">
+								<em style="color:#6699ff">MORB: a multi-scale binary descriptor </em><br><br>
+								Official GitHub repository of the C++ code for the multi-scale binary descriptor based on ORB that improves the accuracy of feature matching under scale changes.
+								<br><br>
+								[<a title="Code" href="https://github.com/kerolex/MORB" TARGET = "_blank"><u>code</u></a>]
+								[<a class="papercite_pdf" title="BibTex" onclick="AppearBib('bib_morb')"><u>bibtex</u></a>]      
+								<div id="bib_morb"  style="display:none;" class="bib pre-white-space">@INPROCEEDINGS{Xompero2018ICIP_MORB,
+								  title = {{MORB: a multi-scale binary descriptor}},
+								  author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},
+								  booktitle = ICIP,
+								  address = {Athens, Greece},
+								  month = "7--10~" # oct,
+								  year = {2018}
+								}
+								</div>
+						</td>
+					</tr>
+				</table>
+	</div>
+<br><br><br>
+<footer class="site-footer">
+<div class="footer-col social-col" aria-label="Social media" style="text-align:center;">  
+	<a href="https://orcid.org/0000-0002-8227-8529" aria-label="ORCID" rel="noopener noreferrer" target="_blank"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i></a>
+	<a href="https://scholar.google.com/citations?user=r7jxqOAAAAAJ&hl=en&oi=ao" aria-label="Google Scholar" rel="noopener noreferrer" target="_blank"><i class="ai ai-fw ai-google-scholar" aria-hidden="true"></i></a>
+	<a href="https://github.com/kerolex/" aria-label="GitHub" rel="noopener noreferrer" target="_blank" ><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>				
+	<a href="https://www.linkedin.com/in/alessioxompero/?locale=en_US" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>
+	<a href="https://bsky.app/profile/axompi.bsky.social" target="_blank" aria-label="Bluesky" rel="noopener noreferrer"><i class="fa-brands fa-bluesky" aria-hidden="true"></i></a>
+</div>
+<p>
+	Copyright &copy; 2015-<span id="currentYear"></span> - Alessio Xompero
+</p>
+</footer>
+<!-- JavaScript for citation toggle functionality -->
+	<script>
+		document.getElementById('currentYear').textContent = new Date().getFullYear();
+		
+		// Toggle citation box visibility
+		function toggleCitation(button, citationId) {
+			const citationBox = document.getElementById(citationId);
+			const isHidden = citationBox.style.display === 'none';
+			
+			// Hide all other citations
+			document.querySelectorAll('.citation-box').forEach(box => {
+				box.style.display = 'none';
+			});
+			document.querySelectorAll('.software-card .blog-post-link').forEach(btn => {
+				if (btn !== button && btn.innerHTML.includes('Quote')) {
+					btn.classList.remove('active');
+				}
+			});
+			
+			// Toggle current citation
+			citationBox.style.display = isHidden ? 'block' : 'none';
+			button.classList.toggle('active', isHidden);
+		}
+	</script>
+	
+	<!-- Existing scripts -->
+	<script src="../js/menu.js" defer></script>
+</body>
+</html>
+
+
