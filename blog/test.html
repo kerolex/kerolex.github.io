@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Benchmarking via Competitions in Robotic Grasping and Manipulation - 2nd Edition">
+    <meta property="og:description" content="Call for Contributions for the 2nd edition workshop at IROS 2025">
+    <meta property="og:type" content="article">
+    <meta name="description" content="Call for Contributions for the 2nd edition workshop at IROS 2025 on benchmarking in robotic grasping and manipulation">
+    <title>Benchmarking via Competitions in Robotic Grasping and Manipulation - Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a365d;
+            --secondary: #2d5a8c;
+            --accent: #d97706;
+            --accent-light: #fbbf24;
+            --bg: #fafaf9;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --border: #e5e7eb;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: linear-gradient(135deg, var(--bg) 0%, #f3f4f6 100%);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            border-bottom: 3px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .logo {
+            font-family: 'Merriweather', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .logo:hover {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        nav a.active {
+            color: var(--accent);
+        }
+
+        nav a.active::after {
+            width: 100%;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: var(--white);
+            padding: 1rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .breadcrumb a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 0.3rem;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Container */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Article Header */
+        .article-header {
+            margin-bottom: 2.5rem;
+            text-align: center;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid var(--accent-light);
+        }
+
+        .post-category-badge {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--primary);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .article-header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin: 1rem 0;
+            line-height: 1.3;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-top: 1.5rem;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Article Image */
+        .article-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Article Content */
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .article-content h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin: 2rem 0 1rem 0;
+            margin-top: 2.5rem;
+        }
+
+        .article-content h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin: 1.5rem 0 0.8rem 0;
+            margin-top: 2rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.3rem;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin: 1.3rem 0 1.3rem 2rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.6rem;
+        }
+
+        .article-content a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .article-content a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        .article-content blockquote {
+            border-left: 5px solid var(--accent);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(217, 119, 6, 0.05) 0%, rgba(251, 191, 36, 0.05) 100%);
+            border-left: 5px solid var(--accent);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box strong {
+            color: var(--primary);
+        }
+
+        /* Important Dates List */
+        .dates-list {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .dates-list ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .dates-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dates-list li:last-child {
+            border-bottom: none;
+        }
+
+        .date-label {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .date-value {
+            color: var(--text-light);
+        }
+
+        /* Article Footer */
+        .article-footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--border);
+        }
+
+        .author-info {
+            background: linear-gradient(135deg, rgba(26, 54, 93, 0.05) 0%, rgba(45, 90, 140, 0.05) 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .author-info strong {
+            color: var(--primary);
+        }
+
+        .author-info p {
+            margin: 0.5rem 0;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            flex: 1;
+            min-width: 200px;
+            padding: 1.5rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            border-color: var(--accent);
+            background: var(--white);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link-label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-link-title {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .nav-link:hover .nav-link-title {
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                flex-direction: column;
+            }
+
+            .article-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+            }
+
+            .nav-link {
+                min-width: 100%;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            header, footer, .breadcrumb, .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">Alessio Xompero, PhD</a>
+            <ul>
+                <li><a href="../research/publications.html">Research</a></li>
+                <li><a href="../services/reviewing.html">Services</a></li>
+                <li><a href="../teaching/teaching.html">Teaching</a></li>
+                <li><a href="../news.html">News</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../bio.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="../blog.html">Blog</a> / Benchmarking via Competitions in Robotic Grasping and Manipulation - 2nd Edition
+    </div>
+
+    <main>
+        <article>
+            <header class="article-header">
+                <span class="post-category-badge">Competitions</span>
+                <h1>Benchmarking via Competitions in Robotic Grasping and Manipulation - 2nd Edition</h1>
+                <div class="article-meta">
+                    <span>📅 22 July 2025</span>
+                    <span>✍️ Alessio Xompero</span>
+                    <span>⏱️ 8 min read</span>
+                </div>
+            </header>
+
+            <img src="../images/blog/RGMCW_IROS25.png" alt="Workshop banner" class="article-image">
+
+            <div class="article-content">
+                <p>I am pleased to announce the <strong>Call for Contributions</strong> for the workshop <em>"Benchmarking via Competitions in Robotic Grasping and Manipulation"</em> (2nd edition) in conjunction with the 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025).</p>
+
+                <p>We are looking forward to receiving your submission! For more details, visit the workshop webpage:</p>
+
+                <div class="highlight-box">
+                    <strong>Workshop Webpage:</strong> <a href="https://sites.google.com/view/iros2025-bench-competitions/" target="_blank">https://sites.google.com/view/iros2025-bench-competitions/</a><br>
+                    <em>See also the programme and invited speakers</em>
+                </div>
+
+                <h2>Workshop Overview</h2>
+
+                <p>Advances in robotics, perception, and artificial intelligence are driving the expectation of robots having high-level capabilities to autonomously, accurately, and robustly address various tasks. However, crucial robotic capabilities such as autonomous assembly and disassembly, cloth manipulation, in-hand manipulation, object picking in cluttered environments, or object handover are far from being solved.</p>
+
+                <p>Many research activities have focused on these subject topics over the last decades, but solutions have remained limited, and results have been demonstrated on custom workflows and validation tests designed in individual laboratories, considering distinct modalities and performance criteria.</p>
+
+                <p>For this reason, <strong>benchmarking is important</strong> to enable reproducibility and comparison across different solutions and to advance the development of challenging robotic manipulation problems. In addition, competitions have been an effective way to drive scientific progress in recent years, spurring advances in robotics research.</p>
+
+                <h2>Workshop Goals</h2>
+
+                <p>This workshop aims to stimulate discussions within the research community from both academia and industry on the current and future challenges of autonomous robotic grasping and manipulation for real-world applications where research innovation meets engineering solutions for developing efficient and elegant systems in relevant environments outside the laboratory.</p>
+
+                <p>With particular attention to benchmarking and competitions, we will:</p>
+                <ul>
+                    <li>Engage with experts on the tasks and the winners of recent competitions</li>
+                    <li>Draw guidelines and directions for the reproducibility and comparison of future solutions</li>
+                    <li>Identify new challenges that arise from the discussion</li>
+                </ul>
+
+                <h2>Call for Contributions</h2>
+
+                <h3>Extended Abstracts (Unpublished Works)</h3>
+
+                <p>We invite interested authors to submit <strong>Extended Abstracts (2 pages)</strong> of ongoing or unpublished works.</p>
+
+                <p>Submitted extended abstracts will be peer-reviewed. Accepted abstracts will be posted on the workshop website and can be presented during the poster session. <strong>The best extended abstract will have the chance to give a talk</strong> during the main event of the workshop.</p>
+
+                <p>Extended abstracts should be in the form of a single PDF in IROS format (LaTex or Word) and submitted via the Microsoft CMT platform:</p>
+
+                <div class="highlight-box">
+                    <strong>Submission Portal:</strong> <a href="https://cmt3.research.microsoft.com/RGMCW2025/" target="_blank">https://cmt3.research.microsoft.com/RGMCW2025/</a><br>
+                    <em>Select the Extended Abstract track</em>
+                </div>
+
+                <h3>Abstracts (Published Works)</h3>
+
+                <p>We also invite interested authors of relevant, already peer-reviewed and published works to submit title, abstract, and link to their journal article or conference paper via the Microsoft CMT platform (select Abstract track).</p>
+
+                <p>Submitted works will be checked for fitting to the workshop and can be presented during the poster session of the workshop.</p>
+
+                <h2>Topics of Interest</h2>
+
+                <p>Topics of interest include but are not limited to:</p>
+                <ul>
+                    <li>Grasping</li>
+                    <li>Manipulation</li>
+                    <li>Datasets related to robotic manipulation and grasping</li>
+                    <li>Learning grasping and manipulation from datasets</li>
+                    <li>Human-to-robot handovers</li>
+                    <li>Performance metrics and benchmarks</li>
+                    <li>Competitions for pick-and-place in logistics, daily living manipulation, manufacturing</li>
+                </ul>
+
+                <h2>Important Deadlines</h2>
+
+                <div class="dates-list">
+                    <ul>
+                        <li>
+                            <span class="date-label">15 August</span>
+                            <span class="date-value">Extended Abstract (unpublished works) submission deadline</span>
+                        </li>
+                        <li>
+                            <span class="date-label">1 September</span>
+                            <span class="date-value">Acceptance notification</span>
+                        </li>
+                        <li>
+                            <span class="date-label">8 September</span>
+                            <span class="date-value">Camera-ready due</span>
+                        </li>
+                        <li>
+                            <span class="date-label">30 September</span>
+                            <span class="date-value">Abstract (published works) submission deadline</span>
+                        </li>
+                        <li>
+                            <span class="date-label">7 October</span>
+                            <span class="date-value">Acceptance notification (published works)</span>
+                        </li>
+                        <li>
+                            <span class="date-label">20 October</span>
+                            <span class="date-value">Workshop</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <p><em>Note: Submission deadlines are at 11:59 pm Anywhere on Earth.</em></p>
+
+                <h2>Organizers</h2>
+
+                <ul>
+                    <li><strong>Salvatore D'Avella</strong>, Scuola Superiore Sant'Anna</li>
+                    <li><strong>Alessio Xompero</strong>, Queen Mary University of London</li>
+                    <li><strong>Andrea Cavallaro</strong>, Idiap Research Institute and École Polytechnique Fédérale de Lausanne</li>
+                    <li><strong>Kaiyu Hang</strong>, Rice University</li>
+                    <li><strong>Berk Calli</strong>, Worcester Polytechnic Institute</li>
+                    <li><strong>Yu Sun</strong>, University of South Florida</li>
+                </ul>
+
+                <h2>Join Us!</h2>
+
+                <p>Whether you're working on grasping algorithms, manipulation strategies, benchmarking frameworks, or competition design, we invite you to contribute to this workshop. This is a great opportunity to share your work, connect with leading researchers in the field, and help shape the future of robotic grasping and manipulation research.</p>
+            </div>
+
+            <div class="article-footer">
+                <div class="author-info">
+                    <p><strong>About the Author</strong></p>
+                    <p>Alessio Xompero is a researcher at Queen Mary University of London working on robotics, computer vision, and artificial intelligence. He is actively involved in organizing workshops and competitions to advance the state of robotic grasping and manipulation.</p>
+                </div>
+
+                <div class="nav-links">
+                    <a href="../blog.html" class="nav-link">
+                        <div class="nav-link-label">← Back</div>
+                        <div class="nav-link-title">All Blog Posts</div>
+                    </a>
+                    <a href="#" class="nav-link" onclick="alert('Next post coming soon'); return false;">
+                        <div class="nav-link-label">Next →</div>
+                        <div class="nav-link-title">Coming Soon</div>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Copyright © 2015–2025 Alessio Xompero</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Add reading time indicator (optional)
+        const content = document.querySelector('.article-content');
+        const words = content.innerText.split(/\s+/).length;
+        const readingTime = Math.ceil(words / 200);
+        console.log(`Estimated reading time: ${readingTime} minutes`);
+    </script>
+</body>
+</html>

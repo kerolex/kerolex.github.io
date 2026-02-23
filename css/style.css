@@ -1,4 +1,6 @@
 /* Master stylesheet - imports modular files in recommended order */
+@import url('nav_menu.css');
+
 
 /* 1. BASE */
 @import url('base/_variables.css');
