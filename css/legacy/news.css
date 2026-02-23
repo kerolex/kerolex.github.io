@@ -440,7 +440,7 @@
 }
 
 /* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     .news-intro-section {
         background: #332800;
         color: #fbbf24;
@@ -503,4 +503,4 @@
     .news-content a {
         color: #fbbf24;
     }
-}
+} */

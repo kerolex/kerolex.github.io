@@ -295,7 +295,7 @@
     }
 }
 
-/* Dark Mode Support */
+/* Dark Mode Support
 @media (prefers-color-scheme: dark) {
     .dataset-card {
         background: #1f2937;
@@ -357,7 +357,7 @@
     .dataset-card:hover {
         box-shadow: 0 4px 12px rgba(217, 119, 6, 0.2);
     }
-}
+} */
 
 /* Print Styles */
 @media print {

@@ -198,7 +198,7 @@
 }
 
 /* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     .award {
         background: #332800;
         border-left-color: #fbbf24;
@@ -243,7 +243,7 @@
         color: #fbbf24;
         border: 1px solid #fbbf24;
     }
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
