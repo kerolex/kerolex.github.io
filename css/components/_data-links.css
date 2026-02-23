@@ -1,0 +1,124 @@
+/* ============================================
+   COMPONENT: Data Links
+   ============================================
+   
+   Links for dataset downloads, documentation,
+   and related resources. Used in data pages.
+*/
+
+.dataset-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    align-items: center;
+    margin: var(--space-lg) 0;
+}
+
+.dataset-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 600;
+    padding: var(--space-sm) 0;
+    border-bottom: 2px solid transparent;
+    transition: all var(--transition-base);
+    font-size: var(--font-size-sm);
+    display: inline-block;
+}
+
+.dataset-link:hover {
+    border-bottom-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.dataset-link:focus {
+    outline: 2px solid rgba(217, 119, 6, 0.3);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+/* Link with Icon (optional) */
+.dataset-link-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.dataset-link-icon::after {
+    content: '→';
+    transition: transform var(--transition-fast);
+}
+
+.dataset-link:hover .dataset-link-icon::after {
+    transform: translateX(4px);
+}
+
+/* Link Variants */
+.dataset-link.primary {
+    color: var(--color-accent);
+}
+
+.dataset-link.secondary {
+    color: var(--color-text-muted);
+}
+
+.dataset-link.secondary:hover {
+    color: var(--color-accent);
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+    .dataset-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+    }
+
+    .dataset-link {
+        display: block;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .dataset-link {
+        font-size: var(--font-size-xs);
+    }
+
+    .dataset-links {
+        gap: var(--space-md);
+    }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .dataset-link {
+        color: var(--color-accent-light);
+    }
+
+    .dataset-link:hover {
+        color: var(--color-accent-lighter);
+    }
+
+    .dataset-link.secondary {
+        color: var(--color-text-light);
+    }
+
+    .dataset-link.secondary:hover {
+        color: var(--color-accent-light);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .dataset-links {
+        display: none;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .dataset-link,
+    .dataset-link-icon::after {
+        transition: none;
+    }
+}

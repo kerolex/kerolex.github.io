@@ -1,0 +1,106 @@
+/* ============================================
+   COMPONENT: Gallery Grid
+   ============================================
+   
+   Responsive grid for image galleries with
+   hover zoom effect and proper aspect ratio.
+*/
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: var(--space-sm);
+    margin: var(--space-md) 0;
+    list-style: none;
+    padding: 0;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    transition: transform var(--transition-base),
+                box-shadow var(--transition-base);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    display: block;
+    background: var(--color-border);
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+.gallery-image:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+/* Image Wrapper (if needed for click handling) */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Lightbox-ready styling */
+.gallery-image[data-lightbox],
+.gallery-item img[data-lightbox] {
+    cursor: zoom-in;
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: var(--space-xs);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        gap: var(--space-xs);
+    }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .gallery-image,
+    .gallery-item {
+        background: #374151;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .gallery-image,
+    .gallery-item img {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .gallery-image,
+    .gallery-item img {
+        transition: none;
+    }
+}

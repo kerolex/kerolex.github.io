@@ -1,7 +1,6 @@
 /* Master stylesheet - imports modular files in recommended order */
 @import url('nav_menu.css');
 
-
 /* 1. BASE */
 @import url('base/_variables.css');
 @import url('base/_reset.css');
@@ -14,6 +13,7 @@
 @import url('layout/_footer.css');
 @import url('layout/_grid.css');
 @import url('layout/_responsive.css');
+@import url('layout/_print.css');
 
 /* 3. COMPONENTS */
 @import url('components/_buttons.css');
@@ -25,6 +25,10 @@
 @import url('components/_tables.css');
 @import url('components/_carousel.css');
 @import url('components/_social-icons.css');
+@import url('components/_media.css');
+@import url('components/_bibtex.css');
+@import url('components/_gallery.css');
+@import url('components/_data-links.css');
 
 /* 4. FEATURES */
 @import url('features/_blog.css');
@@ -34,6 +38,7 @@
 @import url('features/_profile.css');
 @import url('features/_video.css');
 @import url('features/_awards.css');
+@import url('features/_data.css');
 
 /* Site overrides (optional) */
-@import url('site-overrides.css');
+/* @import url('site-overrides.css'); */
