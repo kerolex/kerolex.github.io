@@ -199,6 +199,7 @@ nav ul li a.active {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
   }
 
   .logo {
@@ -206,11 +207,17 @@ nav ul li a.active {
     border-bottom: none;  /* Remove border since it's inline now */
   }
 
+  .logo a {
+    padding: 0 calc(1.5 * var(--spacing));  /* Reduce padding on mobile */
+    font-size: 1em;  /* Smaller text on mobile */
+  }
+
   nav {
     flex: 0 0 auto;
     justify-content: flex-end;
     align-items: center;
     background: transparent;  /* No background needed */
+    padding: 0 calc(1 * var(--spacing));  /* Add padding for spacing */
   }
 
   .menu-toggle {
@@ -221,7 +228,7 @@ nav ul li a.active {
     flex-direction: column;
     align-items: stretch;
     background: var(--primary-blue);
-    width: 100%vw;
+    width: 100vw;
     position: fixed;
     top: var(--nav-height);  /* Below logo bar */
     left: 0;
