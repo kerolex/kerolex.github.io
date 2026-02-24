@@ -1114,58 +1114,6 @@ h4 a {
 
 
 /* Software-specific styles to match data.css layout */
-.software-category-tag {
-  display: inline-block;
-  background: #fbbf24;
-  color: #1a365d;
-  padding: 0.3rem 0.8rem;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.software-category-tag.secondary {
-  background: #d1d5db;
-}
-
-.dataset-card .dataset-title {
-  margin-top: 0;
-}
-
-.dataset-card .dataset-title a {
-  color: #1a365d;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.dataset-card .dataset-title a:hover {
-  color: #d97706;
-}
-
-
-/* Project Card Styles - matching software.html */
-.project-category-tag {
-  display: inline-block;
-  background: #fbbf24;
-  color: #1a365d;
-  padding: 0.3rem 0.8rem;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-category-tag.secondary {
-  background: #d1d5db;
-}
-
 .project-status-badge {
   display: inline-block;
   background: #e0e7ff;
@@ -1189,6 +1137,31 @@ h4 a {
   color: #6b7280;
 }
 
+.project-meta {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+
+.software-category-tag {
+  display: inline-block;
+  background: #fbbf24;
+  color: #1a365d;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.software-category-tag.secondary {
+  background: #d1d5db;
+}
+
 .dataset-card .dataset-title {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -1202,12 +1175,6 @@ h4 a {
 
 .dataset-card .dataset-title a:hover {
   color: #d97706;
-}
-
-.project-meta {
-  font-size: 0.85rem;
-  color: #6b7280;
-  margin-bottom: 1rem;
 }
 
 .dataset-description {
@@ -1233,4 +1200,27 @@ h4 a {
   /* .dataset-media {
     aspect-ratio: 16 / 9;
   } */
+}
+
+.partner-details {
+    margin-top: 0.8rem;
+}
+
+.partner-details summary {
+    cursor: pointer;
+    color: #d97706;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.partner-list {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid #d97706;
+}
+
+.partner-list p {
+    margin: 0.3rem 0;
+    font-size: 0.85rem;
+    color: #4b5563;
 }
