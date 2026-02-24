@@ -1111,3 +1111,126 @@ h4 a {
 .skip-link:focus {
   top: 0;
 }
+
+
+/* Software-specific styles to match data.css layout */
+.software-category-tag {
+  display: inline-block;
+  background: #fbbf24;
+  color: #1a365d;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.software-category-tag.secondary {
+  background: #d1d5db;
+}
+
+.dataset-card .dataset-title {
+  margin-top: 0;
+}
+
+.dataset-card .dataset-title a {
+  color: #1a365d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dataset-card .dataset-title a:hover {
+  color: #d97706;
+}
+
+
+/* Project Card Styles - matching software.html */
+.project-category-tag {
+  display: inline-block;
+  background: #fbbf24;
+  color: #1a365d;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-category-tag.secondary {
+  background: #d1d5db;
+}
+
+.project-status-badge {
+  display: inline-block;
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  margin-left: 0.5rem;
+}
+
+.project-status-badge.active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.project-status-badge.completed {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.dataset-card .dataset-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.dataset-card .dataset-title a {
+  color: #1a365d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dataset-card .dataset-title a:hover {
+  color: #d97706;
+}
+
+.project-meta {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.dataset-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.dataset-links {
+  margin-top: 1rem;
+}
+
+.dataset-links strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+@media (max-width: 768px) {
+  .dataset-card {
+    grid-template-columns: 1fr;
+  }
+
+  /* .dataset-media {
+    aspect-ratio: 16 / 9;
+  } */
+}
