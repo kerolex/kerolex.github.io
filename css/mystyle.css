@@ -350,8 +350,7 @@ a.reversefootnote:hover {
 
 
 #section {
-  width: 90%;  /* was 75% */
-  max-width: 1000px;
+  width: calc(100% - 24px);
   text-align: left;
   margin-top: 0px;
   margin: 0 auto;
@@ -415,8 +414,7 @@ h2{
 }
 
 #about, #services {
-  width: 90%;
-  max-width: 1000px;
+  width: calc(100% - 24px);
   text-align: left;
   margin-top: 0px;
   margin: 0 auto;
@@ -475,8 +473,7 @@ h2{
 }
 
 .scrolling-content {
-  width:100%;
-  max-width: 1000px;
+  width:calc(100% - 24px);
   margin:0 auto;
   padding: 0 12px;
   box-sizing: border-box;
