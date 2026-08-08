@@ -699,6 +699,40 @@
   },
   {
     "filter": "workshops",
+    "year": "2026",
+    "image": "../images/vlms_privacy.png",
+    "imageAlt": "Zero-Shot Image Privacy",
+    "title": "On the Robustness of Vision-Language Models in Zero-shot Privacy Classification",
+    "venue": "Workshop on Trustworthy Document Understanding: Privacy, Unlearning, Robustness, and Explainability (TrustDOC), International Conference on Pattern Recognition (ICPR), Lyon (France), 21 August 2026",
+    "authors": "A. E. Baia, <b>A. Xompero</b>, A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "arxiv",
+        "url": "",
+        "external": true
+      },
+      {
+        "label": "paper",
+        "url": "",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      }
+    ],
+    "abstract": "Automatic systems for document understanding require multimodal models that accurately identify sensitive visual content, even in the presence of image degradations. Instruction-following large Vision-Language Models (VLMs) are expected to generalise across domains and tasks without requiring any specific adaptation. In this work, we systematically analyse whether VLMs can be used reliably for image privacy classification in a zero-shot setup. We evaluate and compare the classification performance of three open-source VLMs against purposely built models on two public, standard benchmarks. We assess robustness to image degradations caused by perturbations such as compression, light variations, and random noise, and analyse inference speed and parameter count to deploy VLMs in privacy-aware document processing pipelines. Our results show that large VLMs are robust to input perturbations but are less accurate (and much slower) than smaller privacy models. Scaling alone is not sufficient,  highlighting the advantages of models specifically designed  for privacy classification.",
+    "id": "baia26",
+    "bibtex": "@misc{Baia2026_ICPRW_TrustDOC,\n  title = {On the Robustness of Vision-Language Models in Zero-shot Privacy Classification},\n  author = {Baia, A. E. and Xompero, A. and Cavallaro, A.},\n  year=2026\n}",
+    "doi": "",
+    "arxivId": "10.48550/arXiv.2409.01814"
+  },
+  {
+    "filter": "workshops",
     "year": "2024",
     "image": "../images/acvr2024.png",
     "imageAlt": "ACVR 2024",
