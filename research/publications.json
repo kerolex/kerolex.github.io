@@ -1,0 +1,1045 @@
+[
+  {
+    "filter": "chapters",
+    "year": "2022",
+    "image": "../images/visualadversarial.png",
+    "imageAlt": "Visual adversarial attacks and defenses",
+    "title": "Chapter 15 - Visual adversarial attacks and defenses",
+    "venue": "In Advanced Methods And Deep Learning In Computer Vision, Editors: E. R. Davies, Matthew Turk, 1st Edition, Elsevier, pages 511-543, November 2022",
+    "authors": "C. Oh, <b>A. Xompero</b>, A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "chapter",
+        "url": "https://doi.org/10.1016/B978-0-12-822109-9.00024-2",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "webpage",
+        "url": "https://cis.eecs.qmul.ac.uk/visualadversarial.html",
+        "external": true
+      }
+    ],
+    "abstract": "Visual adversarial examples are images and videos purposefully perturbed to mislead machine learning models. This chapter presents an overview of methods that craft adversarial perturbations to generate visual adversarial examples for image classification, object detection, motion estimation and video recognition tasks. We define the key properties of an adversarial attack and the types of perturbations that an attack generates. We then analyze the main design choices for methods that craft adversarial attacks for images and videos, and discuss the knowledge they use of the target model. Finally, we review defense mechanisms that increase the robustness of machine learning models to adversarial attacks or detect manipulated input data.",
+    "id": "chapter22",
+    "bibtex": "@incollection{Oh2022VisualAdversarial,\n  title = {Chapter 15 - Visual adversarial attacks and defenses},\n  author = {Changjae Oh and Alessio Xompero and Andrea Cavallaro},\n  booktitle = {Advanced Methods and Deep Learning in Computer Vision},\n  editor = {E.R. Davies and Matthew A. Turk},\n  series = {Computer Vision and Pattern Recognition},\n  publisher = {Academic Press},\n  pages = {511-543},\n  year = {2022},\n}",
+    "doi": "10.1016/B978-0-12-822109-9.00024-2",
+    "arxivId": ""
+  },
+  {
+    "filter": "journals",
+    "year": "2025",
+    "image": "../images/popets25_v2.png",
+    "imageAlt": "Learning Privacy from Visual Entities",
+    "title": "Learning Privacy from Visual Entities",
+    "venue": "Proceedings on Privacy Enhancing Technologies (PoPETs), vol. 2025, n. 3, pp. 1-21, March 2025",
+    "authors": "<b>A. Xompero</b> and A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.56553/popets-2025-0098",
+        "external": true
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2503.12464",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/graphnex/privacy-from-visual-entities",
+        "external": true
+      },
+      {
+        "label": "data",
+        "url": "https://doi.org/10.5281/zenodo.15348506",
+        "external": true
+      },
+      {
+        "label": "models",
+        "url": "https://doi.org/10.5281/zenodo.15349470",
+        "external": true
+      },
+      {
+        "label": "webpage",
+        "url": "https://graphnex.github.io/privacy-from-visual-entities/",
+        "external": true
+      }
+    ],
+    "abstract": "Subjective interpretation and content diversity make predicting whether an image is private or public a challenging task. Graph neural networks combined with convolutional neural networks (CNNs), which consist of 14,000 to 500 millions parameters, generate features for visual entities (e.g., scene and object types) and identify the entities that contribute to the decision. In this paper, we show that using a simpler combination of transfer learning and a CNN to relate privacy with scene types optimises only 732 parameters while achieving comparable performance to that of graph-based methods. On the contrary, end-to-end training of graph-based methods can mask the contribution of individual components to the classification performance. Furthermore, we show that a high-dimensional feature vector, extracted with CNNs for each visual entity, is unnecessary and complexifies the model. The graph component has also negligible impact on performance, which is driven by fine-tuning the CNN to optimise image features for privacy nodes.",
+    "id": "popets25",
+    "bibtex": "@Article{Xompero2025PoPETs,\n  title = {Learning Privacy from Visual Entities},\n  author = {Xompero, A. and Cavallaro, A.},\n  journal = {Proceedings on Privacy Enhancing Technologies},\n  volume = {2025},\n  number = {3},\n  pages={1--21},\n  month = {Mar},\n  year = {2025},\n}",
+    "doi": "10.56553/popets-2025-0098",
+    "arxivId": "10.48550/arXiv.2503.12464"
+  },
+  {
+    "filter": "journals",
+    "year": "2025",
+    "image": "../images/pang24stereoho.jpg",
+    "imageAlt": "Stereo Hand-Object Reconstruction",
+    "title": "Stereo Hand-Object Reconstruction for Human-to-Robot Handover",
+    "venue": "IEEE Robotics and Automation Letters, Vol.10, n.6, June 2025. To be presented at IEEE/RSJ Int. Conf. Intell. Robots and Systems (IROS), Hangzhou, China, 19-25 October 2025",
+    "authors": "Y. L. Pang, <b>A. Xompero</b>, C. Oh, A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/LRA.2025.3562790",
+        "external": true
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2412.07487",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/QM-IPAlab/StereoHO",
+        "external": true
+      },
+      {
+        "label": "webpage",
+        "url": "https://qm-ipalab.github.io/StereoHO/",
+        "external": true
+      },
+      {
+        "label": "video",
+        "url": "https://qm-ipalab.github.io/StereoHO/static/videos/iros_final_720_compress.mp4",
+        "external": true
+      },
+      {
+        "label": "poster",
+        "url": "../resources/posters/Pang2025_StereoHO_BMVA.pdf",
+        "external": true
+      }
+    ],
+    "abstract": "Jointly estimating hand and object shape facilitates the grasping task in human-to-robot handovers. Relying on hand-crafted prior knowledge about the geometric structure of the object fails when generalising to unseen objects, and depth sensors fail to detect transparent objects such as drinking glasses. In this work, we propose a method for hand-object reconstruction that combines single-view reconstructions probabilistically to form a coherent stereo reconstruction. We learn 3D shape priors from a large synthetic hand-object dataset, and use RGB inputs to better capture transparent objects. We show that our method reduces the object Chamfer distance compared to existing RGB based hand-object reconstruction methods on single view and stereo settings. We process the reconstructed hand-object shape with a projection-based outlier removal step and use the output to guide a human-to-robot handover pipeline with wide-baseline stereo RGB cameras. Our hand-object reconstruction enables a robot to successfully receive a diverse range of household objects from the human.",
+    "id": "pang25ral",
+    "bibtex": "@article{Pang2025RAL,\n  title = {Stereo Hand-Object Reconstruction for Human-to-Robot Handover},\n  author = {Pang, Y. L. and Xompero, A. and Oh, C. and Cavallaro, A.},\n  journal={IEEE Robotics and Automation Letters},\n  year={2025},\n  volume={10},\n  number={6},\n  pages={5761--5768},\n  doi={10.1109/LRA.2025.3562790}\n}",
+    "doi": "10.1109/LRA.2025.3562790",
+    "arxivId": "10.48550/arXiv.2412.07487"
+  },
+  {
+    "filter": "journals",
+    "year": "2024",
+    "image": "../images/ram24_handover.png",
+    "imageAlt": "Robotic Grasping and Manipulation Competition",
+    "title": "Robotic Grasping and Manipulation Competition at the 2024 IEEE/RAS International Conference on Robotics and Automation",
+    "venue": "IEEE Robotics &amp; Automation Magazine, Competitions, vol. 31, n. 4, pp. 174-185, December 2024",
+    "authors": "Y. Sun, B. Calli, K. Kimble, F. wyffels, V. De Gusseme, K. Hang, S. D'Avella, <b>A. Xompero</b>, A. Cavallaro, M. A. Roa, J. Avendano, A. Mavrommati",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/MRA.2024.3481609",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "webpage",
+        "url": "https://cse.usf.edu/~yusun/rgmc/2024.html",
+        "external": true
+      }
+    ],
+    "abstract": "The Ninth Robotic Grasping and Manipulation Competition (RGMC) took place in Yokohama, Japan, during the 2024 IEEE/RAS International Conference on Robotics and Automation (ICRA). The series of RGMC events started in 2016 at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) with strong support from the conference's organization committee, and since then they have been held each year at ICRA or IROS. Across the editions, RGMC engaged the community in solving the open challenges associated with various robotic grasping and manipulation tasks for manufacturing, service robots, and logistics, and in advancing research and technology towards more realistic scenarios that can be encountered in daily activities at home or in warehouses.",
+    "id": "ram24",
+    "bibtex": "@Article{Sun2024RAM,\n  title = {Robotic Grasping and Manipulation Competition at the 2024 IEEE/RAS International Conference on Robotics and Automation},\n  author = {Sun, Y., and Calli, B. and Kimble, K. and wyffels, F. and De Gusseme, V. and Hang, K. and D'Avella, S. and Xompero, A. and Cavallaro, A. and Roa, M. A. and Avendano, J. and Mavrommati, A.},\n  journal = {IEEE Robotics and Automation Magazine},\n  volume = {31},\n  number = {4},\n  pages={174--185},\n  month = {Dec},\n  year = {2024},\n}",
+    "doi": "10.1109/MRA.2024.3481609",
+    "arxivId": ""
+  },
+  {
+    "filter": "journals",
+    "year": "2022",
+    "image": "../images/setup.png",
+    "imageAlt": "CORSMAL Benchmark",
+    "title": "The CORSMAL Benchmark for the Prediction of the Properties of Containers",
+    "venue": "IEEE Access, vol. 10, 2022",
+    "authors": "<b>A. Xompero</b>, S. Donaher, V. Iashin, F. Palermo, G. Solak, C. Coppola, R. Ishikawa, Y. Nagao, R. Hachiuma, Q. Liu, F. Feng, C. Lan, R. H. M. Chan, G. Christmann, J. Song, G. Neeharika, C. K. T. Reddy, D. Jain, B. U. Rehman, A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/ACCESS.2022.3166906",
+        "external": true
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2107.12719",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "webpage",
+        "url": "https://corsmal.github.io/challenge.html",
+        "external": true
+      }
+    ],
+    "abstract": "The contactless estimation of the weight of a container and the amount of its content manipulated by a person are key pre-requisites for safe human-to-robot handovers. However, opaqueness and transparencies of the container and the content, and variability of materials, shapes, and sizes, make this problem challenging. In this paper, we present a range of methods and an open framework to benchmark acoustic and visual perception for the estimation of the capacity of a container, and the type, mass, and amount of its content.",
+    "id": "access22",
+    "bibtex": "@Article{Xompero2022Access,\n  title = {The CORSMAL Benchmark for the Prediction of the Properties of Containers},\n  author = {Xompero, A. and Donaher, S. and Iashin, V. and Palermo, F. and Solak, G. and Coppola, C. and Ishikawa, R. and Nagao, Y. and Hachiuma, R. and Liu, Q. and Feng, F. and Lan, C. and Chan, R. H. M. and Christmann, G. and Song, J. and Neeharika, G. and Reddy, C. K. T. and Jain, D. and Rehman, B. U. and Cavallaro, A.},\n  journal = {IEEE Access},\n  volume = {10},\n  pages={41388--41402},\n  month = {Apr},\n  year = {2022},\n}",
+    "doi": "10.1109/ACCESS.2022.3166906",
+    "arxivId": ""
+  },
+  {
+    "filter": "journals",
+    "year": "2020",
+    "image": "../images/tip20_mst.png",
+    "imageAlt": "TIP 2020 MST",
+    "title": "A spatio-temporal multi-scale binary descriptor",
+    "venue": "IEEE Transactions on Image Processing, vol. 29, no. 1, pp. 4362-4375, Dec. 2020",
+    "authors": "<b>A. Xompero</b>, O. Lanz, and A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/TIP.2020.2965277",
+        "external": true
+      },
+      {
+        "label": "preprint",
+        "url": "../resources/Xompero_Lanz_Cavallaro_TIP_2020_MST.pdf",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "webpage",
+        "url": "MST/mst.html",
+        "external": true
+      }
+    ],
+    "abstract": "Binary descriptors are widely used for multi-view matching and robotic navigation. However, their matching performance decreases considerably under severe scale and viewpoint changes in non-planar scenes. To overcome this problem, we propose to encode the varying appearance of selected 3D scene points tracked by a moving camera with compact spatio-temporal descriptors. To this end, we first track interest points and capture their temporal variations at multiple scales. Then, we validate feature tracks through 3D reconstruction and compress the temporal sequence of descriptors by encoding the most frequent and stable binary values. Finally, we determine multi-scale correspondences across views with a matching strategy that handles severe scale differences.",
+    "id": "xomperotip",
+    "bibtex": "@Article{Xompero2020TIP_MST,\n  title={A spatio-temporal multi-scale binary descriptor},\n  author={Alessio Xompero and Oswald Lanz and Andrea Cavallaro},\n  journal={IEEE Transactions on Image Processing},\n  volume={29},\n  number={1},\n  pages={4362--4375},\n  month={Dec},\n  year={2020},\n  issn={1057-7149},\n  doi={10.1109/TIP.2020.2965277}\n}",
+    "doi": "10.1109/TIP.2020.2965277",
+    "arxivId": ""
+  },
+  {
+    "filter": "journals",
+    "year": "2020",
+    "image": "http://corsmal.github.io/benchmark/resources/handover.gif",
+    "imageAlt": "RAL 2020",
+    "title": "Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling",
+    "venue": "IEEE Robotics and Automation Letters, vol. 5, no. 2, pp. 1642-1649, Apr. 2020",
+    "authors": "R. Sanchez-Matilla, K. Chatzilygeroudis, A. Modas, N. Ferreira Duarte, <b>A. Xompero</b>, P. Frossard, A. Billard, and A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/LRA.2020.2969200",
+        "external": true
+      },
+      {
+        "label": "webpage",
+        "url": "http://corsmal.github.io/benchmark.html",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/CORSMAL/Benchmark",
+        "external": true
+      },
+      {
+        "label": "video",
+        "url": "http://corsmal.github.io/benchmark/resources/Benchmark.mp4",
+        "external": true
+      }
+    ],
+    "abstract": "The real-time estimation through vision of the physical properties of objects manipulated by humans is important to inform the control of robots for performing accurate and safe grasps of objects handed over by humans. However, estimating the 3D pose and dimensions of previously unseen objects using only RGB cameras is challenging due to illumination variations, reflective surfaces, transparencies, and occlusions caused both by the human and the robot. In this paper we present a benchmark for dynamic human-to-robot handovers that do not rely on a motion capture system, markers, or prior knowledge of specific objects.",
+    "id": "sanchezral",
+    "bibtex": "@Article{SanchezMatilla2020RAL_Benchmark,\n  title={Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling},\n  author={Ricardo Sanchez-Matilla, Konstantinos Chatzilygeroudis, Apostolos Modas, Nuno Ferreira Duarte, Alessio Xompero, Pascal Frossard, Aude Billard, and Andrea Cavallaro},\n  journal={IEEE Robotics and Automation Letters},\n  volume={5},\n  number={2},\n  pages={1642--1649},\n  month={Apr},\n  year={2020},\n  issn={2377-3766},\n  doi={10.1109/LRA.2020.2969200}\n}",
+    "doi": "10.1109/LRA.2020.2969200",
+    "arxivId": ""
+  },
+  {
+    "filter": "journals",
+    "year": "2016",
+    "image": "../images/cviu2016.jpg",
+    "imageAlt": "CVIU 2016",
+    "title": "An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes",
+    "venue": "Computer Vision and Image Understanding, 2016",
+    "authors": "S. Ba, X. Alameda-Pineda, <b>A. Xompero</b>, and R. Horaud",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "preprint",
+        "url": "http://xavirema.eu/wp-content/papercite-data/pdf/Ba-CVIU-2016.pdf",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "video",
+        "url": "https://youtu.be/ZtIM3Ikpb3k",
+        "external": true
+      }
+    ],
+    "abstract": "Object tracking is an ubiquitous problem that appears in many applications such as remote sensing, audio processing, computer vision, human-machine interfaces, human-robot interaction, etc. Although thoroughly investigated in computer vision, tracking a time-varying number of persons remains a challenging open problem. In this paper, we propose an on-line variational Bayesian model for multi-person tracking from cluttered visual observations provided by person detectors.",
+    "id": "bacviu",
+    "bibtex": "@article{Ba2016cviu,\n  title = {An On-line Variational Bayesian Model for Multi-Person Tracking from Cluttered Scenes},\n  author = {Ba, S. and Alameda-Pineda, X. and Xompero, A. and Horaud, R.},\n  journal = {Computer Vision and Image Understanding},\n  volume={153},\n  pages={64--76},\n  month = apr,\n  year = {2016},\n}",
+    "doi": "10.1016/j.cviu.2016.07.006",
+    "arxivId": "10.48550/arXiv.1509.01520"
+  },
+  {
+    "filter": "conferences",
+    "year": "2022",
+    "image": "../images/overviewpaper_main.png",
+    "imageAlt": "ICASSP 2022",
+    "title": "Audio-Visual Object Classification for Human-Robot Collaboration",
+    "venue": "IEEE International Conference on Acoustic, Speech and Signal Processing (ICASSP), Singapore and Virtual, 22-27 May 2022",
+    "authors": "<b>A. Xompero</b>, Y. L. Pang, T. Patten, A. Prabhakar, B. Calli, A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/ICASSP43922.2022.9746336",
+        "external": true
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2203.01977",
+        "external": true
+      },
+      {
+        "label": "challenge",
+        "url": "https://corsmal.github.io/challenge.html",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      }
+    ],
+    "abstract": "Human-robot collaboration requires the contactless estimation of the physical properties of containers manipulated by a person, for example while pouring content in a cup or moving a food box. Acoustic and visual signals can be used to estimate the physical properties of such objects, which may vary substantially in shape, material and size, and also be occluded by the hands of the person. To facilitate comparisons and stimulate progress in solving this problem, we present the CORSMAL challenge and a dataset to assess the performance of the algorithms through a set of well-defined performance scores.",
+    "id": "icassp22",
+    "bibtex": "@InProceedings{Xompero2022ICASSP,\n  title = {Audio-Visual Object Classification for Human-Robot Collaboration},\n  author = {Xompero, A. and Pang, Y. L. and Patten, T. and Prabhakar, A. and Calli, B. and Cavallaro, A.},\n  booktitle = {IEEE International Conference on Acoustic, Speech and Signal Processing},\n  address={Singapore},\n  month=\"22--27~\" # MAY,\n  year = {2022},\n}",
+    "doi": "10.1109/ICASSP43922.2022.9746336",
+    "arxivId": "10.48550/arXiv.2203.01977"
+  },
+  {
+    "filter": "conferences",
+    "year": "2021",
+    "image": "http://corsmal.github.io/images/real2sim_setup.png",
+    "imageAlt": "RO-MAN 2021",
+    "title": "Towards safe human-to-robot handovers of unknown containers",
+    "venue": "IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), Virtual, 8-12 Aug 2021",
+    "authors": "Y. L. Pang, <b>A. Xompero</b>, C. Oh, and A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/RO-MAN50785.2021.9515350",
+        "external": true
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2107.01309",
+        "external": true
+      },
+      {
+        "label": "webpage",
+        "url": "http://corsmal.github.io/safe_handover.html",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      }
+    ],
+    "abstract": "Safe human-to-robot handovers of unknown containers require accurate estimation of the human and object properties, such as hand pose, object shape, trajectory, and weight. However, accurate estimation requires the use of expensive equipment, such as motion capture systems, markers, and 3D object models. Moreover, developing and testing on real hardware can be dangerous for the human and object. We propose a real-to-simulation framework to conduct safe human-to-robot handovers with visual estimations of the physical properties of unknown cups or drinking glasses and of the human hands from videos of a person manipulating the object.",
+    "id": "roman21",
+    "bibtex": "@Article{Pang2021ROMAN,\n  title = {Towards safe human-to-robot handovers of unknown containers},\n  author = {Yik Lang Pang and Alessio Xompero and Changjae Oh and Andrea Cavallaro},\n  booktitle = {IEEE International Conference on Robot and Human Interactive Communication},\n  address = {Virtual},\n  month = \"8-12~\" # aug,\n  year = {2021},\n}",
+    "doi": "10.1109/RO-MAN50785.2021.9515350",
+    "arxivId": "10.48550/arXiv.2107.01309"
+  },
+  {
+    "filter": "conferences",
+    "year": "2021",
+    "image": "http://corsmal.github.io/images/RTL/abstract.png",
+    "imageAlt": "ICIP 2021",
+    "title": "Improving filling level classification with adversarial training",
+    "venue": "IEEE International Conference on Image Processing (ICIP), Anchorage, Alaska, USA, 19-22 Sep 2021",
+    "authors": "A. Modas, <b>A. Xompero</b>, R. Sanchez-Matilla, P. Frossard, and A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/ICIP42928.2021.9506112",
+        "external": true
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2102.04057",
+        "external": true
+      },
+      {
+        "label": "webpage",
+        "url": "http://corsmal.github.io/filling.html",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "data",
+        "url": "https://zenodo.org/record/4642577",
+        "external": true
+      },
+      {
+        "label": "models",
+        "url": "https://zenodo.org/record/4518951",
+        "external": true
+      }
+    ],
+    "abstract": "We investigate the problem of classifying -- from a single image -- the level of content in a cup or a drinking glass. This problem is made challenging by several ambiguities caused by transparencies, shape variations and partial occlusions, and by the availability of only small training datasets. In this paper, we tackle this problem with an appropriate strategy for transfer learning. Specifically, we use adversarial training in a generic source dataset and then refine the training with a task-specific dataset.",
+    "id": "icip21",
+    "bibtex": "@Article{Modas2021ICIP,\n  title = {Improving filling level classification with adversarial training},\n  author = {Apostolos Modas and Alessio Xompero and Ricardo Sanchez-Matilla and Pascal Frossard and Andrea Cavallaro},\n  booktitle = {IEEE International Conference on Image Processing},\n  address = {Anchorage, Alaska, USA},\n  month = \"19-22~\" # sep,\n  year = {2021},\n}",
+    "doi": "10.1109/ICIP42928.2021.9506112",
+    "arxivId": "10.48550/arXiv.2102.04057"
+  },
+  {
+    "filter": "conferences",
+    "year": "2021",
+    "image": "http://corsmal.github.io/images/acc_image.png",
+    "imageAlt": "EUSIPCO 2021",
+    "title": "Audio classification of the content of food containers and drinking glasses",
+    "venue": "European Signal Processing Conference (EUSIPCO), Dublin, Ireland, 23-27 August 2021",
+    "authors": "S. Donaher, <b>A. Xompero</b>, and A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.23919/EUSIPCO54536.2021.9616206",
+        "external": true
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2103.15999",
+        "external": true
+      },
+      {
+        "label": "webpage",
+        "url": "http://corsmal.github.io/audio_classification.html",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/CORSMAL/ACC/",
+        "external": true
+      },
+      {
+        "label": "data",
+        "url": "https://corsmal.github.io/containers_manip.html",
+        "external": true
+      }
+    ],
+    "abstract": "Food containers, drinking glasses and cups handled by a person generate sounds that vary with the type and amount of their content. In this paper, we propose a new model for sound-based classification of the type and amount of content in a container. The proposed model is based on the decomposition of the problem into two steps, namely action recognition and content classification. We consider the scenario of the recent CORSMAL Containers Manipulation dataset and consider two actions (shaking and pouring), and seven material and filling level combinations.",
+    "id": "eusipco21",
+    "bibtex": "@Article{Donhaer2021EUSIPCO,\n  title={Audio classification of the content of food containers and drinking glasses},\n  author={Santiago Donhaer and Alessio Xompero and Andrea Cavallaro},\n  booktitle={European Signal Processing Conference},\n  address={Dublin, Ireland},\n  month = \"23-27~\" # aug,\n  year={2021},\n}",
+    "doi": "10.23919/EUSIPCO54536.2021.9616206",
+    "arxivId": "10.48550/arXiv.2103.15999"
+  },
+  {
+    "filter": "conferences",
+    "year": "2020",
+    "image": "../images/diagram_ICASSP20.png",
+    "imageAlt": "ICASSP 2020",
+    "title": "Multi-view shape estimation of transparent containers",
+    "venue": "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Barcelona, Spain, 4-8 May 2020",
+    "authors": "<b>A. Xompero</b>, R. Sanchez-Matilla, A. Modas, P. Frossard, and A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/ICASSP40776.2020.9054112",
+        "external": true
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.1911.12354",
+        "external": true
+      },
+      {
+        "label": "webpage",
+        "url": "http://corsmal.github.io/LoDE.html",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "data",
+        "url": "http://corsmal.github.io/containers.html",
+        "external": true
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/CORSMAL/LoDE",
+        "external": true
+      },
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=3UquyP2QXI4",
+        "external": true
+      }
+    ],
+    "abstract": "The 3D localisation of an object and the estimation of its properties, such as shape and dimensions, are challenging under varying degrees of transparency and lighting conditions. In this paper, we propose a method for jointly localising container-like objects and estimating their dimensions using two wide-baseline, calibrated RGB cameras. Under the assumption of circular symmetry along the vertical axis, we estimate the dimensions of an object with a generative 3D sampling model of sparse circumferences, iterative shape fitting and image re-projection to verify the sampling hypotheses in each camera using semantic segmentation masks.",
+    "id": "xomperoicassp",
+    "bibtex": "@InProceedings{Xompero2020ICASSP_LoDE,\n  title={Multi-view shape estimation of transparent containers},\n  author={Alessio Xompero and Ricardo Sanchez-Matilla and Apostolos Modas and Pascal Frossard and Andrea Cavallaro},\n  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing},\n  address = {Barcelona, Spain},\n  month = \"4-8~\" # may,\n  year = {2020}\n}",
+    "doi": "10.1109/ICASSP40776.2020.9054112",
+    "arxivId": "10.48550/arXiv.1911.12354"
+  },
+  {
+    "filter": "conferences",
+    "year": "2019",
+    "image": "../images/multisensor.png",
+    "imageAlt": "ICASSP 2019",
+    "title": "Accurate Target Annotation in 3D from Multimodal Streams",
+    "venue": "International Conference on Acoustics, Speech and Signal Processing (ICASSP), Brighton (UK), May, 12-17, 2019",
+    "authors": "O. Lanz, A. Brutti, <b>A. Xompero</b>, X. Qian, M. Omologo, and A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/ICASSP.2019.8682619",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "CAV3D data",
+        "url": "https://speechtek.fbk.eu/cav3d-dataset/",
+        "external": true
+      }
+    ],
+    "abstract": "Accurate annotation is fundamental to quantify the performance of multi-sensor and multi-modal object detectors and trackers. However, invasive or expensive instrumentation is needed to automatically generate these annotations. To mitigate this problem, we present a multi-modal approach that leverages annotations from reference streams (e.g. individual camera views) and measurements from unannotated additional streams (e.g. audio) to infer 3D trajectories through an optimization. The core of our approach is a multi-modal extension of Bundle Adjustment with a cross-modal correspondence detection that selectively uses measurements in the optimization.",
+    "id": "lanzicassp",
+    "bibtex": "@INPROCEEDINGS{Lanz2019ICASSP,\n  title = {Accurate target annotation in 3D from multimodal streams},\n  author = {Lanz, Oswald and Brutti, Alessio and Xompero, Alessio and Qian, Xinyuan and Omologo, Maurizio and Cavallaro, Andrea},\n  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing},\n  address = {Brighton, UK},\n  month = \"12--17~\" # may,\n  year = {2019}\n}",
+    "doi": "10.1109/ICASSP.2019.8682619",
+    "arxivId": ""
+  },
+  {
+    "filter": "conferences",
+    "year": "2018",
+    "image": "../images/MORB.png",
+    "imageAlt": "ICIP 2018",
+    "title": "MORB: a multi-scale binary descriptor",
+    "venue": "IEEE International Conference on Image Processing (ICIP), Athens (Greece), October, 7-10, 2018",
+    "authors": "<b>A. Xompero</b>, O. Lanz, and A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/ICIP.2018.8451024",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "poster",
+        "url": "projects/icip2018/2018_ICIP_poster_Xompero_Lanz_Cavallaro.pdf",
+        "external": true
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/kerolex/MORB",
+        "external": true
+      }
+    ],
+    "abstract": "Local image features play an important role in matching images under different geometric and photometric transformations. However, as the scale difference across views increases, the matching performance may considerably decrease. To address this problem we propose MORB, a multi-scale binary descriptor that is based on ORB and that improves the accuracy of feature matching under scale changes. MORB describes an image patch at different scales using an oriented sampling pattern of intensity comparisons in a predefined set of pixel pairs.",
+    "id": "morb",
+    "bibtex": "@INPROCEEDINGS{Xompero2018ICIP_MORB,\n  title = {{MORB: a multi-scale binary descriptor}},\n  author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},\n  booktitle = {IEEE International Conference on Image Processing},\n  address = {Athens, Greece},\n  month = \"7--10~\" # oct,\n  year = {2018}\n}",
+    "doi": "10.1109/ICIP.2018.8451024",
+    "arxivId": ""
+  },
+  {
+    "filter": "conferences",
+    "year": "2018",
+    "image": "../images/fusion18_tds.png",
+    "imageAlt": "FUSION 2018",
+    "title": "Multi-camera Matching of Spatio-Temporal Binary Features",
+    "venue": "International Conference on Information Fusion (FUSION), Cambridge (United Kingdom), July, 10-13, 2018",
+    "authors": "<b>A. Xompero</b>, O. Lanz, and A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.23919/ICIF.2018.8455444",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "slides",
+        "url": "http://cis.eecs.qmul.ac.uk/2018SummerSchool/AlessioXompero_CIS_SummerSchool2018.pdf",
+        "external": true
+      }
+    ],
+    "abstract": "Local image features are generally robust to different geometric and photometric transformations on planar surfaces or under narrow baseline views. However, the matching performance decreases considerably across cameras with unknown poses separated by a wide baseline. To address this problem, we accumulate temporal information within each view by tracking local binary features, which encode intensity comparisons of pixel pairs in an image patch.",
+    "id": "fusion",
+    "bibtex": "@INPROCEEDINGS{Xompero2018FUSION,\n  title = {{Multi-camera Matching of Spatio-Temporal Binary Features}},\n  author = {Xompero, Alessio and Lanz, Oswald and Cavallaro, Andrea},\n  booktitle = {International Conference on Information Fusion},\n  address = {Cambridge, UK},\n  month = \"10--13~\" # jul,\n  year = {2018}\n}",
+    "doi": "10.23919/ICIF.2018.8455444",
+    "arxivId": ""
+  },
+  {
+    "filter": "conferences",
+    "year": "2018",
+    "image": "../images/icassp17.png",
+    "imageAlt": "ICASSP 2018",
+    "title": "3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera",
+    "venue": "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Calgary (Canada), April, 15-20, 2018",
+    "authors": "X. Qian, <b>A. Xompero</b>, A. Brutti, O. Lanz, M. Omologo, and A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/ICASSP.2018.8461323",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      }
+    ],
+    "abstract": "We address the 3D audio-visual mouth tracking problem when using a compact platform with co-located audio-visual sensors, without a depth camera. In particular, we propose a multi-modal particle filter that combines a face detector and 3D hypothesis mapping to the image plane. The audio likelihood computation is assisted by video, which relies on a GCC-PHAT based acoustic map. By combining audio and video inputs, the proposed approach can cope with a reverberant and noisy environment, and can deal with situations when the person is occluded, outside the Field of View (FoV), or not facing the sensors.",
+    "id": "qianicassp",
+    "bibtex": "@INPROCEEDINGS{Qian2018ICASSP,\n  title = {{3D Mouth Tracking from a Compact Microphone Array Co-located with a Camera}},\n  author = {Qian, Xinyuan and Xompero, Alessio and Brutti, Alessio and Lanz, Oswald and Omologo, Maurizio and Cavallaro, Andrea},\n  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing},\n  address = {Calgary, Canada},\n  month = \"15--20~\" # apr,\n  year = {2018}\n}",
+    "doi": "10.1109/ICASSP.2018.8461323",
+    "arxivId": ""
+  },
+  {
+    "filter": "workshops",
+    "year": "2024",
+    "image": "../images/acvr2024.png",
+    "imageAlt": "ACVR 2024",
+    "title": "Segmenting Object Affordances: Reproducibility and Sensitivity to Scale",
+    "venue": "Twelth International Workshop on Assistive Computer Vision and Robotics (ACVR), European Conference on Computer Vision (ECCV), Milan (Italy), 29 September 2024",
+    "authors": "T. Apicella, <b>A. Xompero</b>, P. Gastaldo, A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2409.01814",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "webpage",
+        "url": "https://apicis.github.io/aff-seg",
+        "external": true
+      },
+      {
+        "label": "poster",
+        "url": "https://apicis.github.io/aff-seg/assets/Apicella2024ECCVw_ACVR_Poster.png",
+        "external": true
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/apicis/aff-seg",
+        "external": true
+      }
+    ],
+    "abstract": "Visual affordance segmentation identifies image regions of an object an agent can interact with. Existing methods re-use and adapt learning-based architectures for semantic segmentation to the affordance segmentation task and evaluate on small-size datasets. However, experimental setups are often not reproducible, thus leading to unfair and inconsistent comparisons. In this work, we benchmark these methods under a reproducible setup on two single objects scenarios, tabletop without occlusions and hand-held containers, to facilitate future comparisons.",
+    "id": "acvr2024",
+    "bibtex": "@InProceedings{Apicella2024ACVR_ECCVW,\n  title = {Segmenting Object Affordances: Reproducibility and Sensitivity to Scale},\n  author = {Apicella, T. and Xompero, A. and Gastaldo, P. and Cavallaro, A.},\n  booktitle = {Proceedings of the European Conference on Computer Vision Workshops},\n  note = {Twelfth International Workshop on Assistive Computer Vision and Robotics},\n  address={Milan, Italy},\n  month=\"29\" # SEP,\n  year = {2024},\n}",
+    "doi": "",
+    "arxivId": "10.48550/arXiv.2409.01814"
+  },
+  {
+    "filter": "workshops",
+    "year": "2024",
+    "image": "../images/ig-privacy.png",
+    "imageAlt": "XAI4CV 2024",
+    "title": "Explaining models relating objects and privacy",
+    "venue": "The 3rd Explainable AI for Computer Vision (XAI4CV) Workshop, IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR), Seattle (US), 18 June 2024",
+    "authors": "<b>A. Xompero</b>, M. Bontonou, J. Arbona, E. Benetos, A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024W/XAI4CV/papers/Xompero_Explaining_Models_Relating_Objects_and_Privacy_CVPRW_2024_paper.pdf",
+        "external": true
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2405.01646",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "poster",
+        "url": "resources/Xompero2024CVPRw_XAI4CV_Poster.pdf",
+        "external": true
+      },
+      {
+        "label": "video",
+        "url": "https://youtu.be/mCckSgctoCY?si=MP4GQBM_lohCwzQS",
+        "external": true
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/graphnex/ig-privacy",
+        "external": true
+      },
+      {
+        "label": "webpage",
+        "url": "https://graphnex.github.io/ig-privacy/",
+        "external": true
+      }
+    ],
+    "abstract": "Accurately predicting whether an image is private before sharing it online is difficult due to the vast variety of content and the subjective nature of privacy itself. In this paper, we evaluate privacy models that use objects extracted from an image to determine why the image is predicted as private. To explain the decision of these models, we use feature-attribution to identify and quantify which objects (and which of their features) are more relevant to privacy classification with respect to a reference input (i.e., no objects localised in an image) predicted as public. We show that the presence of the person category and its cardinality is the main factor for the privacy decision.",
+    "id": "cvpr2024",
+    "bibtex": "@Article{Xompero2024CPVRW_XAI4CV,\n  title = {Explaining models relating objects and privacy},\n  author={Xompero, A. and Bontonou, M. and Arbona, J. and Benetos, E. and Cavallaro, A.},\n  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision and Pattern Recognition Workshops},\n  note = {The 3rd Explainable AI for Computer Vision (XAI4CV) Workshop},\n  month=\"18\" # JUN,\n  year = {2024},\n}",
+    "doi": "",
+    "arxivId": "10.48550/arXiv.2405.01646"
+  },
+  {
+    "filter": "workshops",
+    "year": "2023",
+    "image": "../images/acvr2023.png",
+    "imageAlt": "ACVR 2023",
+    "title": "Affordance segmentation of hand-occluded containers from exocentric images",
+    "venue": "Eleventh International Workshop on Assistive Computer Vision and Robotics (ACVR), International Conference on Computer Vision (ICCV), Paris (France), 2 October 2023",
+    "authors": "T. Apicella, <b>A. Xompero</b>, E. Ragusa, R. Berta, A. Cavallaro, P. Gastaldo",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1109/ICCVW60793.2023.00204",
+        "external": true
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2308.11233",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "webpage",
+        "url": "https://apicis.github.io/projects/acanet.html",
+        "external": true
+      },
+      {
+        "label": "data",
+        "url": "https://doi.org/10.5281/zenodo.5085800",
+        "external": true
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/SEAlab-unige/acanet",
+        "external": true
+      }
+    ],
+    "abstract": "Visual affordance segmentation identifies the surfaces of an object an agent can interact with. Common challenges for the identification of affordances are the variety of the geometry and physical properties of these surfaces as well as occlusions. In this paper, we focus on occlusions of an object that is hand-held by a person manipulating it. To address this challenge, we propose an affordance segmentation model that uses auxiliary branches to process the object and hand regions separately.",
+    "id": "acvr2023",
+    "bibtex": "@Article{Apicella2023ICCVW,\n  title = {Affordance segmentation of hand-occluded containers from exocentric images},\n  author={Apicella, T. and Xompero, A., and Ragusa, E. and Berta, R. and Cavallaro, A. and Gastaldo, P.},\n  booktitle = {Proceedings of the International Conference on Computer Vision Workshops},\n  note = {International Workshop on Assistive Computer Vision and Robotics},\n  month=\"2\" # OCT,\n  year = {2023},\n}",
+    "doi": "10.1109/ICCVW60793.2023.00204",
+    "arxivId": "10.48550/arXiv.2308.11233"
+  },
+  {
+    "filter": "workshops",
+    "year": "2022",
+    "image": "../images/xview_iwdsc22.svg",
+    "imageAlt": "IWDSC 2022",
+    "title": "Cross-Camera View-Overlap Recognition",
+    "venue": "International Workshop on Smart Distributed Cameras (IWDSC) at European Conference on Computer Vision (ECCV), October 2022",
+    "authors": "<b>A. Xompero</b>, A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "paper",
+        "url": "https://doi.org/10.1007/978-3-031-25075-0_19",
+        "external": true
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2208.11661",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "webpage",
+        "url": "research/xview",
+        "external": true
+      },
+      {
+        "label": "data",
+        "url": "https://doi.org/10.5281/zenodo.7235890",
+        "external": true
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/kerolex/CrossCameraViewOverlapRecognition",
+        "external": true
+      },
+      {
+        "label": "video",
+        "url": "https://youtu.be/MoFhI40Wd0s",
+        "external": true
+      }
+    ],
+    "abstract": "We propose a decentralised view-overlap recognition framework that operates across freely moving cameras without the need of a reference 3D map. Each camera independently extracts, aggregates into a hierarchical structure, and shares feature-point descriptors over time. A view overlap is recognised by view-matching and geometric validation to discard wrongly matched views. The proposed framework is generic and can be used with different descriptors.",
+    "id": "iwdsc22",
+    "bibtex": "@Article{Xompero2022IWDSC,\n  title = {Cross-Camera View-Overlap Recognition},\n  author = {Xompero, A. and Cavallaro, A.},\n  booktitle = {Proceedings of the European Conference on Computer Vision Workshops},\n  note = {International Workshop on Distributed Smart Cameras},\n  month=\"24\" # OCT,\n  year = {2022},\n}",
+    "doi": "10.1007/978-3-031-25075-0_19",
+    "arxivId": "10.48550/arXiv.2208.11661"
+  },
+  {
+    "filter": "preprints",
+    "year": "2025",
+    "image": "../images/vlms_privacy.png",
+    "imageAlt": "Zero-Shot Image Privacy",
+    "title": "Zero-Shot Image Privacy Classification with Vision-Language Models",
+    "venue": "September 2025",
+    "authors": "A. E. Baia, <b>A. Xompero</b>, A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2510.09253",
+        "external": true
+      },
+      {
+        "label": "paper",
+        "url": "../resources/papers/Baia_Xompero_Cavallaro_PrivacyVLMs.pdf",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      }
+    ],
+    "abstract": "While specialized learning-based models have historically dominated image privacy prediction, the current literature increasingly favours adopting large Vision-Language Models (VLMs) designed for generic tasks. This trend risks overlooking the performance ceiling set by purpose-built models due to a lack of systematic evaluation. To address this problem, we establish a zero-shot benchmark for image privacy classification, enabling a fair comparison. We evaluate the top-3 open-source VLMs, according to a privacy benchmark, using task-aligned prompts and we contrast their performance, efficiency, and robustness against established vision-only and multi-modal methods.",
+    "id": "baia25",
+    "bibtex": "@misc{Baia2025_VLM_Privacy,\n  title = {Zero-Shot Image Privacy Classification with Vision-Language Models},\n  author = {Baia, A. E. and Xompero, A. and Cavallaro, A.},\n  year=2025\n}"
+  },
+  {
+    "filter": "preprints",
+    "year": "2025",
+    "image": "../images/visaff_survey.svg",
+    "imageAlt": "Visual Affordances",
+    "title": "Visual Affordances: Enabling robots to understand object functionality",
+    "venue": "May 2025",
+    "authors": "T. Apicella, <b>A. Xompero</b>, A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2505.05074",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "webpage",
+        "url": "https://apicis.github.io/aff-survey/",
+        "external": true
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/apicis/aff-survey",
+        "external": true
+      }
+    ],
+    "abstract": "Human-robot interaction for assistive technologies relies on the prediction of affordances, which are the potential actions a robot can perform on objects. Predicting object affordances from visual perception is formulated differently for tasks such as grasping detection, affordance classification, affordance segmentation, and hand-object interaction synthesis. In this work, we highlight the reproducibility issue in these redefinitions, making comparative benchmarks unfair and unreliable. To address this problem, we propose a unified formulation for visual affordance prediction, provide a comprehensive and systematic review of previous works highlighting strengths and limitations of methods and datasets, and analyse what challenges reproducibility.",
+    "id": "apicella25arxiv",
+    "bibtex": "@misc{Apicella2025,\n  title = {Visual Affordances: Enabling robots to understand object functionality},\n  author = {Apicella, T. and Xompero, A. and Cavallaro, A.},\n  year=2025\n}"
+  },
+  {
+    "filter": "preprints",
+    "year": "2022",
+    "image": "https://corsmal.github.io/images/pose/final_v4.png",
+    "imageAlt": "6D Pose Estimation",
+    "title": "A Mixed-Reality Dataset for Category-level 6D Pose and Size Estimation of Hand-occluded Containers",
+    "venue": "arXiv, 2022",
+    "authors": "X. Weber, <b>A. Xompero</b>, A. Cavallaro",
+    "links": [
+      {
+        "label": "abstract",
+        "action": "abstract"
+      },
+      {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2211.10470",
+        "external": true
+      },
+      {
+        "label": "bibtex",
+        "action": "bibtex"
+      },
+      {
+        "label": "webpage",
+        "url": "https://corsmal.github.io/pose.html",
+        "external": true
+      },
+      {
+        "label": "data",
+        "url": "https://doi.org/10.5281/zenodo.5085800",
+        "external": true
+      }
+    ],
+    "abstract": "Estimating the 6D pose and size of household containers is challenging due to large intra-class variations in the object properties, such as shape, size, appearance, and transparency. The task is made more difficult when these objects are held and manipulated by a person due to varying degrees of hand occlusions caused by the type of grasps and by the viewpoint of the camera observing the person holding the object. In this paper, we present a mixed-reality dataset of hand-occluded containers for category-level 6D object pose and size estimation.",
+    "id": "weber22arxiv",
+    "bibtex": "@misc{Weber2023ArXiv,\n  title = {A Mixed-Reality Dataset for Category-level 6D Pose and Size Estimation of Hand-occluded Containers},\n  author = {Weber, X. and Xompero, A. and Cavallaro, A.},\n  eprint={2211.10470},\n  archivePrefix={arXiv},\n  primaryClass={cs.CV},\n  url={https://arxiv.org/abs/2211.10470}\n}"
+  },
+  {
+    "filter": "thesis",
+    "year": "2020",
+    "image": "../images/phdthesis_main.jpg",
+    "imageAlt": "PhD Thesis",
+    "title": "Local features for view matching across independently moving cameras",
+    "venue": "PhD Thesis, Queen Mary University of London, 2020",
+    "authors": "Alessio Xompero",
+    "links": [
+      {
+        "label": "pdf",
+        "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/68494",
+        "external": true
+      }
+    ],
+    "abstract": "",
+    "bibtex": "",
+    "thesisInfo": "<strong>Supervisors:</strong><br/>Prof. Andrea Cavallaro, Queen Mary University of London, United Kingdom<br/>Dr. Oswald Lanz, Fondazione Bruno Kessler, Italy<br/><br/>\n<strong>Examiners:</strong><br/>Dr. Stefan Leutenegger, Imperial College London, United Kingdom<br/>Dr. Jean-Yves Guillemaut, University of Surrey, United Kingdom"
+  },
+  {
+    "filter": "thesis",
+    "year": "2015",
+    "image": "../images/viprot_demo.gif",
+    "imageAlt": "Master Thesis",
+    "title": "ViProT: A Visual Probabilistic Model for Moving Interest Points Clusters Tracking",
+    "venue": "Master's Thesis, University of Trento, 2015",
+    "authors": "Alessio Xompero",
+    "links": [
+      {
+        "label": "pdf",
+        "url": "projects/MasterThesis_ViProT.pdf",
+        "external": true
+      }
+    ],
+    "abstract": "",
+    "bibtex": "",
+    "thesisInfo": "<strong>Advisors:</strong><br/>Dr. Nicola Conci, University of Trento, Italy<br/>Dr. <a href=\"https://team.inria.fr/robotlearn/team-members/radu-patrice-horaud/\" style=\"color: #0066cc;\" target=\"_blank\">Radu Patrice Horaud</a>, INRIA Grenoble Rhône-Alpes, France<br/>Dr. <a href=\"http://xavirema.eu/\" style=\"color: #0066cc;\" target=\"_blank\">Xavier Alameda-Pineda</a>, INRIA Grenoble Rhône-Alpes, France<br/>Dr. <a href=\"https://sites.google.com/site/sileyeoba/home\" style=\"color: #0066cc;\" target=\"_blank\">Sileye Ba</a>, INRIA Grenoble Rhône-Alpes, France"
+  }
+]
