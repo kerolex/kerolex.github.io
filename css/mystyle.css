@@ -1222,3 +1222,78 @@ h4 a {
     font-size: 0.85rem;
     color: #4b5563;
 }
+
+
+
+.teaching-intro {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.supervision-list {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.supervision-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 0.9rem 1.1rem;
+  background: #fafafa;
+  border-left: 4px solid #8a1f2b;
+  border-radius: 4px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.supervision-item:hover {
+  background: #f1eeee;
+  transform: translateX(2px);
+}
+
+.supervision-item .sup-icon {
+  flex: 0 0 auto;
+  width: 1.6rem;
+  text-align: center;
+  color: #8a1f2b;
+  margin-top: 0.2rem;
+}
+
+.supervision-item .sup-text {
+  flex: 1 1 auto;
+  line-height: 1.5;
+}
+
+.supervision-item .sup-name {
+  font-weight: 700;
+}
+
+.supervision-item .sup-link {
+  margin-left: 0.4rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.supervision-item .sup-link a {
+  color: #8a1f2b;
+  text-decoration: none;
+  border-bottom: 1px dotted #8a1f2b;
+}
+
+.supervision-item .sup-link a:hover {
+  border-bottom-style: solid;
+}
+
+.supervision-item .sup-role {
+  display: block;
+  font-size: 0.92rem;
+  color: #555;
+  margin-top: 0.15rem;
+}
