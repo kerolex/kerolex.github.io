@@ -737,7 +737,9 @@
     ],
     "abstract": "Affordance prediction is the identification of potential actions an agent can perform on a target object from multimodal inputs. However, affordance prediction methods are difficult to evaluate and compare due to heterogeneous problem formulations, inconsistent dataset annotations, incomplete reporting of experimental protocols, and limited information about deployment conditions. These limitations challenge fair benchmarking and performance comparison beyond controlled laboratory settings. To promote transparency, we propose the Affordance Sheet, a unified documentation detailing task formulation with its input modalities, model architectures and training information, datasets, and experimental protocols. Affordance Sheets enable reproducible benchmarking and more reliable evaluation of affordance models for real-world scenarios, including validations with simulated or real-world robot, generalisation to novel conditions, robustness to occlusions, and human safety.",
     "id": "apicella26eccv_hcmiw",
-    "bibtex": "@misc{Apicella2026_ECCV_HCMIW,\n  title = {Reproducible Multimodal Affordance Prediction},\n  author = {Apicella, T. and Xompero, A. and Cavallaro, A.},\n  year=2026\n}"
+    "bibtex": "@misc{Apicella2026_ECCV_HCMIW,\n  title = {Reproducible Multimodal Affordance Prediction},\n  author = {Apicella, T. and Xompero, A. and Cavallaro, A.},\n  year=2026\n}",
+    "doi": "10.48550/arXiv.2608.18317",
+    "arxivId": "10.48550/arXiv.2608.18317"
   },
   {
     "filter": "workshops",
