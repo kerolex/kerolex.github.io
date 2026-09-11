@@ -710,9 +710,29 @@
         "label": "abstract",
         "action": "abstract"
       },
+       {
+        "label": "arxiv",
+        "url": "https://doi.org/10.48550/arXiv.2608.18317",
+        "external": true
+      },
       {
         "label": "bibtex",
         "action": "bibtex"
+      },
+      {
+        "label": "webpage",
+        "url": "https://apicis.github.io/aff-sheet",
+        "external": true
+      },
+      {
+        "label": "poster",
+        "url": "https://apicis.github.io/aff-sheet/assets/poster.png",
+        "external": true
+      },
+      {
+        "label": "webtool",
+        "url": "https://apicis.github.io/aff-sheet/aff_sheet.html",
+        "external": true
       }
     ],
     "abstract": "Affordance prediction is the identification of potential actions an agent can perform on a target object from multimodal inputs. However, affordance prediction methods are difficult to evaluate and compare due to heterogeneous problem formulations, inconsistent dataset annotations, incomplete reporting of experimental protocols, and limited information about deployment conditions. These limitations challenge fair benchmarking and performance comparison beyond controlled laboratory settings. To promote transparency, we propose the Affordance Sheet, a unified documentation detailing task formulation with its input modalities, model architectures and training information, datasets, and experimental protocols. Affordance Sheets enable reproducible benchmarking and more reliable evaluation of affordance models for real-world scenarios, including validations with simulated or real-world robot, generalisation to novel conditions, robustness to occlusions, and human safety.",
@@ -948,38 +968,6 @@
     "bibtex": "@Article{Xompero2022IWDSC,\n  title = {Cross-Camera View-Overlap Recognition},\n  author = {Xompero, A. and Cavallaro, A.},\n  booktitle = {Proceedings of the European Conference on Computer Vision Workshops},\n  note = {International Workshop on Distributed Smart Cameras},\n  month=\"24\" # OCT,\n  year = {2022},\n}",
     "doi": "10.1007/978-3-031-25075-0_19",
     "arxivId": "10.48550/arXiv.2208.11661"
-  },
-  {
-    "filter": "preprints",
-    "year": "2025",
-    "image": "../images/vlms_privacy.png",
-    "imageAlt": "Zero-Shot Image Privacy",
-    "title": "Zero-Shot Image Privacy Classification with Vision-Language Models",
-    "venue": "September 2025",
-    "authors": "A. E. Baia, <b>A. Xompero</b>, A. Cavallaro",
-    "links": [
-      {
-        "label": "abstract",
-        "action": "abstract"
-      },
-      {
-        "label": "arxiv",
-        "url": "https://doi.org/10.48550/arXiv.2510.09253",
-        "external": true
-      },
-      {
-        "label": "paper",
-        "url": "../resources/papers/Baia_Xompero_Cavallaro_PrivacyVLMs.pdf",
-        "external": true
-      },
-      {
-        "label": "bibtex",
-        "action": "bibtex"
-      }
-    ],
-    "abstract": "While specialized learning-based models have historically dominated image privacy prediction, the current literature increasingly favours adopting large Vision-Language Models (VLMs) designed for generic tasks. This trend risks overlooking the performance ceiling set by purpose-built models due to a lack of systematic evaluation. To address this problem, we establish a zero-shot benchmark for image privacy classification, enabling a fair comparison. We evaluate the top-3 open-source VLMs, according to a privacy benchmark, using task-aligned prompts and we contrast their performance, efficiency, and robustness against established vision-only and multi-modal methods.",
-    "id": "baia25",
-    "bibtex": "@misc{Baia2025_VLM_Privacy,\n  title = {Zero-Shot Image Privacy Classification with Vision-Language Models},\n  author = {Baia, A. E. and Xompero, A. and Cavallaro, A.},\n  year=2025\n}"
   },
   {
     "filter": "preprints",
