@@ -788,33 +788,30 @@ h4 a {
 
 /* ===== PROFILE SECTION (Profile image + bio) ===== */
 .profile-section {
-  width: 100%;
-  overflow: visible;
   display: flex;
-  flex-wrap: nowrap;  /* FIX: force items to stay on same line */
+  flex-wrap: nowrap;
   gap: 2rem;
   margin-bottom: 2rem;
   align-items: flex-start;
 }
 
 .profile-image-wrapper {
-  flex: 0 0 18%;
-  min-width: 150px;
+  flex: 0 0 clamp(150px, 22%, 240px);
+  min-width: 0;
 }
 
 .profile-image-wrapper img {
-  width: 100%;
-  border-radius: 0%;
-  padding: 30px 30px 10px 0;
   display: block;
-  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+  margin-bottom: 10px;
 }
 
 .profile-bio {
-  flex: 1 1 auto;
-  padding-top: 30px;
-  text-align: justify;
-  min-width: auto;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 /* Video Section */
@@ -1010,21 +1007,20 @@ h4 a {
   }
 
   .profile-image-wrapper {
-    flex: 0 0 100%;
-    width: 100%;
-    max-width: 300px;
+    flex: 0 1 300px;
+    width: min(100%, 300px);
     margin: 0 auto;
   }
 
   .profile-image-wrapper img {
-    padding: 0;
+    aspect-ratio: 1 / 1;
   }
 
   .profile-bio {
-    flex: 1 1 100%;
+    flex: none;
+    width: 100%;
     padding-top: 1rem;
     text-align: left;
-    min-width: auto;
   }
 
   .event-card {
