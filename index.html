@@ -2,16 +2,6 @@
 <html lang = "en">
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-364488019"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-364488019');
-	</script>
-
 	<title>Alessio Xompero, PhD</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -182,6 +172,13 @@
             <h2>News</h2>
 			<article class="news-feed">
 				<section class="news-item">
+                    <time datetime="2026-11-07" class="news-date">2026/11/7</time>
+                    <p>
+						The 12th Robotic Grasping and Manipulation Competition has been accepted at ICRA 2027. I will leading the Human-to-Robot Handover tracks (4th consecutive year).
+						<a href="https://sites.google.com/view/rgmcomp" target="_blank">link</a>
+					</p>
+                </section>
+				<section class="news-item">
                     <time datetime="2026-10-14" class="news-date">2026/10/14</time>
                     <p>
 						Presenting two proposal of work items for the ITU Focus Group on Embodied AI for Multimedia Technologies (3rd Meeting).
@@ -300,10 +297,84 @@
 </div>
 <p>
 	Copyright &copy; 2015-<span id="currentYear"></span> - Alessio Xompero
+    <!-- &middot; <a href="privacy.html">Privacy Policy</a>
+    &middot; <a href="#" id="cc-settings">Cookie settings</a> -->
 </p>
 </footer>
 <script>
 	document.getElementById('currentYear').textContent = new Date().getFullYear();
 </script>
+
+
+<!-- ===== Banner (paste below <body>) ===== -->
+<!-- <div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden
+     style="position:fixed;left:0;right:0;bottom:0;z-index:1000;background:#222;color:#fff;padding:16px 20px;font-size:14px;line-height:1.5;box-shadow:0 -2px 8px rgba(0,0,0,0.3);">
+  <p style="margin:0 0 12px;max-width:900px;">
+    This website would like to use Google Analytics cookies to count visits and see which pages are popular.
+    These cookies are only set if you accept them. You can read more in our
+    <a href="privacy.html" style="color:#fff;text-decoration:underline;">Privacy Policy</a>.
+  </p>
+  <button id="cc-accept" type="button"
+          style="padding:8px 16px;margin-right:8px;background:#fff;color:#222;border:2px solid #fff;border-radius:4px;cursor:pointer;font-size:14px;">Accept</button>
+  <button id="cc-reject" type="button"
+          style="padding:8px 16px;background:#fff;color:#222;border:2px solid #fff;border-radius:4px;cursor:pointer;font-size:14px;">Reject</button>
+</div>
+  -->
+<!-- ===== Consent logic (paste just before </body>) ===== -->
+<!-- <script>
+(function () {
+  var GA_ID = 'G-364488019';
+  var KEY = 'cookie-consent-v1';
+  var banner = document.getElementById('cookie-banner');
+  var gaLoaded = false;
+ 
+  function loadGA() {
+    if (gaLoaded) return;
+    gaLoaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_ID);
+  }
+ 
+  function showBanner(show) { banner.hidden = !show; }
+ 
+  var choice = null;
+  try { choice = localStorage.getItem(KEY); } catch (e) { /* storage blocked: treat as no choice */ }
+ 
+  if (choice === 'granted') {
+    loadGA();
+  } else if (choice === null) {
+    showBanner(true);
+  }
+  // 'denied': nothing loads, banner stays hidden
+ 
+  document.getElementById('cc-accept').addEventListener('click', function () {
+    try { localStorage.setItem(KEY, 'granted'); } catch (e) {}
+    showBanner(false);
+    loadGA();
+  });
+ 
+  document.getElementById('cc-reject').addEventListener('click', function () {
+    try { localStorage.setItem(KEY, 'denied'); } catch (e) {}
+    showBanner(false);
+  });
+ 
+  // "Cookie settings" link: lets visitors change their choice later
+  var settings = document.getElementById('cc-settings');
+  if (settings) {
+    settings.addEventListener('click', function (e) {
+      e.preventDefault();
+      try { localStorage.removeItem(KEY); } catch (err) {}
+      showBanner(true);
+    });
+  }
+})();
+</script> -->
+
 </body>
 </html>
